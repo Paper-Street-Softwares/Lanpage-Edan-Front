@@ -1,4 +1,4 @@
-import style from "../style/css/awards.css";
+import style from "../style/css/componentsStyle/awards.css";
 
 function Awards() {
   return (

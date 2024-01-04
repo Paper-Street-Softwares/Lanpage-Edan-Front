@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-mais-escuro: #003300;
+  --cor-medio: #339933;
+  --cor-mais-claro: #00ffcc;
+}

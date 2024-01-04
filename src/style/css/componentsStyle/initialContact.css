@@ -5,7 +5,7 @@
 }
 
 .wrapper-InicialContact {
-  background-color: var(--cor-dos-extremos);
+  background-color: var(--cor-mais-escuro);
 }
 
-@import "./global.css";
+@import "../structure-global.css";

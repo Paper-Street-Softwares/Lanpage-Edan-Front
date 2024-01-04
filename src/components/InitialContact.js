@@ -1,5 +1,4 @@
-import style from "../style/css/initialContact.css";
-// import style from "../style/css/global.css";
+import style from "../style/css/componentsStyle/initialContact.css";
 
 function InitialContact() {
   return (
