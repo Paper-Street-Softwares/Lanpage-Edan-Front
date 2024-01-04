@@ -1,1 +1,9 @@
 @import "../structure-global.css";
+
+.wrapper-Navbar {
+  background-color: var(--color-lighter);
+}
+
+img {
+  max-width: 120px;
+}
