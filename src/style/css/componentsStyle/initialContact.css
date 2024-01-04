@@ -1,5 +1,38 @@
 @import "../structure-global.css";
 
 .wrapper-InicialContact {
-  background-color: var(--cor-mais-escuro);
+  background-color: var(--color-dark);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mail-phone {
+  display: flex;
+  align-items: center;
+}
+
+.mail,
+.phone,
+.icons {
+  display: flex;
+  align-items: center;
+  color: var(--color-icon);
+}
+
+.mail h5,
+.phone h5 {
+  margin-left: 10px;
+  margin-right: 50px;
+  color: var(--color-text);
+}
+
+.icons > *:not(:last-child) {
+  margin-right: 8px;
 }

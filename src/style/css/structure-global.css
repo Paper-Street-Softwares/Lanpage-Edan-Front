@@ -5,7 +5,9 @@
 }
 
 :root {
-  --cor-mais-escuro: #003300;
-  --cor-medio: #339933;
-  --cor-mais-claro: #00ffcc;
+  --color-dark: #003300;
+  --color-medium: #339933;
+  --color-lighter: #00ffcc;
+  --color-icon: #00ffcc;
+  --color-text: #ccffcc;
 }
