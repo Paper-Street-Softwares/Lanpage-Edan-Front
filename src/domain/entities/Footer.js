@@ -1,7 +1,8 @@
+import Awards from "../../components/Awards";
 function Footer() {
   return (
     <div>
-      <h1>footer final</h1>
+      <Awards />
     </div>
   );
 }
