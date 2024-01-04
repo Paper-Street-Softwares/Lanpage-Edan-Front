@@ -1,0 +1,5 @@
+@import "../structure-global.css";
+
+.wrapper-Awards {
+  background-color: var(--cor-mais-escuro);
+}

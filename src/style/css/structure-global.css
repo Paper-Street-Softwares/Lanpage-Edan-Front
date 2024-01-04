@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-dark: #003300;
+  --color-medium: #339933;
+  --color-lighter: #00ffcc;
+  --color-icon: #00ffcc;
+  --color-text: #ccffcc;
+}
