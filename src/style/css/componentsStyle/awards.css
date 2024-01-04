@@ -1,11 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "../structure-global.css";
 
 .wrapper-Awards {
   background-color: var(--cor-mais-escuro);
 }
-
-@import "../structure-global.css";
