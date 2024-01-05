@@ -7,6 +7,7 @@ function OurService() {
       <h1 style={{ textAlign: "center" }}>Meu Título Central</h1>
       <div style={{ display: "flex", justifyContent: "space-around" }}>
         <Card
+          icone="icone-abertura"
           titulo="Abertura de Empresas"
           conteudo="Abra seu caminho para o sucesso empresarial conosco!"
         />
