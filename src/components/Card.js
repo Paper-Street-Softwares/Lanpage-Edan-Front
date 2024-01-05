@@ -1,12 +1,11 @@
 import "../style/css/componentsStyle/ourservice.css";
 import "../style/css/structure-global.css";
-import { FaTimes } from "react-icons/fa";
 import PropTypes from "prop-types";
 
-function Card({ titulo, conteudo }) {
+function Card({ icone, titulo, conteudo }) {
   return (
     <div className="card">
-      <FaTimes />
+      <span className={`icon ${icone}`} />
       <div>{titulo}</div>
       <div>{conteudo}</div>
       <div>
@@ -23,6 +22,7 @@ function Card({ titulo, conteudo }) {
 }
 
 Card.propTypes = {
+  icone: PropTypes.string.isRequired,
   titulo: PropTypes.string.isRequired,
   conteudo: PropTypes.string.isRequired,
 };
