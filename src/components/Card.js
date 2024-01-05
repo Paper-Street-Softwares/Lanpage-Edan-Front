@@ -6,15 +6,17 @@ function Card({ titulo, conteudo }) {
   return (
     <div className="card">
       <FaTimes />
-      <h2>{titulo}</h2>
-      <p>{conteudo}</p>
-      <a
-        href="https://www.google.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Saiba mais
-      </a>
+      <div>{titulo}</div>
+      <div>{conteudo}</div>
+      <div>
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Saiba mais
+        </a>
+      </div>
     </div>
   );
 }
