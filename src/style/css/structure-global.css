@@ -34,3 +34,8 @@ h2 {
 p {
   color: var(--color-icon);
 }
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
