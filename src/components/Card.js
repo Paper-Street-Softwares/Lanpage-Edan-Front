@@ -2,7 +2,7 @@ import "../style/css/componentsStyle/ourservice.css";
 import "../style/css/structure-global.css";
 import { FaTimes } from "react-icons/fa";
 
-function Card({ titulo, conteudo }) => {
+function Card({ titulo, conteudo }) {
   return (
     <div className="card">
       <FaTimes />
