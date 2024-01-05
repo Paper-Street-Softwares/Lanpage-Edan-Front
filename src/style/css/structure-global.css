@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 :root {
@@ -11,4 +12,15 @@
   --color-lighter: #00ffcc27;
   --color-icon: #00ffcc;
   --color-text: #ccffcc;
+  --color-transparency: #ffffff00;
+}
+
+h4 {
+  color: var(--color-medium);
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
