@@ -7,13 +7,36 @@ function Navbar() {
       <div className="container">
         <div className="logo-Navbar">
           <img src={Logo} alt="" />
+          <h4>EDAN Contabilidade</h4>
         </div>
         <div className="buttoncascade-Navbar">
-          <button>INÍCIO</button>
-          <button>SOBRE NÓS</button>
-          <button>SERVIÇOS</button>
-          <button>LINKS</button>
-          <button>CONTATO</button>
+          <ul className="list">
+            <li className="item">
+              <button href="/">
+                <a>INÍCIO</a>
+              </button>
+            </li>
+            <li className="item">
+              <button href="/src/components/About.js">
+                <a>SOBRE NÓS</a>
+              </button>
+            </li>
+            <li className="item">
+              <button href="/src/components/OurService.js">
+                <a>SERVIÇOS</a>
+              </button>
+            </li>
+            <li className="item">
+              <button href="/src/components/UsefullLinks.js">
+                <a>LINKS</a>
+              </button>
+            </li>
+            <li className="item">
+              <button href="/src/components/MainContact.js">
+                <a>CONTATO</a>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
