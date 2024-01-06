@@ -2,7 +2,7 @@ window.onload = function() {
   const slider = document.querySelectorAll('.slider');
   const btnPrev = document.getElementById('prev-button');
   const btnNext = document.getElementById('next-button');
-  let intervalId; // Variável para armazenar o ID do intervalo
+  let intervalId;
 
   if (slider.length > 0 && btnPrev && btnNext) {
     let currentSlide = 0;
@@ -16,6 +16,7 @@ window.onload = function() {
     }
 
     function nextSlider() {
+      
       hideSlider()
       if (currentSlide === slider.length - 1) {
         currentSlide = 0
@@ -24,6 +25,8 @@ window.onload = function() {
       }
       showSlider()
     }
+
+    nextSlider();
 
     function prevSlider() {
       hideSlider()
@@ -35,20 +38,18 @@ window.onload = function() {
       showSlider()
     }
 
-    // Adicione os eventos aos botões
     btnNext.addEventListener('click', function() {
-      clearInterval(intervalId); // Limpa o intervalo existente
+      clearInterval(intervalId);
       nextSlider();
-      intervalId = setInterval(nextSlider, 3000); // Inicia um novo intervalo
+      intervalId = setInterval(nextSlider, 3000);
     });
 
     btnPrev.addEventListener('click', function() {
-      clearInterval(intervalId); // Limpa o intervalo existente
+      clearInterval(intervalId);
       prevSlider();
-      intervalId = setInterval(nextSlider, 3000); // Inicia um novo intervalo
+      intervalId = setInterval(nextSlider, 3000);
     });
 
-    // Adicione o intervalo inicial para alterar o slide a cada 1 segundo
     intervalId = setInterval(nextSlider, 3000);
   } else {
     console.error("Elementos DOM não encontrados. Verifique se os seletores e IDs estão corretos.");

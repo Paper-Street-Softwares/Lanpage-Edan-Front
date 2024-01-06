@@ -17,6 +17,10 @@
     width: 700px;
 }
 
+.wrapper-images img{
+    width: 700px !important;
+}
+
 .btns-slide{
     display: flex;
     position: absolute;
