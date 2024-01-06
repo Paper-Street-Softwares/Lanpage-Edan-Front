@@ -17,9 +17,23 @@
     width: 700px;
 }
 
+.btns-slide{
+    display: flex;
+    position: absolute;
+    bottom: 15%;
+    right: 35%;
+    z-index: 1;
+}
+.btns-slide button{
+    display: flex;
+    padding: 10px;
+    margin: 1px;
+    background-color: #fff !important;
+}
+
 .slider{
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: 0.3s;
     position: absolute;
     width: 100%;
     border-radius: 2%;
@@ -41,7 +55,8 @@
     transform: rotate(180deg);
 }
 
-#prev-button img, #next-button img{
-    width: 100%;
-    height: 100%;
+#prev-button, #next-button{
+    width: 100% !important;
+    height: 100% !important;
+    color: var(--color-light);
 }
