@@ -1,22 +1,15 @@
 @import "../structure-global.css";
 
-.qwerty {
-  width: 100%;
-}
-
 .wrapper-OurService {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .title-OurService {
   text-align: center;
-}
-
-.cards-container {
-  display: flex;
-  justify-content: space-around;
 }
 
 .card-OurService {

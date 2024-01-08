@@ -18,8 +18,6 @@ function InitialContact() {
           <div className="mail">
             <FaEnvelope />
             <h5>edilsonmatos.matos@uol.com.br</h5>
-          </div>
-          <div className="phone">
             <FaPhoneVolume />
             <h5>(73) 9961-2263</h5>
           </div>

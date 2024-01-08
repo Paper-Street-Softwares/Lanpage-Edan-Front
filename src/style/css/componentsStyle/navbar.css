@@ -7,16 +7,16 @@
 
 .container-Navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 5vh;
   margin: 0 auto;
-  width: 100%;
+  width: 85%;
 }
 
 .logo-Navbar img {
   max-width: 90px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .logo-Navbar {
@@ -26,8 +26,8 @@
 
 .buttoncascade-Navbar {
   display: flex;
-  justify-content: space-around;
-  padding: 1em;
+  justify-content: space-between;
+  padding: 0.3em;
 }
 
 button {
