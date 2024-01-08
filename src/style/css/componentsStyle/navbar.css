@@ -1,1 +1,40 @@
 @import "../structure-global.css";
+
+.wrapper-Navbar {
+  background-color: var(--color-lighter);
+  overflow: hidden;
+}
+
+.logo-Navbar img {
+  max-width: 90px;
+  margin-right: 10px;
+}
+
+.logo-Navbar {
+  display: flex;
+  align-items: center;
+}
+
+.buttoncascade-Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+button {
+  border: none;
+  background-color: var(--color-transparency);
+}
+
+.item {
+  margin-right: 1em;
+}
+
+.item a {
+  color: var(--color-medium);
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: var(--color-light);
+}
