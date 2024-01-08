@@ -1,12 +1,22 @@
 @import "../structure-global.css";
 
-.titulo-central {
+.wrapper-OurService {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-OurService {
   text-align: center;
 }
 
 .cards-container {
   display: flex;
   justify-content: space-around;
+}
+
+.card-OurService {
+  display: flex;
 }
 
 .card {

@@ -4,8 +4,10 @@ import Card from "./Card";
 function OurService() {
   return (
     <div className="wrapper-OurService">
-      <h1 style={{ textAlign: "center" }}>Meu Título Central</h1>
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
+      <div className="title-OurService">
+        <h1>Meu Título Central</h1>
+      </div>
+      <div className="card-OurService">
         <Card
           icone="icone-abertura"
           titulo="Abertura de Empresas"
