@@ -7,7 +7,6 @@ function Navbar() {
       <div className="container">
         <div className="logo-Navbar">
           <img src={Logo} alt="" />
-          <h4>EDAN Contabilidade</h4>
         </div>
         <div className="buttoncascade-Navbar">
           <ul className="list">
