@@ -1,6 +1,5 @@
 import "../style/css/componentsStyle/ourservice.css";
 import Card from "./Card";
-import ButtonSlide from "./ButtonSlide";
 
 function OurService() {
   return (
@@ -13,6 +12,11 @@ function OurService() {
           icone="icone-abertura"
           titulo="Abertura de Empresas"
           conteudo="Abra seu caminho para o sucesso empresarial conosco!"
+        />
+        <Card
+          icone="icone-abertura"
+          titulo="Qualquer Parada"
+          conteudo="ESQUEÇA TUDO!"
         />
         <Card
           titulo="Baixas"

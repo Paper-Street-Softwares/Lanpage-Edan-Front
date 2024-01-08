@@ -7,6 +7,7 @@ function About() {
         <div className="sectionLeft">
           <div className="titleAbout">
             <h5>SOBRE A EDAN</h5>
+            <br />
           </div>
           <p>
             É a Contabilidade responsável pela analise de natureza econômica de

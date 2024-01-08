@@ -11,12 +11,7 @@
   align-items: center;
   height: 5vh;
   margin: 0 auto;
-  width: 85%;
-}
-
-.logo-Navbar img {
-  max-width: 90px;
-  margin-left: 20px;
+  width: 80%;
 }
 
 .logo-Navbar {
@@ -24,10 +19,13 @@
   align-items: center;
 }
 
+.logo-Navbar img {
+  max-width: 90px;
+}
+
 .buttoncascade-Navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0.3em;
 }
 
 button {
@@ -36,7 +34,11 @@ button {
 }
 
 .item {
-  margin-right: 1em;
+  margin-right: 10px;
+}
+
+.item:last-child {
+  margin-right: 0;
 }
 
 .item a {
