@@ -1,1 +1,39 @@
 @import "../structure-global.css";
+
+.wrapper-UsefullLinks {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-usefull-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.grid-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.titleCenter-UsefullLinks {
+  text-align: center;
+}
