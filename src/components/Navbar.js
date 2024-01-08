@@ -4,7 +4,7 @@ import Logo from "../style/assets/images/EdanLogo.png";
 function Navbar() {
   return (
     <div className="wrapper-Navbar">
-      <div className="container">
+      <div className="container-Navbar">
         <div className="logo-Navbar">
           <img src={Logo} alt="" />
         </div>

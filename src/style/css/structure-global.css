@@ -5,6 +5,11 @@
   font-family: sans-serif;
 }
 
+.mainBody,
+.headerBody {
+  width: 100%;
+}
+
 :root {
   --color-dark: #003300;
   --color-dark-medium: #054d05;
@@ -30,10 +35,6 @@ h4 {
 h1,
 h2 {
   color: var(--color-dark-medium);
-}
-
-p {
-  color: var(--color-icon);
 }
 
 a {

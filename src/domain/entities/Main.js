@@ -1,3 +1,4 @@
+import "../../style/css/structure-global.css";
 import Carrousel from "../../components/Carrousel";
 import OurService from "../../components/OurService";
 import About from "../../components/About";
@@ -7,7 +8,7 @@ import MainContact from "../../components/MainContact";
 
 function Main() {
   return (
-    <div>
+    <div className="mainBody">
       <Carrousel />
       <OurService />
       <About />

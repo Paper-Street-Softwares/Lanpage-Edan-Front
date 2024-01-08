@@ -1,5 +1,9 @@
 @import "../structure-global.css";
 
+.qwerty {
+  width: 100%;
+}
+
 .wrapper-OurService {
   display: flex;
   flex-direction: column;

@@ -5,9 +5,18 @@
   overflow: hidden;
 }
 
+.container-Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .logo-Navbar img {
   max-width: 90px;
-  margin-right: 10px;
+  margin-left: 40px;
 }
 
 .logo-Navbar {
@@ -17,7 +26,7 @@
 
 .buttoncascade-Navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1em;
 }
 

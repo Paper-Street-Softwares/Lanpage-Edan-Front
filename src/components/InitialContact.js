@@ -13,7 +13,7 @@ import {
 function InitialContact() {
   return (
     <div className="wrapper-InicialContact">
-      <div className="container">
+      <div className="container-InitialContact">
         <div className="mail-phone">
           <div className="mail">
             <FaEnvelope />

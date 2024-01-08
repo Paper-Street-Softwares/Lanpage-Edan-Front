@@ -20,22 +20,24 @@ function Carrousel() {
   };
 
   return (
-    <div className="wrapper-slider">
-      <ButtonSlide onNext={handleNextSlide} onPrev={handlePrevSlide} />
-      <div className="wrapper-images">
-        <div className={`slider ${currentSlide === 0 ? "on" : ""}`}>
-          <h1>TEXT1</h1>
-          <img src={img1} alt="cloud1" />
-        </div>
+    <div>
+      <div className="wrapper-slider">
+        <ButtonSlide onNext={handleNextSlide} onPrev={handlePrevSlide} />
+        <div className="wrapper-images">
+          <div className={`slider ${currentSlide === 0 ? "on" : ""}`}>
+            <h1>TEXT1</h1>
+            <img src={img1} alt="cloud1" />
+          </div>
 
-        <div className={`slider ${currentSlide === 1 ? "on" : ""}`}>
-          <h1>TEXT2</h1>
-          <img src={img2} alt="cloud2" />
-        </div>
+          <div className={`slider ${currentSlide === 1 ? "on" : ""}`}>
+            <h1>TEXT2</h1>
+            <img src={img2} alt="cloud2" />
+          </div>
 
-        <div className={`slider ${currentSlide === 2 ? "on" : ""}`}>
-          <h1>TEXT3</h1>
-          <img src={img3} alt="cloud3" />
+          <div className={`slider ${currentSlide === 2 ? "on" : ""}`}>
+            <h1>TEXT3</h1>
+            <img src={img3} alt="cloud3" />
+          </div>
         </div>
       </div>
     </div>
