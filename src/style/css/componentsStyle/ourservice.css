@@ -17,6 +17,7 @@
 
 .card-OurService {
   display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -25,4 +26,9 @@
   padding: 16px;
   margin: 12px;
   border-radius: 12px;
+}
+
+.buttonSlide-OurService {
+  display: flex;
+  justify-content: end;
 }

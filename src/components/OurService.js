@@ -1,5 +1,6 @@
 import "../style/css/componentsStyle/ourservice.css";
 import Card from "./Card";
+import ButtonSlide from "./ButtonSlide";
 
 function OurService() {
   return (
