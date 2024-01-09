@@ -5,9 +5,13 @@
   overflow: hidden;
 }
 
-.logo-Navbar img {
-  max-width: 90px;
-  margin-right: 10px;
+.container-Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .logo-Navbar {
@@ -15,10 +19,13 @@
   align-items: center;
 }
 
+.logo-Navbar img {
+  max-width: 90px;
+}
+
 .buttoncascade-Navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
 }
 
 button {
@@ -27,7 +34,11 @@ button {
 }
 
 .item {
-  margin-right: 1em;
+  margin-right: 10px;
+}
+
+.item:last-child {
+  margin-right: 0;
 }
 
 .item a {

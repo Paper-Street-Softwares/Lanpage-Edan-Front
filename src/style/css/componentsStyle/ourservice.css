@@ -1,18 +1,30 @@
 @import "../structure-global.css";
 
-.titulo-central {
+.wrapper-OurService {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: auto auto;
+}
+
+.title-OurService {
   text-align: center;
 }
 
-.cards-container {
+.card-OurService {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .card {
-  width: 200px;
   border: 1px solid #ccc;
   padding: 16px;
   margin: 12px;
   border-radius: 12px;
+}
+
+.buttonSlide-OurService {
+  display: flex;
+  justify-content: end;
 }

@@ -1,1 +1,31 @@
 @import "../structure-global.css";
+
+.qwerty {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-About {
+  display: flex;
+  width: 80%;
+}
+
+.sectionRight,
+.sectionLeft {
+  flex: 1;
+  width: 48%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.wrapper-About span {
+  margin-bottom: 10px;
+}
+
+.titleAbout {
+  text-align: center;
+}
+
+.sectionRight {
+  background-color: rgb(154, 154, 240);
+}

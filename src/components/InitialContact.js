@@ -13,13 +13,11 @@ import {
 function InitialContact() {
   return (
     <div className="wrapper-InicialContact">
-      <div className="container">
+      <div className="container-InitialContact">
         <div className="mail-phone">
           <div className="mail">
             <FaEnvelope />
-            <h5>edilsonmatos.matos@uol.com.br</h5>
-          </div>
-          <div className="phone">
+            <h5>esqueça-tudo@uol.com.br</h5>
             <FaPhoneVolume />
             <h5>(73) 9961-2263</h5>
           </div>
