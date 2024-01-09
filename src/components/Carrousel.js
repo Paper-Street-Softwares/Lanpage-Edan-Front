@@ -4,7 +4,7 @@ import "../controllers/Slider";
 // import img2 from "../images/carrossel/cloud2.jpg";
 // import img3 from "../images/carrossel/cloud3.jpg";
 // import ButtonSlide from "./ButtonSlide";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 // import { MdArrowForwardIos } from "react-icons/md";
 
