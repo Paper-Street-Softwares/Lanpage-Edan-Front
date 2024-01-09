@@ -17,8 +17,8 @@
   margin: 10px auto;
 }
 
-.esquerda,
-.direita {
+.Col-1,
+.Col-2 {
   flex: 1;
   background-color: white;
 }
