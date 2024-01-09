@@ -1,8 +1,13 @@
 @import "../structure-global.css";
 
 .wrapper-UsefullLinks {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-usefull-links {
@@ -10,6 +15,9 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-bottom: 20px;
+  width: 80%;
+  max-width: 900px;
+  background-color: white;
 }
 
 .grid-item {
@@ -29,11 +37,12 @@
 }
 
 .grid-item a {
-  color: #007bff;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
 .titleCenter-UsefullLinks {
   text-align: center;
+  margin-top: 5px;
 }

@@ -1,0 +1,13 @@
+@import "../structure-global.css";
+
+.form-ContactUs {
+  display: flex;
+}
+
+.form-ContactUs input {
+  width: 100%;
+}
+
+.form-ContactUs button {
+  align-items: center;
+}

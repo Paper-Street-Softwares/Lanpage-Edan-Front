@@ -1,9 +1,11 @@
 import "../style/css/componentsStyle/about.css";
+import ContactForm from "./ContactForm";
+import ContactInfo from "./ContactInfo";
 
 function About() {
   return (
-    <div className="qwerty">
-      <div className="wrapper-About">
+    <div className="wrapper-About">
+      <div className="container-About">
         <div className="sectionLeft">
           <div className="titleAbout">
             <h5>SOBRE A EDAN</h5>
@@ -61,36 +63,11 @@ function About() {
           <br />
         </div>
         <div className="sectionRight">
-          <form>
-            <div>
-              <label htmlFor="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" />
-            </div>
-
-            <div>
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" />
-            </div>
-
-            <div>
-              <label htmlFor="telefone">Telefone:</label>
-              <input type="tel" id="telefone" name="telefone" />
-            </div>
-
-            <div>
-              <label htmlFor="site">Site:</label>
-              <input type="url" id="site" name="site" />
-            </div>
-
-            <div>
-              <label htmlFor="mensagem">Mensagem:</label>
-              <textarea id="mensagem" name="mensagem"></textarea>
-            </div>
-
-            <div>
-              <button type="submit">Enviar</button>
-            </div>
-          </form>
+          <h2>Entre em contato</h2>
+          <br />
+          <ContactForm />
+          <br />
+          <ContactInfo />
         </div>
       </div>
     </div>

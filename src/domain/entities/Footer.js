@@ -1,8 +1,8 @@
-import Awards from "../../components/Awards";
+import FooterPage from "../../components/FooterPage";
 function Footer() {
   return (
-    <div>
-      <Awards />
+    <div className="mainFooter">
+      <FooterPage />
     </div>
   );
 }

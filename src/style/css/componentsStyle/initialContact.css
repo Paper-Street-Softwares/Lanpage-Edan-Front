@@ -1,7 +1,7 @@
 @import "../structure-global.css";
 
 .wrapper-InicialContact {
-  background-color: var(--color-dark);
+  background-color: rgb(180, 180, 180);
 }
 
 .container-InitialContact {
@@ -11,6 +11,8 @@
   height: 5vh;
   margin: 0 auto;
   width: 80%;
+  max-width: 900px;
+  background-color: white;
 }
 
 .mail-phone {

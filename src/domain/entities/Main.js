@@ -4,7 +4,7 @@ import OurService from "../../components/OurService";
 import About from "../../components/About";
 import UsefullLinks from "../../components/UsefullLinks";
 import Location from "../../components/Location";
-import MainContact from "../../components/MainContact";
+import Awards from "../../components/Awards";
 
 function Main() {
   return (
@@ -14,7 +14,7 @@ function Main() {
       <About />
       <UsefullLinks />
       <Location />
-      <MainContact />
+      <Awards />
     </div>
   );
 }

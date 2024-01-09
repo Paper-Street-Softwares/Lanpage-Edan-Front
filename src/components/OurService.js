@@ -16,7 +16,7 @@ function OurService() {
         <Card
           icone="icone-abertura"
           titulo="Qualquer Parada"
-          conteudo="ESQUEÇA TUDO!"
+          conteudo="ESQUEÇA TUDO"
         />
         <Card
           titulo="Baixas"

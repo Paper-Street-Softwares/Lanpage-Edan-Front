@@ -1,5 +1,23 @@
 @import "../structure-global.css";
 
 .wrapper-Awards {
-  background-color: var(--cor-mais-escuro);
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  justify-content: center;
+}
+
+.container-Awards {
+  width: 80%;
+  background-color: white;
+  max-width: 900px;
+  margin: 10px 0;
+}
+
+.title-Awards {
+  text-align: center;
+}
+
+.card-Awards {
+  display: flex;
+  justify-content: space-around;
 }
