@@ -1,5 +1,5 @@
 import "../style/css/componentsStyle/location.css";
-import Map from "../gateways/api/Map";
+import MapLocation from "../gateways/api/MapLocation";
 
 function Location() {
   return (
@@ -15,7 +15,7 @@ function Location() {
           <div className="titleRight-Location">
             <h1>Nos encontre aqui:</h1>
             <div className="container-Map">
-              <Map />
+              <MapLocation />
             </div>
           </div>
         </div>

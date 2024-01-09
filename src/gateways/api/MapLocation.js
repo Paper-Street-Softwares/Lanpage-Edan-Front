@@ -1,4 +1,4 @@
-function Map() {
+function MapLocation() {
   return (
     <div className="wrapper-Map">
       <h3>Adicionar qual API será consumida</h3>
@@ -6,4 +6,4 @@ function Map() {
   );
 }
 
-export default Map;
+export default MapLocation;
