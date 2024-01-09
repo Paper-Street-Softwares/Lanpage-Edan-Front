@@ -1,7 +1,7 @@
 import FooterPage from "../../components/FooterPage";
 function Footer() {
   return (
-    <div>
+    <div className="mainFooter">
       <FooterPage />
     </div>
   );

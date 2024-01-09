@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: rgb(248, 0, 0);
+  background-color: rgb(180, 180, 180);
 }
 
 .container-FooterPage {
@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: center;
   max-width: 900px;
+  background-color: white;
 }
 
 .footerItem-FooterPage {
@@ -21,7 +22,7 @@
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
-  background-color: #ccc;
+  background-color: white;
   align-items: space-around;
   width: 250px;
   display: flex;

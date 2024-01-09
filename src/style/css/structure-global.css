@@ -6,20 +6,12 @@
 }
 
 .mainBody,
-.headerBody {
+.headerBody,
+.mainFooter {
   width: 100%;
 }
 
 :root {
-  --color-dark: #003300;
-  --color-dark-medium: #054d05;
-  --color-medium: #339933;
-  --color-light: #00ffcc;
-  --color-lighter: #00ffcc27;
-  --color-icon: #00ffcc;
-  --color-text: #ccffcc;
-  --color-transparency: #ffffff00;
-  --color-back: #fff;
 }
 
 .list {

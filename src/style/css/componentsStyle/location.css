@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: rgb(255, 166, 0);
+  background-color: rgb(180, 180, 180);
 }
 
 .container-Location {
@@ -15,12 +15,13 @@
   align-items: center;
   justify-content: center;
   max-width: 900px;
+  margin: 10px 0;
 }
 
 .esquerda,
 .direita {
   flex: 1;
-  background-color: rgb(211, 209, 209);
+  background-color: white;
 }
 
 .titleLeft-Location,

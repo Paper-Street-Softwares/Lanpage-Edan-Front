@@ -4,8 +4,8 @@ import ContactInfo from "./ContactInfo";
 
 function About() {
   return (
-    <div className="container-About">
-      <div className="wrapper-About">
+    <div className="wrapper-About">
+      <div className="container-About">
         <div className="sectionLeft">
           <div className="titleAbout">
             <h5>SOBRE A EDAN</h5>

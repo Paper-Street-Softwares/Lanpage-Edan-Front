@@ -5,12 +5,15 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background-color: yellow;
+  background-color: rgb(180, 180, 180);
   align-items: center;
 }
 
 .title-OurService {
   text-align: center;
+  background-color: white;
+  width: 80%;
+  max-width: 900px;
 }
 
 .card-OurService {
@@ -19,12 +22,12 @@
   align-items: center;
   width: 80%;
   max-width: 900px;
+  background-color: white;
 }
 
 .card {
   border: 1px solid #ccc;
   margin: 12px;
-  border-radius: 12px;
 }
 
 .card:first-child {

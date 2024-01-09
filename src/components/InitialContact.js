@@ -2,7 +2,6 @@ import "../style/css/componentsStyle/initialContact.css";
 import {
   FaEnvelope,
   FaPhoneVolume,
-  FaLanguage,
   FaFacebook,
   FaTwitter,
   FaGooglePlusG,
@@ -23,7 +22,6 @@ function InitialContact() {
           </div>
         </div>
         <div className="icons">
-          <FaLanguage />
           <FaFacebook />
           <FaTwitter />
           <FaGooglePlusG />

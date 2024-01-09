@@ -1,15 +1,16 @@
 @import "../structure-global.css";
 
-.container-About {
+.wrapper-About {
   display: flex;
   justify-content: center;
-  background-color: blue;
+  background-color: rgb(180, 180, 180);
 }
 
-.wrapper-About {
+.container-About {
   display: flex;
   width: 80%;
   max-width: 900px;
+  margin: 10px 0;
 }
 
 .sectionRight,
@@ -29,12 +30,12 @@
 }
 
 .sectionRight {
-  background-color: rgb(154, 154, 240);
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .sectionLeft {
-  background-color: aliceblue;
+  background-color: white;
 }
