@@ -9,9 +9,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5vh;
+  height: auto;
   margin: 0 auto;
   width: 80%;
+  max-width: 900px;
 }
 
 .logo-Navbar {
