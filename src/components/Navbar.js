@@ -31,7 +31,7 @@ function Navbar() {
               </button>
             </li>
             <li className="item">
-              <button href="/src/components/MainContact.js">
+              <button href="/src/components/About.js">
                 <a>CONTATO</a>
               </button>
             </li>

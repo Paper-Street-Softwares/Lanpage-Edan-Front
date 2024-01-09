@@ -27,6 +27,10 @@
   border-radius: 12px;
 }
 
+.card:first-child {
+  margin: 0;
+}
+
 .card:last-child {
   margin: 0;
 }
