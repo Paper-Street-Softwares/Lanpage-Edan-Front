@@ -21,7 +21,7 @@ function InitialContact() {
             <h5>(73) 9961-2263</h5>
           </div>
         </div>
-        <div className="icons">
+        <div className="icons-InitialContact">
           <FaFacebook />
           <FaTwitter />
           <FaGooglePlusG />
