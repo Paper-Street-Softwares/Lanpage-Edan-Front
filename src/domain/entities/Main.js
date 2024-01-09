@@ -14,7 +14,6 @@ function Main() {
       <About />
       <UsefullLinks />
       <Location />
-      <ContactUs />
     </div>
   );
 }

@@ -29,4 +29,7 @@
 
 .sectionRight {
   background-color: rgb(154, 154, 240);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
