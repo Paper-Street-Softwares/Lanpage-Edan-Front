@@ -1,0 +1,39 @@
+@import "../structure-global.css";
+
+.wrapper-FooterPage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(248, 0, 0);
+}
+
+.container-FooterPage {
+  width: 80%;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerItem-FooterPage {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #ccc;
+  align-items: center;
+}
+
+.infos-FooterPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-FooterPage,
+.phone-FooterPage,
+.service-FooterPage {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 70px;
+}

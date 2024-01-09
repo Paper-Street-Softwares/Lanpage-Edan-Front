@@ -22,7 +22,7 @@ function Carrousel() {
   return (
     <div>
       <div className="wrapper-slider">
-        <ButtonSlide onNext={handleNextSlide} onPrev={handlePrevSlide} />
+        {/* <ButtonSlide onNext={handleNextSlide} onPrev={handlePrevSlide} />
         <div className="wrapper-images">
           <div className={`slider ${currentSlide === 0 ? "on" : ""}`}>
             <h1>TEXT1</h1>
@@ -38,7 +38,7 @@ function Carrousel() {
             <h1>TEXT3</h1>
             <img src={img3} alt="cloud3" />
           </div>
-        </div>
+        </div>*/}
       </div>
     </div>
   );

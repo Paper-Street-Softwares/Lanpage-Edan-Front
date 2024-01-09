@@ -10,7 +10,7 @@
   gap: 1rem;
   overflow: hidden;
   margin: 0 auto;
-  background-color: red;
+  background-color: rgb(255, 0, 0);
 }
 
 .wrapper-images {
@@ -18,13 +18,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
 }
 
 .wrapper-images img {
   width: 100%;
   height: 250px;
-  border-radius: 20px;
 }
 
 .slider {
