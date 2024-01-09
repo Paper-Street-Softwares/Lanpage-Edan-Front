@@ -1,5 +1,4 @@
 import "../style/css/componentsStyle/location.css";
-import "../gateways/api/Map";
 import Map from "../gateways/api/Map";
 
 function Location() {
