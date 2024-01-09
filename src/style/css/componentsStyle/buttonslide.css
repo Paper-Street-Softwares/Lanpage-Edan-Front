@@ -17,7 +17,7 @@
   background-color: var(--color-back);
 }
 
-#prev-button,
+/* #prev-button,
 #next-button {
   width: 30px;
   height: 30px;
@@ -33,4 +33,4 @@
 #next-button {
   width: 100%;
   color: var(--color-light);
-}
+} */
