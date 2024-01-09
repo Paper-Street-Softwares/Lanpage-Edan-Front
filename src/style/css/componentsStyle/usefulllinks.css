@@ -1,8 +1,13 @@
 @import "../structure-global.css";
 
 .wrapper-UsefullLinks {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-usefull-links {
@@ -10,6 +15,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-bottom: 20px;
+  width: 80%;
 }
 
 .grid-item {
