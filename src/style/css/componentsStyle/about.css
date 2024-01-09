@@ -1,6 +1,6 @@
 @import "../structure-global.css";
 
-.qwerty {
+.container-About {
   display: flex;
   justify-content: center;
   background-color: blue;

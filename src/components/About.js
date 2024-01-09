@@ -2,7 +2,7 @@ import "../style/css/componentsStyle/about.css";
 
 function About() {
   return (
-    <div className="qwerty">
+    <div className="container-About">
       <div className="wrapper-About">
         <div className="sectionLeft">
           <div className="titleAbout">
