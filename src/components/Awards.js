@@ -30,7 +30,7 @@ const Awards = () => {
     <div className="wrapper-Awards">
       <div className="container-Awards">
         <div className="title-Awards">
-          <h3>Prêmios</h3>
+          <h1>Prêmios</h1>
         </div>
         <div className="card-Awards">
           {awardsData.map((award, index) => (

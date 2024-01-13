@@ -1,23 +1,30 @@
 @import "../structure-global.css";
 
 .wrapper-InicialContact {
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(13, 3, 48);
+  display: flex;
 }
 
 .container-InitialContact {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
   height: 5vh;
   margin: 0 auto;
   width: 80%;
   max-width: 900px;
-  background-color: white;
+}
+
+.initialBlocks {
+  display: flex;
+  flex-direction: column;
 }
 
 .mail-phone {
   display: flex;
   align-items: center;
+  margin-left: 30px;
 }
 
 .mail,
@@ -29,10 +36,148 @@
 
 .mail h5,
 .phone h5 {
-  margin-left: 10px;
-  margin-right: 50px;
+  margin-left: 5px;
+}
+
+.mail h5 {
+  margin-right: 10px;
 }
 
 .icons > *:not(:last-child) {
   margin-right: 8px;
+}
+
+.mobile {
+  display: none;
+  align-items: center;
+}
+
+.mobile i {
+  color: white;
+}
+
+#navbar {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .container-InitialContact {
+    margin-left: 78px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 5%;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(13, 3, 48);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  .mobile {
+    margin: 10px;
+  }
+
+  .buttonsCascade-InitialContact li {
+    margin-bottom: 25px;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .buttonsCascade-InitialContact #list-Navbar {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .container-InitialContact {
+    height: auto;
+  }
+
+  .mail-phone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .icons-InitialContact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  #navbar {
+    top: 10%;
+  }
+
+  .container-InitialContact {
+    height: auto;
+    flex-direction: column;
+  }
+
+  #navbar.active {
+    right: -50px;
+  }
+
+  .mail-phone {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phone {
+    margin-top: 3%;
+  }
+
+  .icons-InitialContact {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container-InitialContact {
+    flex-direction: column;
+  }
+
+  #navbar {
+    top: 10%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-InitialContact {
+    flex-direction: column;
+  }
+
+  #navbar {
+    top: 80px;
+  }
+
+  #navbar.active {
+    right: -100px;
+  }
 }

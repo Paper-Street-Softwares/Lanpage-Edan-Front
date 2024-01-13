@@ -1,9 +1,7 @@
+import "../../style/css/componentsStyle/location.css";
+
 function MapLocation() {
-  return (
-    <div className="wrapper-Map">
-      <h3>Adicionar qual API será consumida</h3>
-    </div>
-  );
+  return <div className="wrapper-Map"></div>;
 }
 
 export default MapLocation;

@@ -1,7 +1,7 @@
 @import "../structure-global.css";
 
 .wrapper-Navbar {
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
 }
 
@@ -50,4 +50,10 @@ button {
 
 .item a:hover {
   color: var(--color-light);
+}
+
+@media (max-width: 990px) {
+  .wrapper-Navbar {
+    display: none;
+  }
 }

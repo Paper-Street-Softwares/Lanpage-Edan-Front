@@ -3,9 +3,9 @@ import React from "react";
 const ContactInfo = () => {
   return (
     <div>
-      <p>Email: esqueçatudo@gmail.com</p>
-      <p>Phone: +55 73 99999 0000 Wpp</p>
-      <p>Address: 123 na Rua dos Doidos</p>
+      <p>Email: support@consulting.com</p>
+      <p>Phone: +123-(547)-257</p>
+      <p>Address: 555 Main St, Salt Lake City, UT 84101</p>
     </div>
   );
 };

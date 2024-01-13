@@ -1,34 +1,28 @@
 import "../style/css/componentsStyle/ourservice.css";
 import Card from "./Card";
+import { IconeInvest, IconeMarketing, IconeClients } from "./IconeComponent";
 
 function OurService() {
   return (
     <div className="wrapper-OurService">
-      <div className="title-OurService">
-        <h1>Meu Título Central</h1>
-      </div>
       <div className="card-OurService">
+        <div className="title-OurService">
+          <h1>Porque Somos A Escolha Certa</h1>
+        </div>
         <Card
-          icone="icone-abertura"
-          titulo="Abertura de Empresas"
-          conteudo="Abra seu caminho para o sucesso empresarial conosco!"
+          icone={IconeMarketing}
+          titulo="Expertise em Marketing"
+          conteudo="Domínio estratégico para resultados excepcionais!"
         />
         <Card
-          icone="icone-abertura"
-          titulo="Qualquer Parada"
-          conteudo="ESQUEÇA TUDO"
+          icone={IconeInvest}
+          titulo="Investimento em Série"
+          conteudo="Investir para crescimento consistente e sustentável."
         />
         <Card
-          titulo="Baixas"
-          conteudo="Encerre com facilidade: Baixas empresariais descomplicadas e eficientes!"
-        />
-        <Card
-          titulo="Decore"
-          conteudo="Decore suas finanças com precisão e tranquilidade."
-        />
-        <Card
-          titulo="Imposto de Renda"
-          conteudo="Maximize seu retorno: Especialistas em Imposto de Renda à sua disposição!"
+          icone={IconeClients}
+          titulo="Priorize os clientes"
+          conteudo="Prioridade para sucesso duradouro e sustentável."
         />
       </div>
     </div>

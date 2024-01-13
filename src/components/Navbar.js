@@ -1,12 +1,12 @@
 import "../style/css/componentsStyle/navbar.css";
-import Logo from "../style/assets/images/EdanLogo.png";
+import Logo from "../style/assets/images/Logo.png";
 
 function Navbar() {
   return (
     <div className="wrapper-Navbar">
       <div className="container-Navbar">
         <div className="logo-Navbar">
-          <img src={Logo} alt="Logo EDAN" />
+          <img src={Logo} alt="Logo da Empresa" />
         </div>
         <div className="buttonsCascade-Navbar">
           <ul className="list">

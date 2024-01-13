@@ -4,30 +4,31 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(13, 3, 48);
 }
 
 .container-FooterPage {
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   max-width: 900px;
-  background-color: white;
+  background-color: rgb(13, 3, 48);
+  color: white;
 }
 
 .footerItem-FooterPage {
   flex: 1;
-  border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
-  background-color: white;
+  background-color: rgb(13, 3, 48);
   align-items: space-around;
   width: 250px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  padding: 30px;
 }
 
 .infos-FooterPage {
@@ -72,6 +73,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.links-FooterPage a {
+  color: white;
 }
 
 .item-FooterPage {

@@ -1,6 +1,6 @@
 @import "../structure-global.css";
 
-.wrapper-UsefullLinks {
+.wrapper-RecentProjects {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,25 +9,24 @@
   width: 100%;
 }
 
-.container-UsefullLinks {
+.container-RecentProjects {
   margin-top: 20px;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 900px;
-
   background-color: white;
+  max-width: 900px;
 }
 
-.title-UsefullLinks {
+.title-RecentProjects {
   margin: 20px 0;
   background-color: white;
   width: 80%;
   max-width: 900px;
 }
 
-.gridCard-UsefullLinks {
+.gridImages-RecentProjects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -38,26 +37,26 @@
   width: 100%;
 }
 
-.imageItens-UsefullLinks {
+.imageItens-RecentProjects {
   width: calc(33.33% - 20px);
   margin: 10px;
   box-sizing: border-box;
 }
 
-.imageItens-UsefullLinks img {
+.imageItens-RecentProjects img {
   width: 100%;
   height: auto;
-  display: block;
+  display: flex;
 }
 
 @media (max-width: 768px) {
-  .imageItens-UsefullLinks {
+  .imageItens-RecentProjects {
     width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 425px) {
-  .imageItens-UsefullLinks {
+  .imageItens-RecentProjects {
     width: calc(100% - 20px);
   }
 }

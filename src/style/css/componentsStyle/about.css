@@ -3,11 +3,11 @@
 .wrapper-About {
   display: flex;
   justify-content: center;
-  background-color: rgb(180, 180, 180);
 }
 
 .container-About {
   display: flex;
+  flex-wrap: wrap;
   width: 80%;
   max-width: 900px;
   margin: 10px 0;
@@ -16,9 +16,16 @@
 .sectionRight,
 .sectionLeft {
   flex: 1;
-  width: 48%;
   box-sizing: border-box;
+  margin-top: 10px;
   padding: 10px;
+}
+
+.sectionRight {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper-About span {
@@ -27,6 +34,7 @@
 
 .titleAbout {
   text-align: center;
+  margin: 20px 0;
 }
 
 .sectionRight {
@@ -38,4 +46,12 @@
 
 .sectionLeft {
   background-color: white;
+}
+
+@media (max-width: 768px) {
+  .container-About {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

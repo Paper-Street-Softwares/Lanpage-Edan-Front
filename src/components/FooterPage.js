@@ -1,5 +1,5 @@
 import "../style/css/componentsStyle/footerpage.css";
-import Logo from "../style/assets/images/EdanLogo.png";
+import Logo from "../style/assets/images/Logo.png";
 import { FaHome, FaPhoneAlt, FaRegClock } from "react-icons/fa";
 import {
   FaFacebook,
@@ -20,15 +20,15 @@ function FooterPage() {
           <div className="infos-FooterPage">
             <div className="address-FooterPage">
               <FaHome />
-              <p>esqueça tudo</p>
+              <p>Rua 123, Centro, Cidade Velha</p>
             </div>
             <div className="phone-FooterPage">
               <FaPhoneAlt />
-              <p>73 9999 9999</p>
+              <p>+55 1234 1234</p>
             </div>
             <div className="service-FooterPage">
               <FaRegClock />
-              <p>8:00 às 18:00</p>
+              <p>8am - 6pm</p>
             </div>
           </div>
         </div>
@@ -38,10 +38,14 @@ function FooterPage() {
           </div>
           <br />
           <div className="span-FooterPage">
-            <span>
-              esqueça tudo esqueça tudo esqueça tudo esqueça tudo esqueça tudo
-              esqueça tudo esqueça tudo esqueça tudo esqueça tudo esqueça tudo
-            </span>
+            <p>
+              Na [Nome da Empresa], estamos comprometidos com a excelência e
+              inovação. Somos mais do que uma empresa, somos seu parceiro de
+              confiança para alcançar o sucesso. Descubra soluções
+              personalizadas, qualidade excepcional e uma abordagem moderna para
+              impulsionar seus objetivos. Junte-se a nós na jornada para o
+              sucesso.
+            </p>
           </div>
           <br />
           <div className="icons-FooterPage">

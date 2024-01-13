@@ -1,0 +1,21 @@
+@import "../structure-global.css";
+
+.wrapper-Testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-Testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 900px;
+  margin: 10px 0;
+}
+
+.testimonial-text,
+.testimonial-author,
+.testimonial-company {
+  text-align: center;
+}

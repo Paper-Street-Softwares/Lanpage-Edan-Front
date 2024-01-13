@@ -3,9 +3,11 @@ import "../style/css/structure-global.css";
 import PropTypes from "prop-types";
 
 function Card({ icone, titulo, conteudo }) {
+  const IconeComponent = icone;
+
   return (
     <div className="card">
-      <span className={`icon ${icone}`} />
+      <div className="iconCard">{IconeComponent && <IconeComponent />}</div>
       <div>{titulo}</div>
       <div>{conteudo}</div>
       <div>

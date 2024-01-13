@@ -1,7 +1,6 @@
 @import "../structure-global.css";
 
 .wrapper-Awards {
-  background-color: rgb(180, 180, 180);
   display: flex;
   justify-content: center;
 }
@@ -15,9 +14,12 @@
 
 .title-Awards {
   text-align: center;
+  margin: 20px 0;
 }
 
 .card-Awards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  text-align: center;
 }

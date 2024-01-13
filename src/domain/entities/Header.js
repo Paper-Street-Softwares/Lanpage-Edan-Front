@@ -4,7 +4,7 @@ import "../../style/css/structure-global.css";
 
 function Header() {
   return (
-    <div className="headerBody">
+    <div className="header">
       <InitialContact />
       <Navbar />
     </div>
