@@ -1,5 +1,5 @@
-import "../style/css/componentsStyle/ourservice.css";
-import "../style/css/structure-global.css";
+import "../../style/css/componentsStyle/ourservice.css";
+import "../../style/css/structure-global.css";
 import PropTypes from "prop-types";
 
 function Card({ icone, titulo, conteudo }) {

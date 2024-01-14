@@ -1,5 +1,4 @@
-import { FcWorkflow, FcComboChart, FcCollaboration } from "react-icons/fc";
-import img2 from "../style/assets/images/ex2.jpg";
+import img2 from "../../style/assets/images/ex2.jpg";
 
 function IconeMarketing() {
   return (

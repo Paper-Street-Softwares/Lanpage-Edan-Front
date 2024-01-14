@@ -1,5 +1,5 @@
-import InitialContact from "../../components/InitialContact";
-import Navbar from "../../components/Navbar";
+import InitialContact from "../../components/HeaderSection/InitialContact";
+import Navbar from "../../components/HeaderSection/Navbar";
 import "../../style/css/structure-global.css";
 
 function Header() {

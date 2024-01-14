@@ -1,4 +1,5 @@
-import "../style/css/componentsStyle/contactus.css";
+import "../../style/css/componentsStyle/contactus.css";
+import "../../style/css/structure-global.css";
 
 const ContactForm = () => {
   const handleSubmit = (e) => {
