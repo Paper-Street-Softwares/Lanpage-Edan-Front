@@ -1,5 +1,5 @@
 import "../../style/css/structure-global.css";
-import Carrousel from "../../components/Carrousel";
+import Carousel from "../../components/Carousel";
 import OurService from "../../components/OurService";
 import About from "../../components/About";
 import UsefullLinks from "../../components/UsefullLinks";
@@ -11,7 +11,7 @@ import TestimonialsSection from "../../components/TestimonialsSection";
 function Main() {
   return (
     <div className="mainBody">
-      <Carrousel />
+      <Carousel />
       <OurService />
       <About />
       <RecentProjects />

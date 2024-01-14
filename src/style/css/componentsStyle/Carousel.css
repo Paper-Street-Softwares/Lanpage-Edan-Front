@@ -1,0 +1,40 @@
+@import "../structure-global.css";
+
+.wrapper-Slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.container-slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container-slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.container-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 0, 0, 0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container-slider button:first-child {
+  left: 1px;
+}
+
+.container-slider button:last-child {
+  right: 1px;
+}
