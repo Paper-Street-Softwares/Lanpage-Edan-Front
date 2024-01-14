@@ -6,6 +6,29 @@ import Image3 from "../style/assets/images/image3.jpg";
 import Image4 from "../style/assets/images/image4.jpg";
 import Image5 from "../style/assets/images/image5.jpg";
 
+const carouselData = [
+  {
+    image: Image1,
+    text: "TEXTO EXEMPLO DA IMAGEM 1",
+  },
+  {
+    image: Image2,
+    text: "TEXTO EXEMPLO DA IMAGEM 2",
+  },
+  {
+    image: Image3,
+    text: "TEXTO EXEMPLO DA IMAGEM 3",
+  },
+  {
+    image: Image4,
+    text: "TEXTO EXEMPLO DA IMAGEM 4",
+  },
+  {
+    image: Image5,
+    text: "TEXTO EXEMPLO DA IMAGEM 5",
+  },
+];
+
 function Carrousel() {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -30,9 +53,12 @@ function Carrousel() {
   return (
     <div className="wrapper-Slider">
       <div className="container-slider">
-        <img src={images[currentImage]} alt={`Imagem ${currentImage + 1}`} />
-        <button onClick={prevImage}>AVANÇAR</button>
-        <button onClick={nextImage}>VOLTAR</button>
+        <div className="image-container">
+          <img src={images[currentImage]} alt={`Imagem ${currentImage + 1}`} />
+          <div className="image-text">{carouselData[currentImage].text}</div>
+        </div>
+        <button onClick={prevImage}>VOLTAR</button>
+        <button onClick={nextImage}>AVANÇAR</button>
       </div>
     </div>
   );
