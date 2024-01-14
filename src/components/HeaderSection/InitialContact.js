@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "../style/css/componentsStyle/initialContact.css";
+import "../../style/css/componentsStyle/initialContact.css";
 import {
   FaEnvelope,
   FaPhoneVolume,

@@ -1,6 +1,6 @@
 import "../style/css/componentsStyle/about.css";
-import ContactForm from "./ContactForm";
-import ContactInfo from "./ContactInfo";
+import ContactForm from "../components/ContactSection/ContactForm";
+import ContactInfo from "../components/ContactSection/ContactInfo";
 
 function About() {
   return (

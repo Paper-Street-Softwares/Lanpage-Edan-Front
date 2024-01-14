@@ -1,6 +1,6 @@
-import "../style/css/componentsStyle/awards.css";
-import "../style/css/structure-global.css";
-import AwardCard from "../components/AwardsCards";
+import "../../style/css/componentsStyle/awards.css";
+import "../../style/css/structure-global.css";
+import AwardCard from "./AwardsCards";
 
 const Awards = () => {
   const awardsData = [

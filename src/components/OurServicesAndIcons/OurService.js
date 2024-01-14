@@ -1,5 +1,5 @@
-import "../style/css/componentsStyle/ourservice.css";
-import Card from "./Card";
+import "../../style/css/componentsStyle/ourservice.css";
+import Card from "../../components/AwardAndCards/Card";
 import { IconeInvest, IconeMarketing, IconeClients } from "./IconeComponent";
 
 function OurService() {
