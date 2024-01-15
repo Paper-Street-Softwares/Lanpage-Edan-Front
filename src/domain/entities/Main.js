@@ -13,7 +13,7 @@ function Main() {
   return (
     <div className="mainBody">
       {/* <ButtonFixedWhatsapp/> */}
-      {/* <Carousel /> */}
+      <Carousel />
       {/* <OurService />
       <About />
       <RecentProjects />

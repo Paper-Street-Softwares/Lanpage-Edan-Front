@@ -10,22 +10,57 @@ const carouselData = [
   {
     image: Image1,
     text: "TEXTO EXEMPLO DA IMAGEM 1",
+    buttons: [
+      { label: "Sobre", action: () => console.log("Sobre clicado") },
+      {
+        label: "Carreira",
+        action: () => console.log("Carreira clicado"),
+      },
+    ],
   },
   {
     image: Image2,
     text: "TEXTO EXEMPLO DA IMAGEM 2",
+    buttons: [
+      { label: "Sobre", action: () => console.log("Sobre clicado") },
+      {
+        label: "Carreira",
+        action: () => console.log("Carreira clicado"),
+      },
+    ],
   },
   {
     image: Image3,
     text: "TEXTO EXEMPLO DA IMAGEM 3",
+    buttons: [
+      { label: "Sobre", action: () => console.log("Sobre clicado") },
+      {
+        label: "Carreira",
+        action: () => console.log("Carreira clicado"),
+      },
+    ],
   },
   {
     image: Image4,
     text: "TEXTO EXEMPLO DA IMAGEM 4",
+    buttons: [
+      { label: "Sobre", action: () => console.log("Sobre clicado") },
+      {
+        label: "Carreira",
+        action: () => console.log("Carreira clicado"),
+      },
+    ],
   },
   {
     image: Image5,
     text: "TEXTO EXEMPLO DA IMAGEM 5",
+    buttons: [
+      { label: "Sobre", action: () => console.log("Sobre clicado") },
+      {
+        label: "Carreira",
+        action: () => console.log("Carreira clicado"),
+      },
+    ],
   },
 ];
 
@@ -52,13 +87,36 @@ function Carrousel() {
 
   return (
     <div className="wrapper-Slider">
-      <div className="container-slider">
-        <div className="image-container">
-          <img src={images[currentImage]} alt={`Imagem ${currentImage + 1}`} />
-          <div className="image-text">{carouselData[currentImage].text}</div>
+      <div className="container-Slider">
+        <div className="imageContainer-Slider">
+          <div className="maskLayer-Slider">
+            <img
+              src={images[currentImage]}
+              alt={`Imagem ${currentImage + 1}`}
+              className="transparent-image"
+            />
+          </div>
+          <div className="image-text">
+            {carouselData[currentImage].text}
+            <div className="button-container">
+              {carouselData[currentImage].buttons.map((button, index) => (
+                <button
+                  key={index}
+                  className="button-BelowText"
+                  onClick={button.action}
+                >
+                  {button.label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <button className="button-Carousel" onClick={prevImage}>
+            VOLTAR
+          </button>
+          <button className="button-Carousel" onClick={nextImage}>
+            AVANÇAR
+          </button>
         </div>
-        <button onClick={prevImage}>VOLTAR</button>
-        <button onClick={nextImage}>AVANÇAR</button>
       </div>
     </div>
   );

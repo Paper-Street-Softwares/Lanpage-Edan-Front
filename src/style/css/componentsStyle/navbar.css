@@ -1,7 +1,7 @@
 @import "../structure-global.css";
 
 .wrapper-Navbar {
-  background-color: rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -13,7 +13,7 @@
   margin: 0 auto;
   width: 80%;
   max-width: 900px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0);
 }
 
 .logo-Navbar {
@@ -71,7 +71,7 @@ button {
     right: -300px;
     width: 200px;
     height: 100vh;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0);
     padding: 40px 0 0 10px;
     transition: 0.7s ease-in-out;
   }
