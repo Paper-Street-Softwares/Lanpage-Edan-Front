@@ -21,14 +21,13 @@
 
 .footerItem-FooterPage {
   flex: 1;
-  padding: 10px;
   text-align: center;
   background-color: rgb(13, 3, 48);
   align-items: space-around;
   width: 250px;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 10px;
 }
 
 .infos-FooterPage {

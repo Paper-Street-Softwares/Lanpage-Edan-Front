@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Testimonial from "./Testimonial";
 
 const TestimonialsList = ({ testimonials }) => {
-  testimonials.PropTypes = {
+  TestimonialsList.propTypes = {
     testimonials: PropTypes.string.isRequired,
   };
   return (
