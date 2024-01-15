@@ -1,67 +1,57 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "../style/css/componentsStyle/Carousel.css";
-import Image1 from "../style/assets/images/image1.jpg";
-import Image2 from "../style/assets/images/image2.jpg";
-import Image3 from "../style/assets/images/image3.jpg";
-import Image4 from "../style/assets/images/image4.jpg";
-import Image5 from "../style/assets/images/image5.jpg";
 
-const carouselData = [
-  {
-    image: Image1,
-    text: "TEXTO EXEMPLO DA IMAGEM 1",
-  },
-  {
-    image: Image2,
-    text: "TEXTO EXEMPLO DA IMAGEM 2",
-  },
-  {
-    image: Image3,
-    text: "TEXTO EXEMPLO DA IMAGEM 3",
-  },
-  {
-    image: Image4,
-    text: "TEXTO EXEMPLO DA IMAGEM 4",
-  },
-  {
-    image: Image5,
-    text: "TEXTO EXEMPLO DA IMAGEM 5",
-  },
-];
+const Carousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const images = [
+    require("../style/assets/images/slider1.png"),
+    require("../style/assets/images/slider2.png"),
+    require("../style/assets/images/slider3.png"),
+  ];
+  const texts = ["Texto 1", "Texto 2", "Texto 3"];
 
-function Carrousel() {
-  const [currentImage, setCurrentImage] = useState(0);
-
-  const images = [Image1, Image2, Image3, Image4, Image5];
-
-  const nextImage = () => {
-    setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImage(
-      (prevImage) => (prevImage - 1 + images.length) % images.length
+  const handlePrevClick = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
-  useEffect(() => {
-    const intervalId = setInterval(nextImage, 3000);
+  const handleNextClick = useCallback(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  }, [images.length]);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  useEffect(() => {
+    const interval = setInterval(handleNextClick, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex, handleNextClick]);
 
   return (
-    <div className="wrapper-Slider">
-      <div className="container-slider">
-        <div className="image-container">
-          <img src={images[currentImage]} alt={`Imagem ${currentImage + 1}`} />
-          <div className="image-text">{carouselData[currentImage].text}</div>
+    <div className="carousel-container">
+      <div className="carousel-content">
+        <div className="maskLayout-Carousel" />
+        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+        <div className="text-overlay">
+          <p>{texts[currentIndex]}</p>
+          <div className="buttons">
+            <button id="btnAbout">Sobre</button>
+            <button id="btnCareer">Carreira</button>
+          </div>
         </div>
-        <button onClick={prevImage}>VOLTAR</button>
-        <button onClick={nextImage}>AVANÇAR</button>
+      </div>
+      <div className="carousel-navigation">
+        <button onClick={handlePrevClick}>
+          <FaArrowLeft />
+        </button>
+        <button onClick={handleNextClick}>
+          <FaArrowRight />
+        </button>
       </div>
     </div>
   );
-}
+};
 
-export default Carrousel;
+export default Carousel;

@@ -12,7 +12,7 @@ import ButtonFixedWhatsapp from "../../components/ButtonFixedWhatsapp";
 function Main() {
   return (
     <div className="mainBody">
-      <ButtonFixedWhatsapp/>
+      <ButtonFixedWhatsapp />
       <Carousel />
       <OurService />
       <About />

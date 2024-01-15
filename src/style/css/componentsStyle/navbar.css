@@ -1,8 +1,10 @@
 @import "../structure-global.css";
 
 .wrapper-Navbar {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 0, 0, 0);
   overflow: hidden;
+  height: 10%;
+  margin-top: 20px;
 }
 
 .container-Navbar {
@@ -13,7 +15,7 @@
   margin: 0 auto;
   width: 80%;
   max-width: 900px;
-  background-color: white;
+  background-color: rgba(255, 0, 0, 0);
 }
 
 .logo-Navbar {
@@ -22,12 +24,15 @@
 }
 
 .logo-Navbar img {
-  max-width: 90px;
+  max-width: 150px;
 }
 
-.buttoncascade-Navbar {
+.buttonsCascade-Navbar {
+}
+
+#list-Navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 button {
@@ -44,16 +49,52 @@ button {
 }
 
 .item a {
-  color: var(--color-medium);
+  color: white;
   text-decoration: none;
 }
 
 .item a:hover {
-  color: var(--color-light);
+  color: rgb(54, 216, 54);
 }
 
-@media (max-width: 990px) {
-  .wrapper-Navbar {
-    display: none;
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+  #list-Navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 44px;
+    right: -300px;
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(0, 0, 255, 0);
+    padding: 40px 0 0 10px;
+    transition: 0.7s ease-in-out;
+  }
+
+  #list-Navbar.active {
+    right: 0px;
+  }
+
+  #list-Navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
   }
 }
