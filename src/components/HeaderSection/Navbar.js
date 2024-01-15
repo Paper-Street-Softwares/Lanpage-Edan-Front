@@ -48,7 +48,11 @@ class Navbar extends Component {
               </li>
             </ul>
           </div>
-          <div id="mobile" onClick={this.handleClick}>
+          <div
+            id="mobile"
+            onClick={this.handleClick}
+            onKeyDown={this.handleKeyDown}
+          >
             <i
               id="bars"
               className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
