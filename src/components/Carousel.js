@@ -17,7 +17,6 @@ const Carousel = () => {
     );
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleNextClick = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
