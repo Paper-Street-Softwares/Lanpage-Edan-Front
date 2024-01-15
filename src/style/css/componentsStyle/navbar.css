@@ -3,6 +3,8 @@
 .wrapper-Navbar {
   background-color: rgba(255, 0, 0, 0);
   overflow: hidden;
+  height: 10%;
+  margin-top: 20px;
 }
 
 .container-Navbar {
@@ -22,12 +24,15 @@
 }
 
 .logo-Navbar img {
-  max-width: 90px;
+  max-width: 150px;
+}
+
+.buttonsCascade-Navbar {
 }
 
 #list-Navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 button {
@@ -44,12 +49,12 @@ button {
 }
 
 .item a {
-  color: var(--color-medium);
+  color: white;
   text-decoration: none;
 }
 
 .item a:hover {
-  color: var(--color-light);
+  color: rgb(54, 216, 54);
 }
 
 #mobile {
@@ -57,7 +62,7 @@ button {
 }
 
 #mobile i {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 768px) {
