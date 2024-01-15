@@ -4,9 +4,13 @@ import { Component } from "react";
 
 class Navbar extends Component {
   state = { clicked: false };
+
   handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
+    this.setState((prevState) => {
+      return { clicked: !prevState.clicked };
+    });
   };
+
   render() {
     return (
       <div className="wrapper-Navbar">
@@ -15,12 +19,7 @@ class Navbar extends Component {
             <img src={Logo} alt="Logo da Empresa" />
           </div>
           <div className="buttonsCascade-Navbar">
-            <ul
-              id="list-Navbar"
-              className={
-                this.state.clicked ? "#list-Navbar active" : "#list-Navbar"
-              }
-            >
+            <ul id="list-Navbar" className={this.state.clicked ? "active" : ""}>
               <li className="item">
                 <button>
                   <a href="/">INÍCIO</a>
@@ -37,12 +36,12 @@ class Navbar extends Component {
                 </button>
               </li>
               <li className="item">
-                <button href="/src/components/UsefullLinks.js">
+                <button>
                   <a href="/src/components/UsefullLinks.js">LINKS</a>
                 </button>
               </li>
               <li className="item">
-                <button href="/src/components/About.js">
+                <button>
                   <a href="/src/components/About.js">CONTATO</a>
                 </button>
               </li>
