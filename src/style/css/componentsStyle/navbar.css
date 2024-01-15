@@ -1,7 +1,7 @@
 @import "../structure-global.css";
 
 .wrapper-Navbar {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
   overflow: hidden;
 }
 
@@ -13,7 +13,7 @@
   margin: 0 auto;
   width: 80%;
   max-width: 900px;
-  background-color: white;
+  background-color: rgb(255, 0, 0);
 }
 
 .logo-Navbar {
@@ -52,8 +52,11 @@ button {
   color: var(--color-light);
 }
 
-@media (max-width: 990px) {
-  .wrapper-Navbar {
-    display: none;
-  }
+#mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+#mobile i {
+  color: black;
 }

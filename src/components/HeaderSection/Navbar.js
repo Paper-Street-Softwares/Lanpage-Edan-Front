@@ -1,7 +1,9 @@
 import "../../style/css/componentsStyle/navbar.css";
 import Logo from "../../style/assets/images/Logo.png";
+import { Component } from "react";
 
-function Navbar() {
+class Navbar extends Component() {
+  state={clicked: false}
   return (
     <div className="wrapper-Navbar">
       <div className="container-Navbar">
@@ -36,6 +38,12 @@ function Navbar() {
               </button>
             </li>
           </ul>
+        </div>
+        <div id="mobile">
+          <i
+            id="bars"
+            className={this.state.clicked ? "fa fas-times" : "fa fas-bars"}
+          ></i>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import "../../style/css/structure-global.css";
 function Header() {
   return (
     <div className="header">
-      <InitialContact />
+      {/* <InitialContact /> */}
       <Navbar />
     </div>
   );
