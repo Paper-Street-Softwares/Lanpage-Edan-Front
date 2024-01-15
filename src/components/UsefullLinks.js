@@ -10,19 +10,19 @@ function UsefullLinks() {
       <div className="container-UsefullLinks">
         <div className="gridCard-UsefullLinks">
           <div className="imageItens-UsefullLinks">
-            <img src={img} />
+            <img src={img} alt="exemplo de imagem" />
             <p>ipsum</p>
           </div>
           <div className="imageItens-UsefullLinks">
-            <img src={img} />
+            <img src={img} alt="exemplo de imagem" />
             <p>ipsum</p>
           </div>
           <div className="imageItens-UsefullLinks">
-            <img src={img} />
+            <img src={img} alt="exemplo de imagem" />
             <p>ipsum</p>
           </div>
           <div className="imageItens-UsefullLinks">
-            <img src={img} />
+            <img src={img} alt="exemplo de imagem" />
             <p>ipsum</p>
           </div>
         </div>
