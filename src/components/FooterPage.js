@@ -1,8 +1,10 @@
 import "../style/css/componentsStyle/footerpage.css";
 import Logo from "../style/assets/images/Logo.png";
-import { FaHome, FaPhoneAlt, FaRegClock } from "react-icons/fa";
 import {
   FaFacebook,
+  FaHome,
+  FaPhoneAlt,
+  FaRegClock,
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
@@ -66,30 +68,30 @@ function FooterPage() {
               <div className="columns-FooterPage">
                 <div className="col-1">
                   <li className="item-FooterPage">
-                    <button href="/">
-                      <a>INÍCIO</a>
+                    <button>
+                      <a href="/">INÍCIO</a>
                     </button>
                   </li>
                   <li className="item-FooterPage">
-                    <button href="/src/components/About.js">
-                      <a>SOBRE NÓS</a>
+                    <button>
+                      <a href="/src/components/About.js">SOBRE NÓS</a>
                     </button>
                   </li>
                   <li className="item-FooterPage">
-                    <button href="/src/components/OurService.js">
-                      <a>SERVIÇOS</a>
+                    <button>
+                      <a href="/src/components/OurService.js">SERVIÇOS</a>
                     </button>
                   </li>
                 </div>
                 <div className="col-2">
                   <li className="item-FooterPage">
-                    <button href="/src/components/UsefullLinks.js">
-                      <a>LINKS</a>
+                    <button>
+                      <a href="/src/components/UsefullLinks.js">LINKS</a>
                     </button>
                   </li>
                   <li className="item-FooterPage">
-                    <button href="/src/components/About.js">
-                      <a>CONTATO</a>
+                    <button>
+                      <a href="/src/components/About.js">CONTATO</a>
                     </button>
                   </li>
                 </div>
