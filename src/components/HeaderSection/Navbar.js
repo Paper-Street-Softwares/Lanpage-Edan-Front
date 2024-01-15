@@ -3,11 +3,31 @@ import Logo from "../../style/assets/images/Logo.png";
 import { Component } from "react";
 
 class Navbar extends Component {
-  state = { clicked: false };
+  state = { clicked: false, showServicesMenu: false, showLinksMenu: false };
 
   handleClick = () => {
     this.setState((prevState) => {
       return { clicked: !prevState.clicked };
+    });
+  };
+
+  handleServicesClick = (e) => {
+    e.preventDefault();
+    this.setState((prevState) => {
+      return {
+        showServicesMenu: !prevState.showServicesMenu,
+        showLinksMenu: false,
+      };
+    });
+  };
+
+  handleLinksClick = (e) => {
+    e.preventDefault();
+    this.setState((prevState) => {
+      return {
+        showLinksMenu: !prevState.showLinksMenu,
+        showServicesMenu: false,
+      };
     });
   };
 
@@ -32,13 +52,39 @@ class Navbar extends Component {
               </li>
               <li className="item">
                 <button>
-                  <a href="/src/components/OurService.js">SERVIÇOS</a>
+                  <span onClick={this.handleServicesClick}>
+                    SERVIÇOS
+                    <i className="fas fa-chevron-down" />
+                  </span>
                 </button>
+                {this.state.showServicesMenu && (
+                  <ul className="submenu">
+                    <li>
+                      <a href="/src/components/Service1.js">Serviço 1</a>
+                    </li>
+                    <li>
+                      <a href="/src/components/Service2.js">Serviço 2</a>
+                    </li>
+                  </ul>
+                )}
               </li>
               <li className="item">
                 <button>
-                  <a href="/src/components/UsefullLinks.js">LINKS</a>
+                  <span onClick={this.handleLinksClick}>
+                    LINKS
+                    <i className="fas fa-chevron-down" />
+                  </span>
                 </button>
+                {this.state.showLinksMenu && (
+                  <ul className="submenu">
+                    <li>
+                      <a href="/src/components/Link1.js">Link 1</a>
+                    </li>
+                    <li>
+                      <a href="/src/components/Link2.js">Link 2</a>
+                    </li>
+                  </ul>
+                )}
               </li>
               <li className="item">
                 <button>
