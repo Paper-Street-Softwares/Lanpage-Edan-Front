@@ -1,18 +1,15 @@
 @import "../structure-global.css";
 
 .wrapper-Navbar {
-  background-color: rgba(255, 0, 0, 0);
-  overflow: hidden;
-  height: 10%;
-  margin-top: 20px;
+  background-color: rgba(90, 228, 55, 0);
+  height: 20%;
 }
 
 .container-Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: auto;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 80%;
   max-width: 900px;
   background-color: rgba(255, 0, 0, 0);
@@ -45,13 +42,34 @@ button {
   margin-right: 0;
 }
 
-.item a {
+.item a,
+button {
   color: white;
   text-decoration: none;
 }
 
-.item a:hover {
+.item a:hover,
+span:hover {
   color: rgb(54, 216, 54);
+}
+
+.item i {
+  margin-left: 3px;
+  font-size: 7px;
+  color: white;
+}
+
+.submenu {
+  position: absolute;
+  margin: 10px auto;
+}
+
+.submenu li {
+  margin-bottom: 10px;
+}
+
+.item:hover .submenu {
+  display: block;
 }
 
 #mobile {
@@ -84,6 +102,12 @@ button {
 
   #list-Navbar li {
     margin-bottom: 25px;
+  }
+
+  .submenu li {
+    margin-left: 100px;
+    margin-top: -20px;
+    font-size: 14px;
   }
 
   #mobile {

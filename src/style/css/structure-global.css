@@ -6,8 +6,7 @@
 }
 
 .header {
-  position: fixed;
-  top: 10;
+  position: absolute;
   left: 0;
   width: 100%;
   z-index: 1000;
