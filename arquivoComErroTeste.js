@@ -9,6 +9,9 @@ arquivo com erro pra test sonar
 const a = 10
 const a = 10
 const a = 10
+const a = 10
+const a = 10
+const a = 10
 
 // código comentado
 
