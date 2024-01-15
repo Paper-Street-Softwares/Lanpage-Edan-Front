@@ -57,8 +57,8 @@ class Navbar extends Component {
                     onKeyDown={this.handleKeyDown}
                   >
                     SERVIÇOS
-                    <i className="fas fa-chevron-down" />
                   </span>
+                  <i className="fas fa-chevron-down" />
                 </button>
                 {this.state.showServicesMenu && (
                   <ul className="submenu">
@@ -78,8 +78,8 @@ class Navbar extends Component {
                     onKeyDown={this.handleKeyDown}
                   >
                     LINKS
-                    <i className="fas fa-chevron-down" />
                   </span>
+                  <i className="fas fa-chevron-down" />
                 </button>
                 {this.state.showLinksMenu && (
                   <ul className="submenu">
