@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "../style/css/componentsStyle/Carousel.css";
 
@@ -17,12 +17,11 @@ const Carousel = () => {
     );
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const handleNextClick = () => {
+  const handleNextClick = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
-  };
+  }, [images.length]);
 
   useEffect(() => {
     const interval = setInterval(handleNextClick, 3000);
