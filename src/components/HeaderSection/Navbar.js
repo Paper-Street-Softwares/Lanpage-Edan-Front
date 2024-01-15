@@ -51,15 +51,14 @@ class Navbar extends Component {
                 </button>
               </li>
               <li className="item">
-                <button>
-                  <button
-                    onClick={this.handleServicesClick}
-                    onKeyDown={this.handleKeyDown}
-                  >
-                    SERVIÇOS
-                  </button>
+                <button
+                  onClick={this.handleServicesClick}
+                  onKeyDown={this.handleKeyDown}
+                >
+                  SERVIÇOS
                   <i className="fas fa-chevron-down" />
                 </button>
+
                 {this.state.showServicesMenu && (
                   <ul className="submenu">
                     <li>
@@ -72,15 +71,14 @@ class Navbar extends Component {
                 )}
               </li>
               <li className="item">
-                <button>
-                  <button
-                    onClick={this.handleLinksClick}
-                    onKeyDown={this.handleKeyDown}
-                  >
-                    LINKS
-                  </button>
+                <button
+                  onClick={this.handleLinksClick}
+                  onKeyDown={this.handleKeyDown}
+                >
+                  LINKS
                   <i className="fas fa-chevron-down" />
                 </button>
+
                 {this.state.showLinksMenu && (
                   <ul className="submenu">
                     <li>
