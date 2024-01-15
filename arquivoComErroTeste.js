@@ -8,5 +8,7 @@ arquivo com erro pra test sonar
 // código comentado
 const a = 10
 const a = 10
+const a = 10
+
 // código comentado
 
