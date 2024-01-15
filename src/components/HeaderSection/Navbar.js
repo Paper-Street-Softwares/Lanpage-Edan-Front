@@ -51,6 +51,7 @@ class Navbar extends Component {
             id="mobile"
             onClick={this.handleClick}
             onKeyDown={this.handleKeyDown}
+            role="button"
           >
             <i
               id="bars"
