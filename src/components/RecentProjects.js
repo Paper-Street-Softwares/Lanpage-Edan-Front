@@ -10,22 +10,22 @@ function RecentProjects() {
       <div className="container-RecentProjects">
         <div className="gridImages-RecentProjects">
           <div className="imageItens-RecentProjects">
-            <img src={img} />
+            <img src={img} alt="exemplo de imagem" />
           </div>
           <div className="imageItens-RecentProjects">
-            <img src={img} />
+            <img src={img} alt="exemplo de imagem" />
           </div>
           <div className="imageItens-RecentProjects">
-            <img src={img} />
+            <img src={img} alt="exemplo de imagem" />
           </div>
           <div className="imageItens-RecentProjects">
-            <img src={img} />
+            <img src={img} alt="exemplo de imagem" />
           </div>
           <div className="imageItens-RecentProjects">
-            <img src={img} />
+            <img src={img} alt="exemplo de imagem" />
           </div>
           <div className="imageItens-RecentProjects">
-            <img src={img} />
+            <img src={img} alt="exemplo de imagem" />
           </div>
         </div>
       </div>
