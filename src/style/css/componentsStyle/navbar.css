@@ -43,7 +43,7 @@ button {
 }
 
 .item a,
-span {
+button {
   color: white;
   text-decoration: none;
 }
