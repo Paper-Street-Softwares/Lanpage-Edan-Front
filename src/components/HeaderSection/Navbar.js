@@ -52,7 +52,10 @@ class Navbar extends Component {
               </li>
               <li className="item">
                 <button>
-                  <span onClick={this.handleServicesClick}>
+                  <span
+                    onClick={this.handleServicesClick}
+                    onKeyDown={this.handleKeyDown}
+                  >
                     SERVIÇOS
                     <i className="fas fa-chevron-down" />
                   </span>
@@ -70,7 +73,10 @@ class Navbar extends Component {
               </li>
               <li className="item">
                 <button>
-                  <span onClick={this.handleLinksClick}>
+                  <span
+                    onClick={this.handleLinksClick}
+                    onKeyDown={this.handleKeyDown}
+                  >
                     LINKS
                     <i className="fas fa-chevron-down" />
                   </span>
