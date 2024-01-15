@@ -25,7 +25,7 @@
   max-width: 90px;
 }
 
-.buttoncascade-Navbar {
+#list-Navbar {
   display: flex;
   justify-content: space-between;
 }
@@ -53,10 +53,43 @@ button {
 }
 
 #mobile {
-  display: flex;
-  flex-direction: column;
+  display: none;
 }
 
 #mobile i {
   color: black;
+}
+
+@media (max-width: 768px) {
+  #list-Navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 44px;
+    right: -300px;
+    width: 200px;
+    height: 100vh;
+    background-color: blue;
+    padding: 40px 0 0 10px;
+    transition: 0.7s ease-in-out;
+  }
+
+  #list-Navbar.active {
+    right: 0px;
+  }
+
+  #list-Navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
 }
