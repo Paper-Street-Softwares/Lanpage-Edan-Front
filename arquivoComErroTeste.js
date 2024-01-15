@@ -1,4 +1,4 @@
-arquivo com erro pra testar sonar
+arquivo com erro pra test sonar
 
 // código comentado
 // código comentado
