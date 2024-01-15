@@ -53,9 +53,10 @@ span:hover {
   color: rgb(54, 216, 54);
 }
 
-span i {
+.item i {
   margin-left: 3px;
   font-size: 7px;
+  color: white;
 }
 
 .submenu {
