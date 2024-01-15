@@ -27,9 +27,6 @@
   max-width: 150px;
 }
 
-.buttonsCascade-Navbar {
-}
-
 #list-Navbar {
   display: flex;
   justify-content: space-around;
