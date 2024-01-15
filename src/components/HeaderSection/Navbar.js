@@ -48,6 +48,7 @@ class Navbar extends Component {
             </ul>
           </div>
           <div
+            type="button"
             id="mobile"
             onClick={this.handleClick}
             onKeyDown={this.handleKeyDown}

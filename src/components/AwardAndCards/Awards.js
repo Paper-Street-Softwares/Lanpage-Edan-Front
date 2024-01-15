@@ -33,8 +33,8 @@ const Awards = () => {
           <h1>Prêmios</h1>
         </div>
         <div className="card-Awards">
-          {awardsData.map((award, index) => (
-            <AwardCard key={index} {...award} />
+          {awardsData.map((award) => (
+            <AwardCard key={award.id} {...award} />
           ))}
         </div>
       </div>
