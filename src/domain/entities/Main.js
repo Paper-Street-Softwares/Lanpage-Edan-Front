@@ -2,13 +2,10 @@ import "../../style/css/structure-global.css";
 import Carousel from "../../components/Carousel";
 import OurService from "../../components/OurServicesAndIcons/OurService";
 import About from "../../components/About";
-import UsefullLinks from "../../components/UsefullLinks";
-import Location from "../../components/Location";
-import Awards from "../../components/AwardAndCards/Awards";
-import RecentProjects from "../../components/RecentProjects";
 import ButtonFixedWhatsapp from "../../components/ButtonFixedWhatsapp";
 import RightChoice from "../../components/OurServicesAndIcons/RightChoice";
 import AboutAndAwards from "../../components/AwardAndCards/AboutAndAwards";
+import Testimonial from "../../components/TestimonialSection/Testimonial";
 
 function Main() {
   return (
@@ -19,10 +16,7 @@ function Main() {
       <OurService />
       <AboutAndAwards />
       <About />
-      <RecentProjects />
-      <UsefullLinks />
-      <Location />
-      <Awards />
+      <Testimonial />
     </div>
   );
 }

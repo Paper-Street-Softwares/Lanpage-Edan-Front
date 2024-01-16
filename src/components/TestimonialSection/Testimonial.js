@@ -1,23 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
+import Slider from "../TestimonialSection/Slider";
 import "../../style/css/componentsStyle/testimonial.css";
 
-const Testimonial = ({ author, text, company }) => {
-  Testimonial.propTypes = {
-    author: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    company: PropTypes.string.isRequired,
-  };
-
+function Testimonial() {
   return (
     <div className="wrapper-Testimonial">
       <div className="container-Testimonial">
-        <p className="testimonial-text">{text}</p>
-        <p className="testimonial-author">{author}</p>
-        <p className="testimonial-company">{company}</p>
+        <Slider />
       </div>
     </div>
   );
-};
+}
 
 export default Testimonial;
