@@ -23,7 +23,7 @@
 
 .sectionRight {
   display: flex;
-  flex-direction: center;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -34,10 +34,6 @@
 .titleAbout {
   text-align: center;
   margin: 20px 0;
-}
-
-.sectionLeft {
-  background-color: rgb(255, 0, 0);
 }
 
 @media (max-width: 768px) {
