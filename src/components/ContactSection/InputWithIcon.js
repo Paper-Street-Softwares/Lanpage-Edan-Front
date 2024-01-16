@@ -1,44 +1,47 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";
 import AccountCircle from "@mui/icons-material/AccountCircle";
+import { Button } from "@mui/material";
 
 export default function InputWithIcon() {
   return (
-    <Box sx={{ "& > :not(style)": { m: 1 } }}>
-      <FormControl variant="standard">
-        <InputLabel htmlFor="input-with-icon-adornment">
-          With a start adornment
-        </InputLabel>
-        <Input
-          id="input-with-icon-adornment"
-          startAdornment={
-            <InputAdornment position="start">
-              <AccountCircle />
-            </InputAdornment>
-          }
-        />
-      </FormControl>
-      <TextField
-        id="input-with-icon-textfield"
-        label="TextField"
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <AccountCircle />
-            </InputAdornment>
-          ),
-        }}
-        variant="standard"
-      />
-      <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+    <div>
+      <Box sx={{ display: "flex", alignItems: "flex-end", marginBottom: "3%" }}>
         <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
-        <TextField id="input-with-sx" label="With sx" variant="standard" />
+        <TextField id="input-with-sx" label="Nome" variant="standard" />
       </Box>
-    </Box>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "flex-end",
+          marginBottom: "3%",
+          maxWidth: "100%",
+        }}
+      >
+        <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+        <TextField id="input-with-sx" label="Telefone" variant="standard" />
+      </Box>
+      <Box sx={{ display: "flex", alignItems: "flex-end", marginBottom: "3%" }}>
+        <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+        <TextField id="input-with-sx" label="Email" variant="standard" />
+      </Box>
+      <Box sx={{ display: "flex", alignItems: "flex-end", marginBottom: "3%" }}>
+        <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+        <TextField
+          id="input-with-sx"
+          multiline
+          rows={2}
+          label="Mensagem"
+          variant="standard"
+        />
+      </Box>
+      <Button
+        style={{ marginTop: "3%", backgroundColor: "green" }}
+        variant="contained"
+      >
+        Enviar
+      </Button>
+    </div>
   );
 }
