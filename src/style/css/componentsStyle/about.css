@@ -22,9 +22,8 @@
 }
 
 .sectionRight {
-  background-color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: center;
   align-items: center;
 }
 
