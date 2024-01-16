@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: rgb(13, 3, 48);
+  background-color: #2f602d;
 }
 
 .container-FooterPage {
@@ -12,27 +12,41 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   max-width: 900px;
-  background-color: rgb(13, 3, 48);
+  background-color: #2f602d;
   color: white;
+  margin: 5%;
 }
 
 .footerItem-FooterPage {
   flex: 1;
   text-align: center;
-  background-color: rgb(13, 3, 48);
-  align-items: space-around;
-  width: 250px;
+  background-color: #2f602d;
+  align-items: left;
+  width: 950px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  margin: 10px !important;
+  padding: 0 !important;
 }
 
 .infos-FooterPage {
+  padding: 5px;
   display: flex;
   flex-direction: column;
+  text-align: left;
+}
+
+.address-FooterPage,
+.phone-FooterPage,
+.service-FooterPage{
+  display: flex !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 28px !important;
 }
 
 .address-FooterPage,
@@ -49,19 +63,38 @@
   word-wrap: break-word;
   margin: 0 auto;
   height: auto;
+  color: rgb(226, 226, 226);
+}
+
+.span-FooterPage p{
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 15px;
+  text-align: left;
 }
 
 .infos-FooterPage p {
   margin-left: 10px;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 15px;
 }
 
 .logo-FooterPage img {
   max-width: 180px;
+  margin-bottom: 30px;
 }
 
 .icons-FooterPage {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: left;
+  width: 100%;
+  height: 2rem;
+}
+
+.iconFooterPage{
+  color: rgb(255, 255, 255);
+  width: 20px !important;
+  height: 20px !important;
 }
 
 .icons-FooterPage > * {
@@ -88,6 +121,12 @@
   width: 100%;
 }
 
+.columns-FooterPage a{
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 15px;
+  text-decoration: none;
+}
+
 .col-1,
 .col-2 {
   list-style: none;
@@ -98,5 +137,32 @@
   display: flex;
   flex-direction: column;
   justify-content: right;
-  align-items: center;
+  align-items: right;
+}
+
+.col-2 li{
+  text-align: right;
+}
+
+.col-1 li{
+  text-align: right;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+
+.titleRighter-FooterPage{
+  text-align: right;
+}
+
+.links-footer{
+  display: flex;
+  align-items: right;
+  text-align: right;
+}
+
+#logoinfos-Footer{
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-items: left;
 }
