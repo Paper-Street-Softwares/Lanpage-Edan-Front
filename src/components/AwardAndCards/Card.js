@@ -11,7 +11,7 @@ import "../../style/css/componentsStyle/card.css";
 export default function ActionAreaCard() {
   return (
     <div className="cardGroup">
-      <Card sx={{ maxWidth: 345, marginRight: 2 }}>
+      <Card sx={{ maxWidth: 250, marginRight: 2 }}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -33,7 +33,7 @@ export default function ActionAreaCard() {
         </CardActionArea>
       </Card>
 
-      <Card sx={{ maxWidth: 345, marginRight: 2 }}>
+      <Card sx={{ maxWidth: 250, marginRight: 2 }}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -55,7 +55,7 @@ export default function ActionAreaCard() {
         </CardActionArea>
       </Card>
 
-      <Card sx={{ maxWidth: 345, marginRight: 2 }}>
+      <Card sx={{ maxWidth: 250, marginRight: 2 }}>
         <CardActionArea>
           <CardMedia
             component="img"

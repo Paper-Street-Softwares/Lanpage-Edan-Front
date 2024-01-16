@@ -1,0 +1,39 @@
+@import "../structure-global.css";
+
+.wrapper-AboutAndAwards {
+  display: flex;
+  justify-content: center;
+}
+
+.container-AboutAndAwards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 900px;
+  margin: 10px 0;
+}
+
+.sectionRight-AboutAndAwards,
+.sectionLeft-AboutAndAwards {
+  flex: 1;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.sectionRight-AboutAndAwards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionLeft-AboutAndAwards h1,
+.sectionLeft-AboutAndAwards p {
+  text-align: center;
+}
+
+.title-AboutAndAwards {
+  text-align: center;
+  margin: 20px 0;
+}

@@ -44,11 +44,11 @@ export default function CongratCard() {
           </AspectRatio>
         </CardOverflow>
         <Typography level="title-lg" sx={{ mt: "calc(var(--icon-size) / 2)" }}>
-          Imposto de renda
+          Oferta de Serviço
         </Typography>
         <CardContent sx={{ maxWidth: "40ch" }}>
-          Declarar corretamente é crucial para evitar problemas fiscais e
-          garantir conformidade com a legislação tributária.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          malesuada lacus ex, sit amet blandit leo lobortis eget.
         </CardContent>
         <CardActions
           orientation="vertical"

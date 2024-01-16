@@ -9,6 +9,7 @@ import RecentProjects from "../../components/RecentProjects";
 import TestimonialsSection from "../../components/TestimonialSection/TestimonialsSection";
 import ButtonFixedWhatsapp from "../../components/ButtonFixedWhatsapp";
 import RightChoice from "../../components/OurServicesAndIcons/RightChoice";
+import AboutAndAwards from "../../components/AwardAndCards/AboutAndAwards";
 
 function Main() {
   return (
@@ -17,10 +18,10 @@ function Main() {
       <Carousel />
       <RightChoice />
       <OurService />
+      <AboutAndAwards />
       <About />
       <RecentProjects />
       <UsefullLinks />
-      <TestimonialsSection />
       <Location />
       <Awards />
     </div>
