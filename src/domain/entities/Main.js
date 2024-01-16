@@ -8,12 +8,14 @@ import Awards from "../../components/AwardAndCards/Awards";
 import RecentProjects from "../../components/RecentProjects";
 import TestimonialsSection from "../../components/TestimonialSection/TestimonialsSection";
 import ButtonFixedWhatsapp from "../../components/ButtonFixedWhatsapp";
+import RightChoice from "../../components/OurServicesAndIcons/RightChoice";
 
 function Main() {
   return (
     <div className="mainBody">
       <ButtonFixedWhatsapp />
       <Carousel />
+      <RightChoice />
       <OurService />
       <About />
       <RecentProjects />
