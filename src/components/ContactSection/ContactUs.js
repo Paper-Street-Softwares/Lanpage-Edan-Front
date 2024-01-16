@@ -1,9 +1,10 @@
 import React from "react";
 import InputWithIcon from "./InputWithIcon";
+import "../../style/css/structure-global.css";
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className="InputWithIcon-Component">
       <InputWithIcon />
     </div>
   );
