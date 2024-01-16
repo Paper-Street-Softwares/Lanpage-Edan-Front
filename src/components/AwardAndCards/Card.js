@@ -21,8 +21,12 @@ export default function ActionAreaCard() {
           />
           <CardContent>
             <GrTarget className="icon-Choice" />
-            <Typography variant="body2" color="text.secondary">
-              Declaração de Imposto de Renda
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              textAlign="center"
+            >
+              Somos zika
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -38,8 +42,12 @@ export default function ActionAreaCard() {
           />
           <CardContent>
             <GrMoney className="icon-Choice" />
-            <Typography variant="body2" color="text.secondary">
-              Declaração de Imposto de Renda
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              textAlign="center"
+            >
+              Pq er nois
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -55,8 +63,12 @@ export default function ActionAreaCard() {
           />
           <CardContent>
             <GrOptimize className="icon-Choice" />
-            <Typography variant="body2" color="text.secondary">
-              Declaração de Imposto de Renda
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              textAlign="center"
+            >
+              Esqueça tudo
             </Typography>
           </CardContent>
         </CardActionArea>

@@ -55,3 +55,9 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+
+.inputGroup-Contact,
+.cardGroup-OurService {
+  display: flex;
+  justify-content: center;
+}
