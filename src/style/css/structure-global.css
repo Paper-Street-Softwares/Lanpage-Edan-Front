@@ -54,15 +54,25 @@ p {
 .cardGroup {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
 }
 
 .inputGroup-Contact,
 .cardGroup-OurService {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .FaIcon {
+  color: rgba(0, 128, 0, 0.603);
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.iconCard-OverflowCard {
   color: rgba(0, 128, 0, 0.603);
   margin-right: 10px;
   width: 20px;
@@ -78,4 +88,8 @@ p {
 
 .formWithIcons {
   width: 80%;
+}
+
+.qwerty {
+  width: 100%;
 }
