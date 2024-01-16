@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import { FaUser, FaPhone, FaEnvelope, FaComment } from "react-icons/fa";
+import SendIcon from "@mui/icons-material/Send";
 
 export default function InputWithIcon() {
   return (
@@ -69,6 +70,7 @@ export default function InputWithIcon() {
             width: "100%",
           }}
           variant="contained"
+          endIcon={<SendIcon />}
         >
           Enviar
         </Button>
