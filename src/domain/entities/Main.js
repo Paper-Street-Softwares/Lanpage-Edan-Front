@@ -6,7 +6,6 @@ import UsefullLinks from "../../components/UsefullLinks";
 import Location from "../../components/Location";
 import Awards from "../../components/AwardAndCards/Awards";
 import RecentProjects from "../../components/RecentProjects";
-import TestimonialsSection from "../../components/TestimonialSection/TestimonialsSection";
 import ButtonFixedWhatsapp from "../../components/ButtonFixedWhatsapp";
 import RightChoice from "../../components/OurServicesAndIcons/RightChoice";
 import AboutAndAwards from "../../components/AwardAndCards/AboutAndAwards";
