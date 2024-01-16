@@ -22,12 +22,13 @@ export default function ActionAreaCard() {
           <CardContent>
             <GrTarget className="icon-Choice" />
             <Typography
-              variant="body2"
+              variant="body1"
               color="text.secondary"
               textAlign="center"
             >
-              Somos zika
+              Marketing Experts
             </Typography>
+            <p>Ut enim ad minim veniam, quis nostrud exerci tation ullamco</p>
           </CardContent>
         </CardActionArea>
       </Card>
@@ -43,12 +44,13 @@ export default function ActionAreaCard() {
           <CardContent>
             <GrMoney className="icon-Choice" />
             <Typography
-              variant="body2"
+              variant="body1"
               color="text.secondary"
               textAlign="center"
             >
-              Pq er nois
+              Investimento em Série
             </Typography>
+            <p>Ut enim ad minim veniam, quis nostrud exerci tation ullamco</p>
           </CardContent>
         </CardActionArea>
       </Card>
@@ -64,12 +66,13 @@ export default function ActionAreaCard() {
           <CardContent>
             <GrOptimize className="icon-Choice" />
             <Typography
-              variant="body2"
+              variant="body1"
               color="text.secondary"
               textAlign="center"
             >
-              Esqueça tudo
+              Priorize os Clientes
             </Typography>
+            <p>Ut enim ad minim veniam, quis nostrud exerci tation ullamco</p>
           </CardContent>
         </CardActionArea>
       </Card>
