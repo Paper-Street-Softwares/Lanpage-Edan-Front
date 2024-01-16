@@ -1,5 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import { Button } from "@mui/material";
+import { FaUser, FaPhone, FaEnvelope, FaComment } from "react-icons/fa";
 
 const InputWithIcon = () => {
   const form = useRef();
@@ -16,7 +20,9 @@ const InputWithIcon = () => {
       )
       .then(
         (result) => {
-          alert("Enviado com sucesso.");
+          alert(
+            "Mensagem enviada com sucesso. \nAcompanhe seu email pois em breve entraremos em contato."
+          );
           console.log(result.text);
         },
         (error) => {
@@ -28,96 +34,86 @@ const InputWithIcon = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Phone</label>
-      <input type="phone" name="user_phone" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <div className="formWithIcons">
+        <Box
+          sx={{ display: "flex", alignItems: "flex-end", marginBottom: "3%" }}
+        >
+          <FaUser className="FaIcon" />
+          <TextField
+            name="user_name"
+            id="input-with-sx"
+            label="Nome"
+            color="success"
+            variant="standard"
+            sx={{ width: "100%" }}
+          />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "flex-end",
+            marginBottom: "3%",
+            maxWidth: "100%",
+          }}
+        >
+          <FaPhone className="FaIcon" />
+          <TextField
+            name="user_phone"
+            id="input-with-sx"
+            label="Telefone"
+            color="success"
+            variant="standard"
+            sx={{ width: "100%" }}
+          />
+        </Box>
+        <Box
+          sx={{ display: "flex", alignItems: "flex-end", marginBottom: "3%" }}
+        >
+          <FaEnvelope className="FaIcon" />
+          <TextField
+            name="user_email"
+            id="input-with-sx"
+            label="Email"
+            color="success"
+            variant="standard"
+            sx={{ width: "100%" }}
+          />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "flex-end",
+            marginBottom: "3%",
+          }}
+        >
+          <FaComment className="FaIcon" />
+          <TextField
+            name="message"
+            id="input-with-sx"
+            rows={2}
+            label="Mensagem"
+            color="success"
+            variant="standard"
+            sx={{ width: "100%" }}
+          />
+        </Box>
+        <div className="button-InputWithIcon">
+          <Button
+            type="submit"
+            value="Send"
+            style={{
+              marginTop: "3%",
+              backgroundColor: "rgba(0, 128, 0, 0.603)",
+              width: "100%",
+            }}
+            variant="contained"
+          >
+            Enviar
+          </Button>
+        </div>
+      </div>
     </form>
   );
 };
 
 export default InputWithIcon;
-
-// import * as React from "react";
-// import Box from "@mui/material/Box";
-// import TextField from "@mui/material/TextField";
-// import { Button } from "@mui/material";
-// import { FaUser, FaPhone, FaEnvelope, FaComment } from "react-icons/fa";
-
-// export default function InputWithIcon() {
-//   return (
-//     <div className="formWithIcons">
-//       <Box sx={{ display: "flex", alignItems: "flex-end", marginBottom: "3%" }}>
-//         <FaUser className="FaIcon" />
-//         <TextField
-//           id="input-with-sx"
-//           label="Nome"
-//           color="success"
-//           variant="standard"
-//           sx={{ width: "100%" }}
-//         />
-//       </Box>
-//       <Box
-//         sx={{
-//           display: "flex",
-//           alignItems: "flex-end",
-//           marginBottom: "3%",
-//           maxWidth: "100%",
-//         }}
-//       >
-//         <FaPhone className="FaIcon" />
-//         <TextField
-//           id="input-with-sx"
-//           label="Telefone"
-//           color="success"
-//           variant="standard"
-//           sx={{ width: "100%" }}
-//         />
-//       </Box>
-//       <Box sx={{ display: "flex", alignItems: "flex-end", marginBottom: "3%" }}>
-//         <FaEnvelope className="FaIcon" />
-//         <TextField
-//           id="input-with-sx"
-//           label="Email"
-//           color="success"
-//           variant="standard"
-//           sx={{ width: "100%" }}
-//         />
-//       </Box>
-//       <Box
-//         sx={{
-//           display: "flex",
-//           alignItems: "flex-end",
-//           marginBottom: "3%",
-//         }}
-//       >
-//         <FaComment className="FaIcon" />
-//         <TextField
-//           id="input-with-sx"
-//           rows={2}
-//           label="Mensagem"
-//           color="success"
-//           variant="standard"
-//           sx={{ width: "100%" }}
-//         />
-//       </Box>
-//       <div className="button-InputWithIcon">
-//         <Button
-//           style={{
-//             marginTop: "3%",
-//             backgroundColor: "rgba(0, 128, 0, 0.603)",
-//             width: "100%",
-//           }}
-//           variant="contained"
-//         >
-//           Enviar
-//         </Button>
-//       </div>
-//     </div>
-//   );
-// }
