@@ -38,7 +38,7 @@
 }
 
 .sectionLeft {
-  background-color: white;
+  background-color: rgb(255, 0, 0);
 }
 
 @media (max-width: 768px) {

@@ -1,13 +1,10 @@
 import React from "react";
-import ContactForm from "./ContactForm";
-import ContactInfo from "./ContactInfo";
+import InputWithIcon from "./InputWithIcon";
 
 const ContactUs = () => {
   return (
     <div>
-      <h2>Entre em contato</h2>
-      <ContactForm />
-      <ContactInfo />
+      <InputWithIcon />
     </div>
   );
 };
