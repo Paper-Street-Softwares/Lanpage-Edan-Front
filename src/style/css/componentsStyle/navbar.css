@@ -48,10 +48,10 @@ button {
   text-decoration: none;
 }
 
-.item a:hover,
+/* .item a:hover,
 span:hover {
   color: rgb(54, 216, 54);
-}
+} */
 
 .item i {
   margin-left: 3px;
