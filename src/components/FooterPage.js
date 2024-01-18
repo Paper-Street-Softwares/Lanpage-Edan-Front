@@ -15,7 +15,9 @@ function FooterPage() {
   return (
     <div className="wrapper-FooterPage">
       <div className="container-FooterPage">
+
         <div className="footerItem-FooterPage">
+          <div id="logoinfos-Footer">
           <div className="logo-FooterPage">
             <img src={Logo} alt="Logo EDAN" />
           </div>
@@ -32,9 +34,11 @@ function FooterPage() {
               <FaRegClock />
               <p>8am - 6pm</p>
             </div>
+            </div>
           </div>
         </div>
-        <div className="footerItem-FooterPage">
+        
+        <div id="titleMidle-sobre" className="footerItem-FooterPage">
           <div className="titleMiddle-FooterPage">
             <h1>SOBRE</h1>
           </div>
@@ -51,11 +55,11 @@ function FooterPage() {
           </div>
           <br />
           <div className="icons-FooterPage">
-            <FaFacebook />
-            <FaTwitter />
-            <FaLinkedinIn />
-            <FaInstagram />
-            <FaSignal />
+            <FaFacebook className="iconFooterPage" />
+            <FaTwitter className="iconFooterPage" />
+            <FaLinkedinIn className="iconFooterPage" />
+            <FaInstagram className="iconFooterPage" />
+            <FaSignal className="iconFooterPage" />
           </div>
         </div>
         <div className="footerItem-FooterPage">
