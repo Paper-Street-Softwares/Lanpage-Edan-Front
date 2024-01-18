@@ -12,10 +12,6 @@
   z-index: 1000;
 }
 
-.mainBody {
-  background-color: #f3f2f2;
-}
-
 .list {
   display: flex;
   list-style: none;

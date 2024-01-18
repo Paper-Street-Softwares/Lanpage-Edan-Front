@@ -1,4 +1,5 @@
 import FooterPage from "../../components/FooterPage";
+
 function Footer() {
   return (
     <div className="mainFooter">
