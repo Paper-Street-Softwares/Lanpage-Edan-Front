@@ -1,6 +1,6 @@
 import "../style/css/componentsStyle/about.css";
 import CustomizedAccordions from "./ContactSection/CustomizedAccordions";
-import InputWithIcon from "./ContactSection/InputWithIcon";
+import WhatsappForm from "./ContactSection/WhatsappForm";
 
 function About() {
   return (
@@ -13,10 +13,7 @@ function About() {
           </div>
         </div>
         <div className="sectionRight">
-          <div className="titleAbout">
-            <h1>CONTATO</h1>
-          </div>
-          <InputWithIcon />
+          <WhatsappForm />
         </div>
       </div>
     </div>
