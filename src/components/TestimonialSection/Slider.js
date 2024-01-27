@@ -1,27 +1,23 @@
 import React from "react";
 import { Carousel } from "antd";
 const contentStyle = {
-  height: "160px",
-  color: "#fff",
   lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
 };
 const Slider = () => (
   <Carousel autoplay>
-    <div>
-      <h3 style={contentStyle}>EDISCRÊ LOCO NA DROGA</h3>
+    <div className="bg-green-200 text-center h-40 text-white">
+      <h3 style={contentStyle}>0001</h3>
     </div>
-    <div>
-      <h3 style={contentStyle}>EDISCRÊ CHEIRANDO PÓ NO PAU DE TRAVESTI</h3>
+    <div className="bg-green-200 text-center h-40 text-white">
+      <h3 style={contentStyle}>0002</h3>
     </div>
-    <div>
+    <div className="bg-green-200 text-center h-40 text-white">
       <h3 style={contentStyle}>
-        EDISCRÊ DIVIDINDO A VALA COM UM BÊBADO NO MEIO DA MADRUGADA
+        0003
       </h3>
     </div>
-    <div>
-      <h3 style={contentStyle}>EDISCRÊ SENDO REABILITADO NA MARANATA</h3>
+    <div className="bg-green-200 text-center h-40 text-white">
+      <h3 style={contentStyle}>0004</h3>
     </div>
   </Carousel>
 );
