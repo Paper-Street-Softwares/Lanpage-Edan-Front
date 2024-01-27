@@ -6,42 +6,35 @@ const WhatsappForm = () => {
   const [email, setEmail] = useState("");
   const [typeContact, setTypeContact] = useState("");
   const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    typeContact: "",
-    message: "",
-  });
+  const [errors, setErrors] = useState("");
 
   const sendToWhatsapp = () => {
-    const newErrors = {};
+    const validationErrors = {};
 
-    if (!name) {
-      newErrors.name = "Preencha seu nome.";
+    if (!validateName(name)) {
+      validationErrors.name = "O campo nome é obrigatório";
     }
 
-    if (!phone) {
-      newErrors.phone = "Preencha seu telefone.";
+    if (!validatePhone(phone)) {
+      validationErrors.phone = "O campo telefone é obrigatório";
     }
 
-    if (!email) {
-      newErrors.email = "Preencha seu e-mail.";
+    if (!validateEmail(email)) {
+      validationErrors.email = "O campo email é obrigatório";
     }
 
-    if (!typeContact) {
-      newErrors.typeContact = "Escolha o tipo de contato.";
+    if (!validateTypeContact(typeContact)) {
+      validationErrors.typeContact = "O campo tipo de contato é obrigatório";
     }
 
-    if (!message) {
-      newErrors.message = "Escreva sua mensagem.";
+    if (!validateMessage(message)) {
+      validationErrors.message = "O campo mensagem é obrigatório";
     }
 
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
       return;
     }
-
     const numeroWhatsapp = "+5571982542995";
 
     const mensagemWhatsapp = `Nome: ${name} \nTelefone: ${phone} \nEmail: ${email} \nTipo de Contato: ${
@@ -55,121 +48,102 @@ const WhatsappForm = () => {
     window.location.href = linkWhatsapp;
   };
 
+  const validateName = (name) => {
+    if (!name) {
+      return false;
+    }
+    return true;
+  };
+
+  const validatePhone = (phone) => {
+    if (!phone) {
+      return false;
+    }
+    return true;
+  };
+
+  const validateEmail = (email) => {
+    if (!email) {
+      return false;
+    }
+    return true;
+  };
+
+  const validateTypeContact = (typeContact) => {
+    if (!typeContact) {
+      return false;
+    }
+    return true;
+  };
+
+  const validateMessage = (message) => {
+    if (!message) {
+      return false;
+    }
+    return true;
+  };
+
   return (
-    <div className="flex items-center bg-teal-lighter">
-      <div className="bg-white w-full rounded shadow-lg p-8 m-4">
-        <h1 className="block w-full text-center font-bold uppercase text-grey-darkest mb-6">
-          Contato
-        </h1>
-        <form>
-          <div className="flex flex-col mb-2">
-            <label className="text-base text-grey-darkest" htmlFor="name">
-              Nome:
-            </label>
-            <input
-              className="border py-2 px-3 text-grey-darkest"
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-                setErrors({ ...errors, name: "" });
-              }}
-              placeholder="Digite seu nome"
-              required
-            />
-            <div className="text-red-500">{errors.name}</div>
-          </div>
+    <div>
+      <label htmlFor="name">Nome:</label>
+      <input
+        type="text"
+        id="name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        placeholder="Digite seu nome"
+        required
+      />
+      {errors.name && <p className="text-red-500 mt-2">{errors.name}</p>}
 
-          <div className="flex flex-col mb-2">
-            <label className="text-base text-grey-darkest" htmlFor="telefone">
-              Telefone:
-            </label>
-            <input
-              className="border py-2 px-3 text-grey-darkest"
-              type="tel"
-              id="phone"
-              value={phone}
-              onChange={(e) => {
-                setPhone(e.target.value);
-                setErrors({ ...errors, phone: "" });
-              }}
-              placeholder="Digite seu telefone"
-              required
-            />
-            <div className="text-red-500">{errors.phone}</div>
-          </div>
+      <label htmlFor="telefone">Telefone:</label>
+      <input
+        type="tel"
+        id="phone"
+        value={phone}
+        onChange={(e) => setPhone(e.target.value)}
+        placeholder="Digite seu telefone"
+        required
+      />
+      {errors.phone && <p className="text-red-500 mt-2">{errors.phone}</p>}
 
-          <div className="flex flex-col mb-2">
-            <label className="text-base text-grey-darkest" htmlFor="email">
-              Email:
-            </label>
-            <input
-              className="border py-2 px-3 text-grey-darkest"
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-                setErrors({ ...errors, email: "" });
-              }}
-              placeholder="Digite seu email"
-              required
-            />
-            <div className="text-red-500">{errors.email}</div>
-          </div>
+      <label htmlFor="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="Digite seu email"
+        required
+      />
+      {errors.email && <p className="text-red-500 mt-2">{errors.email}</p>}
 
-          <div className="flex flex-col mb-2">
-            <label
-              className="text-base text-grey-darkest"
-              htmlFor="typeContact"
-            >
-              Tipo de Contato:
-            </label>
-            <select
-              className="border py-2 px-3 text-grey-darkest"
-              id="typeContact"
-              value={typeContact}
-              onChange={(e) => {
-                setTypeContact(e.target.value);
-                setErrors({ ...errors, typeContact: "" });
-              }}
-              required
-            >
-              <option value="">Selecione...</option>
-              <option value="pessoaFisica">Pessoa Física</option>
-              <option value="empresa">Empresa</option>
-            </select>
-            <div className="text-red-500">{errors.typeContact}</div>
-          </div>
+      <label htmlFor="typeContact">Tipo de Contato:</label>
+      <select
+        id="typeContact"
+        value={typeContact}
+        onChange={(e) => setTypeContact(e.target.value)}
+        required
+      >
+        <option value="pessoaFisica">Pessoa Física</option>
+        <option value="empresa">Empresa</option>
+      </select>
+      {errors.typeContact && (
+        <p className="text-red-500 mt-2">{errors.typeContact}</p>
+      )}
 
-          <div className="flex flex-col mb-2">
-            <label className="text-base text-grey-darkest" htmlFor="message">
-              Mensagem:
-            </label>
-            <textarea
-              className="border py-2 px-3 text-grey-darkest"
-              type="text"
-              id="message"
-              value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
-                setErrors({ ...errors, message: "" });
-              }}
-              placeholder="Digite sua mensagem"
-              required
-            />
-            <div className="text-red-500">{errors.message}</div>
-          </div>
+      <label htmlFor="message">Mensagem:</label>
+      <input
+        type="text"
+        id="message"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        placeholder="Digite sua mensagem"
+        required
+      />
+      {errors.message && <p className="text-red-500 mt-2">{errors.message}</p>}
 
-          <button
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
-            onClick={sendToWhatsapp}
-          >
-            Enviar para o WhatsApp
-          </button>
-        </form>
-      </div>
+      <button onClick={sendToWhatsapp}>Enviar para o WhatsApp</button>
     </div>
   );
 };
