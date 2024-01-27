@@ -84,16 +84,19 @@ const WhatsappForm = () => {
   };
 
   return (
-    <div class="w-full bg-white rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
-      <h1 class="block w-full text-center uppercase font-bold text-grey-darkest mb-6">
+    <div className="w-full bg-white rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
+      <h1 className="block w-full text-center uppercase font-bold text-grey-darkest mb-6">
         Entre em contato
       </h1>
-      <div class="flex flex-col mb-4">
-        <label class="tracking-wide text-base text-grey-darkest" htmlFor="name">
+      <div className="flex flex-col mb-4">
+        <label
+          className="tracking-wide text-base text-grey-darkest"
+          htmlFor="name"
+        >
           Nome:
         </label>
         <input
-          class="border py-2 px-3 text-grey-darkest md:mr-2"
+          className="border py-2 px-3 text-grey-darkest md:mr-2"
           type="text"
           id="name"
           value={name}
@@ -104,15 +107,15 @@ const WhatsappForm = () => {
         {errors.name && <p className="text-red-500">{errors.name}</p>}
       </div>
 
-      <div class="flex flex-col mb-4">
+      <div className="flex flex-col mb-4">
         <label
-          class="tracking-wide text-base text-grey-darkest"
+          className="tracking-wide text-base text-grey-darkest"
           htmlFor="telefone"
         >
           Telefone:
         </label>
         <input
-          class="border py-2 px-3 text-grey-darkest md:mr-2"
+          className="border py-2 px-3 text-grey-darkest md:mr-2"
           type="tel"
           id="phone"
           value={phone}
@@ -123,15 +126,15 @@ const WhatsappForm = () => {
         {errors.phone && <p className="text-red-500">{errors.phone}</p>}
       </div>
 
-      <div class="flex flex-col mb-4">
+      <div className="flex flex-col mb-4">
         <label
-          class="tracking-wide text-base text-grey-darkest"
+          className="tracking-wide text-base text-grey-darkest"
           htmlFor="email"
         >
           Email:
         </label>
         <input
-          class="border py-2 px-3 text-grey-darkest md:mr-2"
+          className="border py-2 px-3 text-grey-darkest md:mr-2"
           type="email"
           id="email"
           value={email}
@@ -142,15 +145,15 @@ const WhatsappForm = () => {
         {errors.email && <p className="text-red-500 mt-2">{errors.email}</p>}
       </div>
 
-      <div class="flex flex-col mb-4">
+      <div className="flex flex-col mb-4">
         <label
-          class="tracking-wide text-base text-grey-darkest"
+          className="tracking-wide text-base text-grey-darkest"
           htmlFor="typeContact"
         >
           Tipo de Contato:
         </label>
         <select
-          class="border py-2 px-3 text-grey-darkest md:mr-2"
+          className="border py-2 px-3 text-grey-darkest md:mr-2"
           id="typeContact"
           value={typeContact}
           onChange={(e) => setTypeContact(e.target.value)}
@@ -164,15 +167,15 @@ const WhatsappForm = () => {
         )}
       </div>
 
-      <div class="flex flex-col mb-4">
+      <div className="flex flex-col mb-4">
         <label
-          class="tracking-wide text-base text-grey-darkest"
+          className="tracking-wide text-base text-grey-darkest"
           htmlFor="message"
         >
           Mensagem:
         </label>
         <textarea
-          class="border py-2 px-3 text-grey-darkest md:mr-2"
+          className="border py-2 px-3 text-grey-darkest md:mr-2"
           type="text"
           id="message"
           value={message}
@@ -183,9 +186,9 @@ const WhatsappForm = () => {
         {errors.message && <p className="text-red-500">{errors.message}</p>}
       </div>
 
-      <div class="flex justify-center">
+      <div className="flex justify-center">
         <button
-          class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
+          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
           onClick={sendToWhatsapp}
         >
           Enviar para o WhatsApp
