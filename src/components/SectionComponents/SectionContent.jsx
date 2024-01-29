@@ -1,56 +1,10 @@
-import ImgAndTitleCard from "./ImgAndTitleCard";
+import { Children } from "react";
 
-export default function SectionContent(props) {
+export default function SectionContent({ children }) {
+  const childrenArray = Children.toArray(children);
   return (
-    <div className="bg-yellow-100 flex flex-wrap justify-between w-full h-auto">
-      <ImgAndTitleCard
-        img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-        imgDescription="Teste Icon"
-        title="Exemplo de link exemplo"
-        link="#"
-      />
-      <ImgAndTitleCard
-        img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-        imgDescription="Teste Icon"
-        title="Exemplo de link exemplo"
-        link="#"
-      />
-      <ImgAndTitleCard
-        img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-        imgDescription="Teste Icon"
-        title="Exemplo de link exemplo"
-        link="#"
-      />
-      <ImgAndTitleCard
-        img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-        imgDescription="Teste Icon"
-        title="Exemplo de link exemplo"
-        link="#"
-      />
-      <ImgAndTitleCard
-        img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-        imgDescription="Teste Icon"
-        title="Exemplo de link exemplo"
-        link="#"
-      />
-      <ImgAndTitleCard
-        img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-        imgDescription="Teste Icon"
-        title="Exemplo de link exemplo"
-        link="#"
-      />
-      <ImgAndTitleCard
-        img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-        imgDescription="Teste Icon"
-        title="Exemplo de link exemplo"
-        link="#"
-      />
-      <ImgAndTitleCard
-        img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-        imgDescription="Teste Icon"
-        title="Exemplo de link exemplo"
-        link="#"
-      />
+    <div className="flex flex-wrap justify-between w-full h-auto">
+      {childrenArray}
     </div>
   );
 }

@@ -4,7 +4,7 @@ export default function SectionHeader(props) {
   const sectionHeaderDescription = props.sectionHeaderDescription;
 
   return (
-    <div className="flex flex-col pt-3 pb-3">
+    <div className="flex flex-col pt-3 pb-3 mb-3">
       <div className="w-[79%] flex flex-col justify-center font-poppins text-2xl text-center font-bold ">
         {sectionHeaderTitleFirst}
       </div>
