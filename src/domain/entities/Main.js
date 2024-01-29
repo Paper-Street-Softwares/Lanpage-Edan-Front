@@ -1,20 +1,26 @@
-import "../../style/css/structure-global.css";
-import Carousel from "../../components/Carousel";
-import OurService from "../../components/OurServicesAndIcons/OurService";
-import About from "../../components/About";
-import RightChoice from "../../components/OurServicesAndIcons/RightChoice";
-import AboutAndAwards from "../../components/AwardAndCards/AboutAndAwards";
-import Testimonial from "../../components/TestimonialSection/Testimonial";
+import ServicesSection from "../../components/ServicesSection";
+import ParallaxSection from "../../components/ParallaxSection";
+import DifferentialSection from "../../components/DifferentialSection";
+import AppSection from "../../components/AppSection";
+import LinksSection from "../../components/LinksSection";
+import AboutSection from "../../components/AboutSection";
+import CertificatesSection from "../../components/CertificatesSection";
+import WppSection from "../../components/WppSection";
+import TestimonialsSection from "../../components/TestimonialsSection";
 
 function Main() {
   return (
     <div className="mainBody">
-      <Carousel />
-      <RightChoice />
-      <OurService />
-      <AboutAndAwards />
-      <About />
-      <Testimonial />
+      <ServicesSection />
+      <ParallaxSection />
+      <DifferentialSection />
+      <AppSection />
+      <LinksSection />
+      <ParallaxSection />
+      <AboutSection />
+      <CertificatesSection />
+      <WppSection />
+      <TestimonialsSection />
     </div>
   );
 }

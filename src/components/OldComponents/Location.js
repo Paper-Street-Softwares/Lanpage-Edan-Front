@@ -1,5 +1,5 @@
 import "../style/css/componentsStyle/location.css";
-import MapLocation from "../gateways/api/MapLocation";
+import MapLocation from "../../gateways/api/MapLocation";
 import MapImg from "../style/assets/images/Map.png";
 
 function Location() {

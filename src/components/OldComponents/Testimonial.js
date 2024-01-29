@@ -1,4 +1,4 @@
-import Slider from "../TestimonialSection/Slider";
+import Slider from "./Slider";
 import "../../style/css/componentsStyle/testimonial.css";
 
 function Testimonial() {
