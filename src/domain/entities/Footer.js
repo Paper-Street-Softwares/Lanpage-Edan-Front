@@ -4,6 +4,7 @@ function Footer() {
   return (
     <div className="mainFooter">
       <FooterSection />
+      he
     </div>
   );
 }
