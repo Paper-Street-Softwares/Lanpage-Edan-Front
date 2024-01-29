@@ -44,9 +44,9 @@
   /* background-color: hotpink; */
 }
 
-.content:not(.debug) * + * {
+/* .content:not(.debug) * + * {
   margin-block-start: 1rem;
-}
+} */
 
 /* .popout {
   background-color: thistle;

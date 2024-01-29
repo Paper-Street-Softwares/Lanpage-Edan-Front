@@ -11,16 +11,16 @@ import TestimonialsSection from "../../components/TestimonialsSection";
 function Main() {
   return (
     <div className="mainBody">
-      {/* <ServicesSection />
+      <ServicesSection />
       <ParallaxSection />
       <DifferentialSection />
       <AppSection />
       <LinksSection />
-      <ParallaxSection /> */}
+      <ParallaxSection />
       <AboutSection />
-      {/* <CertificatesSection />
+      <CertificatesSection />
       <WppSection />
-      <TestimonialsSection /> */}
+      <TestimonialsSection />
     </div>
   );
 }
