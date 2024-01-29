@@ -13,48 +13,56 @@ export default function DifferentialSection() {
       <SectionContent>
         {[
           <ImgAndTitleCard
+            key={1}
             img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
             imgDescription="Teste Icon"
             title="Exemplo de link exemplo"
             link="#"
           />,
           <ImgAndTitleCard
+            key={2}
             img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
             imgDescription="Teste Icon"
             title="Exemplo de link exemplo"
             link="#"
           />,
           <ImgAndTitleCard
+            key={3}
             img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
             imgDescription="Teste Icon"
             title="Exemplo de link exemplo"
             link="#"
           />,
           <ImgAndTitleCard
+            key={4}
             img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
             imgDescription="Teste Icon"
             title="Exemplo de link exemplo"
             link="#"
           />,
           <ImgAndTitleCard
+            key={5}
             img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
             imgDescription="Teste Icon"
             title="Exemplo de link exemplo"
             link="#"
           />,
           <ImgAndTitleCard
+            key={6}
             img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
             imgDescription="Teste Icon"
             title="Exemplo de link exemplo"
             link="#"
           />,
           <ImgAndTitleCard
+            key={7}
             img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
             imgDescription="Teste Icon"
             title="Exemplo de link exemplo"
             link="#"
           />,
           <ImgAndTitleCard
+            key={8}
             img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
             imgDescription="Teste Icon"
             title="Exemplo de link exemplo"
