@@ -8,7 +8,7 @@ export default function SectionHeader(props) {
       <div className="w-[79%] flex flex-col justify-center font-poppins text-2xl text-center font-bold ">
         {sectionHeaderTitleFirst}
       </div>
-      <div className="w-[79%] flex flex-col justify-center font-poppins text-green text-2xl text-center font-bold ">
+      <div className="w-[79%] flex flex-col justify-center font-poppins text-lightgreen text-2xl text-center font-bold ">
         {sectionHeaderTitleSecond}
       </div>
       <div className="w-full h-px bg-neutral-200 mt-6 mb-6"></div>

@@ -2,20 +2,23 @@ export default function ImgAndTitleCard(props) {
   const img = props.img;
   const imgDescription = props.imgDescription;
   const title = props.title;
+  const link = props.link;
 
   return (
-    <div className="bg-blue-100 flex flex-col justify-around items-center w-36 h-44">
-      <div>
-        <img
-          src={img}
-          alt={imgDescription}
-          className="bg-yellow-100 h-14"
-        ></img>
+    <a
+      href={link}
+      className="bg-red-100 flex flex-col justify-between items-center w-44 h-44 mt-4 mb-4"
+    >
+      <div className="w-full h-full flex flex-row items-end justify-center">
+        <div>
+          <img src={img} alt={imgDescription} className="h-12 w-auto"></img>
+        </div>
       </div>
-
-      <div className="bg-red-100 font-poppins text-center font-bold text-sm">
-        {title}
+      <div className="w-full h-full flex flex-col justify-center">
+        <div className="font-poppins text-darkgreen text-center font-bold text-sm hover:text-lightgreen transition duration-300">
+          {title}
+        </div>
       </div>
-    </div>
+    </a>
   );
 }
