@@ -61,7 +61,6 @@ export default function AboutSection() {
             width="400"
             height="500"
             style={{ border: "0" }}
-            allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           />
