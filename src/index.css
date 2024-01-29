@@ -41,24 +41,22 @@
 :where(.content > *) {
   display: grid;
   place-items: center;
-  height: 5rem;
-  border-radius: 0.5rem;
-  background-color: hotpink;
+  /* background-color: hotpink; */
 }
 
-.content:not(.debug) * + * {
+/* .content:not(.debug) * + * {
   margin-block-start: 1rem;
-}
+} */
 
-.popout {
+/* .popout {
   background-color: thistle;
 }
 
 .feature {
   background-color: paleturquoise;
-}
+} */
 
 .full {
   border-radius: unset;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
