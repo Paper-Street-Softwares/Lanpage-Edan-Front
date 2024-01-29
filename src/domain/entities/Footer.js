@@ -1,9 +1,9 @@
-import FooterPage from "../../components/FooterPage";
+import FooterSection from "../../components/FooterSection";
 
 function Footer() {
   return (
     <div className="mainFooter">
-      <FooterPage />
+      <FooterSection />
     </div>
   );
 }

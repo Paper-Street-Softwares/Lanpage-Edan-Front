@@ -1,4 +1,4 @@
-import Logo from "../style/assets/images/Logo.png";
+import Logo from "../../style/assets/images/Logo.png";
 import { IoHome } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import {

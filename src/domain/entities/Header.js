@@ -1,10 +1,11 @@
-import Navbar from "../../components/HeaderSection/Navbar";
-import "../../style/css/structure-global.css";
+import NavbarSection from "../../components/NavbarSection";
+import HeroSection from "../../components/HeroSection";
 
 function Header() {
   return (
     <div className="header">
-      <Navbar />
+      <NavbarSection />
+      <HeroSection />
     </div>
   );
 }
