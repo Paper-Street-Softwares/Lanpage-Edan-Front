@@ -6,7 +6,7 @@ export default function SectionHeader(props) {
   const sectionHeaderDescription = props.sectionHeaderDescription;
 
   return (
-    <div className="flex flex-col pt-3 pb-3 mb-3 opacity-0 animate-fade-in">
+    <div className="flex flex-col pt-3 pb-3 mt-6 mb-3 opacity-0 animate-fade-in">
       <div className="w-[79%] flex flex-col justify-center font-poppins text-2xl text-center font-bold ">
         {sectionHeaderTitleFirst}
       </div>
