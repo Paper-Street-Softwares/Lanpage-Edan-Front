@@ -1,7 +1,6 @@
 import ImgAndTitleCard from "./SectionComponents/ImgAndTitleCard";
 import SectionContent from "./SectionComponents/SectionContent";
 import SectionHeader from "./SectionComponents/SectionHeader";
-import { IoHome } from "react-icons/io5";
 
 export default function DifferentialSection() {
   return (
