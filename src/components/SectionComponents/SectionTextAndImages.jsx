@@ -10,16 +10,16 @@ export default function SectionTextAndImages(props) {
 
   return (
     <div className="w-1/2">
-      <div className="flex flex-col font-poppins font-semibold text-2xl text-gray my-4">
+      <div className="flex flex-col font-poppins font-semibold text-xl text-gray my-4">
         {sectionTextAndImagesTitleFirst}
       </div>
-      <div className="flex flex-col font-poppins font-semibold text-2xl text-gray">
+      <div className="flex flex-col font-poppins font-semibold text-xl text-gray">
         {sectionTextAndImagesTitleSecond}
       </div>
-      <div className="flex flex-col font-poppins text-lg text-gray">
+      <div className="flex flex-col font-poppins text-sm text-gray">
         {sectionTextAndImagesDescription}
       </div>
-      <div className="flex flex-col font-poppins text-base font-semibold text-gray">
+      <div className="flex flex-col font-poppins text-sm font-semibold text-gray">
         {sectionTextAndImagesSubscription}
       </div>
       <div className="flex flex-col">
