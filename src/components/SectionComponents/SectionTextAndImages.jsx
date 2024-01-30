@@ -1,28 +1,27 @@
 export default function SectionTextAndImages(props) {
-  const sectionTextAndImagesTitleFirst = props.sectionTextAndImagesTitleFirst;
-  const sectionTextAndImagesTitleSecond = props.sectionTextAndImagesTitleSecond;
-  const sectionTextAndImagesDescription = props.sectionTextAndImagesDescription;
-  const sectionTextAndImagesSubscription =
-    props.sectionTextAndImagesSubscription;
-  const sectionTextAndImagesImg = props.sectionTextAndImagesImg;
-  const imgDescription = props.imgDescription;
-  const iframe = props.iframe;
+  const {
+    sectionTextAndImagesTitleFirst,
+    sectionTextAndImagesTitleSecond,
+    sectionTextAndImagesDescription,
+    sectionTextAndImagesSubscription,
+    sectionTextAndImagesImg,
+    imgDescription,
+    iframe,
+  } = props;
 
   return (
-    <div className="w-1/2">
-      <div className="flex flex-col font-poppins font-semibold text-xl text-gray my-4">
+    <div className="w-full h-auto font-poppins">
+      <div className="font-semibold text-xl text-gray my-8">
         {sectionTextAndImagesTitleFirst}
       </div>
-      <div className="flex flex-col font-poppins font-semibold text-xl text-gray">
+      <div className="font-semibold text-xl text-gray">
         {sectionTextAndImagesTitleSecond}
       </div>
-      <div className="flex flex-col font-poppins text-sm text-gray">
-        {sectionTextAndImagesDescription}
-      </div>
-      <div className="flex flex-col font-poppins text-sm font-semibold text-gray">
+      <div className="text-sm text-gray">{sectionTextAndImagesDescription}</div>
+      <div className="text-sm font-semibold text-gray mt-2">
         {sectionTextAndImagesSubscription}
       </div>
-      <div className="flex flex-col">
+      <div>
         {sectionTextAndImagesImg && (
           <div
             className={`flex flex-col ${
@@ -33,14 +32,14 @@ export default function SectionTextAndImages(props) {
           </div>
         )}
       </div>
-      <div className="flex flex-col">
+      <div className="w-full h-full">
         {iframe && (
           <div className="border-b-8 border-lightgreen">
             <iframe
               title="Localização EDAN Contabilidade"
               src={iframe}
-              width="auto"
-              height="auto"
+              width="100%"
+              height="300"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
