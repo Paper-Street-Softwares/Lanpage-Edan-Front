@@ -1,5 +1,6 @@
 export default function ImgAndTitleCard(props) {
   const img = props.img;
+  const icon = props.icon;
   const imgDescription = props.imgDescription;
   const title = props.title;
   const link = props.link;
@@ -11,7 +12,12 @@ export default function ImgAndTitleCard(props) {
     >
       <div className="w-full h-full flex flex-row items-end justify-center">
         <div>
-          <img src={img} alt={imgDescription} className="h-12 w-auto"></img>
+          <img
+            src={img}
+            alt={imgDescription}
+            className="bg-red-100 h-12 w-auto"
+          ></img>
+          {icon}
         </div>
       </div>
       <div className="w-full h-full flex flex-col justify-center">
