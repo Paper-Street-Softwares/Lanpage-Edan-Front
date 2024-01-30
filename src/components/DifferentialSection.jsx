@@ -16,7 +16,6 @@ export default function DifferentialSection() {
           <ImgAndTitleCard
             key={1}
             img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-            icon={<IoHome />}
             imgDescription="Teste Icon"
             title="Portal do cliente"
           />,
