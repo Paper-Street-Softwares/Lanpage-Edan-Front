@@ -60,3 +60,19 @@
   border-radius: unset;
   /* background-color: bisque; */
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out;
+}
