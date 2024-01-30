@@ -1,6 +1,17 @@
 import ImgAndTitleCard from "./SectionComponents/ImgAndTitleCard";
 import SectionContent from "./SectionComponents/SectionContent";
 import SectionHeader from "./SectionComponents/SectionHeader";
+import imgInscricaoEstadual from "../style/assets/images/links-acesso-rápido/sefaz.png";
+import imgPedidoViabilidade from "../style/assets/images/links-acesso-rápido/juceb.png";
+import imgConsultaDbe from "../style/assets/images/links-acesso-rápido/consultaDbe.png";
+import imgConsultaOptanteSimples from "../style/assets/images/links-acesso-rápido/consultaOptantes.png";
+import imgDarfReceita from "../style/assets/images/links-acesso-rápido/darfReceitaFederal.png";
+import imgEcac from "../style/assets/images/links-acesso-rápido/ecac.png";
+import imgGovBr from "../style/assets/images/links-acesso-rápido/govBr.png";
+import imgPrefeituraIlheus from "../style/assets/images/links-acesso-rápido/prefeituraIlheus.png";
+import imgCartaoCnpj from "../style/assets/images/links-acesso-rápido/cartaoCnpj.png";
+import imgMei from "../style/assets/images/links-acesso-rápido/mei.png";
+import imgInssInformeRendimentos from "../style/assets/images/links-acesso-rápido/inssInformeDeRendimentos.png";
 
 export default function LinksSection() {
   return (
@@ -14,52 +25,18 @@ export default function LinksSection() {
         <SectionContent>
           {[
             <ImgAndTitleCard
+              key={0}
+              img=""
+              imgDescription="Ícone "
+              title=""
+              link="#"
+            />,
+            <ImgAndTitleCard
               key={1}
-              img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-              imgDescription="Teste Icon"
-              title="Portal do cliente"
-            />,
-            <ImgAndTitleCard
-              key={2}
-              img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-              imgDescription="Teste Icon"
-              title="Experiência e Credibilidade"
-            />,
-            <ImgAndTitleCard
-              key={3}
-              img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-              imgDescription="Teste Icon"
-              title="Atendimento qualificado aos clientes"
-            />,
-            <ImgAndTitleCard
-              key={4}
-              img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-              imgDescription="Teste Icon"
-              title="Ajuda na tomada de decisões estratégicas"
-            />,
-            <ImgAndTitleCard
-              key={5}
-              img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-              imgDescription="Teste Icon"
-              title="Expertise"
-            />,
-            <ImgAndTitleCard
-              key={6}
-              img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-              imgDescription="Teste Icon"
-              title="Tecnologia e otimização"
-            />,
-            <ImgAndTitleCard
-              key={7}
-              img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-              imgDescription="Teste Icon"
-              title="Segurança"
-            />,
-            <ImgAndTitleCard
-              key={8}
-              img="https://cdn-icons-png.flaticon.com/128/6422/6422213.png"
-              imgDescription="Teste Icon"
-              title="Confiança"
+              img={imgInscricaoEstadual}
+              imgDescription="Ícone SEFAZ"
+              title="Inscrição Estadual"
+              link="https://portal.sefaz.ba.gov.br/scripts/cadastro/cadastroBa/consultaBa.asp"
             />,
           ]}
         </SectionContent>
