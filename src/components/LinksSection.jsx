@@ -16,31 +16,99 @@ import imgInssInformeRendimentos from "../style/assets/images/links-acesso-rápi
 export default function LinksSection() {
   return (
     <div className="content">
-      <div className="content">
-        <SectionHeader
-          sectionHeaderTitleFirst="A Edan tem tudo que"
-          sectionHeaderTitleSecond="sua empresa precisa"
-          sectionHeaderDescription="Não apenas contabilizamos números, construímos caminhos para o seu sucesso financeiro. Nossos diferenciais vão além da simples prestação de serviços contábeis."
-        />
-        <SectionContent>
-          {[
-            <ImgAndTitleCard
-              key={0}
-              img=""
-              imgDescription="Ícone "
-              title=""
-              link="#"
-            />,
-            <ImgAndTitleCard
-              key={1}
-              img={imgInscricaoEstadual}
-              imgDescription="Ícone SEFAZ"
-              title="Inscrição Estadual"
-              link="https://portal.sefaz.ba.gov.br/scripts/cadastro/cadastroBa/consultaBa.asp"
-            />,
-          ]}
-        </SectionContent>
-      </div>
+      <SectionHeader
+        sectionHeaderTitleFirst="Principais portais e tabelas"
+        sectionHeaderTitleSecond="em um click"
+        sectionHeaderDescription="A Edan Contabilidade facilita seu dia a dia com links rápidos em nosso site, proporcionando acesso direto aos principais serviços contábeis. Agilidade ao alcance de um clique, pensando na eficiência do seu negócio."
+      />
+      <SectionContent>
+        {[
+          <ImgAndTitleCard
+            key={1}
+            img={imgInscricaoEstadual}
+            imgDescription="Ícone SEFAZ"
+            title="Inscrição Estadual"
+            link="https://portal.sefaz.ba.gov.br/scripts/cadastro/cadastroBa/consultaBa.asp"
+          />,
+          <ImgAndTitleCard
+            key={2}
+            img={imgPedidoViabilidade}
+            imgDescription="Ícone Juceb"
+            title="Pedido de Viabilidade"
+            link="http://regin.juceb.ba.gov.br/regin.ba/CON_ViabilidadeSelecaoExternoV2.aspx?"
+          />,
+          <ImgAndTitleCard
+            key={3}
+            img={imgConsultaDbe}
+            imgDescription="Ícone Consulta DBE"
+            title="Consultar DBE"
+            link="https://www.gov.br/empresas-e-negocios/pt-br/redesim/protocolo-redesim"
+          />,
+          <ImgAndTitleCard
+            key={4}
+            img={imgConsultaOptanteSimples}
+            imgDescription="Ícone Consulta Optantes"
+            title="Consulta Optantes Simples"
+            link="http://www8.receita.fazenda.gov.br/SimplesNacional/aplicacoes.aspx?id=22"
+          />,
+          <ImgAndTitleCard
+            key={5}
+            img={imgDarfReceita}
+            imgDescription="Ícone Darf Receita"
+            title="Pessoa Jurídica"
+            link="http://servicos.receita.fazenda.gov.br/Servicos/sicalcweb/default.asp?TipTributo=2&FormaPagto=1"
+          />,
+          <ImgAndTitleCard
+            key={6}
+            img={imgDarfReceita}
+            imgDescription="Ícone Darf Receita"
+            title="Pessoa Física"
+            link="http://servicos.receita.fazenda.gov.br/Servicos/sicalcweb/default.asp?TipTributo=1&FormaPagto=1"
+          />,
+          <ImgAndTitleCard
+            key={7}
+            img={imgEcac}
+            imgDescription="Ícone ECAC"
+            title="Acesso e-CAC"
+            link="https://cav.receita.fazenda.gov.br/autenticacao/login"
+          />,
+          <ImgAndTitleCard
+            key={8}
+            img={imgGovBr}
+            imgDescription="Ícone GovBR"
+            title="Acesso Gov.Br"
+            link="https://sso.acesso.gov.br/login"
+          />,
+          <ImgAndTitleCard
+            key={9}
+            img={imgPrefeituraIlheus}
+            imgDescription="Ícone Prefeitura Ilhéus"
+            title="NF Eletrônica"
+            link="http://ilheus.metropolisweb.com.br:83/metropolisWEB/"
+          />,
+          <ImgAndTitleCard
+            key={10}
+            img={imgCartaoCnpj}
+            imgDescription="Ícone Cartão CNPJ"
+            title="Cartão CNPJ"
+            link="https://servicos.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp?cnpj=10949168000100"
+          />,
+          <ImgAndTitleCard
+            key={11}
+            img={imgMei}
+            imgDescription="Ícone MEI"
+            title="Portal MEI"
+            link="https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes/atspo/pgmei.app/identificacao"
+          />,
+          <ImgAndTitleCard
+            key={12}
+            img={imgInssInformeRendimentos}
+            imgDescription="Ícone informe de Rendimentos"
+            title="Informe de Rendimentos"
+            link="https://extratoir.inss.gov.br/irpf01/pages/consultarExtratoIR.xhtml"
+          />,
+        ]}
+      </SectionContent>
     </div>
   );
 }
