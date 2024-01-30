@@ -1,3 +1,4 @@
+
 export default function DifferentialSection() {
   return (
     <div className="content">

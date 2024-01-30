@@ -9,6 +9,7 @@ module.exports = {
         lightgreen: "#3B8E53",
         gray: "#707070",
         lighter: "#dfdfdf",
+        cinzabg: "#f6f6f6",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
