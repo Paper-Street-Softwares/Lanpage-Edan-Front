@@ -38,9 +38,6 @@ export default function SectionTextAndImages(props) {
             <iframe
               title="Localização EDAN Contabilidade"
               src={iframe}
-              width="100%"
-              height="300"
-              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
