@@ -4,7 +4,7 @@ export default function FooterSection() {
   return (
     <div className="content">
       <div className="full">
-        <FooterPage />
+        <div>Seção Footer</div>
       </div>
     </div>
   );
