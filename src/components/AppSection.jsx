@@ -4,7 +4,11 @@ export default function AppSection() {
   return (
     <div className="content">
       <div className="feature">
-        <img className="mt-8" src={appBanner}></img>
+        <img
+          alt="Banner do Aplicativo da Edan"
+          className="mt-8"
+          src={appBanner}
+        ></img>
       </div>
     </div>
   );
