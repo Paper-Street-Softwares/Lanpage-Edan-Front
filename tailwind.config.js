@@ -6,8 +6,9 @@ module.exports = {
       colors: {
         wallpaper: "#2f612c",
         darkgreen: "#031508",
+        mediumgreen: "#027738",
         lightgreen: "#3B8E53",
-        gray: "#707070",
+        lightgray: "#707070",
         lighter: "#dfdfdf",
         cinzabg: "#f6f6f6",
       },
