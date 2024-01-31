@@ -7,7 +7,7 @@ import imgPlayStore from "../style/assets/images/aplicativo/playStore.png";
 export default function AppSection() {
   return (
     <div className="content">
-      <div className="feature">
+      <div className="feature mt-8 mb-8">
         <SectionContent>
           <div className="bg-red-100 flex flex-col justify-around w-128">
             <div className="bg-yellow-100 flex flex-row justify-center font-poppins font-bold text-2xl text-mediumgreen text-center">
@@ -24,7 +24,7 @@ export default function AppSection() {
             <div className="bg-red-100 flex flex-row justify-center">
               <img className="w-4/5" src={imgAppUtilities}></img>
             </div>
-            <div className="bg-blue-100 flex flex-row justify-around items-center h-10 ">
+            <div className="bg-blue-100 flex flex-row justify-around items-center">
               <img className="h-11" src={imgAppStore} />
               <img className="h-11" src={imgPlayStore} />
             </div>
