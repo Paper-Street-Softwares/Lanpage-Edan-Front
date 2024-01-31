@@ -1,9 +1,15 @@
+import SectionHeader from "../components/SectionComponents/SectionHeader";
+import SectionContent from "./SectionComponents/SectionContent";
+import StandardServiceCard from "./SectionComponents/StandardServiceCard";
+
 export default function ServicesSection() {
   return (
     <div className="content">
-      <div className="feature">
-        <h1>Serviços</h1>
-      </div>
+      <SectionHeader
+        sectionHeaderTitleFirst="Nossos Serviços"
+        sectionHeaderDescription="Confira nossas soluções personalizadas para o seu negócio."
+      />
+      <SectionContent>{[<StandardServiceCard />]}</SectionContent>
     </div>
   );
 }
