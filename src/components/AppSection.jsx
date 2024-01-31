@@ -9,22 +9,22 @@ export default function AppSection() {
     <div className="content">
       <div className="feature mt-8 mb-8">
         <SectionContent>
-          <div className="bg-red-100 flex flex-col justify-around w-128">
-            <div className="bg-yellow-100 flex flex-row justify-center font-poppins font-bold text-2xl text-mediumgreen text-center">
+          <div className="flex flex-col justify-around w-128">
+            <div className="flex flex-row justify-center font-poppins font-bold text-2xl text-mediumgreen text-center">
               Baixe nosso aplicativo e tenha inúmeras vantagens
             </div>
-            <div className="bg-green-100 flex flex-row justify-center">
-              <img src={imgAppScreen} />
+            <div className=" flex flex-row justify-center items-center">
+              <img className="h-4/5" src={imgAppScreen} />
             </div>
           </div>
           <div className="bg-mediumgreen flex flex-col justify-around w-128">
-            <div className="bg-purple-100 flex flex-row justify-center font-poppins font-bold text-2xl text-white text-center">
+            <div className="flex flex-row justify-center font-poppins font-bold text-2xl text-white text-center">
               Algumas funcionalidades do nosso aplicativo
             </div>
-            <div className="bg-red-100 flex flex-row justify-center">
+            <div className=" flex flex-row justify-center">
               <img className="w-4/5" src={imgAppUtilities}></img>
             </div>
-            <div className="bg-blue-100 flex flex-row justify-around items-center">
+            <div className=" flex flex-row justify-around items-center">
               <img className="h-11" src={imgAppStore} />
               <img className="h-11" src={imgPlayStore} />
             </div>
