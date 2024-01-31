@@ -31,19 +31,19 @@ export default function AppSection() {
                 Algumas funcionalidades do nosso aplicativo
               </div>
             </div>
-            <div className="h-4/5 flex flex-col justify-around items-center">
+            <div className=" h-4/5 flex flex-col justify-around items-center">
               <div className="flex flex-row justify-center">
                 <img
-                  className="w-4/5"
+                  className="w-4/6"
                   alt="Utilidades do aplicativo Edan"
                   src={imgAppUtilities}
                 ></img>
               </div>
-              <div className="flex flex-row justify-around items-center">
+              <div className=" flex flex-row justify-around w-4/5 h-auto">
                 <img className="h-11" alt="Botão App Store" src={imgAppStore} />
                 <img
                   className="h-11"
-                  alt="Bitão Play Store"
+                  alt="Botão Play Store"
                   src={imgPlayStore}
                 />
               </div>
