@@ -14,7 +14,11 @@ export default function AppSection() {
               Baixe nosso aplicativo e tenha inúmeras vantagens
             </div>
             <div className=" flex flex-row justify-center items-center">
-              <img className="h-4/5" src={imgAppScreen} />
+              <img
+                className="h-4/5"
+                alt="Telas de celulares"
+                src={imgAppScreen}
+              />
             </div>
           </div>
           <div className="bg-mediumgreen flex flex-col justify-around w-128">
@@ -22,11 +26,15 @@ export default function AppSection() {
               Algumas funcionalidades do nosso aplicativo
             </div>
             <div className=" flex flex-row justify-center">
-              <img className="w-4/5" src={imgAppUtilities}></img>
+              <img
+                className="w-4/5"
+                alt="Utilidades do aplicativo Edan"
+                src={imgAppUtilities}
+              ></img>
             </div>
             <div className=" flex flex-row justify-around items-center">
-              <img className="h-11" src={imgAppStore} />
-              <img className="h-11" src={imgPlayStore} />
+              <img className="h-11" alt="Botão App Store" src={imgAppStore} />
+              <img className="h-11" alt="Bitão Play Store" src={imgPlayStore} />
             </div>
           </div>
         </SectionContent>
