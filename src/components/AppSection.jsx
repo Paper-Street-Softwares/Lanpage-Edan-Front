@@ -40,12 +40,26 @@ export default function AppSection() {
                 ></img>
               </div>
               <div className=" flex flex-row justify-around w-4/5 h-auto">
-                <img className="h-11" alt="Botão App Store" src={imgAppStore} />
-                <img
-                  className="h-11"
-                  alt="Botão Play Store"
-                  src={imgPlayStore}
-                />
+                <a
+                  href="https://apps.apple.com/il/app/edan-contabilidade/id6473044144"
+                  target="_blank"
+                >
+                  <img
+                    className="h-11"
+                    alt="Botão App Store"
+                    src={imgAppStore}
+                  />
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=br.com.taskdo.mobile.edan&hl=ln&gl=US"
+                  target="_blank"
+                >
+                  <img
+                    className="h-11"
+                    alt="Botão Play Store"
+                    src={imgPlayStore}
+                  />
+                </a>
               </div>
             </div>
           </div>
