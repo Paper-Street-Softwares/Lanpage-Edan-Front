@@ -1,6 +1,8 @@
 import imgAbertura from "../../style/assets/icons/servicos/abertura.png";
 
-export default function StandardServiceCard() {
+export default function StandardServiceCard(props) {
+  const { cardTitle } = props;
+
   return (
     <a
       href=""
@@ -18,13 +20,13 @@ export default function StandardServiceCard() {
       </div>
       <div className="bg-blue-700 w-full h-full flex font-poppins flex-col justify-between items-center">
         <div className="bg-purple-700 h-1/3 flex flex-col justify-end p-1">
-          <div className="bg-pink-700 text-darkgreen text-center font-bold text-sm hover:text-lightgreen">
+          <div className="bg-pink-700 text-darkgreen text-center font-medium text-xs hover:text-lightgreen">
             Abertura de Empresas
           </div>
         </div>
         <div className="bg-yellow-500 h-2/3 flex flex-col justify-center text-center p-2">
-          <div className="bg-white text-xs">
-            Entao ndasdsa dasdasdas dasdasdas ads asdasa
+          <div className="bg-white text-xs text-neutral-500">
+            Entao ndasdsad dasdsa dasdasdas Entao ndasdsad dasdsa dasdasda entao
           </div>
         </div>
       </div>
