@@ -49,7 +49,7 @@ export default function ServicesSection() {
             key={5}
             icon={imgITR}
             iconAlt="Ícone ITR"
-            title="ITR"
+            title="Declaração de ITR"
             description="Otimize seus investimentos, simplifique sua vida!"
           />,
         ]}
