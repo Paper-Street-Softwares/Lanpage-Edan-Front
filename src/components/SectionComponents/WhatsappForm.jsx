@@ -63,13 +63,6 @@ const WhatsappForm = () => {
     return true;
   };
 
-  const validateTypeContact = (typeContact) => {
-    if (!typeContact) {
-      return false;
-    }
-    return true;
-  };
-
   const validateMessage = (message) => {
     if (!message) {
       return false;
