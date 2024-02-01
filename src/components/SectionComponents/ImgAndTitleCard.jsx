@@ -1,6 +1,5 @@
 export default function ImgAndTitleCard(props) {
   const img = props.img;
-  const icon = props.icon;
   const imgDescription = props.imgDescription;
   const title = props.title;
   const link = props.link;
