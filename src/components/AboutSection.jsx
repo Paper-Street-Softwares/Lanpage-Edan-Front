@@ -7,7 +7,7 @@ import SectionTextAndImages from "./SectionComponents/SectionTextAndImages";
 
 export default function AboutSection() {
   return (
-    <div className="content bg-cinzabg">
+    <div className="content bg-graybg" id="about">
       <SectionHeader
         sectionHeaderTitleFirst="Sobre a"
         sectionHeaderTitleSecond="EDAN Contabilidade"

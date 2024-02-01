@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import SectionContent from "../components/SectionComponents/SectionContent";
 import Navbar from "./SectionComponents/Navbar";
 import Logo from "../style/assets/images/Logo.png";
+import ListGroup from "./SectionComponents/ListGroup";
 
 export default function NavbarSection() {
   const [scrolling, setScrolling] = useState(false);
@@ -39,29 +40,7 @@ export default function NavbarSection() {
             </div>
             <div className="w-4/5 ml-32 items-center">
               <div className="w-auto">
-                <ul
-                  className={`flex justify-between font-poppins ${
-                    scrolling
-                      ? "text-black transition-color duration-300"
-                      : "text-white transition-color duration-300"
-                  }`}
-                >
-                  <li>
-                    <a href="#inicio">INÍCIO</a>
-                  </li>
-                  <li>
-                    <a href="#sobre">SOBRE</a>
-                  </li>
-                  <li>
-                    <a href="#servicos">SERVIÇOS</a>
-                  </li>
-                  <li>
-                    <a href="#links">LINKS</a>
-                  </li>
-                  <li>
-                    <a href="#contatos">CONTATOS</a>
-                  </li>
-                </ul>
+                <ListGroup />
               </div>
             </div>
           </Navbar>
