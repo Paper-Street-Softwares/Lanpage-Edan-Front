@@ -12,14 +12,14 @@ export default function FooterSection() {
       <div>
         <div className="content">
           <SectionContent>
-            <div className="w-64 font-poppins text-sm text-white">
+            <div className="w-64 font-poppins font-light text-sm text-white">
               <div className="h-12 mb-4">
                 <img className="h-12" src={imgLogo} />
               </div>
-              <div className="bg-blue-700 h-auto">
+              <div>
                 <HonrizontalIconAndText
                   icon={imgHome}
-                  textLine1="Av. Lótus, 23 - Nelson Costa, Ilhéus - BA, 45656-000"
+                  textLine1="Av. Lótus, 23 - Nelson Costa"
                 />
                 <HonrizontalIconAndText
                   icon={imgWhatsapp}
@@ -28,13 +28,13 @@ export default function FooterSection() {
                 <HonrizontalIconAndText
                   icon={imgCalendar}
                   textLine1="Segunda a Quinta, 08h às 18h"
-                  textLine2="Sexta, 08 às 17h"
+                  textLine2="Sexta-feira, 08 às 17h"
                 />
               </div>
             </div>
             <div className="w-64 font-poppins text-sm text-white">
               <div className="h-12  text-2xl font-medium mb-4 ">Sobre</div>
-              <div className="mb-4">
+              <div className="mb-4 font-light">
                 A Edan Contabilidade tem uma equipe de profissionais treinados e
                 capacitados para atender com primazia todas as demandas nas
                 áreas de departamento pessoal, fiscal e contábil.
