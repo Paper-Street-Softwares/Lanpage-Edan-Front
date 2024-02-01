@@ -14,7 +14,7 @@ export default function FooterSection() {
           <SectionContent>
             <div className="w-64 font-poppins font-light text-sm text-white">
               <div className="h-12 mb-4">
-                <img className="h-12" src={imgLogo} />
+                <img alt="Logo Edan" className="h-12" src={imgLogo} />
               </div>
               <div>
                 <HonrizontalIconAndText
