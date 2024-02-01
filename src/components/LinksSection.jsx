@@ -15,7 +15,7 @@ import imgInssInformeRendimentos from "../style/assets/images/links-acesso-rápi
 
 export default function LinksSection() {
   return (
-    <div className="content">
+    <div className="content" id="links">
       <SectionHeader
         sectionHeaderTitleFirst="Principais portais e tabelas"
         sectionHeaderTitleSecond="em um click"

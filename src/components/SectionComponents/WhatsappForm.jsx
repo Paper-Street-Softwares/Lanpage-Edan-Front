@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WhatsAppIcon from "../../style/assets/icons/WhatsAppIcon.png";
 
 const WhatsappForm = () => {
   const [name, setName] = useState("");
@@ -84,9 +85,9 @@ const WhatsappForm = () => {
   };
 
   return (
-    <div className="w-full bg-white rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
-      <h1 className="block w-full text-center uppercase font-bold text-grey-darkest mb-6">
-        Entre em contato
+    <div>
+      <h1 className="block w-full text-center uppercase font-bold text-xl text-grey-darkest mb-2">
+        Entre em contato agora
       </h1>
       <div className="flex flex-col mb-4">
         <label
@@ -96,7 +97,7 @@ const WhatsappForm = () => {
           Nome:
         </label>
         <input
-          className="border py-2 px-3 text-grey-darkest md:mr-2"
+          className="border py-2 px-3 text-grey-darkest"
           type="text"
           id="name"
           value={name}
@@ -104,7 +105,7 @@ const WhatsappForm = () => {
           placeholder="Digite seu nome"
           required
         />
-        {errors.name && <p className="text-red-500">{errors.name}</p>}
+        {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
       </div>
 
       <div className="flex flex-col mb-4">
@@ -115,7 +116,7 @@ const WhatsappForm = () => {
           Telefone:
         </label>
         <input
-          className="border py-2 px-3 text-grey-darkest md:mr-2"
+          className="border py-2 px-3 text-grey-darkest"
           type="tel"
           id="phone"
           value={phone}
@@ -123,7 +124,7 @@ const WhatsappForm = () => {
           placeholder="Digite seu telefone"
           required
         />
-        {errors.phone && <p className="text-red-500">{errors.phone}</p>}
+        {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
       </div>
 
       <div className="flex flex-col mb-4">
@@ -134,7 +135,7 @@ const WhatsappForm = () => {
           Email:
         </label>
         <input
-          className="border py-2 px-3 text-grey-darkest md:mr-2"
+          className="border py-2 px-3 text-grey-darkest"
           type="email"
           id="email"
           value={email}
@@ -142,28 +143,8 @@ const WhatsappForm = () => {
           placeholder="Digite seu email"
           required
         />
-        {errors.email && <p className="text-red-500 mt-2">{errors.email}</p>}
-      </div>
-
-      <div className="flex flex-col mb-4">
-        <label
-          className="tracking-wide text-base text-grey-darkest"
-          htmlFor="typeContact"
-        >
-          Tipo de Contato:
-        </label>
-        <select
-          className="border py-2 px-3 text-grey-darkest md:mr-2"
-          id="typeContact"
-          value={typeContact}
-          onChange={(e) => setTypeContact(e.target.value)}
-          required
-        >
-          <option value="pessoaFisica">Pessoa Física</option>
-          <option value="empresa">Empresa</option>
-        </select>
-        {errors.typeContact && (
-          <p className="text-red-500">{errors.typeContact}</p>
+        {errors.email && (
+          <p className="text-red-500 text-sm mt-2">{errors.email}</p>
         )}
       </div>
 
@@ -175,7 +156,7 @@ const WhatsappForm = () => {
           Mensagem:
         </label>
         <textarea
-          className="border py-2 px-3 text-grey-darkest md:mr-2"
+          className="border py-2 px-3 text-grey-darkest"
           type="text"
           id="message"
           value={message}
@@ -183,15 +164,22 @@ const WhatsappForm = () => {
           placeholder="Digite sua mensagem"
           required
         />
-        {errors.message && <p className="text-red-500">{errors.message}</p>}
+        {errors.message && (
+          <p className="text-red-500 text-sm">{errors.message}</p>
+        )}
       </div>
 
       <div className="flex justify-center">
         <button
-          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
+          className="bg-lightgreen hover:bg-green-800 text-white justify-center items-center text-2xl flex w-full h-16 py-2 px-4"
           onClick={sendToWhatsapp}
         >
-          Enviar para o WhatsApp
+          <img
+            src={WhatsAppIcon}
+            className="w-20 h-20 mr-2 -ml-16"
+            alt="WhatsApp Icon"
+          />
+          Enviar
         </button>
       </div>
     </div>
