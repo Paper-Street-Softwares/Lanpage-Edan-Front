@@ -23,10 +23,6 @@ const WhatsappForm = () => {
       validationErrors.email = "O campo email é obrigatório";
     }
 
-    if (!validateTypeContact(typeContact)) {
-      validationErrors.typeContact = "O campo tipo de contato é obrigatório";
-    }
-
     if (!validateMessage(message)) {
       validationErrors.message = "O campo mensagem é obrigatório";
     }
@@ -37,9 +33,7 @@ const WhatsappForm = () => {
     }
     const numeroWhatsapp = "+5511976564453";
 
-    const mensagemWhatsapp = `Nome: ${name} \nTelefone: ${phone} \nEmail: ${email} \nTipo de Contato: ${
-      typeContact === "pessoaFisica" ? "Pessoa Física" : "Empresa"
-    } \nMensagem: ${message}`;
+    const mensagemWhatsapp = `Nome: ${name} \nTelefone: ${phone} \nEmail: ${email} \nMensagem: ${message}`;
 
     const linkWhatsapp = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(
       mensagemWhatsapp
