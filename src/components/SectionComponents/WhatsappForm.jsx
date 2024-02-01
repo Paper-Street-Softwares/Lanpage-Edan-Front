@@ -5,7 +5,7 @@ const WhatsappForm = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [typeContact, setTypeContact] = useState("");
+  const [typeContact] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState("");
 
