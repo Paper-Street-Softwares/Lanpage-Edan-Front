@@ -9,6 +9,7 @@ export default function ImgAndTitleCard(props) {
       href={link}
       target="_blank"
       className="flex flex-col items-center justify-between mt-2 mb-2 w-44 h-28"
+      rel="noreferrer"
     >
       <div className="flex flex-row items-end justify-center w-full h-full">
         <div>

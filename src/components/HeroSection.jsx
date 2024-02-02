@@ -6,12 +6,13 @@ export default function HeroSection() {
     <div className="content" id="home">
       <div className="full">
         <div
-          className="content bg-center bg-cover h-[773px] w-full h-200"
+          className="content bg-center bg-cover h-[600px] w-full h-200"
           style={{ backgroundImage: "url(" + bgImage + ")" }}
         >
-          <div className="flex justify-between text-white items-center w-full h-auto font-poppins opacity-0 animate-fade-in">
-            <div className="mr-11">
-              <h1 className="font-bold text-5xl mb-11">Solução e Resuldado!</h1>
+          <div className="flex items-center justify-between w-full h-auto text-white opacity-0 font-poppins animate-fade-in">
+            <div className="mt-16 h-96 mr-11">
+              <h1 className="mb-2 text-5xl font-bold">Solução e</h1>
+              <h1 className="text-5xl font-bold mb-11">Resultado!</h1>
               <p className="text-xl mr-11">
                 Experiência que Conta! Com mais de 40 anos de experiência,
                 oferecemos conhecimento sólido para lidar com os desafios
