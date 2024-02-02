@@ -31,7 +31,7 @@ const WhatsappForm = () => {
       setErrors(validationErrors);
       return;
     }
-    const numeroWhatsapp = "+5511976564453";
+    const numeroWhatsapp = "+55";
 
     const mensagemWhatsapp = `Nome: ${name} \nTelefone: ${phone} \nEmail: ${email} \nMensagem: ${message}`;
 
@@ -72,18 +72,10 @@ const WhatsappForm = () => {
 
   return (
     <div>
-      <h1 className="block w-full text-center uppercase font-bold text-xl text-grey-darkest mb-2">
-        Entre em contato agora
-      </h1>
+      <h1 className="block w-full mb-2 text-xl">Entre em contato agora</h1>
       <div className="flex flex-col mb-4">
-        <label
-          className="tracking-wide text-base text-grey-darkest"
-          htmlFor="name"
-        >
-          Nome:
-        </label>
         <input
-          className="border py-2 px-3 text-grey-darkest"
+          className="px-3 py-2 text-black border"
           type="text"
           id="name"
           value={name}
@@ -91,18 +83,12 @@ const WhatsappForm = () => {
           placeholder="Digite seu nome"
           required
         />
-        {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
+        {errors.name && <p className="text-sm text-red-500">{errors.name}</p>}
       </div>
 
       <div className="flex flex-col mb-4">
-        <label
-          className="tracking-wide text-base text-grey-darkest"
-          htmlFor="telefone"
-        >
-          Telefone:
-        </label>
         <input
-          className="border py-2 px-3 text-grey-darkest"
+          className="px-3 py-2 text-black border"
           type="tel"
           id="phone"
           value={phone}
@@ -110,18 +96,12 @@ const WhatsappForm = () => {
           placeholder="Digite seu telefone"
           required
         />
-        {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
+        {errors.phone && <p className="text-sm text-red-500">{errors.phone}</p>}
       </div>
 
       <div className="flex flex-col mb-4">
-        <label
-          className="tracking-wide text-base text-grey-darkest"
-          htmlFor="email"
-        >
-          Email:
-        </label>
         <input
-          className="border py-2 px-3 text-grey-darkest"
+          className="px-3 py-2 text-black border"
           type="email"
           id="email"
           value={email}
@@ -130,19 +110,13 @@ const WhatsappForm = () => {
           required
         />
         {errors.email && (
-          <p className="text-red-500 text-sm mt-2">{errors.email}</p>
+          <p className="mt-2 text-sm text-red-500">{errors.email}</p>
         )}
       </div>
 
       <div className="flex flex-col mb-4">
-        <label
-          className="tracking-wide text-base text-grey-darkest"
-          htmlFor="message"
-        >
-          Mensagem:
-        </label>
         <textarea
-          className="border py-2 px-3 text-grey-darkest"
+          className="px-3 py-2 text-black border"
           type="text"
           id="message"
           value={message}
@@ -151,13 +125,13 @@ const WhatsappForm = () => {
           required
         />
         {errors.message && (
-          <p className="text-red-500 text-sm">{errors.message}</p>
+          <p className="text-sm text-red-500">{errors.message}</p>
         )}
       </div>
 
       <div className="flex justify-center">
         <button
-          className="bg-lightgreen hover:bg-green-800 text-white items-center text-xl flex w-full h-16 py-2 px-4"
+          className="flex items-center w-full h-16 px-4 py-2 text-xl text-white bg-lightgreen hover:bg-green-800"
           onClick={sendToWhatsapp}
         >
           <img

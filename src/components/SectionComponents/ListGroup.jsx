@@ -21,7 +21,7 @@ export default function ListGroup() {
 
   return (
     <ul
-      className={`flex justify-between font-poppins ${
+      className={`flex justify-between font-bold text-sm font-poppins ${
         scrolling
           ? "text-black transition-color duration-500"
           : "text-white transition-color duration-500"
