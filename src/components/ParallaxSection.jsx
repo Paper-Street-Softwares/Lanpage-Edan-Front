@@ -2,10 +2,10 @@ import paralaxBg from "../style/assets/images/paralaxe/paralaxeBg1.jpg";
 
 export default function ParallaxSection() {
   return (
-    <div className="full mt-10">
+    <div className="mt-10 full">
       <div className="full">
         <div
-          className="feature h-52 bg-fixed"
+          className="bg-fixed feature h-52"
           style={{ backgroundImage: `url(${paralaxBg})` }}
         ></div>
       </div>

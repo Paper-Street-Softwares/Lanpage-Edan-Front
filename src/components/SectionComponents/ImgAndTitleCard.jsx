@@ -8,15 +8,15 @@ export default function ImgAndTitleCard(props) {
     <a
       href={link}
       target="_blank"
-      className="flex flex-col justify-between items-center w-44 h-28 mt-2 mb-2"
+      className="flex flex-col items-center justify-between mt-2 mb-2 w-44 h-28"
     >
-      <div className="w-full h-full flex flex-row items-end justify-center">
+      <div className="flex flex-row items-end justify-center w-full h-full">
         <div>
-          <img src={img} alt={imgDescription} className="h-12 w-auto"></img>
+          <img src={img} alt={imgDescription} className="w-auto h-12"></img>
         </div>
       </div>
-      <div className="w-full h-full flex flex-col justify-center">
-        <div className="font-poppins text-darkgreen text-center font-bold text-sm hover:text-lightgreen transition duration-300">
+      <div className="flex flex-col justify-center w-full h-full">
+        <div className="text-sm font-bold text-center transition duration-300 font-poppins text-darkgreen hover:text-lightgreen">
           {title}
         </div>
       </div>
