@@ -165,7 +165,7 @@ const WhatsappForm = () => {
             className="w-20 h-20 mr-2 -ml-16"
             alt="WhatsApp Icon"
           />
-          Enviar
+          Solicitar contato
         </button>
       </div>
     </div>
