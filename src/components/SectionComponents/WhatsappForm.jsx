@@ -73,7 +73,7 @@ const WhatsappForm = () => {
   return (
     <div>
       <h1 className="block w-full mb-2 text-xl">Entre em contato agora</h1>
-      <div className="flex flex-col mb-4">
+      <div className="relative flex flex-col mb-4">
         <input
           className="px-3 py-2 text-black border"
           type="text"
