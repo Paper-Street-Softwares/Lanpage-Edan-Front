@@ -157,12 +157,12 @@ const WhatsappForm = () => {
 
       <div className="flex justify-center">
         <button
-          className="bg-lightgreen hover:bg-green-800 text-white justify-center items-center text-2xl flex w-full h-16 py-2 px-4"
+          className="bg-lightgreen hover:bg-green-800 text-white items-center text-xl flex w-full h-16 py-2 px-4"
           onClick={sendToWhatsapp}
         >
           <img
             src={WhatsAppIcon}
-            className="w-20 h-20 mr-2 -ml-16"
+            className="w-20 h-20 mr-4"
             alt="WhatsApp Icon"
           />
           Solicitar contato
