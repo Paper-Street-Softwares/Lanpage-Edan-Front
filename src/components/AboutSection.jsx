@@ -13,7 +13,7 @@ export default function AboutSection() {
         sectionHeaderTitleSecond="EDAN Contabilidade"
       />
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <SectionContent>
             <SectionTextAndImages
               sectionTextAndImagesTitleFirst="O escritório mais premiado"
@@ -39,12 +39,12 @@ export default function AboutSection() {
               applyBorder={true}
             />
           </SectionContent>
-          <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in mt-8">
-            <h1 className="font-poppins font-semibold text-xl text-gray">
+          <div className="flex flex-wrap justify-between w-full h-auto mt-8 opacity-0 animate-fade-in">
+            <h1 className="text-xl font-semibold font-poppins text-gray">
               A EDAN atende em todo brasil?
             </h1>
             <div className="grid grid-cols-2">
-              <p className="font-poppins text-sm text-gray">
+              <p className="text-sm font-poppins text-gray">
                 É importante escolher serviços contábeis confiáveis, conhecer a
                 qualidade e abrangência dos serviços oferecidos antes de
                 contratá-los. A Edan é uma empresa de contabilidade completa que
@@ -54,11 +54,11 @@ export default function AboutSection() {
               <img src={Brasil} alt="Mapa do Brasil" />
             </div>
           </div>
-          <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in mt-8">
-            <h1 className="font-poppins font-semibold text-xl text-gray mb-8">
+          <div className="flex flex-wrap justify-between w-full h-auto mt-8 opacity-0 animate-fade-in">
+            <h1 className="mb-8 text-xl font-semibold font-poppins text-gray">
               Onde nos encontrar?
             </h1>
-            <div className="border-b-8 border-lightgreen mb-8 w-full">
+            <div className="w-full mb-8 border-b-8 border-lightgreen">
               <iframe
                 className="w-full"
                 title="GoogleMaps"

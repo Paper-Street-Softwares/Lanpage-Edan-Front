@@ -38,7 +38,7 @@ export default function NavbarSection() {
                 <img src={Logo} alt="Logo EDAN" />
               </div>
             </div>
-            <div className="w-4/5 ml-32 items-center">
+            <div className="items-center w-4/5 ml-32">
               <div className="w-auto">
                 <ListGroup />
               </div>
