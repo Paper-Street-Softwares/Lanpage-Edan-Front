@@ -1,5 +1,6 @@
 import SectionContent from "./SectionComponents/SectionContent";
 import imgEdilson from "../style/assets/images/contato-via-whatsapp/edilson.png";
+import bgParalax from "../style/assets/images/contato-via-whatsapp/bgParalax.jpg";
 import WhatsAppIcon from "../style/assets/icons/WhatsAppIcon.png";
 
 export default function WppSection() {
