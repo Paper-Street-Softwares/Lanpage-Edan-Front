@@ -85,7 +85,7 @@ const WhatsappForm = () => {
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Digite seu nome"
+            placeholder="Nome"
             required
           />
         </div>
@@ -105,7 +105,7 @@ const WhatsappForm = () => {
             id="phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            placeholder="Digite seu telefone"
+            placeholder="Telefone"
             required
           />
         </div>
@@ -125,7 +125,7 @@ const WhatsappForm = () => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Digite seu email"
+            placeholder="E-mail"
             required
           />
         </div>
@@ -136,16 +136,16 @@ const WhatsappForm = () => {
 
       <div className="mb-5">
         <div className="flex mb-4 text-gray-500">
-          <div className="flex items-center justify-center w-12 px-1 bg-white ">
-            <CiChat1 />
+          <div className="flex justify-center w-12 px-1 bg-white ">
+            <CiChat1 className="h-11" />
           </div>
-          <input
+          <textarea
             className="w-full px-1 py-2 border-0"
             type="text"
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Digite sua mensagem"
+            placeholder="Mensagem"
             required
           />
         </div>
