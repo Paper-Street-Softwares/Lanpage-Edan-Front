@@ -1,5 +1,5 @@
 import ServicesSection from "../../components/ServicesSection";
-import ParallaxSection from "../../components/SectionComponents/ParallaxSection";
+import ParallaxSection from "../../components/SectionComponents/ParallaxSectionEmpty";
 import DifferentialSection from "../../components/DifferentialSection";
 import AppSection from "../../components/AppSection";
 import LinksSection from "../../components/LinksSection";

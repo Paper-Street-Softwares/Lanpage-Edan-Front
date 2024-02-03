@@ -1,4 +1,4 @@
-export default function ParallaxSection(props) {
+export default function ParallaxSectionEmpty(props) {
   const { img } = props;
 
   return (
