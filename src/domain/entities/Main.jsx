@@ -9,7 +9,6 @@ import WppSection from "../../components/WppSection";
 import TestimonialsSection from "../../components/TestimonialsSection";
 import imgBgTop from "../../style/assets/images/paralaxe/bgImg1.jpg";
 import imgBgMid from "../../style/assets/images/paralaxe/bgImg2.jpg";
-import imgBgBot from "../../style/assets/images/paralaxe/bgImg3.jpg";
 
 function Main() {
   return (
