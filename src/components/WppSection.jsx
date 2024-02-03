@@ -28,7 +28,7 @@ export default function WppSection() {
                         src={WhatsAppIcon}
                         className="w-20 h-20 mr-4"
                         alt="WhatsApp Icon"
-                      />
+                      ></img>
                       Solicitar contato
                     </a>
                   </div>
