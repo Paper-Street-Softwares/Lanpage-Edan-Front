@@ -13,7 +13,7 @@ export default function FooterSection() {
         <div className="content">
           <SectionContent>
             <div className="w-64 text-sm font-light text-white font-poppins">
-              <div className="h-12 mb-10">
+              <div className="h-12 mb-6">
                 <img alt="Logo Edan" className="h-12" src={imgLogo} />
               </div>
               <div className="flex flex-col justify-between h-40">
@@ -38,13 +38,15 @@ export default function FooterSection() {
               </div>
             </div>
             <div className="w-64 text-sm text-white font-poppins">
-              <div className="h-12 mb-10 text-2xl font-medium ">Sobre</div>
-              <div className="mb-4 font-light">
+              <div className="flex flex-col justify-center h-12 mb-6 text-2xl font-bold">
+                SOBRE
+              </div>
+              <div className="mb-4 text-xs font-light">
                 A Edan Contabilidade tem uma equipe de profissionais treinados e
                 capacitados para atender com primazia todas as demandas nas
                 áreas de departamento pessoal, fiscal e contábil.
               </div>
-              <div className="w-44">
+              <div className="w-48">
                 <a
                   target="_blank"
                   href="https://www.instagram.com/edancontabilidade/#"
@@ -58,18 +60,34 @@ export default function FooterSection() {
               </div>
             </div>
             <div className="w-64 text-sm text-white font-poppins">
-              <div className="h-12 mb-10 text-2xl font-medium">Navegação</div>
-              <div className="flex flex-row justify-between h-auto">
+              <div className="flex flex-col justify-center h-12 mb-6 text-2xl font-bold">
+                NAVEGAÇÃO
+              </div>
+              <div className="flex flex-row justify-between h-auto text-xs font-bold">
                 <div>
-                  <div className="mb-4">Início</div>
-                  <div className="mb-4"> Serviços</div>
-                  <div className="mb-4">Aplicativo</div>
-                  <div className="mb-4">Links Úteis</div>
+                  <div className="mb-4">
+                    <a href="#">INÍCIO</a>
+                  </div>
+                  <div className="mb-4">
+                    <a href="#">SERVIÇOS</a>
+                  </div>
+                  <div className="mb-4">
+                    <a href="#">APLICATIVO</a>
+                  </div>
+                  <div className="mb-4">
+                    <a href="#">LINKS ÚTEIS</a>
+                  </div>
                 </div>
                 <div>
-                  <div className="mb-4">Sobre nós</div>
-                  <div className="mb-4">Certidões</div>
-                  <div className="mb-4">Depoimentos</div>
+                  <div className="mb-4">
+                    <a href="#">SOBRE NÓS</a>
+                  </div>
+                  <div className="mb-4">
+                    <a href="#">CERTIDÕES</a>
+                  </div>
+                  <div className="mb-4">
+                    <a href="#">DEPOIMENTOS</a>
+                  </div>
                 </div>
               </div>
             </div>
