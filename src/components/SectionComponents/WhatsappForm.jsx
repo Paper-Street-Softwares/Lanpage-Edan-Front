@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WhatsAppIcon from "../../style/assets/icons/WhatsAppIcon.png";
+import { CiUser, CiPhone, CiMail, CiChat1 } from "react-icons/ci";
 
 const WhatsappForm = () => {
   const [name, setName] = useState("");
@@ -31,7 +32,7 @@ const WhatsappForm = () => {
       setErrors(validationErrors);
       return;
     }
-    const numeroWhatsapp = "+55";
+    const numeroWhatsapp = "+5573999612263";
 
     const mensagemWhatsapp = `Nome: ${name} \nTelefone: ${phone} \nEmail: ${email} \nMensagem: ${message}`;
 
@@ -39,7 +40,7 @@ const WhatsappForm = () => {
       mensagemWhatsapp
     )}`;
 
-    window.location.href = linkWhatsapp;
+    window.open(linkWhatsapp, "_blank");
   };
 
   const validateName = (name) => {
@@ -72,60 +73,84 @@ const WhatsappForm = () => {
 
   return (
     <div>
-      <h1 className="block w-full mb-2 text-xl">Entre em contato agora</h1>
-      <div className="relative flex flex-col mb-4">
-        <input
-          className="px-3 py-2 text-black border"
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Digite seu nome"
-          required
-        />
-        {errors.name && <p className="text-sm text-red-500">{errors.name}</p>}
-      </div>
-
-      <div className="flex flex-col mb-4">
-        <input
-          className="px-3 py-2 text-black border"
-          type="tel"
-          id="phone"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          placeholder="Digite seu telefone"
-          required
-        />
-        {errors.phone && <p className="text-sm text-red-500">{errors.phone}</p>}
-      </div>
-
-      <div className="flex flex-col mb-4">
-        <input
-          className="px-3 py-2 text-black border"
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Digite seu email"
-          required
-        />
-        {errors.email && (
-          <p className="mt-2 text-sm text-red-500">{errors.email}</p>
+      <h1 className="w-full mb-2 text-xl ">Entre em contato agora</h1>
+      <div className="mb-5">
+        <div className="flex mb-4 text-gray-500">
+          <div className="flex items-center justify-center w-12 px-1 bg-white ">
+            <CiUser />
+          </div>
+          <input
+            className="w-full px-1 py-2 border-0"
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Nome"
+            required
+          />
+        </div>
+        {errors.name && (
+          <p className="-mt-4 text-sm text-red-500">{errors.name}</p>
         )}
       </div>
 
-      <div className="flex flex-col mb-4">
-        <textarea
-          className="px-3 py-2 text-black border"
-          type="text"
-          id="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Digite sua mensagem"
-          required
-        />
+      <div className="mb-5">
+        <div className="flex mb-4 text-gray-500">
+          <div className="flex items-center justify-center w-12 px-1 bg-white ">
+            <CiPhone />
+          </div>
+          <input
+            className="w-full px-1 py-2 border-0"
+            type="tel"
+            id="phone"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            placeholder="Telefone"
+            required
+          />
+        </div>
+        {errors.phone && (
+          <p className="-mt-4 text-sm text-red-500">{errors.phone}</p>
+        )}
+      </div>
+
+      <div className="mb-5">
+        <div className="flex mb-4 text-gray-500">
+          <div className="flex items-center justify-center w-12 px-1 bg-white ">
+            <CiMail />
+          </div>
+          <input
+            className="w-full px-1 py-2 border-0"
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="E-mail"
+            required
+          />
+        </div>
+        {errors.email && (
+          <p className="-mt-4 text-sm text-red-500">{errors.email}</p>
+        )}
+      </div>
+
+      <div className="mb-5">
+        <div className="flex mb-4 text-gray-500">
+          <div className="flex justify-center w-12 px-1 bg-white ">
+            <CiChat1 className="h-11" />
+          </div>
+          <textarea
+            className="w-full px-1 py-2 border-0"
+            type="text"
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Mensagem"
+            required
+          />
+        </div>
         {errors.message && (
-          <p className="text-sm text-red-500">{errors.message}</p>
+          <p className="-mt-4 text-sm text-red-500">{errors.message}</p>
         )}
       </div>
 
