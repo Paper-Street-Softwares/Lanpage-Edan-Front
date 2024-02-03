@@ -12,35 +12,53 @@ export default function FooterSection() {
       <div>
         <div className="content">
           <SectionContent>
-            <div className="w-64 text-sm font-light text-white bg-green-100 font-poppins">
-              <div className="h-12 mb-4 bg-yellow-200">
+            <div className="w-64 text-sm font-light text-white font-poppins">
+              <div className="h-12 mb-10">
                 <img alt="Logo Edan" className="h-12" src={imgLogo} />
               </div>
-              <div className="h-40 bg-red-100">
-                <div className="flex bg-blue-400">
-                  <div className="flex flex-col items-center justify-center bg-purple-700">
-                    <img className="h-6" alt="Ícone" src={imgHome} />
-                  </div>
-                  <div className="flex flex-row items-center w-full ml-2 text-xs bg-purple-400">
-                    Av. Lótus, 23 - Nelson Costa, Ilhéus - BA, CEP 45656-000.
-                    Nelson Costa, Ilhéus - BA, CEP 45656-000.
-                  </div>
-                </div>
+              <div className="flex flex-col justify-between h-40">
+                <HonrizontalIconAndText
+                  img={imgHome}
+                  imgAlt="Ícone Home"
+                  text="Av. Lótus, 23 - Nelson Costa, Ilhéus - BA, CEP 45656-000. Nelson Costa, Ilhéus - BA, CEP 45656-000."
+                />
+                <HonrizontalIconAndText
+                  img={imgWhatsapp}
+                  imgAlt="Ícone Whatsapp"
+                  text="(73) 9.9961-2263"
+                />
+                <HonrizontalIconAndText
+                  img={imgCalendar}
+                  imgAlt="Ícone Calendário"
+                  text="Seg. a Quinta, das 08h às 18h."
+                  textLine2="Sexta-feira, das 08 às 17h."
+                  textLine3="Sábado, fechado."
+                  textLine4="Domingo, fechado."
+                />
               </div>
             </div>
             <div className="w-64 text-sm text-white font-poppins">
-              <div className="h-12 mb-4 text-2xl font-medium ">Sobre</div>
+              <div className="h-12 mb-10 text-2xl font-medium ">Sobre</div>
               <div className="mb-4 font-light">
                 A Edan Contabilidade tem uma equipe de profissionais treinados e
                 capacitados para atender com primazia todas as demandas nas
                 áreas de departamento pessoal, fiscal e contábil.
               </div>
-              <div>
-                <HonrizontalIconAndText />
+              <div className="w-44">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/edancontabilidade/#"
+                >
+                  <HonrizontalIconAndText
+                    img={imgInstagram}
+                    alt="Ícone Instagram"
+                    text="Siga-nos no instagram!"
+                  />
+                </a>
               </div>
             </div>
             <div className="w-64 text-sm text-white font-poppins">
-              <div className="h-12 mb-4 text-2xl font-medium">Navegação</div>
+              <div className="h-12 mb-10 text-2xl font-medium">Navegação</div>
               <div className="flex flex-row justify-between h-auto">
                 <div>
                   <div className="mb-4">Início</div>
