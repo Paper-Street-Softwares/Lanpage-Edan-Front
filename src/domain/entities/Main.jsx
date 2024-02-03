@@ -22,7 +22,6 @@ function Main() {
       <ParallaxSection img={imgBgMid} />
       <AboutSection />
       <CertificatesSection />
-      <ParallaxSection img={imgBgBot} />
       <WppSection />
       <TestimonialsSection />
     </div>
