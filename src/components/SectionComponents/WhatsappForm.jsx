@@ -40,7 +40,7 @@ const WhatsappForm = () => {
       mensagemWhatsapp
     )}`;
 
-    window.location.href = linkWhatsapp;
+    window.open(linkWhatsapp, "_blank");
   };
 
   const validateName = (name) => {
@@ -75,12 +75,12 @@ const WhatsappForm = () => {
     <div>
       <h1 className="w-full mb-2 text-xl ">Entre em contato agora</h1>
       <div className="mb-5">
-        <div className="flex w-full mb-4">
-          <div className="flex items-center justify-center px-1 text-gray-500 bg-white ">
+        <div className="flex mb-4 text-gray-500">
+          <div className="flex items-center justify-center w-12 px-1 bg-white ">
             <CiUser />
           </div>
           <input
-            className="w-full px-1 py-2 text-black border-0"
+            className="w-full px-1 py-2 border-0"
             type="text"
             id="name"
             value={name}
@@ -95,12 +95,12 @@ const WhatsappForm = () => {
       </div>
 
       <div className="mb-5">
-        <div className="flex mb-4">
-          <div className="flex items-center justify-center px-1 text-gray-500 bg-white ">
+        <div className="flex mb-4 text-gray-500">
+          <div className="flex items-center justify-center w-12 px-1 bg-white ">
             <CiPhone />
           </div>
           <input
-            className="w-full px-1 py-2 text-black border-0"
+            className="w-full px-1 py-2 border-0"
             type="tel"
             id="phone"
             value={phone}
@@ -115,12 +115,12 @@ const WhatsappForm = () => {
       </div>
 
       <div className="mb-5">
-        <div className="flex mb-4">
-          <div className="flex items-center justify-center px-1 text-gray-500 bg-white ">
+        <div className="flex mb-4 text-gray-500">
+          <div className="flex items-center justify-center w-12 px-1 bg-white ">
             <CiMail />
           </div>
           <input
-            className="w-full px-1 py-2 text-black border-0"
+            className="w-full px-1 py-2 border-0"
             type="email"
             id="email"
             value={email}
@@ -135,12 +135,12 @@ const WhatsappForm = () => {
       </div>
 
       <div className="mb-5">
-        <div className="flex mb-4">
-          <div className="flex items-center justify-center px-1 text-gray-500 bg-white ">
+        <div className="flex mb-4 text-gray-500">
+          <div className="flex items-center justify-center w-12 px-1 bg-white ">
             <CiChat1 />
           </div>
           <input
-            className="w-full px-1 py-1 text-black border-0"
+            className="w-full px-1 py-2 border-0"
             type="text"
             id="message"
             value={message}
