@@ -6,7 +6,6 @@ import LinksSection from "../../components/LinksSection";
 import AboutSection from "../../components/AboutSection";
 import CertificatesSection from "../../components/CertificatesSection";
 import WppSection from "../../components/WppSection";
-import TestimonialsSection from "../../components/TestimonialsSection";
 import imgBgTop from "../../style/assets/images/paralaxe/bgImg1.jpg";
 import imgBgMid from "../../style/assets/images/paralaxe/bgImg2.jpg";
 
@@ -19,10 +18,9 @@ function Main() {
       <AppSection />
       <LinksSection />
       <ParallaxSection img={imgBgMid} />
-      <AboutSection />
       <CertificatesSection />
       <WppSection />
-      <TestimonialsSection />
+      <AboutSection />
     </div>
   );
 }
