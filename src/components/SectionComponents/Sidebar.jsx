@@ -22,54 +22,142 @@ export default function Sidebar() {
             showSublistServices || showSublistLinks ? "mb-16" : ""
           }`}
         >
-          <ul className="text-center text-black">
-            <li className="mb-2">
+          <ul className="text-center text-black ">
+            <li className="mb-2 font-bold">
               <a href="home" className="hover:text-green-300">
                 Início
               </a>
             </li>
-            <li className="mb-2">
+            <li className="mb-2 font-bold">
               <a href="about" className="hover:text-green-300">
                 Sobre Nós
               </a>
             </li>
-            <li className="relative mb-2" onClick={toggleSublistServices}>
-              <span className="cursor-pointer hover:text-green-300">
+            <li className="mb-2 font-bold">
+              <a href="services" className="hover:text-green-300">
                 Serviços
-              </span>
-              {showSublistServices && (
-                <ul className="relative left-0 p-4 text-black bg-white top-full">
-                  <li className="mb-2">
-                    <a href="service1" className="hover:text-green-300">
-                      Serviço 1123123123
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="service2" className="hover:text-green-300">
-                      Serviço 2
-                    </a>
-                  </li>
-                </ul>
-              )}
+              </a>
             </li>
-            <li className="relative mb-2" onClick={toggleSublistLinks}>
-              <span className="cursor-pointer hover:text-green-300">Links</span>
+
+            <li className="relative mb-2 " onClick={toggleSublistLinks}>
+              <span className="font-bold cursor-pointer hover:text-green-300">
+                Links
+              </span>
               {showSublistLinks && (
-                <ul className="relative left-0 p-4 text-black bg-white top-full">
+                <ul className="relative left-0 p-4 text-sm text-black bg-white top-full">
                   <li className="mb-2">
                     <a href="link1" className="hover:text-green-300">
-                      Link 1
+                      Inscrição Estadual
                     </a>
                   </li>
                   <li className="mb-2">
                     <a href="link2" className="hover:text-green-300">
-                      Link 2
+                      Pedido de Viabilidade
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="link2" className="hover:text-green-300">
+                      Consultar DBE
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="link2" className="hover:text-green-300">
+                      Consulta Optantes Simples
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="link2" className="hover:text-green-300">
+                      Pessoa Jurídica
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="link2" className="hover:text-green-300">
+                      Pessoa Física
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="link2" className="hover:text-green-300">
+                      Acesso e-CAC
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="link2" className="hover:text-green-300">
+                      Acesso Gov.Br
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="link2" className="hover:text-green-300">
+                      NF Eletrônica
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="link2" className="hover:text-green-300">
+                      Cartão CNPJ
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="link2" className="hover:text-green-300">
+                      Portal MEI
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="link2" className="hover:text-green-300">
+                      Informe de Rendimentos
                     </a>
                   </li>
                 </ul>
               )}
             </li>
-            <li className="mb-2">
+            <li className="relative mb-2 " onClick={toggleSublistServices}>
+              <span className="font-bold cursor-pointer hover:text-green-300">
+                Certidões
+              </span>
+              {showSublistServices && (
+                <ul className="relative left-0 p-4 text-sm text-black bg-white top-full">
+                  <li className="mb-2">
+                    <a href="service1" className="hover:text-green-300">
+                      CND Receita e Previdência
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="service2" className="hover:text-green-300">
+                      CDT Débitos Trabalhistas
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="service2" className="hover:text-green-300">
+                      CRF Regularidade do FGTS
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="service2" className="hover:text-green-300">
+                      CND Sefaz/Bahia
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="service2" className="hover:text-green-300">
+                      CND Prefeitura de Ilhéus/BA
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="service2" className="hover:text-green-300">
+                      CND Falência e Concordata
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="service2" className="hover:text-green-300">
+                      CND Sefaz/São Paulo
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="service2" className="hover:text-green-300">
+                      CND Sefaz/Rio de Janeiro
+                    </a>
+                  </li>
+                </ul>
+              )}
+            </li>
+            <li className="mb-2 font-bold">
               <a href="contact" className="hover:text-green-300">
                 Contato
               </a>
