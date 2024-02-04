@@ -39,8 +39,11 @@ export default function Sidebar() {
               </a>
             </li>
 
-            <li className="relative mb-2 " onClick={toggleSublistLinks}>
-              <span className="font-bold cursor-pointer hover:text-green-300">
+            <li className="relative mb-2">
+              <span
+                className="font-bold cursor-pointer hover:text-green-300"
+                onClick={toggleSublistLinks}
+              >
                 Links
               </span>
               {showSublistLinks && (
@@ -108,8 +111,12 @@ export default function Sidebar() {
                 </ul>
               )}
             </li>
-            <li className="relative mb-2 " onClick={toggleSublistServices}>
-              <span className="font-bold cursor-pointer hover:text-green-300">
+
+            <li className="relative mb-2 ">
+              <span
+                className="font-bold cursor-pointer hover:text-green-300"
+                onClick={toggleSublistServices}
+              >
                 Certidões
               </span>
               {showSublistServices && (
