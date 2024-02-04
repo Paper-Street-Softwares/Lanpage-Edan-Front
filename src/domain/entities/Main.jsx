@@ -5,19 +5,19 @@ import AppSection from "../../components/AppSection";
 import LinksSection from "../../components/LinksSection";
 import AboutSection from "../../components/AboutSection";
 import CertificatesSection from "../../components/CertificatesSection";
+import TestimonialsSection from "../../components/TestimonialsSection";
 import WppSection from "../../components/WppSection";
-import imgBgTop from "../../style/assets/images/paralaxe/bgImg1.jpg";
-import imgBgMid from "../../style/assets/images/paralaxe/bgImg2.jpg";
+import imgOfficeGreenBackground from "../../style/assets/images/BackgroundImage.png";
 
 function Main() {
   return (
     <div className="mainBody">
       <ServicesSection />
-      <ParallaxSection img={imgBgTop} />
+      <TestimonialsSection />
       <DifferentialSection />
       <AppSection />
       <LinksSection />
-      <ParallaxSection img={imgBgMid} />
+      <ParallaxSection img={imgOfficeGreenBackground} />
       <CertificatesSection />
       <WppSection />
       <AboutSection />
