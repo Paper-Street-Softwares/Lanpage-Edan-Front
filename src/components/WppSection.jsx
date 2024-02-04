@@ -1,13 +1,13 @@
 import SectionContent from "./SectionComponents/SectionContent";
 import imgEdilson from "../style/assets/images/contato-via-whatsapp/edilson.png";
-import bgParalax from "../style/assets/images/contato-via-whatsapp/bgParalax.jpg";
+import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png";
 import WhatsAppIcon from "../style/assets/icons/WhatsAppIcon.png";
 
 export default function WppSection() {
   return (
     <div
       className="bg-fixed bg-red-100 mt-28 content"
-      style={{ backgroundImage: `url(${bgParalax})` }}
+      style={{ backgroundImage: `url(${imgOfficeGreenBackground})` }}
       id="contact"
     >
       <SectionContent>
