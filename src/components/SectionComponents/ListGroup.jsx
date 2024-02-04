@@ -31,6 +31,7 @@ export default function ListGroup() {
       <ListGroupItem id="about" text="sobre nós" />
       <ListGroupItem id="services" text="serviços" />
       <ListGroupItem id="links" text="links" />
+      <ListGroupItem id="certificates" text="certidões" />
       <ListGroupItem id="contact" text="contato" />
     </ul>
   );

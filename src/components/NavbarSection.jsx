@@ -3,7 +3,6 @@ import SectionContent from "../components/SectionComponents/SectionContent";
 import Navbar from "./SectionComponents/Navbar";
 import Logo from "../style/assets/images/Logo.png";
 import ListGroup from "./SectionComponents/ListGroup";
-import Sidebar from "./SectionComponents/Sidebar";
 
 export default function NavbarSection() {
   const [scrolling, setScrolling] = useState(false);
@@ -46,7 +45,6 @@ export default function NavbarSection() {
             </div>
           </Navbar>
         </SectionContent>
-        <Sidebar />
       </div>
     </div>
   );
