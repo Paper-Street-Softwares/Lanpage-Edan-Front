@@ -5,7 +5,6 @@ import AppSection from "../../components/AppSection";
 import LinksSection from "../../components/LinksSection";
 import AboutSection from "../../components/AboutSection";
 import CertificatesSection from "../../components/CertificatesSection";
-import TestimonialsSection from "../../components/TestimonialsSection";
 import WppSection from "../../components/WppSection";
 import imgOfficeGreenBackground from "../../style/assets/images/BackgroundImage.png";
 
@@ -13,7 +12,7 @@ function Main() {
   return (
     <div className="mainBody">
       <ServicesSection />
-      <TestimonialsSection />
+      <ParallaxSection img={imgOfficeGreenBackground} />
       <DifferentialSection />
       <AppSection />
       <LinksSection />
