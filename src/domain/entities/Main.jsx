@@ -7,6 +7,7 @@ import AboutSection from "../../components/AboutSection";
 import CertificatesSection from "../../components/CertificatesSection";
 import WppSection from "../../components/WppSection";
 import imgOfficeGreenBackground from "../../style/assets/images/BackgroundImage.png";
+import BackToTopButton from "../../components/BackToTopButton";
 
 function Main() {
   return (
@@ -20,6 +21,7 @@ function Main() {
       <CertificatesSection />
       <WppSection />
       <AboutSection />
+      <BackToTopButton />
     </div>
   );
 }
