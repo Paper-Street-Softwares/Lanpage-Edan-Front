@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import backToTopImg from "../style/assets/icons/floatingElements/up-arrow.png";
+import { FaArrowUp } from "react-icons/fa"; //
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,10 +30,10 @@ const BackToTopButton = () => {
     <button
       className={`${
         isVisible ? "block animate-fade-in" : "hidden"
-      } fixed bottom-4 left-4 p-4 text-white rounded-full focus:outline-none transition`}
+      } fixed bottom-8 left-8 p-4 bg-mediumgreen text-white rounded-full focus:outline-none hover:bg-green-600 transition`}
       onClick={scrollToTop}
     >
-      <img className="w-16" src={backToTopImg} alt="Back to Top" />
+      <FaArrowUp />
     </button>
   );
 };

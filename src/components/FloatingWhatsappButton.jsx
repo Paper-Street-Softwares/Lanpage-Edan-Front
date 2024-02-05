@@ -1,4 +1,3 @@
-// FloatingWhatsappButton.js
 import React, { useState, useEffect } from "react";
 import whatsappGif from "../style/assets/icons/floatingElements/whatsappGif.gif";
 
@@ -28,10 +27,10 @@ const FloatingWhatsappButton = () => {
     <button
       className={`${
         isVisible ? "block animate-fade-in" : "hidden"
-      } fixed bottom-4 right-4 p-4 text-white rounded-full focus:outline-none transition`}
+      } fixed bottom-2 right-3 p-4 text-white rounded-full focus:outline-none transition`}
       onClick={openWhatsappLink}
     >
-      <img className="w-20" src={whatsappGif} alt="Floating WhatsApp Button" />
+      <img className="w-16" src={whatsappGif} alt="Floating WhatsApp Button" />
     </button>
   );
 };
