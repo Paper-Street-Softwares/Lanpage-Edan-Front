@@ -8,6 +8,7 @@ import CertificatesSection from "../../components/CertificatesSection";
 import WppSection from "../../components/WppSection";
 import imgOfficeGreenBackground from "../../style/assets/images/BackgroundImage.png";
 import BackToTopButton from "../../components/BackToTopButton";
+import FloatingWhatsappButton from "../../components/FloatingWhatsappButton";
 
 function Main() {
   return (
@@ -22,6 +23,7 @@ function Main() {
       <WppSection />
       <AboutSection />
       <BackToTopButton />
+      <FloatingWhatsappButton />
     </div>
   );
 }
