@@ -5,6 +5,7 @@ import imgWhatsapp from "../style/assets/icons/footer/whatsappIcon.png";
 import imgCalendar from "../style/assets/icons/footer/calendarIcon.png";
 import imgLogo from "../style/assets/images/Logo.png";
 import imgInstagram from "../style/assets/icons/footer/instagramIcon.png";
+import imgFacebook from "../style/assets/icons/footer/facebookIcon.png";
 
 export default function FooterSection() {
   return (
@@ -46,7 +47,7 @@ export default function FooterSection() {
                 capacitados para atender com primazia todas as demandas nas
                 áreas de departamento pessoal, fiscal e contábil.
               </div>
-              <div className="w-48">
+              <div className="flex flex-col justify-between h-12 w-52">
                 <a
                   target="_blank"
                   href="https://www.instagram.com/edancontabilidade/#"
@@ -55,6 +56,16 @@ export default function FooterSection() {
                     img={imgInstagram}
                     alt="Ícone Instagram"
                     text="Siga-nos no instagram!"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/EdanContabilidade/?locale=pt_BR"
+                >
+                  <HonrizontalIconAndText
+                    img={imgFacebook}
+                    alt="Ícone Facebook"
+                    text="Curta a Edan no Facebook!"
                   />
                 </a>
               </div>

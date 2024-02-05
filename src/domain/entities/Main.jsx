@@ -5,15 +5,16 @@ import AppSection from "../../components/AppSection";
 import LinksSection from "../../components/LinksSection";
 import AboutSection from "../../components/AboutSection";
 import CertificatesSection from "../../components/CertificatesSection";
-import TestimonialsSection from "../../components/TestimonialsSection";
 import WppSection from "../../components/WppSection";
 import imgOfficeGreenBackground from "../../style/assets/images/BackgroundImage.png";
+import BackToTopButton from "../../components/BackToTopButton";
+import FloatingWhatsappButton from "../../components/FloatingWhatsappButton";
 
 function Main() {
   return (
     <div className="mainBody">
       <ServicesSection />
-      <TestimonialsSection />
+      <ParallaxSection img={imgOfficeGreenBackground} />
       <DifferentialSection />
       <AppSection />
       <LinksSection />
@@ -21,6 +22,8 @@ function Main() {
       <CertificatesSection />
       <WppSection />
       <AboutSection />
+      <BackToTopButton />
+      <FloatingWhatsappButton />
     </div>
   );
 }
