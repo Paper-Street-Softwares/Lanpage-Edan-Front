@@ -20,7 +20,7 @@ const FloatingWhatsappButton = () => {
   }, []);
 
   const openWhatsappLink = () => {
-    window.open("https://wa.me/5573999612263", "_blank");
+    window.open("https://wa.me/5573999612263", "_blank", "noopener");
   };
 
   return (
