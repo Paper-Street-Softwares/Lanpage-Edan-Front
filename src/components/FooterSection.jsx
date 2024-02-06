@@ -1,4 +1,5 @@
 import HonrizontalIconAndText from "./SectionComponents/HorizontalIconAndText";
+import FooterCardContent from "./SectionComponents/FooterCardContent";
 import SectionContent from "./SectionComponents/SectionContent";
 import imgHome from "../style/assets/icons/footer/homeIcon.png";
 import imgWhatsapp from "../style/assets/icons/footer/whatsappIcon.png";
@@ -11,9 +12,9 @@ export default function FooterSection() {
   return (
     <div className="h-auto p-8 full bg-darkgreen ">
       <div>
-        <div className="content">
+        <div className="bg-blue-700 content">
           <SectionContent>
-            <div className="w-64 text-sm font-light text-white font-poppins">
+            <FooterCardContent>
               <div className="h-12 mb-6">
                 <img alt="Logo Edan" className="h-12" src={imgLogo} />
               </div>
@@ -37,8 +38,8 @@ export default function FooterSection() {
                   textLine4="Domingo, fechado."
                 />
               </div>
-            </div>
-            <div className="w-64 text-sm text-white font-poppins">
+            </FooterCardContent>
+            <FooterCardContent>
               <div className="flex flex-col justify-center h-12 mb-6 text-2xl font-bold">
                 SOBRE
               </div>
@@ -69,8 +70,8 @@ export default function FooterSection() {
                   />
                 </a>
               </div>
-            </div>
-            <div className="w-64 text-sm text-white font-poppins">
+            </FooterCardContent>
+            <FooterCardContent>
               <div className="flex flex-col justify-center h-12 mb-6 text-2xl font-bold">
                 NAVEGAÇÃO
               </div>
@@ -101,7 +102,7 @@ export default function FooterSection() {
                   </div>
                 </div>
               </div>
-            </div>
+            </FooterCardContent>
           </SectionContent>
         </div>
       </div>
