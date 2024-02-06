@@ -36,7 +36,11 @@ export default function WppSection() {
               </div>
             </div>
             <div>
-              <img className="w-60" alt="Foto Edilson" src={imgEdilson} />
+              <img
+                className="w-0 md:w-60"
+                alt="Foto Edilson"
+                src={imgEdilson}
+              />
             </div>
           </div>
         </div>
