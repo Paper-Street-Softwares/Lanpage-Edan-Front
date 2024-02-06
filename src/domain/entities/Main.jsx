@@ -6,23 +6,24 @@ import LinksSection from "../../components/LinksSection";
 import AboutSection from "../../components/AboutSection";
 import CertificatesSection from "../../components/CertificatesSection";
 import WppSection from "../../components/WppSection";
-import TestimonialsSection from "../../components/TestimonialsSection";
-import imgBgTop from "../../style/assets/images/paralaxe/bgImg1.jpg";
-import imgBgMid from "../../style/assets/images/paralaxe/bgImg2.jpg";
+import imgOfficeGreenBackground from "../../style/assets/images/BackgroundImage.png";
+import BackToTopButton from "../../components/BackToTopButton";
+import FloatingWhatsappButton from "../../components/FloatingWhatsappButton";
 
 function Main() {
   return (
     <div className="mainBody">
       <ServicesSection />
-      <ParallaxSection img={imgBgTop} />
+      <ParallaxSection img={imgOfficeGreenBackground} />
       <DifferentialSection />
       <AppSection />
       <LinksSection />
-      <ParallaxSection img={imgBgMid} />
-      <AboutSection />
+      <ParallaxSection img={imgOfficeGreenBackground} />
       <CertificatesSection />
       <WppSection />
-      <TestimonialsSection />
+      <AboutSection />
+      <BackToTopButton />
+      <FloatingWhatsappButton />
     </div>
   );
 }
