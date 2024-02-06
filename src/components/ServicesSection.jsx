@@ -29,7 +29,7 @@ export default function ServicesSection() {
             icon={imgBaixa}
             iconAlt="Ícone Baixa"
             title="Baixa de Empresas"
-            description="Conte conosco para fechar com excelência e abrir novos horizontes!"
+            description="Conte conosco para fechar seu negócio com excelência!"
           />,
           <StandardServiceCard
             key={3}

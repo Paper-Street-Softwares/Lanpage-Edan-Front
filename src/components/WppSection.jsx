@@ -15,7 +15,7 @@ export default function WppSection() {
           <div className="flex flex-row items-end justify-between h-52">
             <div className="bg-grenn-200">
               <div className="flex flex-col justify-around h-52">
-                <h1 className="text-3xl text-white font-poppins">
+                <h1 className="text-3xl text-white font-poppins lg:text-3xl md:text-2xl">
                   Contate-nos através do <strong>Whatsapp</strong>
                 </h1>
                 <button className="bg-green-400 w-72">
@@ -36,7 +36,7 @@ export default function WppSection() {
               </div>
             </div>
             <div>
-              <img className="h-64" alt="Foto Edilson" src={imgEdilson} />
+              <img className="w-60" alt="Foto Edilson" src={imgEdilson} />
             </div>
           </div>
         </div>
