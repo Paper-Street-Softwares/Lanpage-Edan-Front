@@ -40,13 +40,12 @@ export default function Sidebar() {
             </li>
 
             <li className="relative mb-2">
-              <div
+              <button
                 className="font-bold cursor-pointer hover:text-green-300"
                 onClick={toggleSublistLinks}
-                role="button"
               >
                 Links
-              </div>
+              </button>
               {showSublistLinks && (
                 <ul className="relative left-0 p-4 text-sm text-black bg-white top-full">
                   <li className="mb-2">
@@ -114,13 +113,12 @@ export default function Sidebar() {
             </li>
 
             <li className="relative mb-2 ">
-              <div
+              <button
                 className="font-bold cursor-pointer hover:text-green-300"
                 onClick={toggleSublistServices}
-                role="button"
               >
                 Certidões
-              </div>
+              </button>
               {showSublistServices && (
                 <ul className="relative left-0 p-4 text-sm text-black bg-white top-full">
                   <li className="mb-2">
