@@ -9,7 +9,7 @@ export default function AppSection() {
     <div className="content">
       <div className="mt-8 mb-8 feature">
         <SectionContent>
-          <div className="flex flex-col justify-around w-60 h-128 md:w-72 lg:w-112 xl:w-128">
+          <div className="flex flex-col justify-around w-full h-96 md:w-72 lg:w-112 xl:w-128">
             <div className="flex flex-col items-center justify-center h-1/5">
               <div className="flex flex-row justify-center mx-2 text-2xl font-bold text-center font-poppins text-mediumgreen md:mx-3">
                 Baixe nosso aplicativo e tenha inúmeras vantagens
@@ -25,27 +25,27 @@ export default function AppSection() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-around bg-mediumgreen w-60 h-128 md:w-72 lg:w-112 xl:w-128">
+          <div className="flex flex-col justify-around w-full bg-mediumgreen h-96 md:w-72 md:h-128 lg:w-112 xl:w-128">
             <div className="flex flex-col items-center justify-center h-1/5">
-              <div className="flex flex-row justify-center mx-2 text-2xl font-bold text-center text-white font-poppins md:mx-4">
+              <div className="flex flex-row justify-center mt-6 text-base font-bold text-center text-white font-poppins md:text-2xl md:mx-4">
                 Algumas funcionalidades do nosso aplicativo
               </div>
             </div>
             <div className="flex flex-col items-center justify-around h-4/5">
               <div className="flex flex-row justify-center">
                 <img
-                  className="w-4/6 md:w-[90%]"
+                  className="w-5/6 md:w-[90%]"
                   alt="Utilidades do aplicativo Edan"
                   src={imgAppUtilities}
                 ></img>
               </div>
-              <div className="flex flex-row justify-around w-4/5 h-auto md:w-[90%]">
+              <div className="flex flex-row justify-around w-4/5 h-8 md:w-[90%]">
                 <a
                   href="https://apps.apple.com/il/app/edan-contabilidade/id6473044144"
                   target="_blank"
                 >
                   <img
-                    className="h-11"
+                    className="h-8 md:h-11"
                     alt="Botão App Store"
                     src={imgAppStore}
                   />
@@ -55,7 +55,7 @@ export default function AppSection() {
                   target="_blank"
                 >
                   <img
-                    className="h-11"
+                    className="h-8 md:h-11"
                     alt="Botão Play Store"
                     src={imgPlayStore}
                   />
