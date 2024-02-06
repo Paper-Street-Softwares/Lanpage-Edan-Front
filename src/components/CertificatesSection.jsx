@@ -12,7 +12,7 @@ import imgSefazSP from "../style/assets/images/certidoes/sefazSP.png";
 
 export default function CertificatesSection() {
   return (
-    <div className="content">
+    <div className="content" id="certificates">
       <SectionHeader
         sectionHeaderTitleFirst="Todas as certidões que"
         sectionHeaderTitleSecond="sua empresa precisa"
