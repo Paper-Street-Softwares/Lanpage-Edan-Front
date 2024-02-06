@@ -10,7 +10,7 @@ import imgFacebook from "../style/assets/icons/footer/facebookIcon.png";
 
 export default function FooterSection() {
   return (
-    <div className="h-auto p-8 full bg-darkgreen ">
+    <div className="h-auto pt-8 full bg-darkgreen ">
       <div>
         <div className="content">
           <SectionContent>
