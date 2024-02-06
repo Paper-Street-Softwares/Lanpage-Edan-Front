@@ -12,7 +12,7 @@ export default function FooterSection() {
   return (
     <div className="h-auto p-8 full bg-darkgreen ">
       <div>
-        <div className="bg-blue-700 content">
+        <div className="content">
           <SectionContent>
             <FooterCardContent>
               <div className="h-12 mb-6">
@@ -43,7 +43,7 @@ export default function FooterSection() {
               <div className="flex flex-col justify-center h-12 mb-6 text-2xl font-bold">
                 SOBRE
               </div>
-              <div className="mb-4 text-xs font-light">
+              <div className="mb-4 font-light">
                 A Edan Contabilidade tem uma equipe de profissionais treinados e
                 capacitados para atender com primazia todas as demandas nas
                 áreas de departamento pessoal, fiscal e contábil.
@@ -75,7 +75,7 @@ export default function FooterSection() {
               <div className="flex flex-col justify-center h-12 mb-6 text-2xl font-bold">
                 NAVEGAÇÃO
               </div>
-              <div className="flex flex-row justify-between h-auto text-xs font-bold">
+              <div className="flex flex-row justify-between h-auto font-bold">
                 <div>
                   <div className="mb-4">
                     <a href="#">INÍCIO</a>

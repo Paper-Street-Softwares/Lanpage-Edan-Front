@@ -11,10 +11,13 @@ module.exports = {
         lightgray: "#707070",
         lighter: "#dfdfdf",
         graybg: "#f6f6f6",
-        lightyellow: '#FBD178'
+        lightyellow: "#FBD178",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+      },
+      fontSize: {
+        "10px": "0.625rem",
       },
       spacing: {
         112: "28rem",
