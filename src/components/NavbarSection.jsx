@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SectionContent from "../components/SectionComponents/SectionContent";
 import Navbar from "./SectionComponents/Navbar";
 import Logo from "../style/assets/images/Logo.png";
 import ListGroup from "./SectionComponents/ListGroup";
