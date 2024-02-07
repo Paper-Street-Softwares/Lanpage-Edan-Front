@@ -22,7 +22,7 @@ export default function WppSection() {
                 <div className="flex tablet2:w-72">
                   <a
                     href="#"
-                    className="flex flex-row items-center justify-around w-full h-16 phone1:p-3 rounded-xl bg-lightgreen hover:bg-green-800"
+                    className="flex flex-row items-center justify-around w-full h-16 phone1:p-3 rounded-xl bg-primary hover:bg-green-800"
                   >
                     <img
                       src={WhatsAppIcon}
