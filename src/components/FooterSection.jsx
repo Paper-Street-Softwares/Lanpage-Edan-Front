@@ -13,7 +13,7 @@ export default function FooterSection() {
     <div className="h-auto pt-8 bg-secondary content">
       <SectionContent>
         <FooterCardContent>
-          <div className="flex flex-col items-center h-12 mb-6 bg-red-500 phone3:items-start">
+          <div className="flex flex-col items-center h-12 mb-6 phone3:items-start">
             <img alt="Logo Edan" className="h-12" src={imgLogo} />
           </div>
           <div className="flex flex-col justify-between h-auto phone3:h-40">
@@ -38,10 +38,10 @@ export default function FooterSection() {
           </div>
         </FooterCardContent>
         <FooterCardContent>
-          <div className="flex flex-col justify-center h-12 mb-6 text-2xl font-bold bg-yellow-800">
+          <div className="flex flex-col justify-center h-12 mb-6 text-2xl font-bold">
             SOBRE
           </div>
-          <div className="mb-4 font-light bg-red-200">
+          <div className="mb-4 font-light">
             A Edan Contabilidade tem uma equipe de profissionais treinados e
             capacitados para atender com primazia todas as demandas nas áreas de
             departamento pessoal, fiscal e contábil.
