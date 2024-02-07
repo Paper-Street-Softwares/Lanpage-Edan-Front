@@ -16,7 +16,7 @@ export default function FooterSection() {
           <div className="flex flex-col items-center h-12 mb-6 bg-red-500 phone3:items-start">
             <img alt="Logo Edan" className="h-12" src={imgLogo} />
           </div>
-          <div className="flex flex-col justify-between h-40">
+          <div className="flex flex-col justify-between h-auto phone3:h-40">
             <HonrizontalIconAndText
               img={imgHome}
               imgAlt="Ícone Home"
@@ -46,7 +46,7 @@ export default function FooterSection() {
             capacitados para atender com primazia todas as demandas nas áreas de
             departamento pessoal, fiscal e contábil.
           </div>
-          <div className="flex flex-col justify-between h-12">
+          <div className="flex flex-col justify-between h-auto phone3:h-12">
             <a
               target="_blank"
               href="https://www.instagram.com/edancontabilidade/#"
