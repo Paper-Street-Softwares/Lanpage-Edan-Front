@@ -11,6 +11,7 @@ export default function AboutSection() {
       <SectionHeader
         sectionHeaderTitleFirst="Sobre a"
         sectionHeaderTitleSecond="Edan Contabilidade"
+        sectionHeaderDescription="Conheça um pouco da nossa história."
       />
       <div>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
@@ -39,8 +40,8 @@ export default function AboutSection() {
               applyBorder={true}
             />
           </SectionContent>
-          <div className="flex flex-wrap justify-between w-full h-auto mt-8 opacity-0 animate-fade-in">
-            <h1 className="text-xl font-semibold font-poppins text-gray">
+          <div className="flex flex-wrap justify-between w-full h-auto mt-4 opacity-0 animate-fade-in">
+            <h1 className="text-xl font-semibold font-poppins text-secondary">
               A Edan atende em todo brasil?
             </h1>
             <div className="grid grid-cols-2">
@@ -58,8 +59,8 @@ export default function AboutSection() {
               />
             </div>
           </div>
-          <div className="flex flex-wrap justify-between w-full h-auto mt-8 opacity-0 animate-fade-in">
-            <h1 className="mb-8 text-xl font-semibold font-poppins text-gray">
+          <div className="flex flex-wrap justify-between w-full h-auto mt-4 opacity-0 animate-fade-in">
+            <h1 className="mb-8 text-xl font-semibold font-poppins text-secondary">
               Onde nos encontrar?
             </h1>
             <div className="w-full mb-8 border-b-8 border-primary">
