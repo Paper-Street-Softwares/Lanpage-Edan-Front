@@ -15,7 +15,7 @@ export default function WppSection() {
           <div className="flex flex-row items-end justify-between h-52">
             <div>
               <div className="flex flex-col justify-around h-52">
-                <h1 className="text-xl text-center text-white font-poppins tablet2:text-3xl tablet2:text-left lg:text-4xl ">
+                <h1 className="text-xl text-center text-white font-poppins tablet2:text-3xl tablet2:text-left desktop1:text-4xl ">
                   Contate-nos através do <strong>Whatsapp</strong>
                 </h1>
 
