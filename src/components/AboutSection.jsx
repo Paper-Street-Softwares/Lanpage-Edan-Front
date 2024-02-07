@@ -10,14 +10,14 @@ export default function AboutSection() {
     <div className="content bg-quinary" id="about">
       <SectionHeader
         sectionHeaderTitleFirst="Sobre a"
-        sectionHeaderTitleSecond="EDAN Contabilidade"
+        sectionHeaderTitleSecond="Edan Contabilidade"
       />
       <div>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <SectionContent>
             <SectionTextAndImages
               sectionTextAndImagesTitleFirst="O escritório mais premiado"
-              sectionTextAndImagesDescription="Nesses 40 anos de existência a EDAN CONTABILIDADE tem primado pela
+              sectionTextAndImagesDescription="Nesses 40 anos de existência a Edan Contabilidade tem primado pela
             excelência no atendimento, controle e eficácia nas obrigações civis
             de pessoas físicas e jurídicas. se destacando e sendo contemplada
             com premiações e destaques."
@@ -41,17 +41,21 @@ export default function AboutSection() {
           </SectionContent>
           <div className="flex flex-wrap justify-between w-full h-auto mt-8 opacity-0 animate-fade-in">
             <h1 className="text-xl font-semibold font-poppins text-gray">
-              A EDAN atende em todo brasil?
+              A Edan atende em todo brasil?
             </h1>
             <div className="grid grid-cols-2">
-              <p className="text-sm font-poppins text-gray">
+              <p className="text-sm md:mt-0 mt-10 font-poppins text-gray">
                 É importante escolher serviços contábeis confiáveis, conhecer a
                 qualidade e abrangência dos serviços oferecidos antes de
                 contratá-los. A Edan é uma empresa de contabilidade completa que
                 atende a todas as cidades do Brasil, mantendo as finanças
                 organizadas e em ordem.
               </p>
-              <img src={Brasil} alt="Mapa do Brasil" />
+              <img
+                src={Brasil}
+                alt="Mapa do Brasil"
+                className="md:mt-0 mt-10"
+              />
             </div>
           </div>
           <div className="flex flex-wrap justify-between w-full h-auto mt-8 opacity-0 animate-fade-in">

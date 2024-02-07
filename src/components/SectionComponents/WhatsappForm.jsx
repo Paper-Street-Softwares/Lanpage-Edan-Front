@@ -73,7 +73,7 @@ const WhatsappForm = () => {
 
   return (
     <div>
-      <h1 className="w-full mb-2 text-xl ">Entre em contato agora</h1>
+      <h1 className="w-full mb-2 text-xl">Entre em contato agora</h1>
       <div className="mb-5">
         <div className="flex mb-4 text-gray-500">
           <div className="flex items-center justify-center w-12 px-1 bg-white ">
