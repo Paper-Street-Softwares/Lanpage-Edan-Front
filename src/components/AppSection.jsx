@@ -25,9 +25,9 @@ export default function AppSection() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-around w-full bg-secondary h-96 tablet2:w-72 tablet2:h-128 desktop1:w-112 xl:w-128">
+          <div className="flex flex-col justify-around w-full bg-secondary h-96 phone1:h-112 phone2:h-128 tablet2:w-72 tablet2:h-128 desktop1:w-112">
             <div className="flex flex-col items-center justify-center h-1/5">
-              <div className="flex flex-row justify-center mt-6 text-base font-bold text-center text-white font-poppins tablet2:text-2xl tablet2:mx-4">
+              <div className="flex flex-row justify-center mx-4 mt-6 text-base font-bold text-center text-white font-poppins tablet2:text-2xl tablet2:mx-4">
                 Algumas funcionalidades do nosso aplicativo
               </div>
             </div>
