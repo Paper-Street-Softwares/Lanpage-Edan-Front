@@ -5,8 +5,12 @@ export default function ParallaxSection(props) {
     <div className="mt-10 full">
       <div className="full">
         <div
-          className="bg-fixed feature h-52"
-          style={{ backgroundImage: `url(${img})` }}
+          className="bg-center bg-cover feature h-52"
+          style={{
+            backgroundImage: `url(${img})`,
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
+          }}
         ></div>
       </div>
     </div>

@@ -6,8 +6,12 @@ import WhatsAppIcon from "../style/assets/icons/WhatsAppIcon.png";
 export default function WppSection() {
   return (
     <div
-      className="mt-12 bg-fixed tablet2:mt-28 content"
-      style={{ backgroundImage: `url(${imgOfficeGreenBackground})` }}
+      className="mt-12 bg-center bg-cover tablet2:mt-28 content"
+      style={{
+        backgroundImage: `url(${imgOfficeGreenBackground})`,
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+      }}
       id="contact"
     >
       <SectionContent>
