@@ -10,7 +10,7 @@ export default function StandardServiceCard(props) {
       </div>
       <div className="flex flex-col items-center justify-between w-full h-full font-poppins">
         <div className="flex flex-col items-center justify-center p-1 h-1/3">
-          <div className="text-xs font-medium text-center text-secondary hover:text-primary">
+          <div className="text-xs font-medium text-center transition text-secondary hover:text-primary">
             {title}
           </div>
         </div>

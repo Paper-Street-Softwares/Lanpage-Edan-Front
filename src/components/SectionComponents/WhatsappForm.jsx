@@ -156,7 +156,7 @@ const WhatsappForm = () => {
 
       <div className="flex justify-center">
         <button
-          className="flex items-center w-full h-16 px-4 py-2 text-xl text-white bg-primary hover:bg-secondary"
+          className="flex items-center w-full h-16 px-4 py-2 text-xl text-white transition rounded-lg bg-primary hover:bg-secondary"
           onClick={sendToWhatsapp}
         >
           <img
