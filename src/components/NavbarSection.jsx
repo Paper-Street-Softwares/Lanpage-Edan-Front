@@ -26,7 +26,7 @@ export default function NavbarSection() {
       <div
         className={`fixed full ${
           scrolling
-            ? "bg-white border-b-4 border-mediumgreen transition-bg duration-300"
+            ? "bg-white shadow-lg transition-shadow transition-bg duration-300"
             : ""
         }`}
       >
