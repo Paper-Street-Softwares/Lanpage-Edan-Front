@@ -7,7 +7,7 @@ import SectionTextAndImages from "./SectionComponents/SectionTextAndImages";
 
 export default function AboutSection() {
   return (
-    <div className="content bg-graybg" id="about">
+    <div className="content bg-quinary" id="about">
       <SectionHeader
         sectionHeaderTitleFirst="Sobre a"
         sectionHeaderTitleSecond="Edan Contabilidade"
@@ -62,7 +62,7 @@ export default function AboutSection() {
             <h1 className="mb-8 text-xl font-semibold font-poppins text-gray">
               Onde nos encontrar?
             </h1>
-            <div className="w-full mb-8 border-b-8 border-lightgreen">
+            <div className="w-full mb-8 border-b-8 border-primary">
               <iframe
                 className="w-full"
                 title="GoogleMaps"

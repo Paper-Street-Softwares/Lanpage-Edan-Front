@@ -25,7 +25,7 @@ export default function SectionTextAndImages(props) {
         {sectionTextAndImagesImg && (
           <div
             className={`flex flex-col ${
-              props.applyBorder ? "border-b-8 border-lightgreen" : ""
+              props.applyBorder ? "border-b-8 border-primary" : ""
             }`}
           >
             <img src={sectionTextAndImagesImg} alt={imgDescription} />
@@ -34,7 +34,7 @@ export default function SectionTextAndImages(props) {
       </div>
       <div className="w-full h-full">
         {iframe && (
-          <div className="border-b-8 border-lightgreen">
+          <div className="border-b-8 border-primary">
             <iframe
               title="Localização EDAN Contabilidade"
               src={iframe}

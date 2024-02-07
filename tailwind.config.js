@@ -4,14 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        wallpaper: "#2f612c",
-        darkgreen: "#031508",
-        mediumgreen: "#027738",
-        lightgreen: "#3B8E53",
-        lightgray: "#707070",
-        lighter: "#dfdfdf",
-        graybg: "#f6f6f6",
-        lightyellow: "#FBD178",
+        primary: "#027738", // Primary collor
+        secondary: "#2A784F", // Light version from primary for small details
+        tertiary: "#09351C", // Dark variation from primary for titles
+        quaternary: "#737373", // Neutral gray for paragraph
+        quinary: "#f6f6f6", // Light gray for background
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
