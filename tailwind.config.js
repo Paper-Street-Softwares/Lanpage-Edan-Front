@@ -30,7 +30,21 @@ module.exports = {
         desktop2: "1280px",
         desktop3: "1440px",
       },
-    },
+      keyframes: {
+        slideDown: {
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
+          "100%": { transform: "translateY(0%)", opacity: "1" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(0%)", opacity: "1" },
+          "100%": { transform: "translateY(-100%)", opacity: "0" },
+        },
+      },
+      animation: {
+        "slide-down": "slideDown 2s ease",
+        "slide-up": "slideUp 2s ease",
+      },
+    }
   },
   plugins: [],
 };
