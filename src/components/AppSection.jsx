@@ -1,6 +1,6 @@
 import SectionContent from "../components/SectionComponents/SectionContent";
 import imgAppScreen from "../style/assets/images/aplicativo/appScreens.png";
-import imgAppUtilities from "../style/assets/images/aplicativo/appUtilities.png";
+import imgAppUtilities from "../style/assets/images/aplicativo/appUtilities2.png";
 import imgAppStore from "../style/assets/images/aplicativo/appStore.png";
 import imgPlayStore from "../style/assets/images/aplicativo/playStore.png";
 
