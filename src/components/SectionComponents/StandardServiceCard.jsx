@@ -15,7 +15,7 @@ export default function StandardServiceCard(props) {
           </div>
         </div>
         <div className="flex flex-col justify-center p-2 text-center h-2/3">
-          <div className="text-xs text-neutral-500">{description}</div>
+          <div className="text-xs text-quaternary">{description}</div>
         </div>
       </div>
     </a>
