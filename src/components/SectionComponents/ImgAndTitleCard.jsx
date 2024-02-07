@@ -17,7 +17,7 @@ export default function ImgAndTitleCard(props) {
         </div>
       </div>
       <div className="flex flex-col justify-center w-full h-full">
-        <div className="text-sm font-bold text-center transition duration-300 font-poppins text-tertiary hover:text-primary">
+        <div className="text-sm font-bold text-center transition duration-300 font-poppins text-secondary hover:text-primary">
           {title}
         </div>
       </div>

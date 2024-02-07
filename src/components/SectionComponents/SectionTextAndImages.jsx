@@ -17,8 +17,10 @@ export default function SectionTextAndImages(props) {
       <div className="text-xl font-semibold text-gray">
         {sectionTextAndImagesTitleSecond}
       </div>
-      <div className="text-sm text-gray">{sectionTextAndImagesDescription}</div>
-      <div className="mt-2 text-sm font-semibold text-gray">
+      <div className="text-sm text-quaternary">
+        {sectionTextAndImagesDescription}
+      </div>
+      <div className="mt-2 text-sm font-semibold text-secondary">
         {sectionTextAndImagesSubscription}
       </div>
       <div>

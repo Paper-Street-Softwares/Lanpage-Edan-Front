@@ -44,7 +44,7 @@ export default function AboutSection() {
               A Edan atende em todo brasil?
             </h1>
             <div className="grid grid-cols-2">
-              <p className="text-sm md:mt-0 mt-10 font-poppins text-gray">
+              <p className="mt-10 text-sm md:mt-0 font-poppins text-quaternary">
                 É importante escolher serviços contábeis confiáveis, conhecer a
                 qualidade e abrangência dos serviços oferecidos antes de
                 contratá-los. A Edan é uma empresa de contabilidade completa que
@@ -54,7 +54,7 @@ export default function AboutSection() {
               <img
                 src={Brasil}
                 alt="Mapa do Brasil"
-                className="md:mt-0 mt-10"
+                className="mt-10 md:mt-0"
               />
             </div>
           </div>

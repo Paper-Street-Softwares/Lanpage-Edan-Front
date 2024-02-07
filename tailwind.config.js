@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#027738", // Primary collor
-        secondary: "#027738", // Light version from primary for small details
-        tertiary: "#09351C", // Dark variation from primary for titles
+        secondary: "#09351C", // Dark variation from primary for small details
+        tertiary: "#ff0000", // Dark variation from primary for titles
         quaternary: "#737373", // Neutral gray for paragraph
         quinary: "#f6f6f6", // Light gray for background
       },
@@ -34,3 +34,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+// 09351C

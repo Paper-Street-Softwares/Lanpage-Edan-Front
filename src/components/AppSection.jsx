@@ -11,7 +11,7 @@ export default function AppSection() {
         <SectionContent>
           <div className="flex flex-col justify-around w-full h-96 tablet2:w-72 desktop1:w-112 xl:w-128">
             <div className="flex flex-col items-center justify-center h-1/5">
-              <div className="flex flex-row justify-center mx-2 text-2xl font-bold text-center font-poppins text-secondary tablet2:mx-3">
+              <div className="flex flex-row justify-center mx-2 text-2xl font-bold text-center font-poppins text-primary tablet2:mx-3">
                 Baixe nosso aplicativo e tenha inúmeras vantagens
               </div>
             </div>
@@ -25,7 +25,7 @@ export default function AppSection() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-around w-full bg-secondary h-96 tablet2:w-72 tablet2:h-128 desktop1:w-112 xl:w-128">
+          <div className="flex flex-col justify-around w-full bg-primary h-96 tablet2:w-72 tablet2:h-128 desktop1:w-112 xl:w-128">
             <div className="flex flex-col items-center justify-center h-1/5">
               <div className="flex flex-row justify-center mt-6 text-base font-bold text-center text-white font-poppins tablet2:text-2xl tablet2:mx-4">
                 Algumas funcionalidades do nosso aplicativo
