@@ -14,7 +14,7 @@ export default function SectionHeader(props) {
         {sectionHeaderTitleSecond}
       </div>
       <div className="w-full h-px mt-6 mb-6 bg-neutral-200"></div>
-      <div className="w-[79%] text-neutral-500 font-poppins text-sm text-center">
+      <div className="w-[79%] text-quaternary font-poppins text-sm text-center">
         {sectionHeaderDescription}
       </div>
     </div>
