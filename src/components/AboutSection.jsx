@@ -41,7 +41,7 @@ export default function AboutSection() {
             />
           </SectionContent>
           <div className="flex flex-wrap justify-between w-full h-auto mt-4 opacity-0 animate-fade-in">
-            <h1 className="text-xl font-semibold font-poppins text-gray">
+            <h1 className="text-xl font-semibold font-poppins text-secondary">
               A Edan atende em todo brasil?
             </h1>
             <div className="grid grid-cols-2">
@@ -60,7 +60,7 @@ export default function AboutSection() {
             </div>
           </div>
           <div className="flex flex-wrap justify-between w-full h-auto mt-4 opacity-0 animate-fade-in">
-            <h1 className="mb-8 text-xl font-semibold font-poppins text-gray">
+            <h1 className="mb-8 text-xl font-semibold font-poppins text-secondary">
               Onde nos encontrar?
             </h1>
             <div className="w-full mb-8 border-b-8 border-primary">

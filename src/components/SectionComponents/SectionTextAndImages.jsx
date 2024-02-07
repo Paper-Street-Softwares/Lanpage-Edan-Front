@@ -11,10 +11,10 @@ export default function SectionTextAndImages(props) {
 
   return (
     <div className="w-full h-auto font-poppins">
-      <div className="my-4 text-xl font-semibold">
+      <div className="my-4 text-xl font-semibold text-secondary">
         {sectionTextAndImagesTitleFirst}
       </div>
-      <div className="text-xl font-semibold">
+      <div className="text-xl font-semibold text-secondary">
         {sectionTextAndImagesTitleSecond}
       </div>
       <div className="text-sm text-quaternary">
