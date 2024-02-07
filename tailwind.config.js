@@ -4,17 +4,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#027738", // Primary collor
-        secondary: "#2A784F", // Light version from primary for small details
-        tertiary: "#09351C", // Dark variation from primary for titles
+        primary: "#027738", // Primary collor (lighter)
+        secondary: "#09351C", // Dark variation from primary for small details (darker)
+        tertiary: "", // Optional
         quaternary: "#737373", // Neutral gray for paragraph
-        quinary: "#f6f6f6", // Light gray for background
+        quinary: "#f6f6f6", // Light primary collor (or gray) for background
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
       fontSize: {
-        "10px": "0.625rem",
+        xxs: "0.625rem",
       },
       spacing: {
         112: "28rem",
@@ -34,3 +34,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+// 09351C
