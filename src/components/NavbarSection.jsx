@@ -5,7 +5,6 @@ import ListGroup from "./SectionComponents/ListGroup";
 
 export default function NavbarSection() {
   const [scrolling, setScrolling] = useState(false);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -13,10 +12,6 @@ export default function NavbarSection() {
     } else {
       setScrolling(false);
     }
-  };
-
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
   };
 
   useEffect(() => {
@@ -42,10 +37,7 @@ export default function NavbarSection() {
             </div>
           </div>
           <div className="items-center w-4/5 ml-32">
-            <button className="block md:hidden" onClick={toggleSidebar}>
-              menu
-            </button>
-            <div className={`md:flex ${sidebarOpen ? "block" : "hidden"}`}>
+            <div className="md:flex">
               <ul className="gap-4 md:flex">
                 <ListGroup />
               </ul>
