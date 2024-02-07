@@ -6,7 +6,7 @@ export default function HonrizontalIconAndText(props) {
       <div className="flex flex-col items-center justify-center bg-blue-700">
         <img className="w-6 m-2 phone3:m-0 " alt={imgAlt} src={img} />
       </div>
-      <div className="flex flex-col justify-center w-full bg-green-500 phone3:ml-4 items-left">
+      <div className="flex flex-col justify-center w-full mb-2 bg-green-500 phone3:ml-4 phone3:mb-0 items-left">
         <div>{text}</div>
         <div>{textLine2}</div>
         <div>{textLine3}</div>
