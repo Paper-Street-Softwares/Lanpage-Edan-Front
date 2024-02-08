@@ -22,7 +22,7 @@ module.exports = {
       },
       screens: {
         phone1: "325px",
-        phone2: "380px",
+        phone2: "365px",
         phone3: "435px",
         tablet1: "640px",
         tablet2: "768px",
