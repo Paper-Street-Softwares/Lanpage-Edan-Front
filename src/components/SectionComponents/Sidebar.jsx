@@ -22,23 +22,23 @@ export default function Sidebar({ showSidebar }) {
     >
       <div className="mx-auto">
         <div
-          className={`flex h-auto justify-center w-64 px-10 py-4 mx-auto bg-white font-poppins ${
+          className={`flex h-auto w-80 px-12 py-6 mx-auto bg-white font-poppins ${
             showSublistServices || showSublistLinks ? "mb-16" : ""
           }`}
         >
           <div className="overflow-y-auto">
-            <ul className="text-center text-black ">
-              <li className="mb-2 font-bold">
+            <ul className="text-black ">
+              <li className="mb-2">
                 <a href="home" className="hover:text-green-300">
                   Início
                 </a>
               </li>
-              <li className="mb-2 font-bold">
+              <li className="mb-2">
                 <a href="about" className="hover:text-green-300">
                   Sobre Nós
                 </a>
               </li>
-              <li className="mb-2 font-bold">
+              <li className="mb-2">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -51,7 +51,7 @@ export default function Sidebar({ showSidebar }) {
 
               <li className="relative mb-2">
                 <button
-                  className="font-bold cursor-pointer hover:text-green-300"
+                  className="cursor-pointer hover:text-green-300"
                   onClick={toggleSublistLinks}
                 >
                   Links
@@ -184,7 +184,7 @@ export default function Sidebar({ showSidebar }) {
 
               <li className="relative mb-2 ">
                 <button
-                  className="font-bold cursor-pointer hover:text-green-300"
+                  className="cursor-pointer hover:text-green-300"
                   onClick={toggleSublistServices}
                 >
                   Certidões
@@ -274,7 +274,7 @@ export default function Sidebar({ showSidebar }) {
                   </ul>
                 )}
               </li>
-              <li className="mb-2 font-bold">
+              <li className="mb-2">
                 <a href="contact" className="hover:text-green-300">
                   Contato
                 </a>
