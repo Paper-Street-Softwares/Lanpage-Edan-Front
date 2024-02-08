@@ -4,7 +4,7 @@ import WhatsappForm from "./SectionComponents/WhatsappForm";
 export default function HeroSection() {
   return (
     <div className="content" id="home">
-      <div className="full">
+      <div className="h-auto full">
         <div
           className="w-full bg-center bg-cover content md:min-h-0"
           style={{ backgroundImage: "url(" + bgImage + ")" }}

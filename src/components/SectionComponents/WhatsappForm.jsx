@@ -80,7 +80,7 @@ const WhatsappForm = () => {
             <CiUser />
           </div>
           <input
-            className="w-full px-1 py-2 border-0"
+            className="w-full px-1 py-2 border-0 rounded-none rounded-tr-none-md rounded-br-none-md"
             type="text"
             id="name"
             value={name}
@@ -90,7 +90,7 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.name && (
-          <p className="-mt-4 text-sm text-red-500">{errors.name}</p>
+          <p className="-mt-4 -mb-4 text-sm text-red-500">{errors.name}</p>
         )}
       </div>
 
@@ -100,7 +100,7 @@ const WhatsappForm = () => {
             <CiPhone />
           </div>
           <input
-            className="w-full px-1 py-2 border-0"
+            className="w-full px-1 py-2 border-0 rounded-none rounded-tr-none-md rounded-br-none-md"
             type="tel"
             id="phone"
             value={phone}
@@ -110,7 +110,7 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.phone && (
-          <p className="-mt-4 text-sm text-red-500">{errors.phone}</p>
+          <p className="-mt-4 -mb-4 text-sm text-red-500">{errors.phone}</p>
         )}
       </div>
 
@@ -120,7 +120,7 @@ const WhatsappForm = () => {
             <CiMail />
           </div>
           <input
-            className="w-full px-1 py-2 border-0"
+            className="w-full px-1 py-2 border-0 rounded-none rounded-tr-none-md rounded-br-none-md"
             type="email"
             id="email"
             value={email}
@@ -130,7 +130,7 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.email && (
-          <p className="-mt-4 text-sm text-red-500">{errors.email}</p>
+          <p className="-mt-4 -mb-4 text-sm text-red-500">{errors.email}</p>
         )}
       </div>
 
@@ -140,7 +140,7 @@ const WhatsappForm = () => {
             <CiChat1 className="h-11" />
           </div>
           <textarea
-            className="w-full px-1 py-2 border-0"
+            className="w-full px-1 py-2 border-0 rounded-none rounded-tr-none-md rounded-br-none-md"
             type="text"
             id="message"
             value={message}
@@ -150,7 +150,7 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.message && (
-          <p className="-mt-4 text-sm text-red-500">{errors.message}</p>
+          <p className="-mt-4 -mb-4 text-sm text-red-500">{errors.message}</p>
         )}
       </div>
 
