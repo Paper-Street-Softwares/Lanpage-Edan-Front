@@ -40,23 +40,19 @@ export default function AboutSection() {
               applyBorder={true}
             />
           </SectionContent>
-          <div className="flex flex-wrap justify-between w-full h-auto mt-4 opacity-0 animate-fade-in">
+          <div className="flex flex-wrap justify-between w-full h-auto mt-4 mb-10 opacity-0 animate-fade-in">
             <h1 className="text-xl font-semibold font-poppins text-secondary">
               A Edan atende em todo brasil?
             </h1>
-            <div className="grid grid-cols-2">
-              <p className="mt-10 text-sm md:mt-0 font-poppins text-quaternary">
+            <div className="grid grid-cols-2 -mt-4">
+              <p className="text-sm font-poppins text-quaternary">
                 É importante escolher serviços contábeis confiáveis, conhecer a
                 qualidade e abrangência dos serviços oferecidos antes de
                 contratá-los. A Edan é uma empresa de contabilidade completa que
                 atende a todas as cidades do Brasil, mantendo as finanças
                 organizadas e em ordem.
               </p>
-              <img
-                src={Brasil}
-                alt="Mapa do Brasil"
-                className="mt-10 md:mt-0"
-              />
+              <img src={Brasil} alt="Mapa do Brasil" />
             </div>
           </div>
           <div className="flex flex-wrap justify-between w-full h-auto mt-4 opacity-0 animate-fade-in">
