@@ -2,7 +2,7 @@ export default function StandardServiceCard(props) {
   const { title, description, icon, altIcon } = props;
 
   return (
-    <a className="flex flex-col items-center justify-between w-full h-auto mt-2 mb-2 border-t border-b-8 border-l border-r border-solid phone3:h-56 border-neutral-200 border-b-primary tablet2:w-28 desktop1:w-36">
+    <a className="flex flex-col items-center justify-between w-full h-auto mt-2 mb-2 border-t border-b-8 border-l border-r border-solid phone3:h-56 border-neutral-200 border-b-primary tablet1:w-40 tablet2:w-28 desktop1:w-36">
       <div className="flex flex-row items-center justify-center w-full h-20 phone3:h-3/5">
         <div>
           <img src={icon} alt={altIcon} className="w-auto h-12"></img>
