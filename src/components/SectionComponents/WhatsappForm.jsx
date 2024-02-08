@@ -52,7 +52,7 @@ const WhatsappForm = () => {
   const validateMessage = (message) => !!message;
 
   return (
-    <div className="text-paragraph3 phone3:text-xl">
+    <div className="text-paragraph3 phone3:text-paragraph4">
       <h1 className="w-full mb-2 font-medium">Entre em contato agora</h1>
       <div className="mb-5">
         <div className="flex mb-4 text-gray-500">
