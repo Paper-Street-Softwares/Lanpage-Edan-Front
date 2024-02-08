@@ -43,33 +43,13 @@ const WhatsappForm = () => {
     window.open(linkWhatsapp, "_blank");
   };
 
-  const validateName = (name) => {
-    if (!name) {
-      return false;
-    }
-    return true;
-  };
+  const validateName = (name) => !!name;
 
-  const validatePhone = (phone) => {
-    if (!phone) {
-      return false;
-    }
-    return true;
-  };
+  const validatePhone = (phone) => !!phone;
 
-  const validateEmail = (email) => {
-    if (!email) {
-      return false;
-    }
-    return true;
-  };
+  const validateEmail = (email) => !!email;
 
-  const validateMessage = (message) => {
-    if (!message) {
-      return false;
-    }
-    return true;
-  };
+  const validateMessage = (message) => !!message;
 
   return (
     <div>
