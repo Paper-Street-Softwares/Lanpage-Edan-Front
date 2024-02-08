@@ -4,7 +4,6 @@ import Logo from "../style/assets/images/Logo.png";
 import ListGroup from "./SectionComponents/ListGroup";
 import Sidebar from "./SectionComponents/Sidebar";
 import { Menu, X } from "lucide-react";
-import SectionContent from "./SectionComponents/SectionContent";
 
 export default function NavbarSection() {
   const [scrolling, setScrolling] = useState(false);
