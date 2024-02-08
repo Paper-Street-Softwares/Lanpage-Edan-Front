@@ -6,7 +6,7 @@ export default function TestimonialsSection() {
     <div
       className="bg-center bg-cover feature h-52"
       style={{
-        backgroundImage: `url(${img})`,
+        backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
       }}
