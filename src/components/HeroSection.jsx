@@ -18,7 +18,7 @@ export default function HeroSection() {
                 <h1 className="font-bold leading-7 mb-9 text-title4 phone3:leading-none phone3:text-title6 phone2:mb-11">
                   Resultado!
                 </h1>
-                <p className="text-paragraph3 phone3:text-xl">
+                <p className="text-paragraph3 phone3:text-paragraph4">
                   Experiência que Conta! Com mais de 40 anos de experiência,
                   oferecemos conhecimento sólido para lidar com os desafios
                   contábeis do seu negócio.
