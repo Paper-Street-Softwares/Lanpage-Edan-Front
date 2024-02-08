@@ -23,9 +23,9 @@ module.exports = {
         title6: "3rem", // 48px -> Números grandes
         title7: "3.4375rem", // 55px -> Hero desktop
         paragraph1: "0.625rem", // 10px
-        paragraph2: "0.75rem", // 12px
-        paragraph3: "0.875rem", // 14px
-        paragraph4: "1rem", // 16px
+        paragraph2: "0.75rem", // 12px | Texto da linha de crédito
+        paragraph3: "0.875rem", // 14px | Texto hero section e section header description, about do footer (texto de acordion)
+        paragraph4: "1rem", // 16px | Textos especiais (cards do footer, tpitulo de acordion, links do footer)
         paragraph5: "1.125rem", // 18px
       },
       spacing: {
