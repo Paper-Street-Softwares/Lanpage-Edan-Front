@@ -48,7 +48,9 @@ export default function NavbarSection() {
     <div className="content">
       <div
         className={`fixed w-full ${
-          scrolling ? "bg-white shadow-lg transition-shadow" : ""
+          scrolling
+            ? "bg-white shadow-lg transition-shadow duration-300 animate-fade-in"
+            : ""
         }`}
       >
         <Navbar>
