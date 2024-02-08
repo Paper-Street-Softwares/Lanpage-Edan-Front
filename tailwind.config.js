@@ -54,8 +54,8 @@ module.exports = {
         },
       },
       animation: {
-        "slide-down": "slideDown 2s ease",
-        "slide-up": "slideUp 2s ease",
+        "slide-down": "slideDown 1s ease",
+        "slide-up": "slideUp 1s ease",
       },
     },
   },
