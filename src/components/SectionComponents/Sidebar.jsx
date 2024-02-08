@@ -22,7 +22,7 @@ export default function Sidebar({ showSidebar }) {
     >
       <div className="mx-auto">
         <div
-          className={`flex h-auto justify-center w-64 px-10 py-4 mx-auto bg-white font-poppins ${
+          className={`flex h-auto w-80 px-12 py-6 mx-auto bg-white font-poppins ${
             showSublistServices || showSublistLinks ? "mb-16" : ""
           }`}
         >
@@ -38,7 +38,7 @@ export default function Sidebar({ showSidebar }) {
                   Sobre Nós
                 </a>
               </li>
-              <li className="mb-2 font-bold">
+              <li className="mb-2">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
