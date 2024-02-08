@@ -22,10 +22,11 @@ module.exports = {
         title5: "2.25rem", // 36px -> Section header
         title6: "3rem", // 48px -> Números grandes
         title7: "3.4375rem", // 55px -> Hero desktop
-        paragraph1: "",
-        paragraph2: "",
-        paragraph3: "",
-        paragraph4: "",
+        paragraph1: "0.625rem", // 10px
+        paragraph2: "0.75rem", // 12px
+        paragraph3: "0.875rem", // 14px
+        paragraph4: "1rem", // 16px
+        paragraph5: "1.125rem", // 18px
       },
       spacing: {
         112: "28rem",
