@@ -28,6 +28,8 @@ export default function LinksSection() {
             img={imgInscricaoEstadual}
             imgDescription="Ícone SEFAZ"
             title="Inscrição Estadual"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://portal.sefaz.ba.gov.br/scripts/cadastro/cadastroBa/consultaBa.asp"
           />,
           <ImgAndTitleCard
@@ -35,6 +37,8 @@ export default function LinksSection() {
             img={imgPedidoViabilidade}
             imgDescription="Ícone Juceb"
             title="Pedido de Viabilidade"
+            target="_blank"
+            rel="noopener noreferrer"
             link="http://regin.juceb.ba.gov.br/regin.ba/CON_ViabilidadeSelecaoExternoV2.aspx?"
           />,
           <ImgAndTitleCard
@@ -42,6 +46,8 @@ export default function LinksSection() {
             img={imgConsultaDbe}
             imgDescription="Ícone Consulta DBE"
             title="Consultar DBE"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://www.gov.br/empresas-e-negocios/pt-br/redesim/protocolo-redesim"
           />,
           <ImgAndTitleCard
@@ -49,6 +55,8 @@ export default function LinksSection() {
             img={imgConsultaOptanteSimples}
             imgDescription="Ícone Consulta Optantes"
             title="Consulta Optantes Simples"
+            target="_blank"
+            rel="noopener noreferrer"
             link="http://www8.receita.fazenda.gov.br/SimplesNacional/aplicacoes.aspx?id=22"
           />,
           <ImgAndTitleCard
@@ -56,6 +64,8 @@ export default function LinksSection() {
             img={imgDarfReceita}
             imgDescription="Ícone Darf Receita"
             title="Pessoa Jurídica"
+            target="_blank"
+            rel="noopener noreferrer"
             link="http://servicos.receita.fazenda.gov.br/Servicos/sicalcweb/default.asp?TipTributo=2&FormaPagto=1"
           />,
           <ImgAndTitleCard
@@ -63,6 +73,8 @@ export default function LinksSection() {
             img={imgDarfReceita}
             imgDescription="Ícone Darf Receita"
             title="Pessoa Física"
+            target="_blank"
+            rel="noopener noreferrer"
             link="http://servicos.receita.fazenda.gov.br/Servicos/sicalcweb/default.asp?TipTributo=1&FormaPagto=1"
           />,
           <ImgAndTitleCard
@@ -70,6 +82,8 @@ export default function LinksSection() {
             img={imgEcac}
             imgDescription="Ícone ECAC"
             title="Acesso e-CAC"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://cav.receita.fazenda.gov.br/autenticacao/login"
           />,
           <ImgAndTitleCard
@@ -77,6 +91,8 @@ export default function LinksSection() {
             img={imgGovBr}
             imgDescription="Ícone GovBR"
             title="Acesso Gov.Br"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://sso.acesso.gov.br/login"
           />,
           <ImgAndTitleCard
@@ -84,6 +100,8 @@ export default function LinksSection() {
             img={imgPrefeituraIlheus}
             imgDescription="Ícone Prefeitura Ilhéus"
             title="NF Eletrônica"
+            target="_blank"
+            rel="noopener noreferrer"
             link="http://ilheus.metropolisweb.com.br:83/metropolisWEB/"
           />,
           <ImgAndTitleCard
@@ -91,6 +109,8 @@ export default function LinksSection() {
             img={imgCartaoCnpj}
             imgDescription="Ícone Cartão CNPJ"
             title="Cartão CNPJ"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://servicos.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp?cnpj=10949168000100"
           />,
           <ImgAndTitleCard
@@ -98,6 +118,8 @@ export default function LinksSection() {
             img={imgMei}
             imgDescription="Ícone MEI"
             title="Portal MEI"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes/atspo/pgmei.app/identificacao"
           />,
           <ImgAndTitleCard
@@ -105,6 +127,8 @@ export default function LinksSection() {
             img={imgInssInformeRendimentos}
             imgDescription="Ícone informe de Rendimentos"
             title="Informe de Rendimentos"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://extratoir.inss.gov.br/irpf01/pages/consultarExtratoIR.xhtml"
           />,
         ]}

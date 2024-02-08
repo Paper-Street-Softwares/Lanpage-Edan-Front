@@ -25,6 +25,8 @@ export default function CertificatesSection() {
             img={imgReceitaFederal}
             imgDescription="Ícone Receita Federal"
             title="CND Receita e Previdência"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir"
           />,
           <ImgAndTitleCard
@@ -32,6 +34,8 @@ export default function CertificatesSection() {
             img={imgTrabalhista}
             imgDescription="Ícone Certidão Trabalhista"
             title="CDT Débitos Trabalhistas"
+            target="_blank"
+            rel="noopener noreferrer"
             link="http://www.tst.jus.br/certidao"
           />,
           <ImgAndTitleCard
@@ -39,6 +43,8 @@ export default function CertificatesSection() {
             img={imgFGTS}
             imgDescription="Ícone FGTS"
             title="CRF Regularidade do FGTS"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
           />,
           <ImgAndTitleCard
@@ -46,6 +52,8 @@ export default function CertificatesSection() {
             img={imgSefaz}
             imgDescription="Ícone SEFAZ"
             title="CND Sefaz/Bahia"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://sistemas.sefaz.ba.gov.br/sistemas/sigat/Default.Aspx?Modulo=CREDITO&Tela=DocEmissaoCertidaoInternet"
           />,
           <ImgAndTitleCard
@@ -53,6 +61,8 @@ export default function CertificatesSection() {
             img={imgPrefeituraIlheus}
             imgDescription="Ícone Prefeitura de Ilhéus"
             title="CND Prefeitura Ilhéus/BA"
+            target="_blank"
+            rel="noopener noreferrer"
             link="http://ilheus.metropolisweb.com.br:83/metropolisWEB/tributario/emitirCertidaoDebitoPublico.do?metodo=executarListar"
           />,
           <ImgAndTitleCard
@@ -60,6 +70,8 @@ export default function CertificatesSection() {
             img={imgFalencia}
             imgDescription="Ícone Falência e Concordata"
             title="CND Falência e Concordata"
+            target="_blank"
+            rel="noopener noreferrer"
             link="http://esaj.tjba.jus.br/esaj/portal.do?servico=810000"
           />,
           <ImgAndTitleCard
@@ -67,6 +79,8 @@ export default function CertificatesSection() {
             img={imgSefazSP}
             imgDescription="Ícone Sefaz SP"
             title="CND Sefaz/São Paulo"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://www10.fazenda.sp.gov.br/CertidaoNegativaDeb/Pages/EmissaoCertidaoNegativa.aspx"
           />,
           <ImgAndTitleCard
@@ -74,6 +88,8 @@ export default function CertificatesSection() {
             img={imgSefazRJ}
             imgDescription="Ícone Sefaz RJ"
             title="CND Sefaz/Rio de Janeiro"
+            target="_blank"
+            rel="noopener noreferrer"
             link="https://www4.fazenda.rj.gov.br/certidao-fiscal-web/emitirCertidao.jsf"
           />,
         ]}
