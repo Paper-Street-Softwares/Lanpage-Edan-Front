@@ -161,7 +161,7 @@ const WhatsappForm = () => {
         >
           <img
             src={WhatsAppIcon}
-            className="w-16 h-16 mr-4 phone2:w-18 phone2:h-18 phone3:h-18 phone3:w-18 phone3:ml-12 phone2:ml-6 tablet2:ml-2"
+            className="w-16 h-16 mr-4 phone2:w-18 phone2:h-18 phone3:h-18 phone3:w-18 phone3:ml-12 phone2:ml-6 tablet2:ml-1"
             alt="WhatsApp Icon"
           />
           Solicitar contato
