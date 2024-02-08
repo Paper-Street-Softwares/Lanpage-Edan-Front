@@ -11,10 +11,14 @@ export default function HeroSection() {
         >
           <div className="flex flex-wrap items-center justify-between w-full h-full mt-10 text-white opacity-0 font-poppins animate-fade-in">
             <div className="w-full md:w-auto md:flex-1 md:mr-11">
-              <div className="mt-16 h-96">
-                <h1 className="mb-2 text-5xl font-bold">Solução e</h1>
-                <h1 className="text-5xl font-bold mb-11">Resultado!</h1>
-                <p className="text-xl">
+              <div className="h-64 mt-16 phone2:h-64 phone3:h-96">
+                <h1 className="mb-2 font-bold leading-7 text-title4 phone3:leading-none phone3:text-title6">
+                  Solução e
+                </h1>
+                <h1 className="font-bold leading-7 mb-9 text-title4 phone3:leading-none phone3:text-title6 phone2:mb-11">
+                  Resultado!
+                </h1>
+                <p className="text-paragraph3 phone3:text-xl">
                   Experiência que Conta! Com mais de 40 anos de experiência,
                   oferecemos conhecimento sólido para lidar com os desafios
                   contábeis do seu negócio.
