@@ -9,25 +9,25 @@ export default function AppSection() {
     <div className="content">
       <div className="mt-8 mb-8 feature">
         <SectionContent>
-          <div className="flex flex-col justify-around w-full h-96 tablet2:w-72 desktop1:w-112 xl:w-128">
+          <div className="flex flex-col justify-around w-full h-96 tablet1:h-112 tablet2:w-72 desktop1:w-112 xl:w-128">
             <div className="flex flex-col items-center justify-center h-1/5">
-              <div className="flex flex-row justify-center mx-2 text-2xl font-bold text-center font-poppins text-secondary tablet2:mx-3">
+              <div className="flex flex-row justify-center mx-2 text-2xl font-bold text-center font-poppins text-secondary tablet1:text-title3 tablet2:mx-3">
                 Baixe nosso aplicativo e tenha inúmeras vantagens
               </div>
             </div>
             <div className="flex flex-col items-center justify-around h-4/5">
               <div className="flex flex-row items-center justify-center ">
                 <img
-                  className="h-4/5"
+                  className="h-4/5 tablet1:h-3/5 tablet2:h-4/5"
                   alt="Telas de celulares"
                   src={imgAppScreen}
                 />
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-around w-full bg-secondary h-96 phone1:h-112 phone2:h-128 tablet2:w-72 tablet2:h-128 desktop1:w-112">
+          <div className="flex flex-col justify-around w-full bg-secondary h-96 tablet1:h-[680px] phone1:h-112 phone2:h-128 tablet2:w-72 tablet2:h-128 desktop1:w-112">
             <div className="flex flex-col items-center justify-center h-1/5">
-              <div className="flex flex-row justify-center mx-4 mt-6 text-base font-bold text-center text-white font-poppins tablet2:text-2xl tablet2:mx-4">
+              <div className="flex flex-row justify-center mx-4 mt-6 text-base font-bold text-center text-white font-poppins tablet1:text-title3 tablet2:text-2xl tablet2:mx-4">
                 Algumas funcionalidades do nosso aplicativo
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function AppSection() {
                   target="_blank"
                 >
                   <img
-                    className="h-8 tablet2:h-11"
+                    className="h-8 tablet1:h-12 tablet2:h-11"
                     alt="Botão App Store"
                     src={imgAppStore}
                   />
@@ -55,7 +55,7 @@ export default function AppSection() {
                   target="_blank"
                 >
                   <img
-                    className="h-8 tablet2:h-11"
+                    className="h-8 tablet1:h-12 tablet2:h-11"
                     alt="Botão Play Store"
                     src={imgPlayStore}
                   />
