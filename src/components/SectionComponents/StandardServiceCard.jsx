@@ -10,12 +10,14 @@ export default function StandardServiceCard(props) {
       </div>
       <div className="flex flex-col items-center justify-between w-full phone3:h-full font-poppins">
         <div className="flex flex-col items-center justify-center p-1 h-1/3">
-          <div className="text-xs font-bold text-center transition text-secondary hover:text-primary">
+          <div className="px-2 font-medium text-center transition text-title1 phone3:text-paragraph3 desktop1:text-paragraph4 text-secondary hover:text-primary">
             {title}
           </div>
         </div>
         <div className="flex flex-col justify-center p-2 text-center h-14 phone3:h-2/3">
-          <div className="text-xs text-quaternary">{description}</div>
+          <div className="text-paragraph3 phone3:text-xs text-quaternary">
+            {description}
+          </div>
         </div>
       </div>
     </a>
