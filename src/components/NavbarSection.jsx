@@ -27,7 +27,7 @@ export default function NavbarSection() {
   };
 
   const handleResize = () => {
-    if (window.innerWidth <= 425) {
+    if (window.innerWidth <= 435) {
       setShowListGroup(false);
     } else {
       setShowListGroup(true);
@@ -57,7 +57,7 @@ export default function NavbarSection() {
           <img src={Logo} alt="Logo Edan" className="absolute left-0 h-12 " />
           <button
             onClick={toggleSidebar}
-            className="absolute right-0 mr-4 -top-4 phone3:hidden"
+            className="absolute right-0 mr-4 -top-4 tablet1:hidden"
           >
             {showMenuIcon ? (
               <Menu
