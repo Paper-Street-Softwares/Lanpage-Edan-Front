@@ -4,8 +4,12 @@ import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png
 export default function TestimonialsSection() {
   return (
     <div
-      className="bg-fixed bg-red-100 mt-28 content"
-      style={{ backgroundImage: `url(${imgOfficeGreenBackground})` }}
+      className="bg-center bg-cover feature h-52"
+      style={{
+        backgroundImage: `url(${img})`,
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+      }}
       id="contact"
     >
       <SectionContent>
