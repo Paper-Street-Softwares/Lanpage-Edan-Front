@@ -47,18 +47,14 @@ export default function NavbarSection() {
   return (
     <div className="content">
       <div
-        className={`fixed w-full ${
+        className={`fixed w-full bg-white bg-opacity-0 ${
           scrolling
-            ? "bg-white shadow-lg transition-shadow duration-300 animate-fade-in"
+            ? "bg-opacity-100 shadow-lg bg-transition-opacity duration-1000"
             : ""
         }`}
       >
         <Navbar>
-          <img
-            src={Logo}
-            alt="Logo Edan"
-            className="absolute left-0 h-12 -top-6"
-          />
+          <img src={Logo} alt="Logo Edan" className="absolute left-0 h-12 " />
           <button
             onClick={toggleSidebar}
             className="absolute right-0 mr-4 -top-4 phone3:hidden"

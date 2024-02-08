@@ -21,7 +21,7 @@ export default function ListGroup() {
 
   return (
     <ul
-      className={`flex flex-wrap items-start justify-end w-full h-auto tablet2:gap-4 desktop1:gap-8 font-bold text-sm font-poppins ${
+      className={`flex flex-wrap items-center justify-end w-full h-auto tablet2:gap-4 desktop1:gap-8 font-bold text-sm font-poppins ${
         scrolling
           ? "text-black transition-color duration-500"
           : "text-white transition-color duration-500"
