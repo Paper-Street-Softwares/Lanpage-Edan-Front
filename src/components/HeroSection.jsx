@@ -10,11 +10,15 @@ export default function HeroSection() {
           style={{ backgroundImage: "url(" + bgImage + ")" }}
         >
           <div className="flex flex-wrap items-center justify-between w-full h-full mt-10 text-white opacity-0 font-poppins animate-fade-in">
-            <div className="w-full md:w-auto md:flex-1 md:mr-11">
-              <div className="mt-16 h-96">
-                <h1 className="mb-2 text-5xl font-bold">Solução e</h1>
-                <h1 className="text-5xl font-bold mb-11">Resultado!</h1>
-                <p className="text-xl">
+            <div className="w-full tablet2:w-auto tablet2:flex-1 tablet2:mr-11">
+              <div className="h-64 mt-16 phone2:h-64 phone3:h-112 tablet1:h-60 tablet2:h-112">
+                <h1 className="mb-2 font-bold leading-7 text-title4 tablet1:leading-none tablet1:text-title5 tablet2:text-title6">
+                  Solução e
+                </h1>
+                <h1 className="font-bold leading-7 mb-9 text-title4 tablet1:leading-none tablet1:text-title5 tablet2:text-title6 phone2:mb-11">
+                  Resultado!
+                </h1>
+                <p className="text-paragraph3 tablet2:text-paragraph4">
                   Experiência que Conta! Com mais de 40 anos de experiência,
                   oferecemos conhecimento sólido para lidar com os desafios
                   contábeis do seu negócio.

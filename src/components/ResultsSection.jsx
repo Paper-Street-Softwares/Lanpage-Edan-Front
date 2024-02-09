@@ -1,6 +1,6 @@
 import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png";
 
-export default function ParallaxSectionWithContent() {
+export default function ResultsSection() {
   return (
     <div
       className="mt-12 bg-center bg-cover tablet2:mt-28 content"
@@ -12,7 +12,7 @@ export default function ParallaxSectionWithContent() {
       id="contact"
     >
       <div className="flex items-center justify-center w-full h-52">
-        <h1 className="text-center text-white">Testimonials Section</h1>
+        <h1 className="text-center text-white">Results Section</h1>
       </div>
     </div>
   );

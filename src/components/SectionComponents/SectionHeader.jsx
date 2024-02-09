@@ -7,14 +7,14 @@ export default function SectionHeader(props) {
 
   return (
     <div className="flex flex-col pt-3 pb-3 mt-6 mb-3 opacity-0 animate-fade-in">
-      <div className="w-[79%] flex flex-col justify-center font-poppins text-2xl text-center font-bold ">
+      <div className="w-[79%] flex flex-col justify-center font-poppins text-title1 phone1:text-title2 phone3:text-title5 text-center font-bold ">
         {sectionHeaderTitleFirst}
       </div>
-      <div className="w-[79%] flex flex-col justify-center font-poppins text-secondary text-2xl text-center font-bold ">
+      <div className="w-[79%] flex flex-col justify-center font-poppins text-secondary text-title1 phone1:text-title2 phone3:text-title5 text-center font-bold ">
         {sectionHeaderTitleSecond}
       </div>
       <div className="w-full h-px mt-6 mb-6 bg-neutral-200"></div>
-      <div className="w-[79%] text-quaternary font-poppins text-sm text-center">
+      <div className="w-[79%] text-quaternary font-poppins text-paragraph3 phone3:text-paragraph4 text-center">
         {sectionHeaderDescription}
       </div>
     </div>
