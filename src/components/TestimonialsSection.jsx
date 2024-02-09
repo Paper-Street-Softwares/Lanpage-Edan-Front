@@ -12,7 +12,7 @@ export default function ParallaxSectionWithContent() {
       id="contact"
     >
       <div className="flex items-center justify-center w-full h-52">
-        <h1 className="text-center text-white">Testimonials Section</h1>
+        <h1 className="text-center text-white">Testimonials</h1>
       </div>
     </div>
   );
