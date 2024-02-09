@@ -14,7 +14,7 @@ export default function Modal({ isOpen, setCloseModal }) {
   if (isOpen) {
     return (
       <div>
-        <div
+        <button
           className="relative grid items-center justify-center shadow-2xl bg-[#f0ecec] rounded-xl"
           onClick={stopPropagation}
         >
@@ -27,7 +27,7 @@ export default function Modal({ isOpen, setCloseModal }) {
           <div className="p-4 m-2 text-left text-black">
             <WhatsappForm />
           </div>
-        </div>
+        </button>
       </div>
     );
   }
