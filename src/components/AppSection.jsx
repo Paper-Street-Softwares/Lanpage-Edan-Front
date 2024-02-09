@@ -24,7 +24,7 @@ export default function AppSection() {
             </div>
           </div>
           <div className="flex flex-col justify-start w-full rounded-xl bg-secondary tablet1:w-64 tablet2:w-80 desktop1:w-112 desktop2:w-128">
-            <div className="flex items-center justify-center h-24 ">
+            <div className="flex items-center justify-center h-28 ">
               <h1 className="flex flex-row justify-center mx-[10%] font-bold text-center text-white  phone1:text-paragraph5 tablet1:text-paragraph3 tablet2:text-paragraph4 desktop1:text-title1 font-poppins">
                 Algumas funcionalidades do nosso aplicativo
               </h1>
@@ -37,7 +37,7 @@ export default function AppSection() {
                   src={imgAppUtilities}
                 ></img>
               </div>
-              <div className="flex flex-row justify-between w-4/5 my-4 desktop1:my-8">
+              <div className="flex flex-row justify-between w-4/5 mt-4 mb-8 desktop1:my-8">
                 <a
                   href="https://apps.apple.com/il/app/edan-contabilidade/id6473044144"
                   target="_blank"
