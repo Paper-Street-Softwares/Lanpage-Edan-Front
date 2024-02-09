@@ -11,6 +11,7 @@ export default function NavbarSection() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [showMenuIcon, setShowMenuIcon] = useState(true);
   const [showSidebarContent, setShowSidebarContent] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -21,9 +22,22 @@ export default function NavbarSection() {
   };
 
   const toggleSidebar = () => {
-    setShowSidebar(!showSidebar);
-    setShowMenuIcon(!showMenuIcon);
-    setShowSidebarContent(!showSidebarContent);
+    if (!isAnimating) {
+      setIsAnimating(true);
+      setShowMenuIcon(!showMenuIcon);
+      setShowSidebarContent(!showSidebarContent);
+      if (showSidebar) {
+        setTimeout(() => {
+          setShowSidebar(false);
+          setIsAnimating(false);
+        }, 950);
+      } else {
+        setShowSidebar(true);
+        setTimeout(() => {
+          setIsAnimating(false);
+        }, 0);
+      }
+    }
   };
 
   const handleResize = () => {
@@ -72,7 +86,9 @@ export default function NavbarSection() {
           {showListGroup ? <ListGroup /> : null}
         </Navbar>
         <div
-          className={`animate-slide-down ${showSidebar ? "block" : "hidden"}`}
+          className={`animate-${
+            showSidebar ? "slide-down block" : "slide-up hidden"
+          }`}
         >
           {showSidebar ? <Sidebar showSidebar={showSidebarContent} /> : null}
         </div>
