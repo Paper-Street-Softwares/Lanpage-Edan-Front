@@ -10,7 +10,7 @@ export default function SectionHeader(props) {
       <div className="w-[79%] flex flex-col justify-center font-poppins text-title1 phone1:text-title2 phone3:text-title5 text-center font-bold ">
         {sectionHeaderTitleFirst}
       </div>
-      <div className="w-[79%] flex flex-col justify-center font-poppins text-secondary text-title1 phone1:text-title2 phone3:text-title5 text-center font-bold ">
+      <div className="w-[79%] flex flex-col justify-center font-poppins text-primary text-title1 phone1:text-title2 phone3:text-title5 text-center font-bold ">
         {sectionHeaderTitleSecond}
       </div>
       <div className="w-full h-px mt-6 mb-6 bg-neutral-200"></div>
