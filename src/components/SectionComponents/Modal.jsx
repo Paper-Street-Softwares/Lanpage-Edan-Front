@@ -1,6 +1,7 @@
 import React from "react";
 import WhatsappForm from "./WhatsappForm";
 import { X } from "lucide-react";
+import WppBg from "./../../style/assets/images/WhatsAppBackGround.png";
 
 export default function Modal({ isOpen, setCloseModal }) {
   const closeModal = () => {
@@ -15,7 +16,10 @@ export default function Modal({ isOpen, setCloseModal }) {
     return (
       <div>
         <button
-          className="relative grid items-center justify-center shadow-2xl bg-[#f0ecec] rounded-xl"
+          className="relative grid items-center justify-center bg-center bg-cover shadow-2xl rounded-xl"
+          style={{
+            backgroundImage: `url(${WppBg})`,
+          }}
           onClick={stopPropagation}
         >
           <div className="bg-[#075E54] h-10 rounded-t-xl flex justify-end items-center px-2">
