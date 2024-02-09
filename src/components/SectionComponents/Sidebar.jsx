@@ -16,42 +16,37 @@ export default function Sidebar({ showSidebar }) {
 
   return (
     <div
-      className={`flex justify-center overflow-hidden text-black  ${
-        showSidebar ? "" : "hidden"
+      className={`sidebar transition-transform transform ${
+        showSidebar ? "animate-slide-down" : "animate-slide-up"
       }`}
     >
       <div className="mx-auto">
         <div
-          className={`flex h-auto w-80 px-12 py-6 mx-auto bg-white font-poppins ${
+          className={`flex h-auto w-64 phone2:w-80 phone3:w-80 px-12 py-6 mx-auto bg-white font-poppins ${
             showSublistServices || showSublistLinks ? "mb-16" : ""
           }`}
         >
           <div className="overflow-y-auto">
-            <ul className="text-center text-black ">
-              <li className="mb-2 font-bold">
+            <ul className="text-black">
+              <li className="mb-2">
                 <a href="home" className="hover:text-primary">
                   Início
                 </a>
               </li>
-              <li className="mb-2 font-bold">
+              <li className="mb-2">
                 <a href="about" className="hover:text-primary">
                   Sobre Nós
                 </a>
               </li>
               <li className="mb-2">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="services"
-                  className="hover:text-primary"
-                >
+                <a href="services" className="hover:text-primary">
                   Serviços
                 </a>
               </li>
 
               <li className="relative mb-2">
                 <button
-                  className="font-bold cursor-pointer hover:text-primary"
+                  className="cursor-pointer hover:text-primary"
                   onClick={toggleSublistLinks}
                 >
                   Links
@@ -184,7 +179,7 @@ export default function Sidebar({ showSidebar }) {
 
               <li className="relative mb-2 ">
                 <button
-                  className="font-bold cursor-pointer hover:text-primary"
+                  className="cursor-pointer hover:text-primary"
                   onClick={toggleSublistServices}
                 >
                   Certidões
@@ -274,7 +269,7 @@ export default function Sidebar({ showSidebar }) {
                   </ul>
                 )}
               </li>
-              <li className="mb-2 font-bold">
+              <li className="mb-2">
                 <a href="contact" className="hover:text-primary">
                   Contato
                 </a>
