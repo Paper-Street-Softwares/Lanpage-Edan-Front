@@ -47,7 +47,7 @@ const WhatsappForm = () => {
 
   const validatePhone = (phone) => {
     const phoneNumberPattern = /^\d+$/;
-    return phoneNumberPattern.test(phone);
+    return phoneNumberPattern.test(phone) && phone.length === 11;
   };
 
   const validateEmail = (email) => {
@@ -92,7 +92,10 @@ const WhatsappForm = () => {
             value={phone}
             onChange={(e) => {
               const re = /^[0-9\b]+$/;
-              if (e.target.value === "" || re.test(e.target.value)) {
+              if (
+                (e.target.value === "" || re.test(e.target.value)) &&
+                e.target.value.length <= 11
+              ) {
                 setPhone(e.target.value);
               }
             }}
