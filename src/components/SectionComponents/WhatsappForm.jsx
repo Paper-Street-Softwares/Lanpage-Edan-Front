@@ -45,9 +45,15 @@ const WhatsappForm = () => {
 
   const validateName = (name) => !!name;
 
-  const validatePhone = (phone) => !!phone;
+  const validatePhone = (phone) => {
+    const phoneNumberPattern = /^\d+$/;
+    return phoneNumberPattern.test(phone);
+  };
 
-  const validateEmail = (email) => !!email;
+  const validateEmail = (email) => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  };
 
   const validateMessage = (message) => !!message;
 
@@ -70,7 +76,7 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.name && (
-          <p className="-mt-4 -mb-4 text-sm text-red-500">{errors.name}</p>
+          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.name}</p>
         )}
       </div>
 
@@ -84,13 +90,19 @@ const WhatsappForm = () => {
             type="tel"
             id="phone"
             value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            onChange={(e) => {
+              const re = /^[0-9\b]+$/;
+              if (e.target.value === "" || re.test(e.target.value)) {
+                setPhone(e.target.value);
+              }
+            }}
             placeholder="Telefone"
+            inputMode="numeric"
             required
           />
         </div>
         {errors.phone && (
-          <p className="-mt-4 -mb-4 text-sm text-red-500">{errors.phone}</p>
+          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.phone}</p>
         )}
       </div>
 
@@ -110,7 +122,7 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.email && (
-          <p className="-mt-4 -mb-4 text-sm text-red-500">{errors.email}</p>
+          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
         )}
       </div>
 
@@ -130,15 +142,13 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.message && (
-          <p className="-mt-4 -mb-4 text-sm text-red-500">{errors.message}</p>
+          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.message}</p>
         )}
       </div>
 
       <div className="flex justify-center">
         <button
-
           className="flex items-center w-full px-4 py-2 font-medium text-white transition rounded-lg text-title1 h-14 phone2:h-14 phone3:h18 bg-primary hover:bg-secondary"
-
           onClick={sendToWhatsapp}
         >
           <img
