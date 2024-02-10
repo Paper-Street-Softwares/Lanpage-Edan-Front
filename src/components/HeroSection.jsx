@@ -11,7 +11,7 @@ export default function HeroSection() {
         >
           <div className="flex flex-wrap items-center justify-between w-full h-full mt-10 text-white opacity-0 font-poppins animate-fade-in">
             <div className="w-full tablet2:w-auto tablet2:flex-1 tablet2:mr-11">
-              <div className="h-64 mt-16 phone2:h-64 phone3:h-112 tablet1:h-60 tablet2:h-112">
+              <div className="h-64 mt-16 phone2:h-64 phone3:h-64 tablet1:h-60 tablet2:h-112">
                 <h1 className="mb-2 font-bold leading-7 text-title4 tablet1:leading-none tablet1:text-title5 tablet2:text-title6">
                   Solução e
                 </h1>
