@@ -68,10 +68,14 @@ export default function NavbarSection() {
         }`}
       >
         <Navbar>
-          <img src={Logo} alt="Logo Edan" className="absolute left-0 h-12 " />
+          <img
+            src={Logo}
+            alt="Logo Edan"
+            className="absolute left-0 h-12 mb-2 tablet3:mb-0"
+          />
           <button
             onClick={toggleSidebar}
-            className="absolute right-0 mr-4 -top-4 tablet1:hidden"
+            className="absolute right-0 mr-4 -top-4 tablet1:hidden phone3:hidden"
           >
             {showMenuIcon ? (
               <Menu
