@@ -43,7 +43,7 @@ export default function ServicesSection() {
             icon={imgImpostoRenda}
             iconAlt="Ícone Imposto de Renda"
             title="Imposto de Renda"
-            description="Simplifique sua declaração de imposto de renda conosco."
+            description="Faça sua declaração de Imposto de Renda conosco."
           />,
           <StandardServiceCard
             key={5}
