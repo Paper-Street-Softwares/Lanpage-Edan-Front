@@ -13,7 +13,7 @@ export default function FooterSection() {
     <div className="h-auto pt-8 bg-secondary content">
       <SectionContent>
         <FooterCardContent>
-          <div className="flex flex-col items-center h-12 mb-6 phone3:items-start">
+          <div className="flex flex-col items-start h-12 mb-6">
             <img alt="Logo Edan" className="h-12" src={imgLogo} />
           </div>
           <div className="flex flex-col justify-between h-auto phone3:h-40">
