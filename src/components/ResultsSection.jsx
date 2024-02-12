@@ -5,7 +5,7 @@ import ResultsCard from "../components/SectionComponents/ResultsCard";
 export default function ResultsSection() {
   return (
     <div
-      className="mt-12 bg-center bg-cover tablet2:mt-28 content"
+      className="mt-12 bg-center bg-cover tablet2:mt-12 content"
       style={{
         backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",
@@ -14,7 +14,7 @@ export default function ResultsSection() {
       id="contact"
     >
       <div className="w-full py-[5%]">
-        <h1 className="flex flex-col items-center phone3:flex-row phone3:justify-between phone3:flex-wrap tablet2:flex-nowrap">
+        <h1 className="flex flex-col items-center tablet1:flex-row tablet1:justify-between tablet1:flex-wrap desktop1:flex-nowrap">
           <ResultsCard img={imgIcon} number="185" text="Anos de empresa" />
           <ResultsCard
             img={imgIcon}
