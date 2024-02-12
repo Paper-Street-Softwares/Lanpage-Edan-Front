@@ -19,6 +19,7 @@ export default function ParallaxSectionWithContent() {
             maestria total. Estou super satisfeito e recomendo muito!"
           </p>
           <img
+            alt="Foto de perfil"
             className="rounded-full w-[15%] my-[5%] phone3:w-[7%] phone3:my-[3%]"
             src={avatar}
           ></img>
