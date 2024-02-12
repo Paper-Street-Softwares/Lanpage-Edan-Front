@@ -9,6 +9,7 @@ module.exports = {
         tertiary: "", // Opcional
         quaternary: "#737373", // Cinza neutro -> Parágrafos
         quinary: "#f6f6f6", // Com primária bem clara ou cinza -> Bg de seções
+        verylighter: "#21A202",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -34,9 +35,9 @@ module.exports = {
         128: "32rem",
       },
       screens: {
-        phone1: "325px",
-        phone2: "365px",
-        phone3: "435px",
+        phone1: "320px",
+        phone2: "375px",
+        phone3: "425px",
         tablet1: "640px",
         tablet2: "768px",
         desktop1: "1024px",
