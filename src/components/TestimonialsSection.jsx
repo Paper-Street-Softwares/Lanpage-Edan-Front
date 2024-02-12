@@ -100,12 +100,12 @@ export default function ParallaxSectionWithContent() {
             </p>
           </div>
           <div className="flex flex-grow mt-6 transform text-quinary">
-            <div className="mx-4" onClick={handlePrevClick}>
+            <button className="mx-4" onClick={handlePrevClick}>
               <ChevronLeft />
-            </div>
-            <div className="mx-4" onClick={handleNextClick}>
+            </button>
+            <button className="mx-4" onClick={handleNextClick}>
               <ChevronRight />
-            </div>
+            </button>
           </div>
         </div>
       </div>
