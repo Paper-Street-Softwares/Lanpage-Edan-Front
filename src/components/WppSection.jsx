@@ -15,36 +15,29 @@ export default function WppSection() {
       id="contact"
     >
       <SectionContent>
-        <div className="w-full h-42 tablet2:h-52">
-          <div className="flex flex-row items-end justify-between h-52">
-            <div>
-              <div className="flex flex-col justify-around h-52">
-                <h1 className="text-xl text-center text-white font-poppins tablet2:text-3xl tablet2:text-left desktop1:text-4xl ">
-                  Contate-nos através do <strong>Whatsapp</strong>
-                </h1>
-
-                <div className="flex tablet2:w-72">
-                  <a
-                    href="#"
-                    className="flex flex-row items-center justify-around w-full h-16 transition rounded-lg phone1:p-3 bg-primary hover:bg-secondary"
-                  >
-                    <img
-                      src={WhatsAppIcon}
-                      className="w-8 mx-2 phone1:mx-5 phone1:w-10 tablet2:w-20"
-                      alt="WhatsApp Icon"
-                    ></img>
-                    <p className="text-sm text-white tablet2:text-xl">
-                      Solicitar contato
-                    </p>
-                  </a>
-                </div>
+        <div className="w-full">
+          <div className="flex flex-row items-end justify-between ">
+            <div className="flex flex-col justify-end h-28">
+              <h1 className="text-center text-white text-paragraph1 font-poppins">
+                Contate-nos através do <strong>Whatsapp</strong>
+              </h1>
+              <div className="flex flex-row items-center justify-center h-14 tablet2:w-72">
+                <a
+                  href="#"
+                  className="flex flex-row items-center justify-around w-[95%] h-[80%] transition rounded-lg bg-primary hover:bg-secondary"
+                >
+                  <img
+                    src={WhatsAppIcon}
+                    className="w-[30%] mx-[8%]"
+                    alt="WhatsApp Icon"
+                  ></img>
+                  <p className="text-white text-paragraph2">
+                    Solicitar contato
+                  </p>
+                </a>
               </div>
             </div>
-            <img
-              className="w-48 tablet2:w-60"
-              alt="Foto Edilson"
-              src={imgEdilson}
-            />
+            <img className="w-20 " alt="Foto Edilson" src={imgEdilson} />
           </div>
         </div>
       </SectionContent>
