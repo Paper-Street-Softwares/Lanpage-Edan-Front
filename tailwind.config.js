@@ -35,9 +35,9 @@ module.exports = {
         128: "32rem",
       },
       screens: {
-        phone1: "325px",
-        phone2: "365px",
-        phone3: "435px",
+        phone1: "320px",
+        phone2: "375px",
+        phone3: "425px",
         tablet1: "640px",
         tablet2: "768px",
         desktop1: "1024px",
