@@ -9,6 +9,7 @@ module.exports = {
         tertiary: "", // Opcional
         quaternary: "#737373", // Cinza neutro -> Parágrafos
         quinary: "#f6f6f6", // Com primária bem clara ou cinza -> Bg de seções
+        verylighter: "#21A202",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

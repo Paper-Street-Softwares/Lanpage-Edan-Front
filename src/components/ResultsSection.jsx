@@ -1,4 +1,6 @@
 import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png";
+import imgIcon from "../style/assets/icons/footer/calendarIcon.png";
+import ResultsCard from "../components/SectionComponents/ResultsCard";
 
 export default function ResultsSection() {
   return (
@@ -11,8 +13,29 @@ export default function ResultsSection() {
       }}
       id="contact"
     >
-      <div className="flex items-center justify-center w-full h-52">
-        <h1 className="text-center text-white">Results Section</h1>
+      <div className="w-full py-[5%]">
+        <h1 className="flex flex-col items-center phone3:flex-row phone3:justify-between phone3:flex-wrap tablet2:flex-nowrap">
+          <ResultsCard
+            img={imgIcon}
+            number="185"
+            text="Folhas de pagamento mensais"
+          />
+          <ResultsCard
+            img={imgIcon}
+            number="185"
+            text="Folhas de pagamento mensais"
+          />
+          <ResultsCard
+            img={imgIcon}
+            number="185"
+            text="Folhas de pagamento mensais"
+          />
+          <ResultsCard
+            img={imgIcon}
+            number="185"
+            text="Folhas de pagamento mensais"
+          />
+        </h1>
       </div>
     </div>
   );
