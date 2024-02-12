@@ -20,7 +20,7 @@ export default function ParallaxSectionWithContent() {
           </p>
           <img
             alt="Foto de perfil"
-            className="rounded-full w-[15%] my-[5%] phone3:w-[7%] phone3:my-[3%]"
+            className="rounded-full w-[15%] my-[5%] tablet1:w-[7%] phone3:my-[3%]"
             src={avatar}
           ></img>
           <h1 className="font-medium">Ivan Coelho</h1>
