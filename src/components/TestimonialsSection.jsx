@@ -4,7 +4,7 @@ import avatar from "../style/assets/images/testemunhos/avatar.png";
 export default function ParallaxSectionWithContent() {
   return (
     <div
-      className="mt-12 bg-center bg-cover tablet2:mt-28 content"
+      className="mt-12 bg-center bg-cover tablet2:mt-12 content"
       style={{
         backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",
@@ -12,8 +12,8 @@ export default function ParallaxSectionWithContent() {
       }}
       id="contact"
     >
-      <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4">
-        <div className="flex flex-col w-full phone3:w-[80%] m-[10%] text-center items-center text-white">
+      <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4 desktop1:text-paragraph5">
+        <div className="flex flex-col w-full phone3:w-[80%] m-[10%] tablet2:m-[5%] text-center items-center text-white">
           <p>
             "A Edan Contabilidade é demais! Eles cuidam da minha empresa com
             maestria total. Estou super satisfeito e recomendo muito!"
@@ -24,7 +24,7 @@ export default function ParallaxSectionWithContent() {
             src={avatar}
           ></img>
           <h1 className="font-medium">Ivan Coelho</h1>
-          <p className="text-paragraph1 phone3:text-paragraph2">
+          <p className="text-paragraph1 phone3:text-paragraph2 desktop1:text-paragraph3">
             Auto Posto Pontal
           </p>
         </div>
