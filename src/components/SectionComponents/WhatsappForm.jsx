@@ -153,7 +153,7 @@ const WhatsappForm = () => {
             Digite um e-mail válido. Inclua um "@" no endereço de e-mail.
           </p>
         )}
-        {errors.email && errors.email.includes("@") && (
+        {errors.email?.includes("@") && (
           <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
         )}
       </div>
