@@ -70,7 +70,7 @@ const WhatsappForm = () => {
   const formatPhoneNumber = (phoneNumber) => {
     let cleaned = phoneNumber.replace(/\D/g, "");
     let formatted = cleaned.replace(
-      /^(\d{2})(\d{0,5})?(\d{0,4})?/,
+      /^(\d{2})(\d{1,5})?(\d{1,4})?/,
       (match, p1, p2, p3) => {
         let part1 = p1 ? `(${p1}` : "";
         let part2 = p2 ? `) ${p2}` : "";
