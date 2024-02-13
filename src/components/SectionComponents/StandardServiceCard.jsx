@@ -1,8 +1,18 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 export default function StandardServiceCard(props) {
   const { title, description, icon, altIcon } = props;
+  const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <a className="flex flex-col items-center justify-between w-full h-auto mt-2 mb-2 border-t border-b-8 border-l border-r border-solid phone3:h-56 border-neutral-200 border-b-primary tablet1:w-[18%]">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }}
+      transition={{ duration: 1 }}
+      className="flex flex-col items-center justify-between w-full h-auto mt-2 mb-2 border-t border-b-8 border-l border-r border-solid phone3:h-56 border-neutral-200 border-b-primary tablet1:w-[18%]"
+    >
       <div className="flex flex-row items-center justify-center w-full h-20 phone3:h-3/5">
         <div>
           <img src={icon} alt={altIcon} className="w-auto h-12"></img>
@@ -20,6 +30,6 @@ export default function StandardServiceCard(props) {
           </div>
         </div>
       </div>
-    </a>
+    </motion.div>
   );
 }
