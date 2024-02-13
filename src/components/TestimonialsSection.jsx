@@ -90,9 +90,8 @@ export default function ParallaxSectionWithContent() {
 
   return (
     <div
-      className="relative mt-12 overflow-y-hidden bg-center bg-cover tablet2:mt-28 content"
+      className="mt-6 overflow-y-hidden bg-center bg-cover tablet2:mt-8 content"
       style={{
-        height: "400px",
         backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
@@ -100,8 +99,8 @@ export default function ParallaxSectionWithContent() {
       }}
       id="contact"
     >
-      <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4">
-        <div className="flex flex-col phone3:w-[80%] my-[10%] text-center items-center text-quinary">
+      <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4 tablet1:text-paragraph5">
+        <div className="flex flex-col phone3:w-[80%] my-[10%] tablet2:my-[5%] text-center items-center text-quinary">
           <div
             className={`flex-grow ${
               isTransitioning ? "slideOutToLeft" : "slideInFromRight"
@@ -110,13 +109,13 @@ export default function ParallaxSectionWithContent() {
             <p>"{depoimentos[currentDepoimentoIndex].texto}"</p>
             <img
               alt="Foto de perfil"
-              className="rounded-full w-[15%] mx-auto my-[5%] phone3:w-[7%] phone3:my-[3%]"
+              className="rounded-full w-[15%] mx-auto my-[5%] phone3:w-[20%] phone3:my-[7%] tablet1:w-[10%] tablet1:my-[3%]"
               src={depoimentos[currentDepoimentoIndex].imagem}
             />
-            <h1 className="font-medium">
+            <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
               {depoimentos[currentDepoimentoIndex].nome}
             </h1>
-            <p className="text-paragraph1 phone3:text-paragraph2">
+            <p className="text-paragraph2 phone3:text-paragraph3">
               {depoimentos[currentDepoimentoIndex].empresa}
             </p>
           </div>
