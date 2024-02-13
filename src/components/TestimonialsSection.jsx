@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png";
 import avatar from "../style/assets/images/testemunhos/avatar.png";
 import avatar2 from "../style/assets/images/testemunhos/avatar2.png";
@@ -32,9 +32,10 @@ const depoimentos = [
 export default function ParallaxSectionWithContent() {
   const [currentDepoimentoIndex, setCurrentDepoimentoIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const intervalRef = useRef(null);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       setIsTransitioning(true);
       setTimeout(() => {
         setCurrentDepoimentoIndex(
@@ -42,28 +43,48 @@ export default function ParallaxSectionWithContent() {
         );
         setIsTransitioning(false);
       });
-    }, 2500000);
+    }, 7000);
 
-    return () => clearInterval(intervalId);
+    return () => clearInterval(intervalRef.current);
   }, []);
 
   const handlePrevClick = () => {
+    clearInterval(intervalRef.current);
     setIsTransitioning(true);
     setTimeout(() => {
       setCurrentDepoimentoIndex(
         (prevIndex) => (prevIndex - 1 + depoimentos.length) % depoimentos.length
       );
       setIsTransitioning(false);
+      intervalRef.current = setInterval(() => {
+        setIsTransitioning(true);
+        setTimeout(() => {
+          setCurrentDepoimentoIndex(
+            (prevIndex) => (prevIndex + 1) % depoimentos.length
+          );
+          setIsTransitioning(false);
+        });
+      }, 7000);
     });
   };
 
   const handleNextClick = () => {
+    clearInterval(intervalRef.current);
     setIsTransitioning(true);
     setTimeout(() => {
       setCurrentDepoimentoIndex(
         (prevIndex) => (prevIndex + 1) % depoimentos.length
       );
       setIsTransitioning(false);
+      intervalRef.current = setInterval(() => {
+        setIsTransitioning(true);
+        setTimeout(() => {
+          setCurrentDepoimentoIndex(
+            (prevIndex) => (prevIndex + 1) % depoimentos.length
+          );
+          setIsTransitioning(false);
+        });
+      }, 7000);
     });
   };
 
