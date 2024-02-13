@@ -1,3 +1,5 @@
+import MotionDivLeftToRight from "./MotionDivLeftToRight";
+
 export default function ImgAndTitleCard(props) {
   const img = props.img;
   const imgDescription = props.imgDescription;
@@ -12,13 +14,13 @@ export default function ImgAndTitleCard(props) {
       rel="noreferrer"
     >
       <div className="flex flex-row items-end justify-center w-full h-full">
-        <div>
+        <MotionDivLeftToRight>
           <img src={img} alt={imgDescription} className="w-auto h-12"></img>
-        </div>
+        </MotionDivLeftToRight>
       </div>
       <div className="flex flex-col justify-center w-full h-full">
         <div className="font-medium text-center transition duration-300 text-paragraph3 tablet1:text-paragraph4 font-poppins text-secondary hover:text-primary">
-          {title}
+          <MotionDivLeftToRight>{title}</MotionDivLeftToRight>
         </div>
       </div>
     </a>

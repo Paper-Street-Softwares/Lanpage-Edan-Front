@@ -2,6 +2,7 @@ import SectionContent from "./SectionComponents/SectionContent";
 import imgEdilson from "../style/assets/images/contato-via-whatsapp/edilson.png";
 import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png";
 import WhatsAppIcon from "../style/assets/icons/WhatsAppIcon.png";
+import MotionDivLeftToRight from "./SectionComponents/MotionDivLeftToRight";
 
 export default function WppSection() {
   return (
@@ -19,7 +20,9 @@ export default function WppSection() {
           <div className="flex flex-row items-end justify-between h-28 phone1:h-40 phone3:h-48 desktop1:h-52">
             <div className="flex flex-col w-full justify-evenly items-left h-28 phone1:h-40 phone3:h-48 desktop1:h-52">
               <h1 className="text-left text-white text-paragraph1 phone1:text-paragraph4 phone3:text-paragraph5 max-w-32 phone3:max-w-none font-poppins tablet1:text-title2 tablet2:text-title3 desktop1:text-title4">
-                Contate-nos através do <strong>Whatsapp</strong>
+                <MotionDivLeftToRight>
+                  Contate-nos através do <strong>Whatsapp</strong>
+                </MotionDivLeftToRight>
               </h1>
               <a
                 href="#"

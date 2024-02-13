@@ -1,3 +1,5 @@
+import MotionDivUpToDown from "./MotionDivUpToDown";
+
 export default function HonrizontalIconAndText(props) {
   const { img, imgAlt, number, text } = props;
 
@@ -8,10 +10,10 @@ export default function HonrizontalIconAndText(props) {
       </div>
       <div className="flex flex-col justify-center flex-1 ml-[5%]">
         <div className="flex flex-col justify-start font-extrabold leading-none text-white text-title2 phone1:text-title4 phone2:text-title5 tablet1:text-title3">
-          {number}
+          <MotionDivUpToDown>{number}</MotionDivUpToDown>
         </div>
         <div className="text-left text-white text-paragraph1 phone1:text-paragraph3 phone2:text-paragraph3 phone3:text-paragraph4 tablet1:text-paragraph2 tablet2:text-paragraph3 desktop1:text-paragraph2">
-          {text}
+          <MotionDivUpToDown>{text}</MotionDivUpToDown>
         </div>
       </div>
     </div>
