@@ -3,6 +3,7 @@ import imgEdilson from "../style/assets/images/contato-via-whatsapp/edilson.png"
 import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png";
 import WhatsAppIcon from "../style/assets/icons/WhatsAppIcon.png";
 import MotionDivLeftToRight from "./SectionComponents/MotionDivLeftToRight";
+import MotionDivRightToLeft from "./SectionComponents/MotionDivRightToLeft";
 
 export default function WppSection() {
   return (
@@ -42,11 +43,12 @@ export default function WppSection() {
                 </div>
               </MotionDivLeftToRight>
             </div>
-            <img
-              className="w-[45%] max-w-28 phone1:w-[50%] phone1:max-w-none phone3:max-w-56 tablet1:w-[35%]"
-              alt="Foto Edilson"
-              src={imgEdilson}
-            />
+
+            <div className="w-[90%] max-w-40 phone1:w-[100%] phone1:max-w-none phone3:max-w-56 tablet1:w-[45%]">
+              <MotionDivRightToLeft>
+                <img className="" alt="Foto Edilson" src={imgEdilson} />
+              </MotionDivRightToLeft>
+            </div>
           </div>
         </div>
       </SectionContent>
