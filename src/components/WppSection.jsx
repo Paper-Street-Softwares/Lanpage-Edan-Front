@@ -6,7 +6,7 @@ import WhatsAppIcon from "../style/assets/icons/WhatsAppIcon.png";
 export default function WppSection() {
   return (
     <div
-      className="mt-12 bg-center bg-cover tablet2:mt-28 content"
+      className="mt-12 phone1:mt-[15%] bg-center bg-cover tablet2:mt-28 content"
       style={{
         backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",
@@ -16,29 +16,27 @@ export default function WppSection() {
     >
       <SectionContent>
         <div className="w-full">
-          <div className="flex flex-row items-end justify-between h-28">
-            <div className="flex flex-col w-full justify-evenly items-left h-28">
-              <h1 className="text-left text-white bg-blue-700 text-paragraph1 max-w-32 font-poppins">
+          <div className="flex flex-row items-end justify-between h-28 phone1:h-40">
+            <div className="flex flex-col w-full justify-evenly items-left h-28 phone1:h-40">
+              <h1 className="text-left text-white text-paragraph1 phone1:text-paragraph4 max-w-32 font-poppins">
                 Contate-nos através do <strong>Whatsapp</strong>
               </h1>
-              <div className="flex flex-col justify-center bg-red-500 max-w-32 items-left h-14 tablet2:w-72">
-                <a
-                  href="#"
-                  className="flex flex-row px-1 justify-around items-center w-full max-w-32 h-[80%] transition rounded-lg bg-primary hover:bg-secondary"
-                >
-                  <img
-                    src={WhatsAppIcon}
-                    className="h-[45%]"
-                    alt="WhatsApp Icon"
-                  ></img>
-                  <p className="font-bold text-white text-paragraph1">
-                    Solicitar Contato
-                  </p>
-                </a>
-              </div>
+              <a
+                href="#"
+                className="flex flex-row items-center justify-around w-full h-12 px-1 transition rounded-lg max-w-32 bg-primary hover:bg-secondary"
+              >
+                <img
+                  src={WhatsAppIcon}
+                  className="h-[45%]"
+                  alt="WhatsApp Icon"
+                ></img>
+                <p className="text-white text-paragraph1 phone1:text-paragraph3">
+                  Clique aqui
+                </p>
+              </a>
             </div>
             <img
-              className="w-[45%] max-w-28"
+              className="w-[45%] max-w-28 phone1:w-[50%] phone1:max-w-none"
               alt="Foto Edilson"
               src={imgEdilson}
             />
