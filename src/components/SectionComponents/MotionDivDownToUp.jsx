@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Children } from "react";
 
-export default function MotionDivUpToDown({ children }) {
+export default function MotionDivDownToUp({ children }) {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   const childrenArray = Children.toArray(children);
