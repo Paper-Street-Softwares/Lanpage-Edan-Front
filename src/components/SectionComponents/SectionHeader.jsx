@@ -1,4 +1,5 @@
 import MotionDivLeftToRight from "./MotionDivLeftToRight";
+import MotionDivRightToLeft from "./MotionDivRightToLeft";
 
 export default function SectionHeader(props) {
   const sectionHeaderTitleFirst = props.sectionHeaderTitleFirst;
@@ -11,7 +12,7 @@ export default function SectionHeader(props) {
         <MotionDivLeftToRight>{sectionHeaderTitleFirst}</MotionDivLeftToRight>
       </div>
       <div className="w-[79%] flex flex-col justify-center font-poppins text-primary text-title1 phone1:text-title2 phone3:text-title5 text-center font-bold ">
-        <MotionDivLeftToRight>{sectionHeaderTitleSecond}</MotionDivLeftToRight>
+        <MotionDivRightToLeft>{sectionHeaderTitleSecond}</MotionDivRightToLeft>
       </div>
       <div className="w-full h-px mt-6 mb-6 bg-neutral-200"></div>
       <div className="w-[79%] text-quaternary font-poppins text-paragraph3 phone3:text-paragraph4 text-center">
