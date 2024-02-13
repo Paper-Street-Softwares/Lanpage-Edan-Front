@@ -3,11 +3,12 @@ import imgEdilson from "../style/assets/images/contato-via-whatsapp/edilson.png"
 import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png";
 import WhatsAppIcon from "../style/assets/icons/WhatsAppIcon.png";
 import MotionDivLeftToRight from "./SectionComponents/MotionDivLeftToRight";
+import MotionDivRightToLeft from "./SectionComponents/MotionDivRightToLeft";
 
 export default function WppSection() {
   return (
     <div
-      className="mt-12 phone1:mt-[15%] phone2:mt-[20%] phone3:mt-[20%] bg-center bg-cover tablet2:mt-28 content"
+      className="mt-12 phone1:mt-[15%] phone2:mt-[20%] phone3:mt-[20%] bg-center bg-cover tablet1:mt-28 content"
       style={{
         backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",
@@ -24,25 +25,30 @@ export default function WppSection() {
                   Contate-nos através do <strong>Whatsapp</strong>
                 </MotionDivLeftToRight>
               </h1>
-              <a
-                href="#"
-                className="flex flex-row items-center justify-around w-[90%] h-8 phone1:h-12 px-1 transition rounded-lg max-w-32 tablet1:h-[30%] phone3:max-w-48 tablet1:max-w-60 phone3:w-[90%] bg-primary hover:bg-secondary"
-              >
-                <img
-                  src={WhatsAppIcon}
-                  className="h-[45%] phone3:h-[60%] tablet1:h-20"
-                  alt="WhatsApp Icon"
-                ></img>
-                <p className="text-white text-paragraph1 phone1:text-paragraph3 phone3:text-paragraph5 tablet1:pr-[3%] tablet1:font-bold tablet1:text-title2">
-                  Clique aqui
-                </p>
-              </a>
+              <MotionDivLeftToRight>
+                <div className="w-full">
+                  <a
+                    href="#"
+                    className="flex flex-row items-center justify-around w-[90%] h-8 phone1:h-12 px-1 transition rounded-lg max-w-32 tablet1:h-18 phone3:max-w-48 tablet1:max-w-60 phone3:w-[90%] bg-primary hover:bg-secondary"
+                  >
+                    <img
+                      src={WhatsAppIcon}
+                      className="h-[45%] phone3:h-[60%] tablet1:h-20"
+                      alt="WhatsApp Icon"
+                    ></img>
+                    <p className="text-white text-paragraph1 phone1:text-paragraph3 phone3:text-paragraph5 tablet1:pr-[3%] tablet1:font-bold tablet1:text-title2">
+                      Clique aqui
+                    </p>
+                  </a>
+                </div>
+              </MotionDivLeftToRight>
             </div>
-            <img
-              className="w-[45%] max-w-28 phone1:w-[50%] phone1:max-w-none phone3:max-w-56 tablet1:w-[35%]"
-              alt="Foto Edilson"
-              src={imgEdilson}
-            />
+
+            <div className="w-[90%] max-w-40 phone1:w-[100%] phone1:max-w-none phone3:max-w-56 tablet1:w-[45%]">
+              <MotionDivRightToLeft>
+                <img className="" alt="Foto Edilson" src={imgEdilson} />
+              </MotionDivRightToLeft>
+            </div>
           </div>
         </div>
       </SectionContent>
