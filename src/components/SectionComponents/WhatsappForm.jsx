@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import WhatsAppIcon from "../../style/assets/icons/WhatsAppIcon.png";
 import { CiUser, CiPhone, CiMail, CiChat1 } from "react-icons/ci";
-import MotionDivDownToUp from "./MotionDivDownToUp";
 
 const WhatsappForm = () => {
   const [name, setName] = useState("");
