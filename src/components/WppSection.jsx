@@ -18,10 +18,10 @@ export default function WppSection() {
         <div className="w-full">
           <div className="flex flex-row items-end justify-between h-28">
             <div className="flex flex-col w-full justify-evenly items-left h-28">
-              <h1 className="text-left text-white text-paragraph1 max-w-32 font-poppins">
+              <h1 className="text-left text-white bg-blue-700 text-paragraph1 max-w-32 font-poppins">
                 Contate-nos através do <strong>Whatsapp</strong>
               </h1>
-              <div className="flex flex-col justify-center max-w-32 items-left h-14 tablet2:w-72">
+              <div className="flex flex-col justify-center bg-red-500 max-w-32 items-left h-14 tablet2:w-72">
                 <a
                   href="#"
                   className="flex flex-row px-1 justify-around items-center w-full max-w-32 h-[80%] transition rounded-lg bg-primary hover:bg-secondary"
