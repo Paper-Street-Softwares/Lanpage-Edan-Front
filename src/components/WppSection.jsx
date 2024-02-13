@@ -8,7 +8,7 @@ import MotionDivRightToLeft from "./SectionComponents/MotionDivRightToLeft";
 export default function WppSection() {
   return (
     <div
-      className="mt-12 phone1:mt-[15%] phone2:mt-[20%] phone3:mt-[20%] bg-center bg-cover tablet2:mt-28 content"
+      className="mt-12 phone1:mt-[15%] phone2:mt-[20%] phone3:mt-[20%] bg-center bg-cover tablet1:mt-28 content"
       style={{
         backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",
