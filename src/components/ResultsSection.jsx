@@ -1,6 +1,7 @@
 import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png";
 import imgIcon from "../style/assets/icons/footer/calendarIcon.png";
 import ResultsCard from "../components/SectionComponents/ResultsCard";
+import AnimatedCounter from "./SectionComponents/AnimatedCounter";
 
 export default function ResultsSection() {
   return (
@@ -17,22 +18,22 @@ export default function ResultsSection() {
         <h1 className="flex flex-col items-center tablet1:flex-row tablet1:justify-between tablet1:flex-wrap desktop1:flex-nowrap">
           <ResultsCard
             img={imgIcon}
-            number="40"
+            number={<AnimatedCounter endValue={40} />}
             text="Anos de serviços prestados"
           />
           <ResultsCard
             img={imgIcon}
-            number="+ de 1500"
+            number={<AnimatedCounter endValue={500} />}
             text="Empresas abertas anualmente."
           />
           <ResultsCard
             img={imgIcon}
-            number="+ de 1000"
+            number={<AnimatedCounter endValue={1500} />}
             text="Impostos de Renda feitos anualmente."
           />
           <ResultsCard
             img={imgIcon}
-            number="+ de 200"
+            number={<AnimatedCounter endValue={300} />}
             text="Empresas atendidas mensalmente."
           />
         </h1>
