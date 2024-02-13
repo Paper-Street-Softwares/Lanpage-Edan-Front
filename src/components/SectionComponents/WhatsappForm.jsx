@@ -46,16 +46,49 @@ const WhatsappForm = () => {
   const validateName = (name) => !!name;
 
   const validatePhone = (phone) => {
-    const phoneNumberPattern = /^\d+$/;
-    return phoneNumberPattern.test(phone) && phone.length === 11;
+    console.log("Validating phone:", phone);
+    const phoneNumberPattern = /^[\d()-\s]+$/;
+    const cleanedPhone = phone.replace(/[^\d]/g, "");
+    console.log("Cleaned phone:", cleanedPhone);
+    console.log("Phone length:", cleanedPhone.length);
+    const isValid =
+      phoneNumberPattern.test(phone) && cleanedPhone.length === 11;
+    console.log("Phone validation result:", isValid);
+    return isValid;
   };
 
   const validateEmail = (email) => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email.includes("@")) {
+      return false;
+    }
     return emailPattern.test(email);
   };
 
   const validateMessage = (message) => !!message;
+
+  const formatPhoneNumber = (phoneNumber) => {
+    let cleaned = phoneNumber.replace(/\D/g, "");
+    let formatted = cleaned.replace(
+      /^(\d{2})(\d{1,5})?(\d{1,4})?/,
+      (match, p1, p2, p3) => {
+        let part1 = p1 ? `(${p1}` : "";
+        let part2 = p2 ? `) ${p2}` : "";
+        let part3 = p3 ? `-${p3}` : "";
+        return `${part1}${part2}${part3}`;
+      }
+    );
+
+    return formatted;
+  };
+
+  const handlePhoneChange = (e) => {
+    let input = e.target.value.replace(/[^\d()-\s]/g, "");
+    let formattedPhone = formatPhoneNumber(input);
+    if (formattedPhone.length <= 15) {
+      setPhone(formattedPhone);
+    }
+  };
 
   return (
     <div className="text-paragraph3 phone3:text-paragraph4">
@@ -90,17 +123,8 @@ const WhatsappForm = () => {
             type="tel"
             id="phone"
             value={phone}
-            onChange={(e) => {
-              const re = /^[0-9\b]+$/;
-              if (
-                (e.target.value === "" || re.test(e.target.value)) &&
-                e.target.value.length <= 11
-              ) {
-                setPhone(e.target.value);
-              }
-            }}
+            onChange={handlePhoneChange}
             placeholder="Telefone"
-            inputMode="numeric"
             required
           />
         </div>
@@ -124,7 +148,12 @@ const WhatsappForm = () => {
             required
           />
         </div>
-        {errors.email && (
+        {errors.email && !errors.email.includes("@") && (
+          <p className="-mt-2 -mb-1 text-xs text-red-500">
+            Digite um e-mail válido. Inclua um "@" no endereço de e-mail.
+          </p>
+        )}
+        {errors.email?.includes("@") && (
           <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
         )}
       </div>
