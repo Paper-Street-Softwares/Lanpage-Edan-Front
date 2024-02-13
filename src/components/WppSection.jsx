@@ -3,7 +3,6 @@ import imgEdilson from "../style/assets/images/contato-via-whatsapp/edilson.png"
 import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png";
 import WhatsAppIcon from "../style/assets/icons/WhatsAppIcon.png";
 import MotionDivLeftToRight from "./SectionComponents/MotionDivLeftToRight";
-import MotionDivRightToLeft from "./SectionComponents/MotionDivRightToLeft";
 
 export default function WppSection() {
   return (
