@@ -10,20 +10,29 @@ import FloatingWhatsappButton from "../../components/FloatingWhatsappButton";
 import ResultsSection from "../../components/ResultsSection";
 import ParallaxSectionWithContent from "../../components/SectionComponents/ParallaxSectionWithContent";
 import MarginBetweenSection from "../../components/SectionComponents/MarginBetweenSection";
+import MarginBetweenSectionColored from "../../components/SectionComponents/MarginBetweenSectionColored";
 
 function Main() {
   return (
     <div className="mainBody">
+      <MarginBetweenSection />
       <ServicesSection />
+      <MarginBetweenSection />
       <ResultsSection />
+      <MarginBetweenSection />
       <DifferentialSection />
+      <MarginBetweenSection />
       <AppSection />
+      <MarginBetweenSection />
       <LinksSection />
+      <MarginBetweenSection />
       <ParallaxSectionWithContent />
+      <MarginBetweenSection />
       <CertificatesSection />
       <WppSection />
+      <MarginBetweenSectionColored />
       <AboutSection />
-      <MarginBetweenSection />
+      <MarginBetweenSectionColored />
       <BackToTopButton />
       <FloatingWhatsappButton />
     </div>
