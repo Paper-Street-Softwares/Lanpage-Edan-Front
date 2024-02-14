@@ -12,7 +12,6 @@ export default function ResultsSection() {
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
       }}
-      id="contact"
     >
       <div className="w-full py-[5%]">
         <h1 className="flex flex-col items-center tablet1:flex-row tablet1:justify-between tablet1:flex-wrap desktop1:flex-nowrap">
