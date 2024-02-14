@@ -7,6 +7,7 @@ import imgCalendar from "../style/assets/icons/footer/calendarIcon.png";
 import imgLogo from "../style/assets/images/Logo.png";
 import imgInstagram from "../style/assets/icons/footer/instagramIcon.png";
 import imgFacebook from "../style/assets/icons/footer/facebookIcon.png";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function FooterSection() {
   return (
@@ -50,6 +51,7 @@ export default function FooterSection() {
             <a
               target="_blank"
               href="https://www.instagram.com/edancontabilidade/#"
+              rel="noreferrer"
             >
               <HonrizontalIconAndText
                 img={imgInstagram}
@@ -60,6 +62,7 @@ export default function FooterSection() {
             <a
               target="_blank"
               href="https://www.facebook.com/EdanContabilidade/?locale=pt_BR"
+              rel="noreferrer"
             >
               <HonrizontalIconAndText
                 img={imgFacebook}
@@ -75,29 +78,92 @@ export default function FooterSection() {
           </div>
           <div className="flex flex-row justify-between font-bold">
             <div>
-              <div className="mb-4">
-                <a href="#">INÍCIO</a>
-              </div>
-              <div className="mb-4">
-                <a href="#">SERVIÇOS</a>
-              </div>
-              <div className="mb-4">
-                <a href="#">APLICATIVO</a>
-              </div>
-              <div className="mb-4">
-                <a href="#">LINKS ÚTEIS</a>
-              </div>
+              <ScrollLink
+                to="home"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">INÍCIO</span>
+                </div>
+              </ScrollLink>
+              <ScrollLink
+                to="services"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">SERVIÇOS</span>
+                </div>
+              </ScrollLink>
+              <ScrollLink
+                to="app"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={800}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">APLICATIVO</span>
+                </div>
+              </ScrollLink>
+              <ScrollLink
+                to="links"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">LINKS ÚTEIS</span>
+                </div>
+              </ScrollLink>
             </div>
             <div>
-              <div className="mb-4">
-                <a href="#">SOBRE NÓS</a>
-              </div>
-              <div className="mb-4">
-                <a href="#">CERTIDÕES</a>
-              </div>
-              <div className="mb-4">
-                <a href="#">DEPOIMENTOS</a>
-              </div>
+              <ScrollLink
+                to="about"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">SOBRE NÓS</span>
+                </div>
+              </ScrollLink>
+              <ScrollLink
+                to="certificates"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">CERTIDÕES</span>
+                </div>
+              </ScrollLink>
+              <ScrollLink
+                to="contact"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-170}
+                duration={800}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">CONTATO</span>
+                </div>
+              </ScrollLink>
             </div>
           </div>
         </FooterCardContent>
