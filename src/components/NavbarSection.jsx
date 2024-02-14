@@ -61,7 +61,7 @@ export default function NavbarSection() {
   return (
     <div className="content">
       <div
-        className={`fixed w-full bg-white bg-opacity-0 ${
+        className={`fixed w-full h-16 desktop1:h-20 bg-white bg-opacity-0 ${
           scrolling
             ? "bg-opacity-100 shadow-lg bg-transition-opacity duration-1000"
             : ""
@@ -71,11 +71,11 @@ export default function NavbarSection() {
           <img
             src={Logo}
             alt="Logo Edan"
-            className="absolute left-0 h-12 mb-2 tablet3:mb-0"
+            className="absolute left-0 h-10 mb-2 tablet3:mb-0"
           />
           <button
             onClick={toggleSidebar}
-            className="absolute right-0 mr-4 -top-4 tablet1:hidden phone3:hidden"
+            className="absolute right-0 mr-4 -top-4 tablet1:hidden"
           >
             {showMenuIcon ? (
               <Menu
