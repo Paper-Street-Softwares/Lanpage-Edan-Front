@@ -35,79 +35,63 @@ export default function ParallaxSectionWithContent() {
   const intervalRef = useRef(null);
 
   useEffect(() => {
-    const iniciarReproducaoAutomatica = () => {
+    intervalRef.current = setInterval(() => {
       setIsTransitioning(true);
       setTimeout(() => {
         setCurrentDepoimentoIndex(
           (prevIndex) => (prevIndex + 1) % depoimentos.length
         );
         setIsTransitioning(false);
-      }, 700);
-    };
-
-    intervalRef.current = setInterval(iniciarReproducaoAutomatica, 7000);
+      });
+    }, 7000);
 
     return () => clearInterval(intervalRef.current);
   }, []);
 
   const handlePrevClick = () => {
-    clearInterval(intervalRef.current); // Limpar qualquer temporizador ativo
-
-    setIsTransitioning(true); // Indicar transição
-
-    // Calcular o novo índice do depoimento
-    const newIndex =
-      (currentDepoimentoIndex - 1 + depoimentos.length) % depoimentos.length;
-
-    // Lidar com a volta ao início se estiver no final
-    if (newIndex === depoimentos.length - 1) {
-      setCurrentDepoimentoIndex(0); // Mudar para o primeiro depoimento
-    } else {
-      setCurrentDepoimentoIndex(newIndex); // Definir para o depoimento anterior
-    }
-
-    setIsTransitioning(false); // Atualizar o estado de transição
-
-    // Reiniciar o temporizador de transição automática se desejado
-    if (intervalRef.current) {
-      // Verificar se o intervalo existe
-      clearInterval(intervalRef.current);
+    clearInterval(intervalRef.current);
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentDepoimentoIndex(
+        (prevIndex) => (prevIndex - 1 + depoimentos.length) % depoimentos.length
+      );
+      setIsTransitioning(false);
       intervalRef.current = setInterval(() => {
-        setCurrentDepoimentoIndex(
-          (prevIndex) => (prevIndex + 1) % depoimentos.length
-        );
-      }, 7000); // Substituir pelo intervalo desejado
-    }
+        setIsTransitioning(true);
+        setTimeout(() => {
+          setCurrentDepoimentoIndex(
+            (prevIndex) => (prevIndex + 1) % depoimentos.length
+          );
+          setIsTransitioning(false);
+        });
+      }, 7000);
+    });
   };
 
   const handleNextClick = () => {
     clearInterval(intervalRef.current);
     setIsTransitioning(true);
-
-    // No need for separate update function if logic is simple
-    const newIndex = (currentDepoimentoIndex + 1) % depoimentos.length;
-    setCurrentDepoimentoIndex(newIndex);
-
-    setIsTransitioning(false);
-
-    // Restart automatic transition timer if desired
-    if (intervalRef.current) {
-      // Check if interval exists
-      clearInterval(intervalRef.current);
+    setTimeout(() => {
+      setCurrentDepoimentoIndex(
+        (prevIndex) => (prevIndex + 1) % depoimentos.length
+      );
+      setIsTransitioning(false);
       intervalRef.current = setInterval(() => {
-        // Replace with your preferred automatic transition logic
-        setCurrentDepoimentoIndex(
-          (prevIndex) => (prevIndex + 1) % depoimentos.length
-        );
-      }, 7000); // Replace with your desired interval
-    }
+        setIsTransitioning(true);
+        setTimeout(() => {
+          setCurrentDepoimentoIndex(
+            (prevIndex) => (prevIndex + 1) % depoimentos.length
+          );
+          setIsTransitioning(false);
+        });
+      }, 7000);
+    });
   };
 
   return (
     <div
-      className="relative mt-12 overflow-y-hidden bg-center bg-cover tablet2:mt-28 content"
+      className="mt-6 overflow-y-hidden bg-center bg-cover tablet2:mt-8 content"
       style={{
-        height: "400px",
         backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
@@ -115,8 +99,8 @@ export default function ParallaxSectionWithContent() {
       }}
       id="contact"
     >
-      <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4">
-        <div className="flex flex-col phone3:w-[80%] my-[10%] text-center items-center text-quinary">
+      <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4 tablet1:text-paragraph5">
+        <div className="flex flex-col phone3:w-[80%] my-[10%] tablet2:my-[5%] text-center items-center text-quinary">
           <div
             className={`flex-grow ${
               isTransitioning ? "slideOutToLeft" : "slideInFromRight"
@@ -125,13 +109,13 @@ export default function ParallaxSectionWithContent() {
             <p>"{depoimentos[currentDepoimentoIndex].texto}"</p>
             <img
               alt="Foto de perfil"
-              className="rounded-full w-[15%] mx-auto my-[5%] phone3:w-[7%] phone3:my-[3%]"
+              className="rounded-full w-[15%] mx-auto my-[5%] phone3:w-[20%] phone3:my-[7%] tablet1:w-[10%] tablet1:my-[3%]"
               src={depoimentos[currentDepoimentoIndex].imagem}
             />
-            <h1 className="font-medium">
+            <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
               {depoimentos[currentDepoimentoIndex].nome}
             </h1>
-            <p className="text-paragraph1 phone3:text-paragraph2">
+            <p className="text-paragraph2 phone3:text-paragraph3">
               {depoimentos[currentDepoimentoIndex].empresa}
             </p>
           </div>
