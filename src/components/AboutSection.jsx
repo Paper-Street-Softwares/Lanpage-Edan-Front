@@ -54,35 +54,34 @@ export default function AboutSection() {
               </h1>
               <div className="flex flex-col tablet2:grid tablet2:grid-cols-2">
                 <p className="text-sm font-poppins text-quaternary">
-                  É importante escolher serviços contábeis confiáveis, conhecer a
-                  qualidade e abrangência dos serviços oferecidos antes de
-                  contratá-los. A Edan é uma empresa de contabilidade completa que
-                  atende a todas as cidades do Brasil, mantendo as finanças
+                  É importante escolher serviços contábeis confiáveis, conhecer
+                  a qualidade e abrangência dos serviços oferecidos antes de
+                  contratá-los. A Edan é uma empresa de contabilidade completa
+                  que atende a todas as cidades do Brasil, mantendo as finanças
                   organizadas e em ordem.
                 </p>
                 <img
                   src={Brasil}
                   alt="Mapa do Brasil"
-                  className="my-auto phone3:w-[66.666%] phone3:mx-auto tablet1:w-full"
+                  className="my-auto phone1:w-[50%] phone1:mx-auto tablet2:w-full"
                 />
               </div>
             </div>
           </MotionDivLeftToRight>
           <MotionDivRightToLeft>
-          <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in">
-            <h1 className="text-xl my-4 font-semibold font-poppins text-secondary">
-              Onde nos encontrar?
-            </h1>
-            <div className="w-full border-b-8 border-primary">
-              <iframe
-                className="w-full"
-                title="GoogleMaps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.0757758120135!2d-39.03699242413275!3d-14.821004699742826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7390a5df4a80977%3A0x283de9a3dd4420ba!2sEdan%20Contabilidade!5e0!3m2!1spt-BR!2sbr!4v1706652415211!5m2!1spt-BR!2sbr"
-                height="300"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-
+            <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in">
+              <h1 className="text-xl my-4 font-semibold font-poppins text-secondary">
+                Onde nos encontrar?
+              </h1>
+              <div className="w-full border-b-8 border-primary">
+                <iframe
+                  className="w-full"
+                  title="GoogleMaps"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.0757758120135!2d-39.03699242413275!3d-14.821004699742826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7390a5df4a80977%3A0x283de9a3dd4420ba!2sEdan%20Contabilidade!5e0!3m2!1spt-BR!2sbr!4v1706652415211!5m2!1spt-BR!2sbr"
+                  height="300"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </MotionDivRightToLeft>
         </div>
