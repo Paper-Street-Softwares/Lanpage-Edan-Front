@@ -79,11 +79,15 @@ export default function NavbarSection() {
           >
             {showMenuIcon ? (
               <Menu
-                className={`w-8 h-8 ${scrolling ? "text-black" : "text-white"}`}
+                className={`w-8 h-8 ${
+                  scrolling ? "text-secondary" : "text-white"
+                }`}
               />
             ) : (
               <X
-                className={`w-8 h-8 ${scrolling ? "text-black" : "text-white"}`}
+                className={`w-8 h-8 ${
+                  scrolling ? "text-secondary" : "text-white"
+                }`}
               />
             )}
           </button>
