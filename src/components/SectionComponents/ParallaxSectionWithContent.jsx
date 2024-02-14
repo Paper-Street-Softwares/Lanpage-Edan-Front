@@ -4,12 +4,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import imgOfficeGreenBackground from "../../style/assets/images/BackgroundImage.png";
 import avatar1 from "../../style/assets/images/testemunhos/avatar.png";
-import { PlayIcon, PauseIcon } from "@heroicons/react/outline";
+import avatar2 from "../../style/assets/images/testemunhos/avatar2.png";
+import avatar3 from "../../style/assets/images/testemunhos/avatar3.png";
+import {
+  PlayIcon,
+  PauseIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/outline";
 
 export default function ParallaxSectionWithContent() {
   const [sliderIndex, setSliderIndex] = useState(0);
   const [autoplay, setAutoplay] = useState(true);
   const [slider, setSlider] = useState(null);
+  const [timer, setTimer] = useState(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -17,11 +25,12 @@ export default function ParallaxSectionWithContent() {
         slider && slider.slickNext();
       }
     }, 7000); // Intervalo ajustado para 7 segundos
+    setTimer(interval); // Salva o intervalo no estado timer
     return () => clearInterval(interval);
   }, [autoplay, slider]);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -29,6 +38,18 @@ export default function ParallaxSectionWithContent() {
     autoplay: autoplay,
     autoplaySpeed: 7000, // Velocidade de autoplay ajustada para 7 segundos
     afterChange: (current) => setSliderIndex(current),
+    beforeChange: (current, next) => {
+      // Reinicia o intervalo quando o slide muda manualmente
+      if (current !== next) {
+        clearInterval(timer);
+        const newInterval = setInterval(() => {
+          if (autoplay) {
+            slider && slider.slickNext();
+          }
+        }, 7000);
+        setTimer(newInterval);
+      }
+    },
   };
 
   const toggleAutoplay = () => {
@@ -36,11 +57,11 @@ export default function ParallaxSectionWithContent() {
   };
 
   const nextSlide = () => {
-    slider.slickNext();
+    slider && slider.slickNext();
   };
 
   const prevSlide = () => {
-    slider.slickPrev();
+    slider && slider.slickPrev();
   };
 
   return (
@@ -86,13 +107,14 @@ export default function ParallaxSectionWithContent() {
             <div className="flex flex-col phone3:w-[80%] my-[10%] tablet2:my-[5%] text-center items-center text-quinary">
               <div>
                 <p>
-                  "A Edan Contabilidade é demais! Eles cuidam da minha empresa
-                  com maestria total. Estou super satisfeito e recomendo muito!"
+                  "Estou extremamente satisfeita com os serviços da Edan
+                  Contabilidade. Profissionalismo, dedicação e competência são
+                  marcas registradas desta empresa."
                 </p>
                 <img
                   alt="Foto de perfil"
                   className="rounded-full w-[15%] mx-auto my-[5%] phone3:w-[20%] phone3:my-[7%] tablet1:w-[10%] tablet1:my-[3%]"
-                  src={avatar1}
+                  src={avatar2}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
                   Nome da Pessoa
@@ -109,13 +131,14 @@ export default function ParallaxSectionWithContent() {
             <div className="flex flex-col phone3:w-[80%] my-[10%] tablet2:my-[5%] text-center items-center text-quinary">
               <div>
                 <p>
-                  "A Edan Contabilidade é demais! Eles cuidam da minha empresa
-                  com maestria total. Estou super satisfeito e recomendo muito!"
+                  "A equipe da Edan Contabilidade tem sido fundamental para o
+                  sucesso do meu negócio. Recomendo a todos que buscam serviços
+                  contábeis de qualidade."
                 </p>
                 <img
                   alt="Foto de perfil"
                   className="rounded-full w-[15%] mx-auto my-[5%] phone3:w-[20%] phone3:my-[7%] tablet1:w-[10%] tablet1:my-[3%]"
-                  src={avatar1}
+                  src={avatar3}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
                   Nome da Pessoa
@@ -130,6 +153,9 @@ export default function ParallaxSectionWithContent() {
       </Slider>
       <div className="bottom-0 left-0 w-full py-2">
         <div className="flex items-center justify-center text-white">
+          <button className="mx-2" onClick={prevSlide}>
+            <ChevronLeftIcon className="w-10 h-10" />
+          </button>
           <button className="mx-2" onClick={toggleAutoplay}>
             {autoplay ? (
               <PauseIcon className="w-10 h-10" />
@@ -137,7 +163,10 @@ export default function ParallaxSectionWithContent() {
               <PlayIcon className="w-10 h-10" />
             )}
           </button>
-          <div className="flex items-center justify-center my-8">
+          <button className="mx-2" onClick={nextSlide}>
+            <ChevronRightIcon className="w-10 h-10" />
+          </button>
+          <div className="flex items-center justify-center mb-8">
             <div className="w-3/4 h-6 bg-white rounded-full">
               <div
                 className="h-full bg-white rounded-full"
