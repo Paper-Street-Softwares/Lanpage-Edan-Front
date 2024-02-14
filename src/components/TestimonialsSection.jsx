@@ -35,7 +35,7 @@ export default function ParallaxSectionWithContent() {
   const intervalRef = useRef(null);
 
   useEffect(() => {
-    intervalRef.current = setInterval(() => {
+    const iniciarReproducaoAutomatica = () => {
       setIsTransitioning(true);
       setTimeout(() => {
         setCurrentDepoimentoIndex(
@@ -43,49 +43,64 @@ export default function ParallaxSectionWithContent() {
         );
         setIsTransitioning(false);
       }, 700);
-    }, 7000);
+    };
+
+    intervalRef.current = setInterval(iniciarReproducaoAutomatica, 7000);
 
     return () => clearInterval(intervalRef.current);
   }, []);
 
   const handlePrevClick = () => {
-    clearInterval(intervalRef.current);
-    setIsTransitioning(true);
-    setTimeout(() => {
-      setCurrentDepoimentoIndex(
-        (prevIndex) => (prevIndex - 1 + depoimentos.length) % depoimentos.length
-      );
-      setIsTransitioning(false);
+    clearInterval(intervalRef.current); // Limpar qualquer temporizador ativo
+
+    setIsTransitioning(true); // Indicar transição
+
+    // Calcular o novo índice do depoimento
+    const newIndex =
+      (currentDepoimentoIndex - 1 + depoimentos.length) % depoimentos.length;
+
+    // Lidar com a volta ao início se estiver no final
+    if (newIndex === depoimentos.length - 1) {
+      setCurrentDepoimentoIndex(0); // Mudar para o primeiro depoimento
+    } else {
+      setCurrentDepoimentoIndex(newIndex); // Definir para o depoimento anterior
+    }
+
+    setIsTransitioning(false); // Atualizar o estado de transição
+
+    // Reiniciar o temporizador de transição automática se desejado
+    if (intervalRef.current) {
+      // Verificar se o intervalo existe
+      clearInterval(intervalRef.current);
       intervalRef.current = setInterval(() => {
-        setIsTransitioning(true);
-        setTimeout(() => {
-          setCurrentDepoimentoIndex(
-            (prevIndex) => (prevIndex + 1) % depoimentos.length
-          );
-          setIsTransitioning(false);
-        });
-      }, 7000);
-    });
+        setCurrentDepoimentoIndex(
+          (prevIndex) => (prevIndex + 1) % depoimentos.length
+        );
+      }, 7000); // Substituir pelo intervalo desejado
+    }
   };
 
   const handleNextClick = () => {
     clearInterval(intervalRef.current);
     setIsTransitioning(true);
-    setTimeout(() => {
-      setCurrentDepoimentoIndex(
-        (prevIndex) => (prevIndex + 1) % depoimentos.length
-      );
-      setIsTransitioning(false);
+
+    // No need for separate update function if logic is simple
+    const newIndex = (currentDepoimentoIndex + 1) % depoimentos.length;
+    setCurrentDepoimentoIndex(newIndex);
+
+    setIsTransitioning(false);
+
+    // Restart automatic transition timer if desired
+    if (intervalRef.current) {
+      // Check if interval exists
+      clearInterval(intervalRef.current);
       intervalRef.current = setInterval(() => {
-        setIsTransitioning(true);
-        setTimeout(() => {
-          setCurrentDepoimentoIndex(
-            (prevIndex) => (prevIndex + 1) % depoimentos.length
-          );
-          setIsTransitioning(false);
-        });
-      }, 7000);
-    });
+        // Replace with your preferred automatic transition logic
+        setCurrentDepoimentoIndex(
+          (prevIndex) => (prevIndex + 1) % depoimentos.length
+        );
+      }, 7000); // Replace with your desired interval
+    }
   };
 
   return (
