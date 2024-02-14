@@ -55,7 +55,7 @@ export default function AboutSection() {
                 A Edan atende em todo brasil?
               </h1>
               <div className="flex flex-col tablet2:grid tablet2:grid-cols-2">
-                <p className="text-sm font-poppins text-quaternary">
+                <p className="text-paragraph3 font-poppins text-quaternary">
                   É importante escolher serviços contábeis confiáveis, conhecer
                   a qualidade e abrangência dos serviços oferecidos antes de
                   contratá-los. A Edan é uma empresa de contabilidade completa
@@ -65,14 +65,14 @@ export default function AboutSection() {
                 <img
                   src={Brasil}
                   alt="Mapa do Brasil"
-                  className="my-auto phone1:w-[50%] phone1:mx-auto tablet2:w-full phone1:mt-6"
+                  className="my-auto phone1:w-[50%] phone1:mx-auto tablet2:w-full phone1:mt-[5%]"
                 />
               </div>
             </div>
           </MotionDivLeftToRight>
           <MotionDivRightToLeft>
             <div className="flex flex-wrap justify-between w-full h-auto">
-              <h1 className="my-4 mt-12 text-xl font-semibold tablet2:mt-0 font-poppins text-secondary">
+              <h1 className="my-4 mt-12 text-xl font-semibold tablet2:mt-0 font-poppins text-secondary"
                 Onde nos encontrar?
               </h1>
               <div className="w-full border-b-8 border-primary">
