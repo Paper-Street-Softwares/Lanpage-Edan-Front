@@ -6,12 +6,7 @@ import imgOfficeGreenBackground from "../../style/assets/images/BackgroundImage.
 import avatar1 from "../../style/assets/images/testemunhos/avatar.png";
 import avatar2 from "../../style/assets/images/testemunhos/avatar2.png";
 import avatar3 from "../../style/assets/images/testemunhos/avatar3.png";
-import {
-  PlayIcon,
-  StopIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-} from "@heroicons/react/outline";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 
 export default function ParallaxSectionWithContent() {
   const [sliderIndex, setSliderIndex] = useState(0);
