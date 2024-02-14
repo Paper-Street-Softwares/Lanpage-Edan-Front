@@ -75,7 +75,6 @@ export default function ParallaxSectionWithContent() {
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
       }}
-      id="contact"
     >
       <Slider
         className="py-8"
