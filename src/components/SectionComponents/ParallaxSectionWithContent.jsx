@@ -96,7 +96,7 @@ export default function ParallaxSectionWithContent() {
                   src={avatar1}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-                  Carlos Adans
+                  Abraão Sampaio
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
                   Função da Pessoa
@@ -120,7 +120,7 @@ export default function ParallaxSectionWithContent() {
                   src={avatar2}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-                  Ilca Adans
+                  Ilca Almeida
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
                   Função da Pessoa
@@ -174,7 +174,9 @@ export default function ParallaxSectionWithContent() {
               <div
                 className="h-full bg-white rounded-full"
                 style={{
-                  width: `${(sliderIndex + 1) * (100 / settings.slidesToShow)}%`,
+                  width: `${
+                    (sliderIndex + 1) * (100 / settings.slidesToShow)
+                  }%`,
                 }}
               ></div>
             </div>
