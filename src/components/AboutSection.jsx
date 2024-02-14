@@ -16,7 +16,7 @@ export default function AboutSection() {
         sectionHeaderDescription="Conheça um pouco da nossa história."
       />
       <div className="flex flex-wrap items-start justify-around w-full h-auto opacity-0 animate-fade-in">
-        <div className="grid grid-cols-1 tablet2:gap-12 md:grid-cols-2">
+        <div className="grid grid-cols-1 tablet2:gap-12 tablet2:grid-cols-2">
           <SectionContent>
             <MotionDivLeftToRight>
               <SectionTextAndImages
@@ -51,11 +51,11 @@ export default function AboutSection() {
 
           <MotionDivLeftToRight>
             <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in">
-              <h1 className="text-xl mt-12 tablet2:mt-0 my-4 font-semibold font-poppins text-secondary">
+              <h1 className="text-title1 mt-[10%] tablet2:mt-[0%] my-[5%] font-semibold font-poppins text-secondary">
                 A Edan atende em todo brasil?
               </h1>
               <div className="flex flex-col tablet2:grid tablet2:grid-cols-2">
-                <p className="text-sm font-poppins text-quaternary">
+                <p className="text-paragraph3 font-poppins text-quaternary">
                   É importante escolher serviços contábeis confiáveis, conhecer
                   a qualidade e abrangência dos serviços oferecidos antes de
                   contratá-los. A Edan é uma empresa de contabilidade completa
@@ -65,14 +65,14 @@ export default function AboutSection() {
                 <img
                   src={Brasil}
                   alt="Mapa do Brasil"
-                  className="my-auto phone1:w-[50%] phone1:mx-auto tablet2:w-full phone1:mt-6"
+                  className="my-auto phone1:w-[50%] phone1:mx-auto tablet2:w-full phone1:mt-[5%]"
                 />
               </div>
             </div>
           </MotionDivLeftToRight>
           <MotionDivRightToLeft>
             <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in">
-              <h1 className="text-xl my-4 mt-12  tablet2:mt-0 font-semibold font-poppins text-secondary">
+              <h1 className="text-title1 my-[5%] tablet2:mt-[0%] font-semibold font-poppins text-secondary">
                 Onde nos encontrar?
               </h1>
               <div className="w-full border-b-8 border-primary">
