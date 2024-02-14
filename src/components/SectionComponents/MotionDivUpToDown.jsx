@@ -10,8 +10,8 @@ export default function MotionDivUpToDown({ children }) {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: -100 }}
-      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -100 }}
+      initial={{ opacity: 0, y: -5 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -5 }}
       transition={{ duration: 1 }}
     >
       {childrenArray}
