@@ -59,7 +59,7 @@ const WhatsappForm = () => {
 
   const validateEmail = (email) => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!email.includes("@")) {
+    if (!email.includes("@") && !email.includes(".com")) {
       return false;
     }
     return emailPattern.test(email);
@@ -150,7 +150,7 @@ const WhatsappForm = () => {
         </div>
         {errors.email && !errors.email.includes("@") && (
           <p className="-mt-2 -mb-1 text-xs text-red-500">
-            Digite um e-mail válido. Inclua um "@" no endereço de e-mail.
+            Digite um e-mail válido. Inclua as expressões "@" e ".com".
           </p>
         )}
         {errors.email?.includes("@") && (
