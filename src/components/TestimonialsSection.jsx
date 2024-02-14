@@ -29,7 +29,7 @@ const depoimentos = [
   },
 ];
 
-export default function ParallaxSectionWithContent() {
+export default function TestimonialSection() {
   const [currentDepoimentoIndex, setCurrentDepoimentoIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const intervalRef = useRef(null);
