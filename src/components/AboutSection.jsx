@@ -4,6 +4,8 @@ import Awards from "../style/assets/images/AwardsEDAN.png";
 import SectionHeader from "./SectionComponents/SectionHeader";
 import SectionContent from "./SectionComponents/SectionContent";
 import SectionTextAndImages from "./SectionComponents/SectionTextAndImages";
+import MotionDivLeftToRight from "./SectionComponents/MotionDivLeftToRight";
+import MotionDivRightToLeft from "./SectionComponents/MotionDivRightToLeft";
 
 export default function AboutSection() {
   return (
@@ -16,49 +18,57 @@ export default function AboutSection() {
       <div className="flex flex-wrap items-start my-8 justify-around w-full h-auto opacity-0 animate-fade-in">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <SectionContent>
-            <SectionTextAndImages
-              sectionTextAndImagesTitleFirst="O escritório mais premiado"
-              sectionTextAndImagesDescription="Nesses 40 anos de existência a Edan Contabilidade tem primado pela
+            <MotionDivLeftToRight>
+              <SectionTextAndImages
+                sectionTextAndImagesTitleFirst="O escritório mais premiado"
+                sectionTextAndImagesDescription="Nesses 40 anos de existência a Edan Contabilidade tem primado pela
             excelência no atendimento, controle e eficácia nas obrigações civis
             de pessoas físicas e jurídicas. se destacando e sendo contemplada
             com premiações e destaques."
-              sectionTextAndImagesSubscription={
-                <>
-                  2019 a 2021 - Destaque Regional.
-                  <br />
-                  2013 a 2018 - Prêmio Empresarial.
-                  <br />
-                  2012 - Prêmio Empresarial Qualidade Profissional da Bahia.
-                </>
-              }
-            />
+                sectionTextAndImagesSubscription={
+                  <>
+                    2019 a 2021 - Destaque Regional.
+                    <br />
+                    2013 a 2018 - Prêmio Empresarial.
+                    <br />
+                    2012 - Prêmio Empresarial Qualidade Profissional da Bahia.
+                  </>
+                }
+              />
+            </MotionDivLeftToRight>
           </SectionContent>
           <SectionContent>
-            <SectionTextAndImages
-              sectionTextAndImagesImg={Awards}
-              imgDescription="Premiações EDAN"
-              applyBorder={true}
-            />
-          </SectionContent>
-          <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in">
-            <h1 className="text-xl my-4 font-semibold font-poppins text-secondary">
-              A Edan atende em todo brasil?
-            </h1>
-            <div className="flex flex-col tablet2:grid tablet2:grid-cols-2">
-              <p className="text-sm font-poppins text-quaternary">
-                É importante escolher serviços contábeis confiáveis, conhecer a
-                qualidade e abrangência dos serviços oferecidos antes de
-                contratá-los. A Edan é uma empresa de contabilidade completa que
-                atende a todas as cidades do Brasil, mantendo as finanças
-                organizadas e em ordem.
-              </p>
-              <img
-                src={Brasil}
-                alt="Mapa do Brasil"
-                className="my-auto phone3:w-[66.666%] phone3:mx-auto tablet1:w-full"
+            <MotionDivRightToLeft>
+              <SectionTextAndImages
+                sectionTextAndImagesImg={Awards}
+                imgDescription="Premiações EDAN"
+                applyBorder={true}
               />
+            </MotionDivRightToLeft>
+          </SectionContent>
+
+          <MotionDivLeftToRight>
+            <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in">
+              <h1 className="text-xl my-4 font-semibold font-poppins text-secondary">
+                A Edan atende em todo brasil?
+              </h1>
+              <div className="flex flex-col tablet2:grid tablet2:grid-cols-2">
+                <p className="text-sm font-poppins text-quaternary">
+                  É importante escolher serviços contábeis confiáveis, conhecer a
+                  qualidade e abrangência dos serviços oferecidos antes de
+                  contratá-los. A Edan é uma empresa de contabilidade completa que
+                  atende a todas as cidades do Brasil, mantendo as finanças
+                  organizadas e em ordem.
+                </p>
+                <img
+                  src={Brasil}
+                  alt="Mapa do Brasil"
+                  className="my-auto phone3:w-[66.666%] phone3:mx-auto tablet1:w-full"
+                />
+              </div>
             </div>
-          </div>
+          </MotionDivLeftToRight>
+          <MotionDivRightToLeft>
           <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in">
             <h1 className="text-xl my-4 font-semibold font-poppins text-secondary">
               Onde nos encontrar?
@@ -72,7 +82,9 @@ export default function AboutSection() {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-          </div>
+
+            </div>
+          </MotionDivRightToLeft>
         </div>
       </div>
     </div>
