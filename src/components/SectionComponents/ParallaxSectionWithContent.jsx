@@ -8,7 +8,7 @@ import avatar2 from "../../style/assets/images/testemunhos/avatar2.png";
 import avatar3 from "../../style/assets/images/testemunhos/avatar3.png";
 import {
   PlayIcon,
-  PauseIcon,
+  StopIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
 } from "@heroicons/react/outline";
@@ -31,6 +31,7 @@ export default function ParallaxSectionWithContent() {
 
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -38,22 +39,30 @@ export default function ParallaxSectionWithContent() {
     autoplay: autoplay,
     autoplaySpeed: 7000, // Velocidade de autoplay ajustada para 7 segundos
     afterChange: (current) => setSliderIndex(current),
-    beforeChange: (current, next) => {
+    beforeChange: () => {
       // Reinicia o intervalo quando o slide muda manualmente
-      if (current !== next) {
-        clearInterval(timer);
-        const newInterval = setInterval(() => {
-          if (autoplay) {
-            slider && slider.slickNext();
-          }
-        }, 7000);
-        setTimer(newInterval);
-      }
+      clearInterval(timer);
+      const newInterval = setInterval(() => {
+        if (autoplay) {
+          slider && slider.slickNext();
+        }
+      }, 7000);
+      setTimer(newInterval);
     },
   };
 
   const toggleAutoplay = () => {
     setAutoplay(!autoplay);
+    if (!autoplay) {
+      const newInterval = setInterval(() => {
+        if (autoplay) {
+          slider && slider.slickNext();
+        }
+      }, 7000);
+      setTimer(newInterval);
+    } else {
+      clearInterval(timer);
+    }
   };
 
   const nextSlide = () => {
@@ -66,7 +75,7 @@ export default function ParallaxSectionWithContent() {
 
   return (
     <div
-      className="relative mt-12 bg-center bg-cover tablet2:mt-28 content"
+      className="relative mt-12 bg-center bg-cover tablet2:mt-16 content"
       style={{
         backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",
@@ -81,7 +90,7 @@ export default function ParallaxSectionWithContent() {
       >
         <div>
           <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4 tablet1:text-paragraph5">
-            <div className="flex flex-col phone3:w-[80%] my-[10%] tablet2:my-[5%] text-center items-center text-quinary">
+            <div className="flex flex-col phone3:w-[80%] mt-[10%] tablet2:mt-[5%] text-center items-center text-quinary">
               <div>
                 <p>
                   "A Edan Contabilidade é demais! Eles cuidam da minha empresa
@@ -93,7 +102,7 @@ export default function ParallaxSectionWithContent() {
                   src={avatar1}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-                  Nome da Pessoa
+                  Carlos Adans
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
                   Função da Pessoa
@@ -104,7 +113,7 @@ export default function ParallaxSectionWithContent() {
         </div>
         <div>
           <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4 tablet1:text-paragraph5">
-            <div className="flex flex-col phone3:w-[80%] my-[10%] tablet2:my-[5%] text-center items-center text-quinary">
+            <div className="flex flex-col phone3:w-[80%] mt-[10%] tablet2:mt-[5%] text-center items-center text-quinary">
               <div>
                 <p>
                   "Estou extremamente satisfeita com os serviços da Edan
@@ -117,7 +126,7 @@ export default function ParallaxSectionWithContent() {
                   src={avatar2}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-                  Nome da Pessoa
+                  Ilca Adans
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
                   Função da Pessoa
@@ -128,7 +137,7 @@ export default function ParallaxSectionWithContent() {
         </div>
         <div>
           <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4 tablet1:text-paragraph5">
-            <div className="flex flex-col phone3:w-[80%] my-[10%] tablet2:my-[5%] text-center items-center text-quinary">
+            <div className="flex flex-col phone3:w-[80%] mt-[10%] tablet2:mt-[5%] text-center items-center text-quinary">
               <div>
                 <p>
                   "A equipe da Edan Contabilidade tem sido fundamental para o
@@ -141,7 +150,7 @@ export default function ParallaxSectionWithContent() {
                   src={avatar3}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-                  Nome da Pessoa
+                  Gael Adans
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
                   Função da Pessoa
@@ -151,16 +160,16 @@ export default function ParallaxSectionWithContent() {
           </div>
         </div>
       </Slider>
-      <div className="bottom-0 left-0 w-full py-2">
+      <div className="bottom-0 left-0 w-full mb-[10%] tablet2:mb-[5%]">
         <div className="flex items-center justify-center text-white">
           <button className="mx-2" onClick={prevSlide}>
             <ChevronLeftIcon className="w-10 h-10" />
           </button>
           <button className="mx-2" onClick={toggleAutoplay}>
             {autoplay ? (
-              <PauseIcon className="w-10 h-10" />
+              <p className="font-bold">PARAR</p>
             ) : (
-              <PlayIcon className="w-10 h-10" />
+              <p className="font-bold">CONTINUAR</p>
             )}
           </button>
           <button className="mx-2" onClick={nextSlide}>

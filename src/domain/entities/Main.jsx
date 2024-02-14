@@ -18,8 +18,8 @@ function Main() {
       <ResultsSection />
       <DifferentialSection />
       <AppSection />
-      <ParallaxSectionWithContent />
       <LinksSection />
+      <ParallaxSectionWithContent />
       <TestimonialSection />
       <CertificatesSection />
       <WppSection />
