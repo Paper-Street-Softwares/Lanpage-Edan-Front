@@ -69,7 +69,7 @@ export default function ParallaxSectionWithContent() {
 
   return (
     <div
-      className="relative mt-12 bg-center bg-cover tablet2:mt-16 content"
+      className="relative bg-center bg-cover content"
       style={{
         backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",

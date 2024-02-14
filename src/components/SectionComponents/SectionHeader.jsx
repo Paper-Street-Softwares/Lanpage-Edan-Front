@@ -7,7 +7,7 @@ export default function SectionHeader(props) {
   const sectionHeaderDescription = props.sectionHeaderDescription;
 
   return (
-    <div className="flex flex-col pt-3 pb-3 mt-6 mb-3">
+    <div className="flex flex-col pb-3 mb-3">
       <div className="w-[79%] flex flex-col justify-center font-poppins text-title1 phone1:text-title2 phone3:text-title5 text-center font-bold ">
         <MotionDivLeftToRight>{sectionHeaderTitleFirst}</MotionDivLeftToRight>
       </div>

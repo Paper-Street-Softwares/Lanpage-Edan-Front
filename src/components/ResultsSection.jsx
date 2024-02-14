@@ -6,7 +6,7 @@ import AnimatedCounter from "./SectionComponents/AnimatedCounter";
 export default function ResultsSection() {
   return (
     <div
-      className="mt-12 bg-center bg-cover tablet2:mt-12 content"
+      className="bg-center bg-cover content"
       style={{
         backgroundImage: `url(${imgOfficeGreenBackground})`,
         backgroundRepeat: "no-repeat",

@@ -9,6 +9,7 @@ import BackToTopButton from "../../components/BackToTopButton";
 import FloatingWhatsappButton from "../../components/FloatingWhatsappButton";
 import ResultsSection from "../../components/ResultsSection";
 import ParallaxSectionWithContent from "../../components/SectionComponents/ParallaxSectionWithContent";
+import MarginBetweenSection from "../../components/SectionComponents/MarginBetweenSection";
 
 function Main() {
   return (
@@ -22,6 +23,7 @@ function Main() {
       <CertificatesSection />
       <WppSection />
       <AboutSection />
+      <MarginBetweenSection />
       <BackToTopButton />
       <FloatingWhatsappButton />
     </div>
