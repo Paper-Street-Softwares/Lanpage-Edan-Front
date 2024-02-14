@@ -15,7 +15,7 @@ export default function AboutSection() {
         sectionHeaderTitleSecond="Edan Contabilidade"
         sectionHeaderDescription="Conheça um pouco da nossa história."
       />
-      <div className="flex flex-wrap items-start justify-around w-full h-auto opacity-0 animate-fade-in">
+      <div className="flex flex-wrap items-start justify-around w-full h-auto">
         <div className="grid grid-cols-1 tablet2:gap-12 md:grid-cols-2">
           <SectionContent>
             <MotionDivLeftToRight>
@@ -50,8 +50,8 @@ export default function AboutSection() {
           </SectionContent>
 
           <MotionDivLeftToRight>
-            <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in">
-              <h1 className="text-xl mt-12 tablet2:mt-0 my-4 font-semibold font-poppins text-secondary">
+            <div className="flex flex-wrap justify-between w-full h-auto">
+              <h1 className="my-4 mt-12 text-xl font-semibold tablet2:mt-0 font-poppins text-secondary">
                 A Edan atende em todo brasil?
               </h1>
               <div className="flex flex-col tablet2:grid tablet2:grid-cols-2">
@@ -71,8 +71,8 @@ export default function AboutSection() {
             </div>
           </MotionDivLeftToRight>
           <MotionDivRightToLeft>
-            <div className="flex flex-wrap justify-between w-full h-auto opacity-0 animate-fade-in">
-              <h1 className="text-xl my-4 mt-12  tablet2:mt-0 font-semibold font-poppins text-secondary">
+            <div className="flex flex-wrap justify-between w-full h-auto">
+              <h1 className="my-4 mt-12 text-xl font-semibold tablet2:mt-0 font-poppins text-secondary">
                 Onde nos encontrar?
               </h1>
               <div className="w-full border-b-8 border-primary">
