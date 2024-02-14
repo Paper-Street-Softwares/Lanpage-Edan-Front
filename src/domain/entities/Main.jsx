@@ -9,6 +9,7 @@ import BackToTopButton from "../../components/BackToTopButton";
 import FloatingWhatsappButton from "../../components/FloatingWhatsappButton";
 import TestimonialSection from "../../components/TestimonialsSection";
 import ResultsSection from "../../components/ResultsSection";
+import ParallaxSectionWithContent from "../../components/SectionComponents/ParallaxSectionWithContent";
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
       <ResultsSection />
       <DifferentialSection />
       <AppSection />
+      <ParallaxSectionWithContent />
       <LinksSection />
       <TestimonialSection />
       <CertificatesSection />
