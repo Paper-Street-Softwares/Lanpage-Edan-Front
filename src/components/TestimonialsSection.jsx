@@ -42,7 +42,7 @@ export default function ParallaxSectionWithContent() {
           (prevIndex) => (prevIndex + 1) % depoimentos.length
         );
         setIsTransitioning(false);
-      });
+      }, 700);
     }, 7000);
 
     return () => clearInterval(intervalRef.current);
