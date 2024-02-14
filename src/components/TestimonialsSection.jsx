@@ -89,42 +89,44 @@ export default function TestimonialSection() {
   };
 
   return (
-    <div
-      className="mt-6 overflow-y-hidden bg-center bg-cover tablet2:mt-8 content"
-      style={{
-        backgroundImage: `url(${imgOfficeGreenBackground})`,
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
-        overflowX: "hidden",
-      }}
-    >
-      <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4 tablet1:text-paragraph5">
-        <div className="flex flex-col phone3:w-[80%] my-[10%] tablet2:my-[5%] text-center items-center text-quinary">
-          <div
-            className={`flex-grow ${
-              isTransitioning ? "slideOutToLeft" : "slideInFromRight"
-            }`}
-          >
-            <p>"{depoimentos[currentDepoimentoIndex].texto}"</p>
-            <img
-              alt="Foto de perfil"
-              className="rounded-full w-[15%] mx-auto my-[5%] phone3:w-[20%] phone3:my-[7%] tablet1:w-[10%] tablet1:my-[3%]"
-              src={depoimentos[currentDepoimentoIndex].imagem}
-            />
-            <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-              {depoimentos[currentDepoimentoIndex].nome}
-            </h1>
-            <p className="text-paragraph2 phone3:text-paragraph3">
-              {depoimentos[currentDepoimentoIndex].empresa}
-            </p>
-          </div>
-          <div className="flex flex-grow mt-6 transform text-quinary">
-            <button className="mx-4" onClick={handlePrevClick}>
-              <ChevronLeft />
-            </button>
-            <button className="mx-4" onClick={handleNextClick}>
-              <ChevronRight />
-            </button>
+    <div id="testimonial">
+      <div
+        className="mt-6 overflow-y-hidden bg-center bg-cover tablet2:mt-8 content"
+        style={{
+          backgroundImage: `url(${imgOfficeGreenBackground})`,
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+          overflowX: "hidden",
+        }}
+      >
+        <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4 tablet1:text-paragraph5">
+          <div className="flex flex-col phone3:w-[80%] my-[10%] tablet2:my-[5%] text-center items-center text-quinary">
+            <div
+              className={`flex-grow ${
+                isTransitioning ? "slideOutToLeft" : "slideInFromRight"
+              }`}
+            >
+              <p>"{depoimentos[currentDepoimentoIndex].texto}"</p>
+              <img
+                alt="Foto de perfil"
+                className="rounded-full w-[15%] mx-auto my-[5%] phone3:w-[20%] phone3:my-[7%] tablet1:w-[10%] tablet1:my-[3%]"
+                src={depoimentos[currentDepoimentoIndex].imagem}
+              />
+              <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
+                {depoimentos[currentDepoimentoIndex].nome}
+              </h1>
+              <p className="text-paragraph2 phone3:text-paragraph3">
+                {depoimentos[currentDepoimentoIndex].empresa}
+              </p>
+            </div>
+            <div className="flex flex-grow mt-6 transform text-quinary">
+              <button className="mx-4" onClick={handlePrevClick}>
+                <ChevronLeft />
+              </button>
+              <button className="mx-4" onClick={handleNextClick}>
+                <ChevronRight />
+              </button>
+            </div>
           </div>
         </div>
       </div>
