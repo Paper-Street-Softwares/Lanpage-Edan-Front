@@ -19,8 +19,8 @@ export default function ParallaxSectionWithContent() {
       if (autoplay) {
         slider && slider.slickNext();
       }
-    }, 7000); // Intervalo ajustado para 7 segundos
-    setTimer(interval); // Salva o intervalo no estado timer
+    }, 7000);
+    setTimer(interval);
     return () => clearInterval(interval);
   }, [autoplay, slider]);
 
@@ -32,10 +32,9 @@ export default function ParallaxSectionWithContent() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: autoplay,
-    autoplaySpeed: 7000, // Velocidade de autoplay ajustada para 7 segundos
+    autoplaySpeed: 7000,
     afterChange: (current) => setSliderIndex(current),
     beforeChange: () => {
-      // Reinicia o intervalo quando o slide muda manualmente
       clearInterval(timer);
       const newInterval = setInterval(() => {
         if (autoplay) {
