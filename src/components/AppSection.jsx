@@ -9,7 +9,7 @@ import MotionDivRightToLeft from "./SectionComponents/MotionDivRightToLeft";
 export default function AppSection() {
   return (
     <div className="content">
-      <div className="mt-8 mb-8 feature">
+      <div className="feature">
         <SectionContent>
           <div
             className="flex flex-col justify-between w-full mb-6 tablet1:mb-0 tablet1:w-72 tablet2:w-80 desktop1:w-112 desktop2:w-128"
