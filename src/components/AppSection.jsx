@@ -48,6 +48,7 @@ export default function AppSection() {
                   <a
                     href="https://apps.apple.com/il/app/edan-contabilidade/id6473044144"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       className="w-32 tablet1:w-24 tablet2:w-28 desktop1:w-44"
@@ -58,6 +59,7 @@ export default function AppSection() {
                   <a
                     href="https://play.google.com/store/apps/details?id=br.com.taskdo.mobile.edan&hl=ln&gl=US"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       className="w-32 tablet1:w-24 tablet2:w-28 desktop1:w-44"
