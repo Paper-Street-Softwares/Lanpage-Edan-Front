@@ -91,7 +91,7 @@ const WhatsappForm = () => {
   };
 
   return (
-    <div className="text-paragraph3 phone3:text-paragraph4">
+    <div className="mx-auto text-paragraph3 phone3:text-paragraph4 max-w-80">
       <h1 className="w-full mb-2 font-medium">Entre em contato agora</h1>
       <div className="mb-5">
         <div className="flex mb-4 text-gray-500">
@@ -185,7 +185,7 @@ const WhatsappForm = () => {
         >
           <img
             src={WhatsAppIcon}
-            className="w-16 h-16 mr-4 phone2:w-18 phone2:h-18 phone3:h-18 phone3:w-18 phone3:ml-12 phone2:ml-6 tablet2:ml-1"
+            className="w-16 h-16 mr-4 phone2:w-18 phone2:h-18 phone3:h-18 phone3:w-18 "
             alt="WhatsApp Icon"
           />
           Solicitar contato
