@@ -41,7 +41,7 @@ export default function NavbarSection() {
   };
 
   const handleResize = () => {
-    if (window.innerWidth <= 435) {
+    if (window.innerWidth < 768) {
       setShowListGroup(false);
     } else {
       setShowListGroup(true);
@@ -61,7 +61,7 @@ export default function NavbarSection() {
   return (
     <div className="content">
       <div
-        className={`fixed w-full bg-white bg-opacity-0 ${
+        className={`fixed z-10 w-full h-auto desktop1:h-20 bg-white bg-opacity-0 ${
           scrolling
             ? "bg-opacity-100 shadow-lg bg-transition-opacity duration-1000"
             : ""
@@ -71,19 +71,23 @@ export default function NavbarSection() {
           <img
             src={Logo}
             alt="Logo Edan"
-            className="absolute left-0 h-12 mb-2 tablet3:mb-0"
+            className="absolute left-0 h-10 tablet3:mb-0"
           />
           <button
             onClick={toggleSidebar}
-            className="absolute right-0 mr-4 -top-4 tablet1:hidden phone3:hidden"
+            className="absolute right-0 mr-4 -top-4 tablet2:hidden"
           >
             {showMenuIcon ? (
               <Menu
-                className={`w-8 h-8 ${scrolling ? "text-black" : "text-white"}`}
+                className={`w-8 h-8 ${
+                  scrolling ? "text-secondary" : "text-white"
+                }`}
               />
             ) : (
               <X
-                className={`w-8 h-8 ${scrolling ? "text-black" : "text-white"}`}
+                className={`w-8 h-8 ${
+                  scrolling ? "text-secondary" : "text-white"
+                }`}
               />
             )}
           </button>

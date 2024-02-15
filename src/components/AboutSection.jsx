@@ -15,8 +15,8 @@ export default function AboutSection() {
         sectionHeaderTitleSecond="Edan Contabilidade"
         sectionHeaderDescription="Conheça um pouco da nossa história."
       />
-      <div>
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+      <div className="flex flex-wrap items-start justify-around w-full h-auto">
+        <div className="grid grid-cols-1 tablet2:gap-12 md:grid-cols-2">
           <SectionContent>
             <MotionDivLeftToRight>
               <SectionTextAndImages
@@ -27,6 +27,8 @@ export default function AboutSection() {
             com premiações e destaques."
                 sectionTextAndImagesSubscription={
                   <>
+                    2024 - Destaque Empresarial - Melhor do Ano.
+                    <br />
                     2019 a 2021 - Destaque Regional.
                     <br />
                     2013 a 2018 - Prêmio Empresarial.
@@ -46,12 +48,13 @@ export default function AboutSection() {
               />
             </MotionDivRightToLeft>
           </SectionContent>
+
           <MotionDivLeftToRight>
-            <div className="flex flex-wrap justify-between w-full h-auto mt-4 mb-10">
-              <h1 className="text-xl font-semibold font-poppins text-secondary">
+            <div className="flex flex-wrap justify-between w-full h-auto">
+              <h1 className="my-4 mt-12 text-xl font-semibold tablet2:mt-0 font-poppins text-secondary">
                 A Edan atende em todo brasil?
               </h1>
-              <div className="grid grid-cols-2 -mt-4">
+              <div className="flex flex-col tablet2:grid tablet2:grid-cols-2">
                 <p className="text-sm font-poppins text-quaternary">
                   É importante escolher serviços contábeis confiáveis, conhecer
                   a qualidade e abrangência dos serviços oferecidos antes de
@@ -59,16 +62,20 @@ export default function AboutSection() {
                   que atende a todas as cidades do Brasil, mantendo as finanças
                   organizadas e em ordem.
                 </p>
-                <img src={Brasil} alt="Mapa do Brasil" />
+                <img
+                  src={Brasil}
+                  alt="Mapa do Brasil"
+                  className="my-auto phone1:w-[50%] phone1:mx-auto tablet2:w-full phone1:mt-6"
+                />
               </div>
             </div>
           </MotionDivLeftToRight>
           <MotionDivRightToLeft>
-            <div className="flex flex-wrap justify-between w-full h-auto mt-4">
-              <h1 className="mb-8 text-xl font-semibold font-poppins text-secondary">
+            <div className="flex flex-wrap justify-between w-full h-auto">
+              <h1 className="my-4 mt-12 text-xl font-semibold tablet2:mt-0 font-poppins text-secondary">
                 Onde nos encontrar?
               </h1>
-              <div className="w-full mb-8 border-b-8 border-primary">
+              <div className="w-full border-b-8 border-primary">
                 <iframe
                   className="w-full"
                   title="GoogleMaps"
