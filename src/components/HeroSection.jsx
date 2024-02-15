@@ -1,4 +1,4 @@
-import bgImage from "../style/assets/images/BackgroundImage.png";
+import bgImage from "../style/assets/images/paralaxe/paralaxeBg1.jpg";
 import WhatsappForm from "./SectionComponents/WhatsappForm";
 import MotionDivLeftToRight from "./SectionComponents/MotionDivLeftToRight";
 import MotionDivRightToLeft from "./SectionComponents/MotionDivRightToLeft";
