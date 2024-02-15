@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import ListGroupItem from "./ListGroupItem";
-import { Link as ScrollLink } from "react-scroll";
 
 export default function ListGroup() {
   const [scrolling, setScrolling] = useState(false);
@@ -28,66 +27,12 @@ export default function ListGroup() {
           : "text-white transition-color duration-500"
       }`}
     >
-      <ScrollLink
-        to="home"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={800}
-      >
-        <ListGroupItem text="início" />
-      </ScrollLink>
-      <ScrollLink
-        to="about"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={800}
-      >
-        <ListGroupItem text="sobre nós" />
-      </ScrollLink>
-      <ScrollLink
-        to="services"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={800}
-      >
-        <ListGroupItem text="serviços" />
-      </ScrollLink>
-      <ScrollLink
-        to="links"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={800}
-      >
-        <ListGroupItem text="links" />
-      </ScrollLink>
-      <ScrollLink
-        to="certificates"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={800}
-      >
-        <ListGroupItem text="certidões" />
-      </ScrollLink>
-      <ScrollLink
-        to="contact"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-170}
-        duration={800}
-      >
-        <ListGroupItem text="contato" />
-      </ScrollLink>
+      <ListGroupItem text="início" />
+      <ListGroupItem text="sobre nós" />
+      <ListGroupItem text="serviços" />
+      <ListGroupItem text="links" />
+      <ListGroupItem text="certidões" />
+      <ListGroupItem text="contato" />
     </ul>
   );
 }

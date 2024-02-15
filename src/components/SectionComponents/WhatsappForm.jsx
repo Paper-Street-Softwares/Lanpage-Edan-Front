@@ -13,19 +13,19 @@ const WhatsappForm = () => {
     const validationErrors = {};
 
     if (!validateName(name)) {
-      validationErrors.name = "O campo nome é obrigatório";
+      validationErrors.name = "O campo nome é obrigatório.";
     }
 
     if (!validatePhone(phone)) {
-      validationErrors.phone = "O campo telefone é obrigatório";
+      validationErrors.phone = "O campo telefone é obrigatório.";
     }
 
     if (!validateEmail(email)) {
-      validationErrors.email = "O campo email é obrigatório";
+      validationErrors.email = "O campo email é obrigatório.";
     }
 
     if (!validateMessage(message)) {
-      validationErrors.message = "O campo mensagem é obrigatório";
+      validationErrors.message = "O campo mensagem é obrigatório.";
     }
 
     if (Object.keys(validationErrors).length > 0) {

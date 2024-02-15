@@ -7,7 +7,6 @@ import imgCalendar from "../style/assets/icons/footer/calendarIcon.png";
 import imgLogo from "../style/assets/images/Logo.png";
 import imgInstagram from "../style/assets/icons/footer/instagramIcon.png";
 import imgFacebook from "../style/assets/icons/footer/facebookIcon.png";
-import { Link as ScrollLink } from "react-scroll";
 
 export default function FooterSection() {
   return (
@@ -78,92 +77,29 @@ export default function FooterSection() {
           </div>
           <div className="flex flex-row justify-between font-bold">
             <div>
-              <ScrollLink
-                to="home"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={800}
-              >
-                <div className="mb-4">
-                  <span className="cursor-pointer">INÍCIO</span>
-                </div>
-              </ScrollLink>
-              <ScrollLink
-                to="services"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={800}
-              >
-                <div className="mb-4">
-                  <span className="cursor-pointer">SERVIÇOS</span>
-                </div>
-              </ScrollLink>
-              <ScrollLink
-                to="app"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={800}
-              >
-                <div className="mb-4">
-                  <span className="cursor-pointer">APLICATIVO</span>
-                </div>
-              </ScrollLink>
-              <ScrollLink
-                to="links"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={800}
-              >
-                <div className="mb-4">
-                  <span className="cursor-pointer">LINKS ÚTEIS</span>
-                </div>
-              </ScrollLink>
+              <div className="mb-4">
+                <span className="cursor-pointer">INÍCIO</span>
+              </div>
+              <div className="mb-4">
+                <span className="cursor-pointer">SERVIÇOS</span>
+              </div>
+              <div className="mb-4">
+                <span className="cursor-pointer">APLICATIVO</span>
+              </div>
+              <div className="mb-4">
+                <span className="cursor-pointer">LINKS ÚTEIS</span>
+              </div>
             </div>
             <div>
-              <ScrollLink
-                to="about"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={800}
-              >
-                <div className="mb-4">
-                  <span className="cursor-pointer">SOBRE NÓS</span>
-                </div>
-              </ScrollLink>
-              <ScrollLink
-                to="certificates"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={800}
-              >
-                <div className="mb-4">
-                  <span className="cursor-pointer">CERTIDÕES</span>
-                </div>
-              </ScrollLink>
-              <ScrollLink
-                to="contact"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-170}
-                duration={800}
-              >
-                <div className="mb-4">
-                  <span className="cursor-pointer">CONTATO</span>
-                </div>
-              </ScrollLink>
+              <div className="mb-4">
+                <span className="cursor-pointer">SOBRE NÓS</span>
+              </div>
+              <div className="mb-4">
+                <span className="cursor-pointer">CERTIDÕES</span>
+              </div>
+              <div className="mb-4">
+                <span className="cursor-pointer">CONTATO</span>
+              </div>
             </div>
           </div>
         </FooterCardContent>
