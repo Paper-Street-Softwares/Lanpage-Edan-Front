@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import imgOfficeGreenBackground from "../../style/assets/images/BackgroundImage.png";
+import imgOfficeGreenBackground from "../../style/assets/images/paralaxe/paralaxeBg1.jpg";
 import avatar1 from "../../style/assets/images/testemunhos/avatar.png";
 import avatar2 from "../../style/assets/images/testemunhos/avatar2.png";
 import avatar3 from "../../style/assets/images/testemunhos/avatar3.png";

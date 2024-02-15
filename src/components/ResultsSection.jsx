@@ -1,4 +1,4 @@
-import imgOfficeGreenBackground from "../style/assets/images/BackgroundImage.png";
+import imgOfficeGreenBackground from "../style/assets/images/paralaxe/paralaxeBg1.jpg";
 import imgIcon from "../style/assets/icons/footer/calendarIcon.png";
 import ResultsCard from "../components/SectionComponents/ResultsCard";
 import AnimatedCounter from "./SectionComponents/AnimatedCounter";
