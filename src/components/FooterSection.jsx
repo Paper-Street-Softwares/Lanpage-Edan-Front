@@ -50,6 +50,7 @@ export default function FooterSection() {
             <a
               target="_blank"
               href="https://www.instagram.com/edancontabilidade/#"
+              rel="noreferrer"
             >
               <HonrizontalIconAndText
                 img={imgInstagram}
@@ -60,6 +61,7 @@ export default function FooterSection() {
             <a
               target="_blank"
               href="https://www.facebook.com/EdanContabilidade/?locale=pt_BR"
+              rel="noreferrer"
             >
               <HonrizontalIconAndText
                 img={imgFacebook}
@@ -76,27 +78,27 @@ export default function FooterSection() {
           <div className="flex flex-row justify-between font-bold">
             <div>
               <div className="mb-4">
-                <a href="#">INÍCIO</a>
+                <span className="cursor-pointer">INÍCIO</span>
               </div>
               <div className="mb-4">
-                <a href="#">SERVIÇOS</a>
+                <span className="cursor-pointer">SERVIÇOS</span>
               </div>
               <div className="mb-4">
-                <a href="#">APLICATIVO</a>
+                <span className="cursor-pointer">APLICATIVO</span>
               </div>
               <div className="mb-4">
-                <a href="#">LINKS ÚTEIS</a>
+                <span className="cursor-pointer">LINKS ÚTEIS</span>
               </div>
             </div>
             <div>
               <div className="mb-4">
-                <a href="#">SOBRE NÓS</a>
+                <span className="cursor-pointer">SOBRE NÓS</span>
               </div>
               <div className="mb-4">
-                <a href="#">CERTIDÕES</a>
+                <span className="cursor-pointer">CERTIDÕES</span>
               </div>
               <div className="mb-4">
-                <a href="#">DEPOIMENTOS</a>
+                <span className="cursor-pointer">DEPOIMENTOS</span>
               </div>
             </div>
           </div>
