@@ -23,8 +23,8 @@ export default function AboutSection() {
                 sectionTextAndImagesTitleFirst="O escritório mais premiado"
                 sectionTextAndImagesDescription="Nesses 40 anos de existência a Edan Contabilidade tem primado pela
             excelência no atendimento, controle e eficácia nas obrigações civis
-            de pessoas físicas e jurídicas. se destacando e sendo contemplada
-            com premiações e destaques."
+            de pessoas físicas e jurídicas, sempre se destacando e sendo contemplada
+            com várias premiações e destaques."
                 sectionTextAndImagesSubscription={
                   <>
                     2024 - Destaque Empresarial - Melhor do Ano.
@@ -56,11 +56,9 @@ export default function AboutSection() {
               </h1>
               <div className="flex flex-col tablet2:grid tablet2:grid-cols-2">
                 <p className="text-sm font-poppins text-quaternary">
-                  É importante escolher serviços contábeis confiáveis, conhecer
-                  a qualidade e abrangência dos serviços oferecidos antes de
-                  contratá-los. A Edan é uma empresa de contabilidade completa
-                  que atende a todas as cidades do Brasil, mantendo as finanças
-                  organizadas e em ordem.
+                  A Edan atende todas as cidades do Brasil, funcionando também
+                  de forma totalmente digital para atender as necessidades de
+                  clientes distantes.
                 </p>
                 <img
                   src={Brasil}

@@ -15,7 +15,7 @@ export default function AppSection() {
             <div className="flex flex-col items-center justify-center h-24 ">
               <h1 className="flex flex-col justify-center font-bold text-center text-title1 phone1:text-title2 tablet1:text-title1 tablet2:text-title2 font-poppins text-secondary">
                 <MotionDivLeftToRight>
-                  Baixe nosso aplicativo e tenha inúmeras vantagens
+                  Baixe o App Edan e tenha inúmeras vantagens
                 </MotionDivLeftToRight>
               </h1>
             </div>

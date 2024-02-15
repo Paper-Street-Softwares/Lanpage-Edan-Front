@@ -49,7 +49,7 @@ export default function Sidebar({ showSidebar }) {
                   className="cursor-pointer hover:text-primary"
                   onClick={toggleSublistLinks}
                 >
-                  Links
+                  Links Úteis
                 </button>
                 {showSublistLinks && (
                   <ul className="relative left-0 p-4 overflow-y-auto text-sm text-black bg-white top-full max-h-48">

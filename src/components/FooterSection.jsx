@@ -42,9 +42,10 @@ export default function FooterSection() {
             SOBRE
           </div>
           <div className="mb-4 font-light">
-            A Edan Contabilidade tem uma equipe de profissionais treinados e
-            capacitados para atender com primazia todas as demandas nas áreas de
-            departamento pessoal, fiscal e contábil.
+            Agradecemos sua visita! Esperamos que em breve você se torne nosso
+            cliente e desfrute de todos os benefícios que oferecemos.
+            <br></br>
+            Para saber mais sobre nós, confira nossas redes sociais:
           </div>
           <div className="flex flex-col justify-between">
             <a
@@ -84,7 +85,7 @@ export default function FooterSection() {
                 <span className="cursor-pointer">SERVIÇOS</span>
               </div>
               <div className="mb-4">
-                <span className="cursor-pointer">APLICATIVO</span>
+                <span className="cursor-pointer">APLICATIVO EDAN</span>
               </div>
               <div className="mb-4">
                 <span className="cursor-pointer">LINKS ÚTEIS</span>

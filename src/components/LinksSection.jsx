@@ -19,7 +19,7 @@ export default function LinksSection() {
       <SectionHeader
         sectionHeaderTitleFirst="Principais portais e tabelas"
         sectionHeaderTitleSecond="em um click"
-        sectionHeaderDescription="A Edan Contabilidade facilita seu dia a dia com links rápidos em nosso site, proporcionando acesso direto aos principais serviços contábeis. Agilidade ao alcance de um clique, pensando na eficiência do seu negócio."
+        sectionHeaderDescription="Agilidade ao alcance de um clique, pensando na eficiência do seu negócio."
       />
       <SectionContent>
         {[

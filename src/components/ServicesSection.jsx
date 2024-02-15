@@ -13,7 +13,7 @@ export default function ServicesSection() {
     <div className="content" id="services">
       <SectionHeader
         sectionHeaderTitleFirst="Nossos Serviços"
-        sectionHeaderDescription="Explore o potencial do seu negócio com nossos serviços contábeis especializados. Descubra soluções personalizadas para impulsionar sua gestão financeira."
+        sectionHeaderDescription="Explore o potencial do seu negócio com nossos serviços contábeis especializados."
       />
       <SectionContent>
         {[
@@ -50,7 +50,7 @@ export default function ServicesSection() {
             icon={imgITR}
             iconAlt="Ícone ITR"
             title="Declaração de ITR"
-            description="Otimize seus investimentos, simplifique sua vida!"
+            description="Sua declaração de ITR de forma simplificada."
           />,
         ]}
       </SectionContent>

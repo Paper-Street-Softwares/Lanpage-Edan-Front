@@ -87,8 +87,8 @@ export default function ParallaxSectionWithContent() {
             <div className="flex flex-col phone3:w-[80%] mt-[10%] tablet2:mt-[5%] text-center items-center text-quinary">
               <div>
                 <p>
-                  "A Edan Contabilidade é demais! Eles cuidam da minha empresa
-                  com maestria total. Estou super satisfeito e recomendo muito!"
+                  "A Edan Contabilidade resolve tudo, sabe? Desde que começamos
+                  a trabalhar juntos, nossa empresa só cresce. Valeu, pessoal!"
                 </p>
                 <img
                   alt="Foto de perfil"
@@ -99,7 +99,7 @@ export default function ParallaxSectionWithContent() {
                   Abraão Sampaio
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
-                  Função da Pessoa
+                  Cliente há 12 anos
                 </p>
               </div>
             </div>
@@ -110,9 +110,9 @@ export default function ParallaxSectionWithContent() {
             <div className="flex flex-col phone3:w-[80%] mt-[10%] tablet2:mt-[5%] text-center items-center text-quinary">
               <div>
                 <p>
-                  "Estou extremamente satisfeita com os serviços da Edan
-                  Contabilidade. Profissionalismo, dedicação e competência são
-                  marcas registradas desta empresa."
+                  "A equipe da Edan Contabilidade é incrível! Eles nos deram
+                  suporte desde o início e nos ajudaram a economizar dinheiro.
+                  Recomendo de olho fechado!"
                 </p>
                 <img
                   alt="Foto de perfil"
@@ -120,10 +120,10 @@ export default function ParallaxSectionWithContent() {
                   src={avatar2}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-                  Ilca Almeida
+                  Madalena Almeida
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
-                  Função da Pessoa
+                  Cliente há 9 anos
                 </p>
               </div>
             </div>
@@ -134,9 +134,9 @@ export default function ParallaxSectionWithContent() {
             <div className="flex flex-col phone3:w-[80%] mt-[10%] tablet2:mt-[5%] text-center items-center text-quinary">
               <div>
                 <p>
-                  "A equipe da Edan Contabilidade tem sido fundamental para o
-                  sucesso do meu negócio. Recomendo a todos que buscam serviços
-                  contábeis de qualidade."
+                  "A Edan Contabilidade é tipo aquele amigo que sempre salva a
+                  pátria! Com eles, nossas finanças tão tinindo, e a gente só
+                  tem a agradecer. Valeu, Edan!"
                 </p>
                 <img
                   alt="Foto de perfil"
@@ -144,10 +144,10 @@ export default function ParallaxSectionWithContent() {
                   src={avatar3}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-                  Gael Adans
+                  Ivan Coelho
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
-                  Função da Pessoa
+                  Cliente há 16 anos
                 </p>
               </div>
             </div>

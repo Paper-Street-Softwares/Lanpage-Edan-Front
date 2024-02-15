@@ -16,7 +16,7 @@ export default function DifferentialSection() {
       <SectionHeader
         sectionHeaderTitleFirst="A Edan tem tudo que"
         sectionHeaderTitleSecond="sua empresa precisa"
-        sectionHeaderDescription="Não apenas contabilizamos números, construímos caminhos para o seu sucesso financeiro. Nossos diferenciais vão além da simples prestação de serviços contábeis."
+        sectionHeaderDescription="Nossos diferenciais vão além da simples prestação de serviços contábeis."
       />
       <SectionContent>
         {[
