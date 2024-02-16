@@ -9,6 +9,14 @@ const WhatsappForm = () => {
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState("");
 
+  const capitalizeFirstLetter = (str) => {
+    return str
+      .toLowerCase()
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  };
+
   const sendToWhatsapp = () => {
     const validationErrors = {};
 
@@ -20,8 +28,11 @@ const WhatsappForm = () => {
       validationErrors.phone = "O campo telefone é obrigatório";
     }
 
-    if (!validateEmail(email)) {
+    if (!email) {
       validationErrors.email = "O campo email é obrigatório";
+    } else if (!validateEmail(email)) {
+      validationErrors.email =
+        "O formato do email digitado é inválido. Verifique.";
     }
 
     if (!validateMessage(message)) {
@@ -53,13 +64,17 @@ const WhatsappForm = () => {
     console.log("Phone length:", cleanedPhone.length);
     const isValid =
       phoneNumberPattern.test(phone) && cleanedPhone.length === 11;
-    console.log("Phone validation result:", isValid);
     return isValid;
   };
 
   const validateEmail = (email) => {
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!email.includes("@")) {
+    const emailPattern =
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.com)?$/;
+    if (
+      !email.includes("@") &&
+      !email.includes(".com") &&
+      !email.includes(".com.br")
+    ) {
       return false;
     }
     return emailPattern.test(email);
@@ -105,7 +120,7 @@ const WhatsappForm = () => {
             type="text"
             id="name"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setName(capitalizeFirstLetter(e.target.value))}
             placeholder="Nome"
             required
           />
@@ -151,9 +166,7 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.email && !errors.email.includes("@") && (
-          <p className="-mt-2 -mb-1 text-xs text-red-500">
-            Digite um e-mail válido. Inclua um "@" no endereço de e-mail.
-          </p>
+          <p className="-mt-2 -mb-1 text-xs text-red-500">{errors.email}</p>
         )}
         {errors.email?.includes("@") && (
           <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
