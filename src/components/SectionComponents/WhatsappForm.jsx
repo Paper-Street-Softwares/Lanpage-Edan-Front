@@ -126,7 +126,9 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.name && (
-          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.name}</p>
+          <p className="-mt-2 -mb-1 text-paragraph3 text-red-500">
+            {errors.name}
+          </p>
         )}
       </div>
 
@@ -146,7 +148,9 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.phone && (
-          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.phone}</p>
+          <p className="-mt-2 -mb-1 text-paragraph3 text-red-500">
+            {errors.phone}
+          </p>
         )}
       </div>
 
@@ -166,10 +170,14 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.email && !errors.email.includes("@") && (
-          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
+          <p className="-mt-2 -mb-1 text-paragraph3 text-red-500">
+            {errors.email}
+          </p>
         )}
         {errors.email?.includes("@") && (
-          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
+          <p className="-mt-2 -mb-1 text-paragraph3 text-red-500">
+            {errors.email}
+          </p>
         )}
       </div>
 
@@ -189,7 +197,9 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.message && (
-          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.message}</p>
+          <p className="-mt-2 -mb-1 text-paragraph3 text-red-500">
+            {errors.message}
+          </p>
         )}
       </div>
 
