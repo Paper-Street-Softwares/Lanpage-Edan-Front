@@ -97,7 +97,6 @@ export default function TestimonialSection() {
         backgroundAttachment: "fixed",
         overflowX: "hidden",
       }}
-      id="contact"
     >
       <div className="flex flex-col items-center justify-center w-full font-poppins text-paragraph3 phone3:text-paragraph4 tablet1:text-paragraph5">
         <div className="flex flex-col phone3:w-[80%] my-[10%] tablet2:my-[5%] text-center items-center text-quinary">

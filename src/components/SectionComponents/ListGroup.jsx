@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ListGroupItem from "./ListGroupItem";
+import { Link } from "react-scroll";
 
 export default function ListGroup() {
   const [scrolling, setScrolling] = useState(false);
@@ -27,12 +27,66 @@ export default function ListGroup() {
           : "text-white transition-color duration-500"
       }`}
     >
-      <ListGroupItem id="home" text="início" />
-      <ListGroupItem id="about" text="sobre nós" />
-      <ListGroupItem id="services" text="serviços" />
-      <ListGroupItem id="links" text="links" />
-      <ListGroupItem id="certificates" text="certidões" />
-      <ListGroupItem id="contact" text="contato" />
+      <Link
+        to="home"
+        className="cursor-pointer"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-100}
+      >
+        INÍCIO
+      </Link>
+      <Link
+        to="about"
+        className="cursor-pointer"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-100}
+      >
+        SOBRE NÓS
+      </Link>
+      <Link
+        to="services"
+        className="cursor-pointer"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-100}
+      >
+        SERVIÇOS
+      </Link>
+      <Link
+        to="links"
+        className="cursor-pointer"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-100}
+      >
+        LINKS
+      </Link>
+      <Link
+        to="certificates"
+        className="cursor-pointer"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-100}
+      >
+        CERTIDÕES
+      </Link>
+      <Link
+        to="contact"
+        className="cursor-pointer"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-170}
+      >
+        CONTATO
+      </Link>
     </ul>
   );
 }
