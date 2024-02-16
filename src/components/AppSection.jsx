@@ -11,7 +11,10 @@ export default function AppSection() {
     <div className="content">
       <div className="feature">
         <SectionContent>
-          <div className="flex flex-col justify-between w-full mb-6 tablet1:mb-0 tablet1:w-72 tablet2:w-80 desktop1:w-112 desktop2:w-128">
+          <div
+            id="app"
+            className="flex flex-col justify-between w-full mb-6 tablet1:mb-0 tablet1:w-72 tablet2:w-80 desktop1:w-112 desktop2:w-128"
+          >
             <div className="flex flex-col items-center justify-center h-24 ">
               <h1 className="flex flex-col justify-center font-bold text-center text-title1 phone1:text-title2 tablet1:text-title1 tablet2:text-title2 font-poppins text-secondary">
                 <MotionDivLeftToRight>
