@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import ListGroupItem from "./ListGroupItem";
 
 export default function ListGroup() {
@@ -27,12 +28,60 @@ export default function ListGroup() {
           : "text-white transition-color duration-500"
       }`}
     >
-      <ListGroupItem id="home" text="início" />
-      <ListGroupItem id="about" text="sobre nós" />
-      <ListGroupItem id="services" text="serviços" />
-      <ListGroupItem id="links" text="links" />
-      <ListGroupItem id="certificates" text="certidões" />
-      <ListGroupItem id="contact" text="contato" />
+      <Link
+        to="home"
+        smooth={true}
+        duration={500}
+        offset={-100}
+        className="cursor-pointer"
+      >
+        <ListGroupItem text="início" />
+      </Link>
+      <Link
+        to="about"
+        smooth={true}
+        duration={500}
+        offset={-100}
+        className="cursor-pointer"
+      >
+        <ListGroupItem text="sobre nós" />
+      </Link>
+      <Link
+        to="services"
+        smooth={true}
+        duration={500}
+        offset={-100}
+        className="cursor-pointer"
+      >
+        <ListGroupItem text="serviços" />
+      </Link>
+      <Link
+        to="links"
+        smooth={true}
+        duration={500}
+        offset={-100}
+        className="cursor-pointer"
+      >
+        <ListGroupItem text="links" />
+      </Link>
+      <Link
+        to="certificates"
+        smooth={true}
+        duration={500}
+        offset={-100}
+        className="cursor-pointer"
+      >
+        <ListGroupItem text="certidões" />
+      </Link>
+      <Link
+        to="contact"
+        smooth={true}
+        duration={500}
+        offset={-170}
+        className="cursor-pointer"
+      >
+        <ListGroupItem text="contato" />
+      </Link>
     </ul>
   );
 }

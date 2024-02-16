@@ -166,7 +166,7 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.email && !errors.email.includes("@") && (
-          <p className="-mt-2 -mb-1 text-xs text-red-500">{errors.email}</p>
+          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
         )}
         {errors.email?.includes("@") && (
           <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
@@ -200,7 +200,7 @@ const WhatsappForm = () => {
         >
           <div className="grid grid-cols-2 items-center w-[70%]">
             <img src={WhatsAppIcon} className="w-16 h-16" alt="WhatsApp Icon" />
-            <p className="whitespace-nowrap phone2:text-title2 tablet1:text-title1">
+            <p className="whitespace-nowrap text-paragraph4 phone1:text-paragraph5 phone2:text-title2 tablet1:text-title1">
               Solicite contato
             </p>
           </div>
