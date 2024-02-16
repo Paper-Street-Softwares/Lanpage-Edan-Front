@@ -166,7 +166,7 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.email && !errors.email.includes("@") && (
-          <p className="-mt-2 -mb-1 text-xs text-red-500">{errors.email}</p>
+          <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
         )}
         {errors.email?.includes("@") && (
           <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
