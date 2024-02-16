@@ -9,6 +9,14 @@ const WhatsappForm = () => {
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState("");
 
+  const capitalizeFirstLetter = (str) => {
+    return str
+      .toLowerCase()
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  };
+
   const sendToWhatsapp = () => {
     const validationErrors = {};
 
@@ -20,8 +28,11 @@ const WhatsappForm = () => {
       validationErrors.phone = "O campo telefone é obrigatório";
     }
 
-    if (!validateEmail(email)) {
+    if (!email) {
       validationErrors.email = "O campo email é obrigatório";
+    } else if (!validateEmail(email)) {
+      validationErrors.email =
+        "O formato do email digitado é inválido. Verifique.";
     }
 
     if (!validateMessage(message)) {
@@ -53,7 +64,6 @@ const WhatsappForm = () => {
     console.log("Phone length:", cleanedPhone.length);
     const isValid =
       phoneNumberPattern.test(phone) && cleanedPhone.length === 11;
-    console.log("Phone validation result:", isValid);
     return isValid;
   };
 
@@ -110,7 +120,7 @@ const WhatsappForm = () => {
             type="text"
             id="name"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setName(capitalizeFirstLetter(e.target.value))}
             placeholder="Nome"
             required
           />
@@ -156,9 +166,7 @@ const WhatsappForm = () => {
           />
         </div>
         {errors.email && !errors.email.includes("@") && (
-          <p className="-mt-2 -mb-1 text-xs text-red-500">
-            Digite um e-mail válido. Inclua "@" e ".com" no endereço de e-mail.
-          </p>
+          <p className="-mt-2 -mb-1 text-xs text-red-500">{errors.email}</p>
         )}
         {errors.email?.includes("@") && (
           <p className="-mt-2 -mb-1 text-sm text-red-500">{errors.email}</p>
