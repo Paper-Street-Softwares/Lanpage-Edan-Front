@@ -22,9 +22,9 @@ export default function HeroSection() {
                 </h1>
                 <p className="text-paragraph3 tablet2:text-paragraph4 phone3:text-title1 tablet1:text-paragraph3 tablet1:mr-4">
                   <MotionDivLeftToRight>
-                    Experiência que Conta! Com mais de 40 anos de experiência,
-                    oferecemos conhecimento sólido para lidar com os desafios
-                    contábeis do seu negócio.
+                    Experiência que Conta! Com mais de 40 anos no mercado
+                    empresarial, oferecemos conhecimento sólido para lidar com
+                    os desafios contábeis do seu negócio.
                   </MotionDivLeftToRight>
                 </p>
               </div>
