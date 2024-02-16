@@ -7,6 +7,7 @@ import imgCalendar from "../style/assets/icons/footer/calendarIcon.png";
 import imgLogo from "../style/assets/images/Logo.png";
 import imgInstagram from "../style/assets/icons/footer/instagramIcon.png";
 import imgFacebook from "../style/assets/icons/footer/facebookIcon.png";
+import { Link } from "react-scroll";
 
 export default function FooterSection() {
   return (
@@ -78,29 +79,92 @@ export default function FooterSection() {
           </div>
           <div className="flex flex-row justify-between font-bold">
             <div>
-              <div className="mb-4">
-                <span className="cursor-pointer">INÍCIO</span>
-              </div>
-              <div className="mb-4">
-                <span className="cursor-pointer">SERVIÇOS</span>
-              </div>
-              <div className="mb-4">
-                <span className="cursor-pointer">APLICATIVO EDAN</span>
-              </div>
-              <div className="mb-4">
-                <span className="cursor-pointer">LINKS ÚTEIS</span>
-              </div>
+              <Link
+                to="home"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-100}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">INÍCIO</span>
+                </div>
+              </Link>
+              <Link
+                to="services"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-100}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">SERVIÇOS</span>
+                </div>
+              </Link>
+              <Link
+                to="app"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-100}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">APLICATIVO EDAN</span>
+                </div>
+              </Link>
+              <Link
+                to="links"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-100}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">LINKS ÚTEIS</span>
+                </div>
+              </Link>
             </div>
             <div>
-              <div className="mb-4">
-                <span className="cursor-pointer">SOBRE NÓS</span>
-              </div>
-              <div className="mb-4">
-                <span className="cursor-pointer">CERTIDÕES</span>
-              </div>
-              <div className="mb-4">
-                <span className="cursor-pointer">DEPOIMENTOS</span>
-              </div>
+              <Link
+                to="about"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-100}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">SOBRE NÓS</span>
+                </div>
+              </Link>
+              <Link
+                to="certificates"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-100}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">CERTIDÕES</span>
+                </div>
+              </Link>
+              <Link
+                to="contact"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-170}
+              >
+                <div className="mb-4">
+                  <span className="cursor-pointer">CONTATO</span>
+                </div>
+              </Link>
             </div>
           </div>
         </FooterCardContent>
