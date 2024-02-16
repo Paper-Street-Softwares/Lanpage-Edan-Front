@@ -87,8 +87,9 @@ export default function ParallaxSectionWithContent() {
             <div className="flex flex-col phone3:w-[80%] mt-[10%] tablet2:mt-[5%] text-center items-center text-quinary">
               <div>
                 <p>
-                  "A Edan Contabilidade resolve tudo, sabe? Desde que começamos
-                  a trabalhar juntos, nossa empresa só cresce. Valeu, pessoal!"
+                  "Desde quando o IBEC foi criado que somos cliente da Edan
+                  Contabilidade. É o escritório que tem nos dado todo o suporte
+                  ao longo desses anos. Indico e recomendo"
                 </p>
                 <img
                   alt="Foto de perfil"
@@ -96,10 +97,10 @@ export default function ParallaxSectionWithContent() {
                   src={avatar1}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-                  Abraão Sampaio
+                  Prof. Reinaldo Soares - IBEC
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
-                  Cliente há 12 anos
+                  Cliente há 18 anos
                 </p>
               </div>
             </div>
@@ -110,9 +111,9 @@ export default function ParallaxSectionWithContent() {
             <div className="flex flex-col phone3:w-[80%] mt-[10%] tablet2:mt-[5%] text-center items-center text-quinary">
               <div>
                 <p>
-                  "A equipe da Edan Contabilidade é incrível! Eles nos deram
-                  suporte desde o início e nos ajudaram a economizar dinheiro.
-                  Recomendo de olho fechado!"
+                  Em toda nossa trajetória, contamos com a parceria da Edan
+                  Contabilidade. Uma empresa séria, com profissionais
+                  competentes e um atendimento de excelência. Essa eu indico!
                 </p>
                 <img
                   alt="Foto de perfil"
@@ -120,10 +121,10 @@ export default function ParallaxSectionWithContent() {
                   src={avatar2}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-                  Madalena Almeida
+                  Gil Ferreira - Vitrine do Gesso
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
-                  Cliente há 9 anos
+                  Cliente há 16 anos
                 </p>
               </div>
             </div>
@@ -134,9 +135,9 @@ export default function ParallaxSectionWithContent() {
             <div className="flex flex-col phone3:w-[80%] mt-[10%] tablet2:mt-[5%] text-center items-center text-quinary">
               <div>
                 <p>
-                  "A Edan Contabilidade é tipo aquele amigo que sempre salva a
-                  pátria! Com eles, nossas finanças tão tinindo, e a gente só
-                  tem a agradecer. Valeu, Edan!"
+                  "Na Edan a gente é muito bem atendido e ainda granha presente!
+                  Ainda tem o aplicativo que traz toda nossa documentação na
+                  palma da nossa mão. Edan, tá de parabéns!"
                 </p>
                 <img
                   alt="Foto de perfil"
@@ -144,10 +145,10 @@ export default function ParallaxSectionWithContent() {
                   src={avatar3}
                 />
                 <h1 className="font-medium text-paragraph4 phone3:text-paragraph5">
-                  Ivan Coelho
+                  Ricardo Shuenk - Virtuos Lingerie
                 </h1>
                 <p className="text-paragraph2 phone3:text-paragraph3">
-                  Cliente há 16 anos
+                  Cliente há 7 anos
                 </p>
               </div>
             </div>

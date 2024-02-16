@@ -23,17 +23,17 @@ export default function ResultsSection() {
           />
           <ResultsCard
             img={imgIcon}
-            number={<AnimatedCounter endValue={500} />}
+            number={<AnimatedCounter endValue={85} />}
             text="Empresas abertas anualmente."
           />
           <ResultsCard
             img={imgIcon}
-            number={<AnimatedCounter endValue={1500} />}
+            number={<AnimatedCounter endValue={650} />}
             text="Impostos de Renda feitos anualmente."
           />
           <ResultsCard
             img={imgIcon}
-            number={<AnimatedCounter endValue={300} />}
+            number={<AnimatedCounter endValue={208} />}
             text="Empresas atendidas mensalmente."
           />
         </h1>

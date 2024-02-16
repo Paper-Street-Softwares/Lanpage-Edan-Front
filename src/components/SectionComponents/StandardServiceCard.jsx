@@ -24,7 +24,7 @@ export default function StandardServiceCard(props) {
             {title}
           </div>
         </div>
-        <div className="flex flex-col justify-center p-2 text-center h-14 phone3:h-2/3">
+        <div className="flex flex-col justify-center p-2 mb-2 text-center h-14 phone3:h-2/3">
           <div className="text-paragraph3 tablet1:text-paragraph1 desktop1:text-paragraph2 text-quaternary">
             {description}
           </div>

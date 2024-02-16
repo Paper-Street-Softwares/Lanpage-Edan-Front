@@ -36,7 +36,7 @@ export default function ServicesSection() {
             icon={imgDecore}
             iconAlt="Ícone Decore"
             title="DECORE"
-            description="Seus documentos contábeis de forma rápida e eficiente!"
+            description="Emitimos comprovação de renda para autônomos e empresários"
           />,
           <StandardServiceCard
             key={4}
