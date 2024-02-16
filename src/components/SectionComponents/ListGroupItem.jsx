@@ -1,5 +1,3 @@
-import React from "react";
-
 const ListGroupItem = ({ id, text }) => {
   return (
     <li className="uppercase">
