@@ -4,6 +4,7 @@ import Logo from "../style/assets/images/Logo.png";
 import ListGroup from "./SectionComponents/ListGroup";
 import Sidebar from "./SectionComponents/Sidebar";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-scroll";
 
 export default function NavbarSection() {
   const [scrolling, setScrolling] = useState(false);
@@ -68,11 +69,20 @@ export default function NavbarSection() {
         }`}
       >
         <Navbar>
-          <img
-            src={Logo}
-            alt="Logo Edan"
-            className="absolute left-0 h-10 tablet3:mb-0"
-          />
+          <Link
+            to="home"
+            className="cursor-pointer"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-100}
+          >
+            <img
+              src={Logo}
+              alt="Logo Edan"
+              className="absolute left-0 h-10 -mt-4 tablet3:mb-0"
+            />
+          </Link>
           <button
             onClick={toggleSidebar}
             className="absolute right-0 mr-4 -top-4 tablet2:hidden"

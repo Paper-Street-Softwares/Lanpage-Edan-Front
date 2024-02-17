@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 export default function Sidebar({ showSidebar }) {
   const [showSublistServices, setShowSublistServices] = useState(false);
@@ -28,21 +29,48 @@ export default function Sidebar({ showSidebar }) {
         >
           <div className="overflow-y-auto">
             <ul className="text-black">
-              <li className="mb-2">
-                <a href="home" className="hover:text-primary">
-                  Início
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="about" className="hover:text-primary">
-                  Sobre Nós
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="services" className="hover:text-primary">
-                  Serviços
-                </a>
-              </li>
+              <Link
+                to="home"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-100}
+              >
+                <li className="mb-2">
+                  <a href="home" className="hover:text-primary">
+                    Início
+                  </a>
+                </li>
+              </Link>
+              <Link
+                to="about"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-320}
+              >
+                <li className="mb-2">
+                  <a href="about" className="hover:text-primary">
+                    Sobre Nós
+                  </a>
+                </li>
+              </Link>
+              <Link
+                to="services"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-320}
+              >
+                <li className="mb-2">
+                  <a href="services" className="hover:text-primary">
+                    Serviços
+                  </a>
+                </li>
+              </Link>
 
               <li className="relative mb-2">
                 <button
@@ -269,11 +297,20 @@ export default function Sidebar({ showSidebar }) {
                   </ul>
                 )}
               </li>
-              <li className="mb-2">
-                <a href="contact" className="hover:text-primary">
-                  Contato
-                </a>
-              </li>
+              <Link
+                to="contact"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-390}
+              >
+                <li className="mb-2">
+                  <a href="contact" className="hover:text-primary">
+                    Contato
+                  </a>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
