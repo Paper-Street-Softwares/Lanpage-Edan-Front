@@ -20,17 +20,17 @@ export default function FooterSection() {
           <div className="flex flex-col justify-between">
             <HonrizontalIconAndText
               img={imgHome}
-              imgAlt="Ícone Home"
+              imgAlt="Edan Home Contabilidade Ilhéus"
               text="Av. Lótus, 23 - Nelson Costa, Ilhéus - BA, CEP 45656-000."
             />
             <HonrizontalIconAndText
               img={imgWhatsapp}
-              imgAlt="Ícone Whatsapp"
+              imgAlt="Edan Whatsapp Contabilidade Ilhéus"
               text="(73) 9.9961-2263"
             />
             <HonrizontalIconAndText
               img={imgCalendar}
-              imgAlt="Ícone Calendário"
+              imgAlt="Edan Calendário Contabilidade Ilhéus"
               text="Seg. a Quinta, das 08h às 18h."
               textLine2="Sexta-feira, das 08 às 17h."
               textLine3="Sábado, fechado."
@@ -56,7 +56,7 @@ export default function FooterSection() {
             >
               <HonrizontalIconAndText
                 img={imgInstagram}
-                alt="Ícone Instagram"
+                alt="Edan Instagram  Contabilidade Ilhéus"
                 text="Siga-nos no instagram!"
               />
             </a>
@@ -67,7 +67,7 @@ export default function FooterSection() {
             >
               <HonrizontalIconAndText
                 img={imgFacebook}
-                alt="Ícone Facebook"
+                alt="Edan Facebook Contabilidade Ilhéus"
                 text="Curta a Edan no Facebook!"
               />
             </a>
