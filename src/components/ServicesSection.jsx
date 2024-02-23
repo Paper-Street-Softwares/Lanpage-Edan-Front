@@ -20,35 +20,35 @@ export default function ServicesSection() {
           <StandardServiceCard
             key={1}
             icon={imgAbertura}
-            iconAlt="Ícone Abertura"
+            iconAlt="Edan Abertura de Empresas Contabilidade Ilhéus"
             title="Abertura de Empresas"
             description="Descomplique o processo de abertura da sua empresa!"
           />,
           <StandardServiceCard
             key={2}
             icon={imgBaixa}
-            iconAlt="Ícone Baixa"
+            iconAlt="Edan Baixa de Empresas Contabilidade Ilhéus"
             title="Baixa de Empresas"
             description="Conte conosco para fechar seu negócio com excelência!"
           />,
           <StandardServiceCard
             key={3}
             icon={imgDecore}
-            iconAlt="Ícone Decore"
+            iconAlt="Edan DECORE Contabilidade Ilhéus"
             title="DECORE"
             description="Emitimos comprovação de renda para autônomos e empresários"
           />,
           <StandardServiceCard
             key={4}
             icon={imgImpostoRenda}
-            iconAlt="Ícone Imposto de Renda"
+            iconAlt="Edan Imposto de Renda Contabilidade Ilhéus"
             title="Imposto de Renda"
             description="Faça sua declaração de Imposto de Renda conosco."
           />,
           <StandardServiceCard
             key={5}
             icon={imgITR}
-            iconAlt="Ícone ITR"
+            iconAlt="Edan Declaração de ITR Contabilidade Ilhéus"
             title="Declaração de ITR"
             description="Sua declaração de ITR de forma simplificada."
           />,

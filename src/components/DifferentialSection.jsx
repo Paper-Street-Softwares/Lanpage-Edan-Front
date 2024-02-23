@@ -23,49 +23,49 @@ export default function DifferentialSection() {
           <ImgAndTitleCard
             key={1}
             img={imgPortal}
-            imgDescription="Ícone Portal do Cliente"
+            imgDescription="Ícone Portal do Cliente Contabilidade Ilhéus"
             title="Portal do Cliente"
           />,
           <ImgAndTitleCard
             key={2}
             img={imgExperiencia}
-            imgDescription="Ícone Experiência"
+            imgDescription="Ícone Experiência Contabilidade Ilhéus"
             title="Experiência e Credibilidade"
           />,
           <ImgAndTitleCard
             key={3}
             img={imgAtendimento}
-            imgDescription="Ícone Atendimento"
+            imgDescription="Ícone Atendimento Contabilidade Ilhéus"
             title="Atendimento Qualificado"
           />,
           <ImgAndTitleCard
             key={4}
             img={imgTomadaDecisoes}
-            imgDescription="Ícone Tomada de Decisões"
+            imgDescription="Ícone Tomada de Decisões Contabilidade Ilhéus"
             title="Ajuda na tomada de decisões"
           />,
           <ImgAndTitleCard
             key={5}
             img={imgExpertise}
-            imgDescription="Ícone Expertise"
+            imgDescription="Ícone Expertise Contabilidade Ilhéus"
             title="Expertise na área"
           />,
           <ImgAndTitleCard
             key={6}
             img={imgTecnologia}
-            imgDescription="Ícone Tecnologia"
+            imgDescription="Ícone Tecnologia Contabilidade Ilhéus"
             title="Tecnologia e Otimização"
           />,
           <ImgAndTitleCard
             key={7}
             img={imgSegurança}
-            imgDescription="Ícone Segurança"
+            imgDescription="Ícone Segurança Contabilidade Ilhéus"
             title="Segurança"
           />,
           <ImgAndTitleCard
             key={8}
             img={imgConfianca}
-            imgDescription="Ícone Confiança"
+            imgDescription="Ícone Confiança Contabilidade Ilhéus"
             title="Confiança"
           />,
         ]}

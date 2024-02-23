@@ -23,8 +23,8 @@ export default function CertificatesSection() {
           <ImgAndTitleCard
             key={1}
             img={imgReceitaFederal}
-            imgDescription="Ícone Receita Federal"
-            title="CND Receita e Previdência"
+            imgDescription="Receita Federal Contabilidade Ilhéus"
+            title="CND Receita e Previdência Contabilidade Ilhéus"
             target="_blank"
             rel="noopener noreferrer"
             link="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir"
@@ -32,7 +32,7 @@ export default function CertificatesSection() {
           <ImgAndTitleCard
             key={2}
             img={imgTrabalhista}
-            imgDescription="Ícone Certidão Trabalhista"
+            imgDescription="Certidão Trabalhista Contabilidade Ilhéus"
             title="CDT Débitos Trabalhistas"
             target="_blank"
             rel="noopener noreferrer"
@@ -41,7 +41,7 @@ export default function CertificatesSection() {
           <ImgAndTitleCard
             key={3}
             img={imgFGTS}
-            imgDescription="Ícone FGTS"
+            imgDescription="FGTS Contabilidade Ilhéus"
             title="CRF Regularidade do FGTS"
             target="_blank"
             rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function CertificatesSection() {
           <ImgAndTitleCard
             key={4}
             img={imgSefaz}
-            imgDescription="Ícone SEFAZ"
+            imgDescription="SEFAZ Contabilidade Ilhéus"
             title="CND Sefaz/Bahia"
             target="_blank"
             rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export default function CertificatesSection() {
           <ImgAndTitleCard
             key={5}
             img={imgPrefeituraIlheus}
-            imgDescription="Ícone Prefeitura de Ilhéus"
+            imgDescription="Prefeitura de Ilhéus Contabilidade Ilhéus"
             title="CND Prefeitura Ilhéus/BA"
             target="_blank"
             rel="noopener noreferrer"
@@ -68,7 +68,7 @@ export default function CertificatesSection() {
           <ImgAndTitleCard
             key={6}
             img={imgFalencia}
-            imgDescription="Ícone Falência e Concordata"
+            imgDescription="Falência e Concordata Contabilidade Ilhéus"
             title="CND Falência e Concordata"
             target="_blank"
             rel="noopener noreferrer"
@@ -77,7 +77,7 @@ export default function CertificatesSection() {
           <ImgAndTitleCard
             key={7}
             img={imgSefazSP}
-            imgDescription="Ícone Sefaz SP"
+            imgDescription="Sefaz SP Contabilidade Ilhéus"
             title="CND Sefaz/São Paulo"
             target="_blank"
             rel="noopener noreferrer"
@@ -86,7 +86,7 @@ export default function CertificatesSection() {
           <ImgAndTitleCard
             key={8}
             img={imgSefazRJ}
-            imgDescription="Ícone Sefaz RJ"
+            imgDescription="Sefaz RJ Contabilidade Ilhéus"
             title="CND Sefaz/Rio de Janeiro"
             target="_blank"
             rel="noopener noreferrer"

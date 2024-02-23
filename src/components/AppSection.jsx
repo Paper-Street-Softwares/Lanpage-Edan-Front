@@ -26,7 +26,7 @@ export default function AppSection() {
               <MotionDivLeftToRight>
                 <img
                   className="w-full"
-                  alt="Telas de celulares"
+                  alt="Aplicativo celular Edan Contabilidade Ilhéus"
                   src={imgAppScreen}
                 />
               </MotionDivLeftToRight>
@@ -55,7 +55,7 @@ export default function AppSection() {
                   >
                     <img
                       className="w-32 tablet1:w-24 tablet2:w-28 desktop1:w-44"
-                      alt="Botão App Store"
+                      alt="Edan App Store"
                       src={imgAppStore}
                     />
                   </a>
@@ -66,7 +66,7 @@ export default function AppSection() {
                   >
                     <img
                       className="w-32 tablet1:w-24 tablet2:w-28 desktop1:w-44"
-                      alt="Botão Play Store"
+                      alt="Edan Play Store"
                       src={imgPlayStore}
                     />
                   </a>

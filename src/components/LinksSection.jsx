@@ -26,7 +26,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={1}
             img={imgInscricaoEstadual}
-            imgDescription="Ícone SEFAZ"
+            imgDescription="Edan SEFAZ Contabilidade Ilhéus"
             title="Inscrição Estadual"
             target="_blank"
             rel="noopener noreferrer"
@@ -35,7 +35,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={2}
             img={imgPedidoViabilidade}
-            imgDescription="Ícone Juceb"
+            imgDescription="Edan Juceb Contabilidade Ilhéus"
             title="Pedido de Viabilidade"
             target="_blank"
             rel="noopener noreferrer"
@@ -44,7 +44,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={3}
             img={imgConsultaDbe}
-            imgDescription="Ícone Consulta DBE"
+            imgDescription="Edan Consulta DBE Contabilidade Ilhéus"
             title="Consultar DBE"
             target="_blank"
             rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={4}
             img={imgConsultaOptanteSimples}
-            imgDescription="Ícone Consulta Optantes"
+            imgDescription="Edan Consulta Optantes Contabilidade Ilhéus"
             title="Consulta Optantes Simples"
             target="_blank"
             rel="noopener noreferrer"
@@ -62,7 +62,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={5}
             img={imgDarfReceita}
-            imgDescription="Ícone Darf Receita"
+            imgDescription="Edan Darf Receita Contabilidade Ilhéus"
             title="Pessoa Jurídica"
             target="_blank"
             rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={6}
             img={imgDarfReceita}
-            imgDescription="Ícone Darf Receita"
+            imgDescription="Edan Darf Receita Contabilidade Ilhéus"
             title="Pessoa Física"
             target="_blank"
             rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={7}
             img={imgEcac}
-            imgDescription="Ícone ECAC"
+            imgDescription="Edan ECAC Contabilidade Ilhéus"
             title="Acesso e-CAC"
             target="_blank"
             rel="noopener noreferrer"
@@ -89,7 +89,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={8}
             img={imgGovBr}
-            imgDescription="Ícone GovBR"
+            imgDescription="Edan GovBR Contabilidade Ilhéus"
             title="Acesso Gov.Br"
             target="_blank"
             rel="noopener noreferrer"
@@ -98,7 +98,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={9}
             img={imgPrefeituraIlheus}
-            imgDescription="Ícone Prefeitura Ilhéus"
+            imgDescription="Edan Prefeitura Ilhéus Contabilidade Ilhéus"
             title="NF Eletrônica"
             target="_blank"
             rel="noopener noreferrer"
@@ -107,7 +107,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={10}
             img={imgCartaoCnpj}
-            imgDescription="Ícone Cartão CNPJ"
+            imgDescription="Edan Cartão CNPJ Contabilidade Ilhéus"
             title="Cartão CNPJ"
             target="_blank"
             rel="noopener noreferrer"
@@ -116,7 +116,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={11}
             img={imgMei}
-            imgDescription="Ícone MEI"
+            imgDescription="Edan MEI Contabilidade Ilhéus"
             title="Portal MEI"
             target="_blank"
             rel="noopener noreferrer"
@@ -125,7 +125,7 @@ export default function LinksSection() {
           <ImgAndTitleCard
             key={12}
             img={imgInssInformeRendimentos}
-            imgDescription="Ícone informe de Rendimentos"
+            imgDescription="Edan Informe de Rendimentos Contabilidade Ilhéus"
             title="Informe de Rendimentos"
             target="_blank"
             rel="noopener noreferrer"
